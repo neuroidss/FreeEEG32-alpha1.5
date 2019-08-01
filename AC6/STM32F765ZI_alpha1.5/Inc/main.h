@@ -78,6 +78,10 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
+#define SAI4_DS_B_Pin GPIO_PIN_3
+#define SAI4_DS_B_GPIO_Port GPIOE
+#define TIM15_CH2_Pin GPIO_PIN_6
+#define TIM15_CH2_GPIO_Port GPIOE
 #define ADC2_START_Pin GPIO_PIN_4
 #define ADC2_START_GPIO_Port GPIOF
 #define ADC2_RESET_Pin GPIO_PIN_5
