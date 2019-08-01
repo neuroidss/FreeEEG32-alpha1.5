@@ -2183,11 +2183,11 @@ Text GLabel 1950 7650 2    50   Input ~ 0
 MCU_73_SPI2_NSS
 Wire Wire Line
 	1850 7650 1950 7650
-Text GLabel 650  7450 0    50   Input ~ 0
+Text GLabel -250 7450 0    50   Input ~ 0
 MCU_70_I2C2_SDA
 Wire Wire Line
 	650  7450 750  7450
-Text GLabel 650  7350 0    50   Input ~ 0
+Text GLabel -250 7350 0    50   Input ~ 0
 MCU_69_I2C2_SCL
 Text GLabel 650  7050 0    50   Input ~ 0
 MCU_66_SPI4_MISO
@@ -2225,11 +2225,11 @@ Text GLabel 650  3250 0    50   Input ~ 0
 MCU_28_SPI2_MISO
 Wire Wire Line
 	650  3250 750  3250
-Text GLabel 650  3050 0    50   Input ~ 0
+Text GLabel -200 3050 0    50   Input ~ 0
 MCU_26_SAI2_FS_B
 Wire Wire Line
 	650  3050 750  3050
-Text GLabel 650  550  0    50   Input ~ 0
+Text GLabel -200 550  0    50   Input ~ 0
 MCU_1_SPI4_SCK
 Wire Wire Line
 	650  550  750  550 
@@ -4143,9 +4143,9 @@ Text GLabel -200 5250 0    50   Input ~ 0
 MCU_48_SAI1_SD_A
 Text GLabel -1050 5250 0    50   Input ~ 0
 MCU_48_SPI3_MOSI
-Text GLabel 650  5350 0    50   Input ~ 0
-MCU_49_SAI2_SD_B
 Text GLabel -200 5350 0    50   Input ~ 0
+MCU_49_SAI2_SD_B
+Text GLabel -1050 5350 0    50   Input ~ 0
 MCU_49_SPI5_MOSI
 Text GLabel -250 5850 0    50   Input ~ 0
 MCU_54_I2C4_SCL
@@ -4171,7 +4171,7 @@ Text GLabel 650  7150 0    50   Input ~ 0
 MCU_67_SPI4_MOSI
 Text GLabel -1150 7150 0    50   Input ~ 0
 MCU_67_TIM1_CH4
-Text GLabel -250 7350 0    50   Input ~ 0
+Text GLabel -1150 7350 0    50   Input ~ 0
 MCU_69_SPI2_SCK
 Text GLabel 3000 7450 2    50   Input ~ 0
 MCU_75_SPI2_MISO
@@ -4195,7 +4195,7 @@ Text GLabel 3900 5050 2    50   Input ~ 0
 MCU_99_I2C_SDA
 Text GLabel 3900 4950 2    50   Input ~ 0
 MCU_100_I2C_SCL
-Text GLabel 1950 4950 2    50   Input ~ 0
+Text GLabel 3050 4950 2    50   Input ~ 0
 MCU_100_TIM1_CH1
 Text GLabel 3050 4850 2    50   Input ~ 0
 MCU_101_TIM1_CH2
@@ -4223,7 +4223,7 @@ Text GLabel 3050 3750 2    50   Input ~ 0
 MCU_112_SPI3_MISO
 Text GLabel 3050 3650 2    50   Input ~ 0
 MCU_114_SPI3_MOSI
-Text GLabel 1950 3250 2    50   Input ~ 0
+Text GLabel 2900 3250 2    50   Input ~ 0
 MCU_117_SPI2_SCK
 Text GLabel 3950 2750 2    50   Input ~ 0
 MCU_122_SPI3_MOSI
@@ -4231,13 +4231,13 @@ Text GLabel 1950 2450 2    50   Input ~ 0
 MCU_125_SAI2_SD_B
 Text GLabel 2900 2450 2    50   Input ~ 0
 MCU_125_SPI1_NSS
-Text GLabel 1950 2650 2    50   Input ~ 0
+Text GLabel 2800 2650 2    50   Input ~ 0
 MCU_123_SPI1_MOSI
 Text GLabel 1950 2550 2    50   Input ~ 0
 MCU_124_SAI2_FS_B
 Text GLabel 2900 2550 2    50   Input ~ 0
 MCU_124_SPI1_MISO
-Text GLabel 1950 2350 2    50   Input ~ 0
+Text GLabel 2850 2350 2    50   Input ~ 0
 MCU_126_SPI1_SCK
 Text GLabel 2850 1650 2    50   Input ~ 0
 MCU_133_SPI1_SCK
@@ -4269,7 +4269,7 @@ Text GLabel 4650 1050 2    50   Input ~ 0
 MCU_139_I2C4_SCL
 Text GLabel 4650 950  2    50   Input ~ 0
 MCU_140_I2C4_SDA
-Text GLabel 1950 950  2    50   Input ~ 0
+Text GLabel 2800 1000 2    50   Input ~ 0
 MCU_140_SPI2_NSS
 Text GLabel -14450 -500 2    50   Input ~ 0
 MCU_66_SPI4_MISO
@@ -6296,43 +6296,6 @@ Wire Wire Line
 	650  7250 750  7250
 Wire Wire Line
 	650  7550 750  7550
-NoConn ~ 1950 7250
-NoConn ~ 1950 7050
-NoConn ~ 1950 6450
-NoConn ~ 1950 6350
-NoConn ~ 1950 6050
-NoConn ~ 1950 5950
-NoConn ~ 1950 5850
-NoConn ~ 1950 5750
-NoConn ~ 650  5750
-NoConn ~ 650  5850
-NoConn ~ 650  5950
-NoConn ~ 650  6050
-NoConn ~ 650  6150
-NoConn ~ 650  6350
-NoConn ~ 650  6750
-NoConn ~ 650  7250
-NoConn ~ 650  7550
-NoConn ~ 650  5450
-NoConn ~ 1950 4350
-NoConn ~ 1950 3550
-NoConn ~ 650  3950
-NoConn ~ 650  4150
-NoConn ~ 650  4850
-NoConn ~ 650  4950
-NoConn ~ 650  2650
-NoConn ~ 650  2750
-NoConn ~ 650  2850
-NoConn ~ 650  2350
-NoConn ~ 650  1150
-NoConn ~ 650  1250
-NoConn ~ 650  1350
-NoConn ~ 650  1450
-NoConn ~ 650  1550
-NoConn ~ 1950 1050
-NoConn ~ 650  1750
-NoConn ~ 650  1650
-NoConn ~ 1950 1750
 Text GLabel 8400 1950 0    50   Input ~ 0
 ADC4_13_MODE0_GPIO0
 Wire Wire Line
