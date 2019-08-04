@@ -250,13 +250,13 @@ Wire Wire Line
 $Comp
 L Connector_Generic:Conn_02x03_Odd_Even J57
 U 1 1 981E459B
-P 1250 2950
-F 0 "J57" H 1300 3267 50  0000 C CNN
-F 1 "Conn_02x03_Odd_Even" H 1300 3176 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical" H 1250 2950 50  0001 C CNN
-F 3 "~" H 1250 2950 50  0001 C CNN
-	1    1250 2950
-	-1   0    0    -1  
+P 1150 2950
+F 0 "J57" H 1200 3267 50  0000 C CNN
+F 1 "Conn_02x03_Odd_Even" H 1200 3176 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical" H 1150 2950 50  0001 C CNN
+F 3 "~" H 1150 2950 50  0001 C CNN
+	1    1150 2950
+	1    0    0    1   
 $EndComp
 Text HLabel 850  2850 0    50   Input ~ 0
 1_VCC1

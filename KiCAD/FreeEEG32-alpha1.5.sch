@@ -470,7 +470,7 @@ $Sheet
 S 3250 -4100 800  350 
 U 5CF566B4
 F0 "USB_POWER" 50
-F1 "USB.sch" 50
+F1 "USB_POWER.sch" 50
 F2 "1_VBUS" I L 3250 -4050 50 
 F3 "3_D+" I L 3250 -3950 50 
 F4 "2_D-" I R 4050 -4050 50 
@@ -630,30 +630,30 @@ F145 "115_PD1" I R 1850 3450 50
 $EndSheet
 Text GLabel 6150 -2750 0    50   Input ~ 0
 CRYSTAL_4_Vin
-Text GLabel 3150 -3950 0    50   Input ~ 0
+Text GLabel 2950 -3950 0    50   Input ~ 0
 USB_POWER_3_D+
-Text GLabel 4150 -4050 2    50   Input ~ 0
+Text GLabel 4250 -4050 2    50   Input ~ 0
 USB_POWER_2_D-
 Wire Wire Line
 	3150 -3950 3250 -3950
 Wire Wire Line
 	4050 -4050 4150 -4050
-Text GLabel -3950 5700 0    50   Input ~ 0
+Text GLabel -3400 6400 0    50   Input ~ 0
 USB_3_D+
 Wire Wire Line
-	-3850 5700 -3950 5700
+	-3300 6400 -3400 6400
 Wire Wire Line
-	-3850 5800 -3950 5800
-Text GLabel -3950 5800 0    50   Input ~ 0
+	-3300 6500 -3400 6500
+Text GLabel -3400 6500 0    50   Input ~ 0
 USB_2_D-
 Text GLabel 1950 4550 2    50   Input ~ 0
-MCU_104_USART1_RTS
+MCU_104_PA12_USART1_RTS
 Wire Wire Line
 	1850 4550 1950 4550
 Wire Wire Line
 	1850 4650 1950 4650
 Text GLabel 1950 4650 2    50   Input ~ 0
-MCU_103_USART1_CTS
+MCU_103_PA11_USART1_CTS
 Text GLabel 6150 -2850 0    50   Input ~ 0
 CRYSTAL_3_OUT
 Text GLabel 6150 -2950 0    50   Input ~ 0
@@ -1615,7 +1615,7 @@ F 3 "~" H 2350 -550 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4200 -600 4100 -600
-Text GLabel 6400 -2350 2    50   Input ~ 0
+Text GLabel 6450 -2350 2    50   Input ~ 0
 CRYSTAL_4_Vin
 Wire Wire Line
 	6300 -2350 6400 -2350
@@ -1667,10 +1667,10 @@ $EndComp
 Wire Wire Line
 	9000 6450 8900 6450
 Wire Wire Line
-	9050 4600 8950 4600
-Text GLabel 8950 4600 0    50   Input ~ 0
+	12450 3050 12350 3050
+Text GLabel 12350 3050 0    50   Input ~ 0
 CRYSTAL_3_OUT
-Text GLabel 9050 4600 2    50   Input ~ 0
+Text GLabel 12500 3050 2    50   Input ~ 0
 ADC4_32_XTAL2_MCLK
 $Comp
 L Device:R_Small R22
@@ -2050,11 +2050,11 @@ MCU_6_VBAT
 Wire Wire Line
 	750  1050 650  1050
 Text GLabel 1950 1250 2    50   Input ~ 0
-MCU_137_I2C1_SDA
+MCU_137_PB7_I2C1_SDA
 Wire Wire Line
 	1850 1250 1950 1250
 Text GLabel 650  5250 0    50   Input ~ 0
-MCU_48_BOOT1
+MCU_48_PB2_BOOT1
 Wire Wire Line
 	8500 6350 8400 6350
 Text GLabel 1950 1150 2    50   Input ~ 0
@@ -2062,373 +2062,367 @@ MCU_138_BOOT0
 Wire Wire Line
 	1850 1150 1950 1150
 Text GLabel 1950 1350 2    50   Input ~ 0
-MCU_136_I2C1_SCL
+MCU_136_PB6_I2C1_SCL
 Wire Wire Line
 	1850 1350 1950 1350
 Text GLabel 1950 1450 2    50   Input ~ 0
-MCU_135_SPI3_MOSI
+MCU_135_PB5_SPI3_MOSI
 Text GLabel 1950 1550 2    50   Input ~ 0
-MCU_134_SPI3_MISO
+MCU_134_PB4_SPI3_MISO
 Text GLabel 1950 1650 2    50   Input ~ 0
-MCU_133_SPI3_SCK
+MCU_133_PB3_SPI3_SCK
 Text GLabel 1950 2050 2    50   Input ~ 0
-MCU_129_SPI6_MOSI
+MCU_129_PG14_SPI6_MOSI
 Wire Wire Line
 	1850 2050 1950 2050
 Text GLabel 1950 2150 2    50   Input ~ 0
-MCU_128_SPI6_SCK
+MCU_128_PG13_SPI6_SCK
 Wire Wire Line
 	1850 2150 1950 2150
 Text GLabel 1950 2250 2    50   Input ~ 0
-MCU_127_SPI6_MISO
+MCU_127_PG12_SPI6_MISO
 Wire Wire Line
 	1850 2250 1950 2250
-Text GLabel 2850 2750 2    50   Input ~ 0
+Text GLabel 3150 2750 2    50   Input ~ 0
 MCU_122_SAI1_SD_A
-Text GLabel 3950 3050 2    50   Input ~ 0
+Text GLabel 4250 3050 2    50   Input ~ 0
 MCU_119_AD2_START
 Wire Wire Line
 	1850 3050 1950 3050
-Text GLabel 3950 3150 2    50   Input ~ 0
+Text GLabel 4250 3150 2    50   Input ~ 0
 MCU_118_AD2_DRDY
 Wire Wire Line
 	1850 3150 1950 3150
 Text GLabel 1950 3350 2    50   Input ~ 0
-MCU_116_SDMMC1_CMD
+MCU_116_PD2_SDMMC1_CMD
 Wire Wire Line
 	1850 3350 1950 3350
 Text GLabel 1950 3650 2    50   Input ~ 0
-MCU_113_SDMMC1_CK
+MCU_113_PC12_SDMMC1_CK
 Wire Wire Line
 	1850 3650 1950 3650
 Text GLabel 1950 3750 2    50   Input ~ 0
-MCU_112_SDMMC1_D3
+MCU_112_PC11_SDMMC1_D3
 Wire Wire Line
 	1850 3750 1950 3750
 Text GLabel 1950 3850 2    50   Input ~ 0
-MCU_111_SDMMC1_D2
+MCU_111_PC10_SDMMC1_D2
 Wire Wire Line
 	1850 3850 1950 3850
 Text GLabel 1950 3950 2    50   Input ~ 0
-MCU_110_SPI3_NSS
+MCU_110_PA15_SPI3_NSS
 Text GLabel 1950 4050 2    50   Input ~ 0
-MCU_109_SYS_JTCK-SWCLK
+MCU_109_PA14_SYS_JTCK-SWCLK
 Wire Wire Line
 	1850 4050 1950 4050
 Text GLabel 1950 4450 2    50   Input ~ 0
-MCU_105_SYS_JTMS-SWDIO
+MCU_105_PA13_SYS_JTMS-SWDIO
 Wire Wire Line
 	1850 4450 1950 4450
 Text GLabel 1950 4750 2    50   Input ~ 0
-MCU_102_USART1_RX
+MCU_102_PA10_USART1_RX
 Wire Wire Line
 	1850 4750 1950 4750
 Text GLabel 1950 4850 2    50   Input ~ 0
-MCU_101_USART1_TX
+MCU_101_PA9_USART1_TX
 Wire Wire Line
 	1850 4850 1950 4850
 Text GLabel 1950 5050 2    50   Input ~ 0
-MCU_99_SDMMC1_D1
+MCU_99_PC9_SDMMC1_D1
 Wire Wire Line
 	1850 5050 1950 5050
 Text GLabel 1950 5150 2    50   Input ~ 0
-MCU_98_SDMMC1_D0
+MCU_98_PC8_SDMMC1_D0
 Wire Wire Line
 	1850 5150 1950 5150
-Text GLabel 1950 5250 2    50   Input ~ 0
-MCU_97_SDMMC1_DETECT
+Text GLabel 3300 3550 2    50   Input ~ 0
+MCU_114_SDMMC1_DETECT
 Wire Wire Line
 	1850 5250 1950 5250
 Text GLabel 1950 5650 2    50   Input ~ 0
-MCU_93_SPI6_NSS
+MCU_93_PG8_SPI6_NSS
 Wire Wire Line
 	1850 5650 1950 5650
-Text GLabel 2950 5950 2    50   Input ~ 0
+Text GLabel 3250 5950 2    50   Input ~ 0
 MCU_90_AD1_RESET
 Wire Wire Line
 	650  6250 750  6250
-Text GLabel 2800 6450 2    50   Input ~ 0
+Text GLabel 3100 6450 2    50   Input ~ 0
 MCU_85_AD1_START
 Wire Wire Line
 	1850 5350 1950 5350
 Text GLabel 1950 6750 2    50   Input ~ 0
-MCU_82_SAI2_SCK_A
+MCU_82_PD13_SAI2_SCK_A
 Wire Wire Line
 	1850 6750 1950 6750
 Text GLabel 1950 6850 2    50   Input ~ 0
-MCU_81_SAI2_FS_A
+MCU_81_P12_SAI2_FS_A
 Wire Wire Line
 	1850 6850 1950 6850
 Text GLabel 1950 6950 2    50   Input ~ 0
-MCU_80_SAI2_SD_A
+MCU_80_PD11_SAI2_SD_A
 Wire Wire Line
 	1850 6950 1950 6950
-Text GLabel 3750 7050 2    50   Input ~ 0
+Text GLabel 4050 7050 2    50   Input ~ 0
 MCU_79_AD1_DRDY
 Wire Wire Line
 	1850 7050 1950 7050
 Text GLabel 1950 7350 2    50   Input ~ 0
-MCU_76_USB_OTG_HS_DP
+MCU_76_PB15_USB_OTG_HS_DP
 Wire Wire Line
 	1850 7350 1950 7350
 Text GLabel 1950 7450 2    50   Input ~ 0
-MCU_75_USB_OTG_HS_DM
+MCU_75_PB14_USB_OTG_HS_DM
 Wire Wire Line
 	1850 7450 1950 7450
 Text GLabel 1950 7550 2    50   Input ~ 0
-MCU_74_SPI2_SCK
+MCU_74_PB13_SPI2_SCK
 Wire Wire Line
 	1850 7550 1950 7550
 Text GLabel 1950 7650 2    50   Input ~ 0
-MCU_73_SPI2_NSS
+MCU_73_PB12_SPI2_NSS
 Wire Wire Line
 	1850 7650 1950 7650
-Text GLabel -250 7450 0    50   Input ~ 0
-MCU_70_I2C2_SDA
+Text GLabel 650  7450 0    50   Input ~ 0
+MCU_70_PB11_I2C2_SDA
 Wire Wire Line
 	650  7450 750  7450
-Text GLabel -250 7350 0    50   Input ~ 0
-MCU_69_I2C2_SCL
+Text GLabel 650  7350 0    50   Input ~ 0
+MCU_69_PB10_I2C2_SCL
 Text GLabel 650  7050 0    50   Input ~ 0
-MCU_66_SPI4_MISO
+MCU_66_PE13_SPI4_MISO
 Text GLabel 650  6850 0    50   Input ~ 0
-MCU_64_SPI4_NSS
-Text GLabel -1200 5850 0    50   Input ~ 0
+MCU_64_PE11_SPI4_NSS
+Text GLabel -1050 5850 0    50   Input ~ 0
 MCU_54_AD4_RESET
 Wire Wire Line
 	650  6450 750  6450
-Text GLabel -1150 5150 0    50   Input ~ 0
+Text GLabel -1100 5150 0    50   Input ~ 0
 MCU_47_AD4_START
 Wire Wire Line
 	650  5150 750  5150
-Text GLabel -1150 5050 0    50   Input ~ 0
+Text GLabel -1100 5050 0    50   Input ~ 0
 MCU_46_AD4_DRDY
 Wire Wire Line
 	650  5050 750  5050
 Text GLabel 650  4750 0    50   Input ~ 0
-MCU_43_SPI1_MOSI
+MCU_43_PA7_SPI1_MOSI
 Text GLabel 650  4650 0    50   Input ~ 0
-MCU_42_SPI1_MISO
+MCU_42_PA6_SPI1_MISO
 Text GLabel 650  4550 0    50   Input ~ 0
-MCU_41_SPI1_SCK
+MCU_41_PA5_SPI1_SCK
 Text GLabel 650  4450 0    50   Input ~ 0
-MCU_40_SPI1_NSS
+MCU_40_PA4_SPI1_NSS
 Text GLabel 650  4050 0    50   Input ~ 0
-MCU_36_SAI2_SCK_B
+MCU_36_PA2_SAI2_SCK_B
 Wire Wire Line
 	650  4050 750  4050
-Text GLabel -350 3850 0    50   Input ~ 0
+Text GLabel -600 3850 0    50   Input ~ 0
 MCU_34_SAI2_SD_B
 Wire Wire Line
 	650  3850 750  3850
 Text GLabel 650  3250 0    50   Input ~ 0
-MCU_28_SPI2_MISO
+MCU_28_PC2_SPI2_MISO
 Wire Wire Line
 	650  3250 750  3250
-Text GLabel -200 3050 0    50   Input ~ 0
+Text GLabel 450  3050 0    50   Input ~ 0
 MCU_26_SAI2_FS_B
 Wire Wire Line
 	650  3050 750  3050
-Text GLabel -200 550  0    50   Input ~ 0
+Text GLabel 550  550  0    50   Input ~ 0
 MCU_1_SPI4_SCK
 Wire Wire Line
 	650  550  750  550 
-Text GLabel -150 650  0    50   Input ~ 0
+Text GLabel -400 650  0    50   Input ~ 0
 MCU_2_SAI1_SD_B
 Wire Wire Line
 	650  650  750  650 
 Text GLabel 650  750  0    50   Input ~ 0
-MCU_3_SAI1_FS_A
+MCU_3_PE4_SAI1_FS_A
 Text GLabel 650  850  0    50   Input ~ 0
-MCU_4_SAI1_SCK_A
-Text GLabel -950 950  0    50   Input ~ 0
+MCU_4_PE5_SAI1_SCK_A
+Text GLabel -1350 950  0    50   Input ~ 0
 MCU_5_SPI4_MOSI
-Text GLabel -1300 1950 0    50   Input ~ 0
+Text GLabel -1400 1950 0    50   Input ~ 0
 MCU_15_AD3_RESET
 Wire Wire Line
 	650  1950 750  1950
-Text GLabel -1050 2250 0    50   Input ~ 0
+Text GLabel -1300 2250 0    50   Input ~ 0
 MCU_18_UART7_RX
-Text GLabel -1050 2350 0    50   Input ~ 0
+Text GLabel -1300 2350 0    50   Input ~ 0
 MCU_19_UART7_TX
 Text GLabel 650  2450 0    50   Input ~ 0
-MCU_20_SAI1_SCK_B
+MCU_20_PF8_SAI1_SCK_B
 Text GLabel 650  2550 0    50   Input ~ 0
-MCU_21_SAI1_FS_B
-Text GLabel -3950 2600 0    50   Input ~ 0
+MCU_21_PF9_SAI1_FS_B
+Text GLabel -5800 2800 0    50   Input ~ 0
 ADC3_30_DRDY
 Wire Wire Line
-	-3950 2600 -3850 2600
-Text GLabel -3950 2700 0    50   Input ~ 0
+	-5800 2800 -5700 2800
+Text GLabel -5800 2900 0    50   Input ~ 0
 ADC3_29_DCLK
-Text GLabel -3950 2800 0    50   Input ~ 0
+Text GLabel -5800 3000 0    50   Input ~ 0
 ADC3_28_DOUT0
 Wire Wire Line
-	-3950 2800 -3850 2800
+	-5800 3000 -5700 3000
 Wire Wire Line
-	-3950 2700 -3850 2700
-Text GLabel -3950 2950 0    50   Input ~ 0
+	-5800 2900 -5700 2900
+Text GLabel -5800 3150 0    50   Input ~ 0
 ADC4_30_DRDY
 Wire Wire Line
-	-3950 2950 -3850 2950
-Text GLabel -3950 3050 0    50   Input ~ 0
+	-5800 3150 -5700 3150
+Text GLabel -5800 3250 0    50   Input ~ 0
 ADC4_29_DCLK
-Text GLabel -3950 3150 0    50   Input ~ 0
+Text GLabel -5800 3350 0    50   Input ~ 0
 ADC4_28_DOUT0
 Wire Wire Line
-	-3950 3150 -3850 3150
+	-5800 3350 -5700 3350
 Wire Wire Line
-	-3950 3050 -3850 3050
-Text GLabel -3950 2250 0    50   Input ~ 0
+	-5800 3250 -5700 3250
+Text GLabel -5800 2450 0    50   Input ~ 0
 ADC2_30_DRDY
 Wire Wire Line
-	-3950 2250 -3850 2250
-Text GLabel -3950 2350 0    50   Input ~ 0
+	-5800 2450 -5700 2450
+Text GLabel -5800 2550 0    50   Input ~ 0
 ADC2_29_DCLK
-Text GLabel -3950 2450 0    50   Input ~ 0
+Text GLabel -5800 2650 0    50   Input ~ 0
 ADC2_28_DOUT0
 Wire Wire Line
-	-3950 2450 -3850 2450
+	-5800 2650 -5700 2650
 Wire Wire Line
-	-3950 2350 -3850 2350
-Text GLabel -3950 1900 0    50   Input ~ 0
+	-5800 2550 -5700 2550
+Text GLabel -5800 2100 0    50   Input ~ 0
 ADC1_30_DRDY
 Wire Wire Line
-	-3950 1900 -3850 1900
-Text GLabel -3950 2000 0    50   Input ~ 0
+	-5800 2100 -5700 2100
+Text GLabel -5800 2200 0    50   Input ~ 0
 ADC1_29_DCLK
-Text GLabel -3950 2100 0    50   Input ~ 0
+Text GLabel -5800 2300 0    50   Input ~ 0
 ADC1_28_DOUT0
 Wire Wire Line
-	-3950 2100 -3850 2100
+	-5800 2300 -5700 2300
 Wire Wire Line
-	-3950 2000 -3850 2000
-Text GLabel -6300 7350 2    50   Input ~ 0
+	-5800 2200 -5700 2200
+Text GLabel -12200 8650 2    50   Input ~ 0
 MCU_70_I2C2_SDA
 Wire Wire Line
-	-6300 7350 -6400 7350
-Text GLabel -6300 7250 2    50   Input ~ 0
+	-12200 8650 -12300 8650
+Text GLabel -12200 8550 2    50   Input ~ 0
 MCU_69_I2C2_SCL
 Wire Wire Line
-	-6300 7250 -6400 7250
-Text GLabel -3850 5000 2    50   Input ~ 0
-MCU_66_SPI4_MISO
+	-12200 8550 -12300 8550
+Text GLabel -5700 5200 2    50   Input ~ 0
+MCU_66_PE13_SPI4_MISO
 Wire Wire Line
 	-9000 10550 -9100 10550
-Text GLabel -3850 4700 2    50   Input ~ 0
-MCU_64_SPI4_NSS
+Text GLabel -5700 4900 2    50   Input ~ 0
+MCU_64_PE11_SPI4_NSS
 Wire Wire Line
 	-9000 10250 -9100 10250
-Text GLabel -6300 7150 2    50   Input ~ 0
+Text GLabel -12200 8450 2    50   Input ~ 0
 MCU_54_AD4_RESET
 Wire Wire Line
-	-6300 7150 -6400 7150
-Text GLabel -6300 7050 2    50   Input ~ 0
+	-12200 8450 -12300 8450
+Text GLabel -12200 8350 2    50   Input ~ 0
 MCU_47_AD4_START
 Wire Wire Line
-	-6300 7050 -6400 7050
-Text GLabel -6300 6950 2    50   Input ~ 0
+	-12200 8350 -12300 8350
+Text GLabel -12200 8250 2    50   Input ~ 0
 MCU_46_AD4_DRDY
 Wire Wire Line
-	-6300 6950 -6400 6950
-Text GLabel -3850 3550 2    50   Input ~ 0
-MCU_129_SPI6_MOSI
+	-12200 8250 -12300 8250
+Text GLabel -5700 3750 2    50   Input ~ 0
+MCU_129_PG14_SPI6_MOSI
 Wire Wire Line
 	-9000 9100 -9100 9100
-Text GLabel -3850 3650 2    50   Input ~ 0
-MCU_127_SPI6_MISO
+Text GLabel -5700 3850 2    50   Input ~ 0
+MCU_127_PG12_SPI6_MISO
 Wire Wire Line
 	-9000 9200 -9100 9200
-Text GLabel -3850 3450 2    50   Input ~ 0
-MCU_128_SPI6_SCK
+Text GLabel -5700 3650 2    50   Input ~ 0
+MCU_128_PG13_SPI6_SCK
 Wire Wire Line
 	-9000 9000 -9100 9000
-Text GLabel -3850 3350 2    50   Input ~ 0
-MCU_93_SPI6_NSS
+Text GLabel -5700 3550 2    50   Input ~ 0
+MCU_93_PG8_SPI6_NSS
 Wire Wire Line
 	-9000 8900 -9100 8900
-Text GLabel -3850 2000 2    50   Input ~ 0
-MCU_36_SAI2_SCK_B
+Text GLabel -5700 2200 2    50   Input ~ 0
+MCU_36_PA2_SAI2_SCK_B
 Wire Wire Line
 	-9000 8600 -9100 8600
-Text GLabel -3850 2100 2    50   Input ~ 0
-MCU_125_SAI2_SD_B
+Text GLabel -5700 2300 2    50   Input ~ 0
+MCU_125_PG10_SAI2_SD_B
 Wire Wire Line
 	-9000 8700 -9100 8700
-Text GLabel -3850 4550 2    50   Input ~ 0
-MCU_28_SPI2_MISO
+Text GLabel -5700 4750 2    50   Input ~ 0
+MCU_28_PC2_SPI2_MISO
 Wire Wire Line
 	-9000 9650 -9100 9650
-Text GLabel -3850 4450 2    50   Input ~ 0
-MCU_29_SPI2_MOSI
+Text GLabel -5700 4650 2    50   Input ~ 0
+MCU_29_PC3_SPI2_MOSI
 Wire Wire Line
 	-9000 9550 -9100 9550
-Text GLabel -3850 1900 2    50   Input ~ 0
-MCU_124_SAI2_FS_B
+Text GLabel -5700 2100 2    50   Input ~ 0
+MCU_124_PG9_SAI2_FS_B
 Wire Wire Line
 	-9000 8500 -9100 8500
-Text GLabel -3850 4800 2    50   Input ~ 0
-MCU_65_SPI4_SCK
+Text GLabel -5700 5000 2    50   Input ~ 0
+MCU_65_PE12_SPI4_SCK
 Wire Wire Line
 	-9000 10350 -9100 10350
-Text GLabel -3850 2800 2    50   Input ~ 0
-MCU_18_SAI1_SD_B
+Text GLabel -5700 3000 2    50   Input ~ 0
+MCU_18_PF6_SAI1_SD_B
 Wire Wire Line
 	-9000 7900 -9100 7900
-Text GLabel -3850 2250 2    50   Input ~ 0
-MCU_3_SAI1_FS_A
+Text GLabel -5700 2450 2    50   Input ~ 0
+MCU_3_PE4_SAI1_FS_A
 Wire Wire Line
 	-9000 7400 -9100 7400
-Text GLabel -3850 2350 2    50   Input ~ 0
-MCU_4_SAI1_SCK_A
+Text GLabel -5700 2550 2    50   Input ~ 0
+MCU_4_PE5_SAI1_SCK_A
 Wire Wire Line
 	-9000 7300 -9100 7300
-Text GLabel -3850 4900 2    50   Input ~ 0
-MCU_67_SPI4_MOSI
+Text GLabel -5700 5100 2    50   Input ~ 0
+MCU_67_PE14_SPI4_MOSI
 Wire Wire Line
 	-9000 10450 -9100 10450
-Text GLabel -6300 6750 2    50   Input ~ 0
+Text GLabel -12200 8050 2    50   Input ~ 0
 MCU_18_UART7_RX
 Wire Wire Line
-	-6300 6750 -6400 6750
-Text GLabel -6300 6850 2    50   Input ~ 0
+	-12200 8050 -12300 8050
+Text GLabel -12200 8150 2    50   Input ~ 0
 MCU_19_UART7_TX
 Wire Wire Line
-	-6300 6850 -6400 6850
-Text GLabel -3850 2700 2    50   Input ~ 0
-MCU_20_SAI1_SCK_B
+	-12200 8150 -12300 8150
+Text GLabel -5700 2900 2    50   Input ~ 0
+MCU_20_PF8_SAI1_SCK_B
 Wire Wire Line
 	-9000 7800 -9100 7800
-Text GLabel -3850 2600 2    50   Input ~ 0
-MCU_21_SAI1_FS_B
+Text GLabel -5700 2800 2    50   Input ~ 0
+MCU_21_PF9_SAI1_FS_B
 Wire Wire Line
 	-9000 7700 -9100 7700
-Text GLabel -3850 8750 2    50   Input ~ 0
-MCU_104_USART1_RTS
+Text GLabel -3300 4000 2    50   Input ~ 0
+MCU_104_PA12_USART1_RTS
 Wire Wire Line
 	-9100 13450 -9000 13450
 Wire Wire Line
 	-9100 13550 -9000 13550
-Text GLabel -3850 8850 2    50   Input ~ 0
-MCU_103_USART1_CTS
-Text GLabel -3850 7350 2    50   Input ~ 0
-MCU_137_I2C1_SDA
+Text GLabel -3300 4100 2    50   Input ~ 0
+MCU_103_PA11_USART1_CTS
+Text GLabel -3300 4450 2    50   Input ~ 0
+MCU_137_PB7_I2C1_SDA
 Wire Wire Line
 	-9100 12200 -9000 12200
-Text GLabel -3850 7450 2    50   Input ~ 0
-MCU_136_I2C1_SCL
+Text GLabel -3300 4550 2    50   Input ~ 0
+MCU_136_PB6_I2C1_SCL
 Wire Wire Line
 	-9100 12300 -9000 12300
-Text GLabel -3850 4000 2    50   Input ~ 0
-MCU_135_SPI3_MOSI
 Wire Wire Line
 	-9100 10000 -9000 10000
-Text GLabel -3850 4100 2    50   Input ~ 0
-MCU_134_SPI3_MISO
 Wire Wire Line
 	-9100 10100 -9000 10100
-Text GLabel -3850 3900 2    50   Input ~ 0
-MCU_133_SPI3_SCK
 Wire Wire Line
 	-9100 9900 -9000 9900
 Wire Wire Line
@@ -2437,111 +2431,111 @@ Wire Wire Line
 	-9100 11700 -9000 11700
 Wire Wire Line
 	-9100 11900 -9000 11900
-Text GLabel -3850 2450 2    50   Input ~ 0
-MCU_27_SAI1_SD_A
+Text GLabel -5700 2650 2    50   Input ~ 0
+MCU_27_PC1_SAI1_SD_A
 Wire Wire Line
 	-9100 7500 -9000 7500
-Text GLabel -6300 7550 2    50   Input ~ 0
+Text GLabel -12200 8850 2    50   Input ~ 0
 MCU_119_AD2_START
 Wire Wire Line
-	-6400 7550 -6300 7550
-Text GLabel -6300 7650 2    50   Input ~ 0
+	-12300 8850 -12200 8850
+Text GLabel -12200 8950 2    50   Input ~ 0
 MCU_118_AD2_DRDY
 Wire Wire Line
-	-6400 7650 -6300 7650
-Text GLabel -3850 7800 2    50   Input ~ 0
-MCU_116_SDMMC1_CMD
+	-12300 8950 -12200 8950
+Text GLabel -3300 5300 2    50   Input ~ 0
+MCU_116_PD2_SDMMC1_CMD
 Wire Wire Line
 	-9100 12500 -9000 12500
-Text GLabel -3850 7900 2    50   Input ~ 0
-MCU_113_SDMMC1_CK
+Text GLabel -3300 5400 2    50   Input ~ 0
+MCU_113_PC12_SDMMC1_CK
 Wire Wire Line
 	-9100 12600 -9000 12600
-Text GLabel -3850 8000 2    50   Input ~ 0
-MCU_112_SDMMC1_D3
+Text GLabel -3300 5500 2    50   Input ~ 0
+MCU_112_PC11_SDMMC1_D3
 Wire Wire Line
 	-9100 12700 -9000 12700
-Text GLabel -3850 8100 2    50   Input ~ 0
-MCU_111_SDMMC1_D2
+Text GLabel -3300 5600 2    50   Input ~ 0
+MCU_111_PC10_SDMMC1_D2
 Wire Wire Line
 	-9100 12800 -9000 12800
-Text GLabel -3850 3800 2    50   Input ~ 0
-MCU_110_SPI3_NSS
+Text GLabel -5700 4000 2    50   Input ~ 0
+MCU_110_PA15_SPI3_NSS
 Wire Wire Line
 	-9100 9800 -9000 9800
-Text GLabel -6300 7750 2    50   Input ~ 0
+Text GLabel -12200 9050 2    50   Input ~ 0
 MCU_109_SYS_JTCK-SWCLK
 Wire Wire Line
-	-6400 7750 -6300 7750
-Text GLabel -6300 7850 2    50   Input ~ 0
+	-12300 9050 -12200 9050
+Text GLabel -12200 9150 2    50   Input ~ 0
 MCU_105_SYS_JTMS-SWDIO
 Wire Wire Line
-	-6400 7850 -6300 7850
-Text GLabel -3850 8950 2    50   Input ~ 0
-MCU_102_USART1_RX
+	-12300 9150 -12200 9150
+Text GLabel -3300 4200 2    50   Input ~ 0
+MCU_102_PA10_USART1_RX
 Wire Wire Line
 	-9100 13650 -9000 13650
-Text GLabel -3850 9050 2    50   Input ~ 0
-MCU_101_USART1_TX
+Text GLabel -3300 4300 2    50   Input ~ 0
+MCU_101_PA9_USART1_TX
 Wire Wire Line
 	-9100 13750 -9000 13750
-Text GLabel -3850 8200 2    50   Input ~ 0
-MCU_99_SDMMC1_D1
+Text GLabel -3300 5700 2    50   Input ~ 0
+MCU_99_PC9_SDMMC1_D1
 Wire Wire Line
 	-9100 12900 -9000 12900
-Text GLabel -3850 8300 2    50   Input ~ 0
-MCU_98_SDMMC1_D0
+Text GLabel -3300 5800 2    50   Input ~ 0
+MCU_98_PC8_SDMMC1_D0
 Wire Wire Line
 	-9100 13000 -9000 13000
-Text GLabel -3850 8400 2    50   Input ~ 0
-MCU_97_SDMMC1_DETECT
+Text GLabel -8200 7500 2    50   Input ~ 0
+MCU_114_SDMMC1_DETECT
 Wire Wire Line
 	-9100 13100 -9000 13100
 Wire Wire Line
 	-9100 11600 -9000 11600
-Text GLabel -6300 7950 2    50   Input ~ 0
+Text GLabel -12200 9250 2    50   Input ~ 0
 MCU_90_AD1_RESET
 Wire Wire Line
-	-6400 7950 -6300 7950
-Text GLabel -6300 8050 2    50   Input ~ 0
+	-12300 9250 -12200 9250
+Text GLabel -12200 9350 2    50   Input ~ 0
 MCU_85_AD1_START
 Wire Wire Line
-	-6400 8050 -6300 8050
-Text GLabel -3850 3050 2    50   Input ~ 0
-MCU_82_SAI2_SCK_A
+	-12300 9350 -12200 9350
+Text GLabel -5700 3250 2    50   Input ~ 0
+MCU_82_PD13_SAI2_SCK_A
 Wire Wire Line
 	-9100 8200 -9000 8200
-Text GLabel -3850 2950 2    50   Input ~ 0
-MCU_81_SAI2_FS_A
+Text GLabel -5700 3150 2    50   Input ~ 0
+MCU_81_P12_SAI2_FS_A
 Wire Wire Line
 	-9100 8100 -9000 8100
-Text GLabel -3850 3150 2    50   Input ~ 0
-MCU_80_SAI2_SD_A
+Text GLabel -5700 3350 2    50   Input ~ 0
+MCU_80_PD11_SAI2_SD_A
 Wire Wire Line
 	-9100 8300 -9000 8300
-Text GLabel -6300 8150 2    50   Input ~ 0
+Text GLabel -12200 9450 2    50   Input ~ 0
 MCU_79_AD1_DRDY
 Wire Wire Line
-	-6400 8150 -6300 8150
-Text GLabel -3850 5350 2    50   Input ~ 0
-MCU_76_USB_OTG_HS_DP
+	-12300 9450 -12200 9450
+Text GLabel -3300 6100 2    50   Input ~ 0
+MCU_76_PB15_USB_OTG_HS_DP
 Wire Wire Line
 	-9100 10900 -9000 10900
-Text GLabel -3850 5450 2    50   Input ~ 0
-MCU_75_USB_OTG_HS_DM
+Text GLabel -3300 6200 2    50   Input ~ 0
+MCU_75_PB14_USB_OTG_HS_DM
 Wire Wire Line
 	-9100 11000 -9000 11000
-Text GLabel -3850 4350 2    50   Input ~ 0
-MCU_74_SPI2_SCK
+Text GLabel -5700 4550 2    50   Input ~ 0
+MCU_74_PB13_SPI2_SCK
 Wire Wire Line
 	-9100 9450 -9000 9450
-Text GLabel -3850 4250 2    50   Input ~ 0
-MCU_73_SPI2_NSS
+Text GLabel -5700 4450 2    50   Input ~ 0
+MCU_73_PB12_SPI2_NSS
 Wire Wire Line
 	-9100 9350 -9000 9350
 Wire Wire Line
-	-6400 7450 -6300 7450
-Text GLabel -6300 7450 2    50   Input ~ 0
+	-12300 8750 -12200 8750
+Text GLabel -12200 8750 2    50   Input ~ 0
 MCU_138_BOOT0
 $Comp
 L Device:R_Small R35
@@ -2699,70 +2693,70 @@ F 5 "Bourns" V -9200 8500 50  0001 C CNN "Manufacturer"
 	1    -9200 8500
 	0    -1   -1   0   
 $EndComp
-Text GLabel -3950 3650 0    50   Input ~ 0
+Text GLabel -5800 3850 0    50   Input ~ 0
 ADC1_21_DCLK0_SDO
 Wire Wire Line
-	-3950 3650 -3850 3650
-Text GLabel -3950 3550 0    50   Input ~ 0
+	-5800 3850 -5700 3850
+Text GLabel -5800 3750 0    50   Input ~ 0
 ADC1_20_DCLK1_SDI
-Text GLabel -3950 3450 0    50   Input ~ 0
+Text GLabel -5800 3650 0    50   Input ~ 0
 ADC1_19_DCLK2_SCLK
-Text GLabel -3950 3350 0    50   Input ~ 0
+Text GLabel -5800 3550 0    50   Input ~ 0
 ADC1_18_ALERT_CS
 Wire Wire Line
-	-3950 3350 -3850 3350
+	-5800 3550 -5700 3550
 Wire Wire Line
-	-3950 3450 -3850 3450
+	-5800 3650 -5700 3650
 Wire Wire Line
-	-3950 3550 -3850 3550
-Text GLabel -3950 4100 0    50   Input ~ 0
+	-5800 3750 -5700 3750
+Text GLabel -5800 4300 0    50   Input ~ 0
 ADC2_21_DCLK0_SDO
 Wire Wire Line
-	-3950 4100 -3850 4100
-Text GLabel -3950 4000 0    50   Input ~ 0
+	-5800 4300 -5700 4300
+Text GLabel -5800 4200 0    50   Input ~ 0
 ADC2_20_DCLK1_SDI
-Text GLabel -3950 3900 0    50   Input ~ 0
+Text GLabel -5800 4100 0    50   Input ~ 0
 ADC2_19_DCLK2_SCLK
-Text GLabel -3950 3800 0    50   Input ~ 0
+Text GLabel -5800 4000 0    50   Input ~ 0
 ADC2_18_ALERT_CS
 Wire Wire Line
-	-3950 3800 -3850 3800
+	-5800 4000 -5700 4000
 Wire Wire Line
-	-3950 3900 -3850 3900
+	-5800 4100 -5700 4100
 Wire Wire Line
-	-3950 4000 -3850 4000
-Text GLabel -3950 4550 0    50   Input ~ 0
+	-5800 4200 -5700 4200
+Text GLabel -5800 4750 0    50   Input ~ 0
 ADC3_21_DCLK0_SDO
 Wire Wire Line
-	-3950 4550 -3850 4550
-Text GLabel -3950 4450 0    50   Input ~ 0
+	-5800 4750 -5700 4750
+Text GLabel -5800 4650 0    50   Input ~ 0
 ADC3_20_DCLK1_SDI
-Text GLabel -3950 4350 0    50   Input ~ 0
+Text GLabel -5800 4550 0    50   Input ~ 0
 ADC3_19_DCLK2_SCLK
-Text GLabel -3950 4250 0    50   Input ~ 0
+Text GLabel -5800 4450 0    50   Input ~ 0
 ADC3_18_ALERT_CS
 Wire Wire Line
-	-3950 4250 -3850 4250
+	-5800 4450 -5700 4450
 Wire Wire Line
-	-3950 4350 -3850 4350
+	-5800 4550 -5700 4550
 Wire Wire Line
-	-3950 4450 -3850 4450
-Text GLabel -3950 5000 0    50   Input ~ 0
+	-5800 4650 -5700 4650
+Text GLabel -5800 5200 0    50   Input ~ 0
 ADC4_21_DCLK0_SDO
 Wire Wire Line
-	-3950 5000 -3850 5000
-Text GLabel -3950 4900 0    50   Input ~ 0
+	-5800 5200 -5700 5200
+Text GLabel -5800 5100 0    50   Input ~ 0
 ADC4_20_DCLK1_SDI
-Text GLabel -3950 4800 0    50   Input ~ 0
+Text GLabel -5800 5000 0    50   Input ~ 0
 ADC4_19_DCLK2_SCLK
-Text GLabel -3950 4700 0    50   Input ~ 0
+Text GLabel -5800 4900 0    50   Input ~ 0
 ADC4_18_ALERT_CS
 Wire Wire Line
-	-3950 4700 -3850 4700
+	-5800 4900 -5700 4900
 Wire Wire Line
-	-3950 4800 -3850 4800
+	-5800 5000 -5700 5000
 Wire Wire Line
-	-3950 4900 -3850 4900
+	-5800 5100 -5700 5100
 $Comp
 L Device:R_Small R47
 U 1 1 60093D1C
@@ -3000,105 +2994,105 @@ $EndComp
 $Comp
 L Device:R_Small R65
 U 1 1 61536F3B
-P -6550 6750
-F 0 "R65" V -6746 6750 50  0000 C CNN
-F 1 "0" V -6655 6750 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H -6550 6750 50  0001 C CNN
-F 3 "~" H -6550 6750 50  0001 C CNN
-F 4 "CR0402-J/-000GLF" V -6550 6750 50  0001 C CNN "MNP"
-F 5 "Bourns" V -6550 6750 50  0001 C CNN "Manufacturer"
-	1    -6550 6750
+P -12450 8050
+F 0 "R65" V -12646 8050 50  0000 C CNN
+F 1 "0" V -12555 8050 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H -12450 8050 50  0001 C CNN
+F 3 "~" H -12450 8050 50  0001 C CNN
+F 4 "CR0402-J/-000GLF" V -12450 8050 50  0001 C CNN "MNP"
+F 5 "Bourns" V -12450 8050 50  0001 C CNN "Manufacturer"
+	1    -12450 8050
 	0    -1   1    0   
 $EndComp
 $Comp
 L Device:R_Small R66
 U 1 1 615AB919
-P -6550 6850
-F 0 "R66" V -6746 6850 50  0000 C CNN
-F 1 "0" V -6655 6850 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H -6550 6850 50  0001 C CNN
-F 3 "~" H -6550 6850 50  0001 C CNN
-F 4 "CR0402-J/-000GLF" V -6550 6850 50  0001 C CNN "MNP"
-F 5 "Bourns" V -6550 6850 50  0001 C CNN "Manufacturer"
-	1    -6550 6850
+P -12450 8150
+F 0 "R66" V -12646 8150 50  0000 C CNN
+F 1 "0" V -12555 8150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H -12450 8150 50  0001 C CNN
+F 3 "~" H -12450 8150 50  0001 C CNN
+F 4 "CR0402-J/-000GLF" V -12450 8150 50  0001 C CNN "MNP"
+F 5 "Bourns" V -12450 8150 50  0001 C CNN "Manufacturer"
+	1    -12450 8150
 	0    -1   1    0   
 $EndComp
 $Comp
 L Device:R_Small R67
 U 1 1 616202F8
-P -6550 6950
-F 0 "R67" V -6746 6950 50  0000 C CNN
-F 1 "0" V -6655 6950 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H -6550 6950 50  0001 C CNN
-F 3 "~" H -6550 6950 50  0001 C CNN
-F 4 "CR0402-J/-000GLF" V -6550 6950 50  0001 C CNN "MNP"
-F 5 "Bourns" V -6550 6950 50  0001 C CNN "Manufacturer"
-	1    -6550 6950
+P -12450 8250
+F 0 "R67" V -12646 8250 50  0000 C CNN
+F 1 "0" V -12555 8250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H -12450 8250 50  0001 C CNN
+F 3 "~" H -12450 8250 50  0001 C CNN
+F 4 "CR0402-J/-000GLF" V -12450 8250 50  0001 C CNN "MNP"
+F 5 "Bourns" V -12450 8250 50  0001 C CNN "Manufacturer"
+	1    -12450 8250
 	0    -1   1    0   
 $EndComp
 $Comp
 L Device:R_Small R68
 U 1 1 61694CD8
-P -6550 7050
-F 0 "R68" V -6746 7050 50  0000 C CNN
-F 1 "0" V -6655 7050 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H -6550 7050 50  0001 C CNN
-F 3 "~" H -6550 7050 50  0001 C CNN
-F 4 "CR0402-J/-000GLF" V -6550 7050 50  0001 C CNN "MNP"
-F 5 "Bourns" V -6550 7050 50  0001 C CNN "Manufacturer"
-	1    -6550 7050
+P -12450 8350
+F 0 "R68" V -12646 8350 50  0000 C CNN
+F 1 "0" V -12555 8350 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H -12450 8350 50  0001 C CNN
+F 3 "~" H -12450 8350 50  0001 C CNN
+F 4 "CR0402-J/-000GLF" V -12450 8350 50  0001 C CNN "MNP"
+F 5 "Bourns" V -12450 8350 50  0001 C CNN "Manufacturer"
+	1    -12450 8350
 	0    -1   1    0   
 $EndComp
 $Comp
 L Device:R_Small R69
 U 1 1 617096B9
-P -6550 7150
-F 0 "R69" V -6746 7150 50  0000 C CNN
-F 1 "0" V -6655 7150 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H -6550 7150 50  0001 C CNN
-F 3 "~" H -6550 7150 50  0001 C CNN
-F 4 "CR0402-J/-000GLF" V -6550 7150 50  0001 C CNN "MNP"
-F 5 "Bourns" V -6550 7150 50  0001 C CNN "Manufacturer"
-	1    -6550 7150
+P -12450 8450
+F 0 "R69" V -12646 8450 50  0000 C CNN
+F 1 "0" V -12555 8450 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H -12450 8450 50  0001 C CNN
+F 3 "~" H -12450 8450 50  0001 C CNN
+F 4 "CR0402-J/-000GLF" V -12450 8450 50  0001 C CNN "MNP"
+F 5 "Bourns" V -12450 8450 50  0001 C CNN "Manufacturer"
+	1    -12450 8450
 	0    -1   1    0   
 $EndComp
 $Comp
 L Device:R_Small R70
 U 1 1 6177E09B
-P -6550 7250
-F 0 "R70" V -6746 7250 50  0000 C CNN
-F 1 "0" V -6655 7250 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H -6550 7250 50  0001 C CNN
-F 3 "~" H -6550 7250 50  0001 C CNN
-F 4 "CR0402-J/-000GLF" V -6550 7250 50  0001 C CNN "MNP"
-F 5 "Bourns" V -6550 7250 50  0001 C CNN "Manufacturer"
-	1    -6550 7250
+P -12450 8550
+F 0 "R70" V -12646 8550 50  0000 C CNN
+F 1 "0" V -12555 8550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H -12450 8550 50  0001 C CNN
+F 3 "~" H -12450 8550 50  0001 C CNN
+F 4 "CR0402-J/-000GLF" V -12450 8550 50  0001 C CNN "MNP"
+F 5 "Bourns" V -12450 8550 50  0001 C CNN "Manufacturer"
+	1    -12450 8550
 	0    -1   1    0   
 $EndComp
 $Comp
 L Device:R_Small R71
 U 1 1 617F2A7E
-P -6550 7350
-F 0 "R71" V -6746 7350 50  0000 C CNN
-F 1 "0" V -6655 7350 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H -6550 7350 50  0001 C CNN
-F 3 "~" H -6550 7350 50  0001 C CNN
-F 4 "CR0402-J/-000GLF" V -6550 7350 50  0001 C CNN "MNP"
-F 5 "Bourns" V -6550 7350 50  0001 C CNN "Manufacturer"
-	1    -6550 7350
+P -12450 8650
+F 0 "R71" V -12646 8650 50  0000 C CNN
+F 1 "0" V -12555 8650 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H -12450 8650 50  0001 C CNN
+F 3 "~" H -12450 8650 50  0001 C CNN
+F 4 "CR0402-J/-000GLF" V -12450 8650 50  0001 C CNN "MNP"
+F 5 "Bourns" V -12450 8650 50  0001 C CNN "Manufacturer"
+	1    -12450 8650
 	0    -1   1    0   
 $EndComp
 $Comp
 L Device:R_Small R72
 U 1 1 61867464
-P -6550 7450
-F 0 "R72" V -6746 7450 50  0000 C CNN
-F 1 "0" V -6655 7450 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H -6550 7450 50  0001 C CNN
-F 3 "~" H -6550 7450 50  0001 C CNN
-F 4 "CR0402-J/-000GLF" V -6550 7450 50  0001 C CNN "MNP"
-F 5 "Bourns" V -6550 7450 50  0001 C CNN "Manufacturer"
-	1    -6550 7450
+P -12450 8750
+F 0 "R72" V -12646 8750 50  0000 C CNN
+F 1 "0" V -12555 8750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H -12450 8750 50  0001 C CNN
+F 3 "~" H -12450 8750 50  0001 C CNN
+F 4 "CR0402-J/-000GLF" V -12450 8750 50  0001 C CNN "MNP"
+F 5 "Bourns" V -12450 8750 50  0001 C CNN "Manufacturer"
+	1    -12450 8750
 	0    -1   1    0   
 $EndComp
 $Comp
@@ -3169,27 +3163,27 @@ $EndComp
 $Comp
 L Device:R_Small R78
 U 1 1 619C53F6
-P -6550 7550
-F 0 "R78" V -6746 7550 50  0000 C CNN
-F 1 "0" V -6655 7550 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H -6550 7550 50  0001 C CNN
-F 3 "~" H -6550 7550 50  0001 C CNN
-F 4 "CR0402-J/-000GLF" V -6550 7550 50  0001 C CNN "MNP"
-F 5 "Bourns" V -6550 7550 50  0001 C CNN "Manufacturer"
-	1    -6550 7550
+P -12450 8850
+F 0 "R78" V -12646 8850 50  0000 C CNN
+F 1 "0" V -12555 8850 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H -12450 8850 50  0001 C CNN
+F 3 "~" H -12450 8850 50  0001 C CNN
+F 4 "CR0402-J/-000GLF" V -12450 8850 50  0001 C CNN "MNP"
+F 5 "Bourns" V -12450 8850 50  0001 C CNN "Manufacturer"
+	1    -12450 8850
 	0    -1   1    0   
 $EndComp
 $Comp
 L Device:R_Small R79
 U 1 1 619C53FF
-P -6550 7650
-F 0 "R79" V -6746 7650 50  0000 C CNN
-F 1 "0" V -6655 7650 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H -6550 7650 50  0001 C CNN
-F 3 "~" H -6550 7650 50  0001 C CNN
-F 4 "CR0402-J/-000GLF" V -6550 7650 50  0001 C CNN "MNP"
-F 5 "Bourns" V -6550 7650 50  0001 C CNN "Manufacturer"
-	1    -6550 7650
+P -12450 8950
+F 0 "R79" V -12646 8950 50  0000 C CNN
+F 1 "0" V -12555 8950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H -12450 8950 50  0001 C CNN
+F 3 "~" H -12450 8950 50  0001 C CNN
+F 4 "CR0402-J/-000GLF" V -12450 8950 50  0001 C CNN "MNP"
+F 5 "Bourns" V -12450 8950 50  0001 C CNN "Manufacturer"
+	1    -12450 8950
 	0    -1   1    0   
 $EndComp
 $Comp
@@ -3247,27 +3241,27 @@ $EndComp
 $Comp
 L Device:R_Small R84
 U 1 1 61A39F08
-P -6550 7750
-F 0 "R84" V -6746 7750 50  0000 C CNN
-F 1 "0" V -6655 7750 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H -6550 7750 50  0001 C CNN
-F 3 "~" H -6550 7750 50  0001 C CNN
-F 4 "CR0402-J/-000GLF" V -6550 7750 50  0001 C CNN "MNP"
-F 5 "Bourns" V -6550 7750 50  0001 C CNN "Manufacturer"
-	1    -6550 7750
+P -12450 9050
+F 0 "R84" V -12646 9050 50  0000 C CNN
+F 1 "0" V -12555 9050 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H -12450 9050 50  0001 C CNN
+F 3 "~" H -12450 9050 50  0001 C CNN
+F 4 "CR0402-J/-000GLF" V -12450 9050 50  0001 C CNN "MNP"
+F 5 "Bourns" V -12450 9050 50  0001 C CNN "Manufacturer"
+	1    -12450 9050
 	0    -1   1    0   
 $EndComp
 $Comp
 L Device:R_Small R85
 U 1 1 61A39F11
-P -6550 7850
-F 0 "R85" V -6746 7850 50  0000 C CNN
-F 1 "0" V -6655 7850 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H -6550 7850 50  0001 C CNN
-F 3 "~" H -6550 7850 50  0001 C CNN
-F 4 "CR0402-J/-000GLF" V -6550 7850 50  0001 C CNN "MNP"
-F 5 "Bourns" V -6550 7850 50  0001 C CNN "Manufacturer"
-	1    -6550 7850
+P -12450 9150
+F 0 "R85" V -12646 9150 50  0000 C CNN
+F 1 "0" V -12555 9150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H -12450 9150 50  0001 C CNN
+F 3 "~" H -12450 9150 50  0001 C CNN
+F 4 "CR0402-J/-000GLF" V -12450 9150 50  0001 C CNN "MNP"
+F 5 "Bourns" V -12450 9150 50  0001 C CNN "Manufacturer"
+	1    -12450 9150
 	0    -1   1    0   
 $EndComp
 $Comp
@@ -3377,40 +3371,40 @@ $EndComp
 $Comp
 L Device:R_Small R94
 U 1 1 61AAE9EB
-P -6550 7950
-F 0 "R94" V -6746 7950 50  0000 C CNN
-F 1 "0" V -6655 7950 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H -6550 7950 50  0001 C CNN
-F 3 "~" H -6550 7950 50  0001 C CNN
-F 4 "CR0402-J/-000GLF" V -6550 7950 50  0001 C CNN "MNP"
-F 5 "Bourns" V -6550 7950 50  0001 C CNN "Manufacturer"
-	1    -6550 7950
+P -12450 9250
+F 0 "R94" V -12646 9250 50  0000 C CNN
+F 1 "0" V -12555 9250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H -12450 9250 50  0001 C CNN
+F 3 "~" H -12450 9250 50  0001 C CNN
+F 4 "CR0402-J/-000GLF" V -12450 9250 50  0001 C CNN "MNP"
+F 5 "Bourns" V -12450 9250 50  0001 C CNN "Manufacturer"
+	1    -12450 9250
 	0    -1   1    0   
 $EndComp
 $Comp
 L Device:R_Small R95
 U 1 1 61AAE9F4
-P -6550 8050
-F 0 "R95" V -6746 8050 50  0000 C CNN
-F 1 "0" V -6655 8050 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H -6550 8050 50  0001 C CNN
-F 3 "~" H -6550 8050 50  0001 C CNN
-F 4 "CR0402-J/-000GLF" V -6550 8050 50  0001 C CNN "MNP"
-F 5 "Bourns" V -6550 8050 50  0001 C CNN "Manufacturer"
-	1    -6550 8050
+P -12450 9350
+F 0 "R95" V -12646 9350 50  0000 C CNN
+F 1 "0" V -12555 9350 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H -12450 9350 50  0001 C CNN
+F 3 "~" H -12450 9350 50  0001 C CNN
+F 4 "CR0402-J/-000GLF" V -12450 9350 50  0001 C CNN "MNP"
+F 5 "Bourns" V -12450 9350 50  0001 C CNN "Manufacturer"
+	1    -12450 9350
 	0    -1   1    0   
 $EndComp
 $Comp
 L Device:R_Small R96
 U 1 1 61AAE9FD
-P -6550 8150
-F 0 "R96" V -6746 8150 50  0000 C CNN
-F 1 "0" V -6655 8150 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H -6550 8150 50  0001 C CNN
-F 3 "~" H -6550 8150 50  0001 C CNN
-F 4 "CR0402-J/-000GLF" V -6550 8150 50  0001 C CNN "MNP"
-F 5 "Bourns" V -6550 8150 50  0001 C CNN "Manufacturer"
-	1    -6550 8150
+P -12450 9450
+F 0 "R96" V -12646 9450 50  0000 C CNN
+F 1 "0" V -12555 9450 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H -12450 9450 50  0001 C CNN
+F 3 "~" H -12450 9450 50  0001 C CNN
+F 4 "CR0402-J/-000GLF" V -12450 9450 50  0001 C CNN "MNP"
+F 5 "Bourns" V -12450 9450 50  0001 C CNN "Manufacturer"
+	1    -12450 9450
 	0    -1   1    0   
 $EndComp
 Text GLabel 4450 8400 0    50   Input ~ 0
@@ -3490,40 +3484,40 @@ Wire Wire Line
 Text GLabel 6750 8750 0    50   Input ~ 0
 SD_9_DETECT
 Wire Wire Line
-	-3950 6650 -3850 6650
-Text GLabel -3950 6650 0    50   Input ~ 0
+	-4050 9400 -3950 9400
+Text GLabel -4050 9400 0    50   Input ~ 0
 ACC_13_SCL
 Wire Wire Line
-	-3950 6550 -3850 6550
-Text GLabel -3950 6550 0    50   Input ~ 0
+	-4050 9300 -3950 9300
+Text GLabel -4050 9300 0    50   Input ~ 0
 ACC_14_SDA
-Text GLabel -3950 8100 0    50   Input ~ 0
+Text GLabel -3400 5600 0    50   Input ~ 0
 SD_1_DATA2
 Wire Wire Line
-	-3950 8100 -3850 8100
-Text GLabel -3950 7900 0    50   Input ~ 0
+	-3400 5600 -3300 5600
+Text GLabel -3400 5400 0    50   Input ~ 0
 SD_5_CLK
 Wire Wire Line
-	-3850 7900 -3950 7900
-Text GLabel -3950 7800 0    50   Input ~ 0
+	-3300 5400 -3400 5400
+Text GLabel -3400 5300 0    50   Input ~ 0
 SD_3_CMD
 Wire Wire Line
-	-3950 7800 -3850 7800
+	-3400 5300 -3300 5300
 Wire Wire Line
-	-3950 8300 -3850 8300
-Text GLabel -3950 8300 0    50   Input ~ 0
+	-3400 5800 -3300 5800
+Text GLabel -3400 5800 0    50   Input ~ 0
 SD_7_DATA0
 Wire Wire Line
-	-3950 8400 -3850 8400
-Text GLabel -3950 8400 0    50   Input ~ 0
+	-3400 5900 -3300 5900
+Text GLabel -3400 5900 0    50   Input ~ 0
 SD_9_DETECT
 Wire Wire Line
-	-3950 8000 -3850 8000
-Text GLabel -3950 8000 0    50   Input ~ 0
+	-3400 5500 -3300 5500
+Text GLabel -3400 5500 0    50   Input ~ 0
 SD_2_DATA3
 Wire Wire Line
-	-3950 8200 -3850 8200
-Text GLabel -3950 8200 0    50   Input ~ 0
+	-3400 5700 -3300 5700
+Text GLabel -3400 5700 0    50   Input ~ 0
 SD_8_DATA1
 $Sheet
 S 1600 8000 950  850 
@@ -3975,13 +3969,13 @@ Text GLabel 2550 11650 2    50   Input ~ 0
 ISO_SPI_12_OUTC
 Text GLabel 2550 11850 2    50   Input ~ 0
 ISO_SPI_10_EN2
-Text GLabel -3950 5450 0    50   Input ~ 0
+Text GLabel -3400 6200 0    50   Input ~ 0
 ISO_USB_11_DD–
 Wire Wire Line
-	-3950 5450 -3850 5450
+	-3400 6200 -3300 6200
 Wire Wire Line
-	-3950 5350 -3850 5350
-Text GLabel -3950 5350 0    50   Input ~ 0
+	-3400 6100 -3300 6100
+Text GLabel -3400 6100 0    50   Input ~ 0
 ISO_USB_10_DD+
 $Comp
 L Device:R_Small R63
@@ -4009,43 +4003,43 @@ F 5 "Bourns" V -9200 11000 50  0001 C CNN "Manufacturer"
 	1    -9200 11000
 	0    -1   1    0   
 $EndComp
-Text GLabel -3850 5800 2    50   Input ~ 0
+Text GLabel -3300 6500 2    50   Input ~ 0
 ISO_USB_6_UD–
 Wire Wire Line
 	-9000 11350 -9100 11350
 Wire Wire Line
 	-9000 11250 -9100 11250
-Text GLabel -3850 5700 2    50   Input ~ 0
+Text GLabel -3300 6400 2    50   Input ~ 0
 ISO_USB_7_UD+
-Text GLabel -3950 6750 0    50   Input ~ 0
+Text GLabel -4050 9500 0    50   Input ~ 0
 ACC_4_INT1
 Wire Wire Line
-	-3950 6750 -3850 6750
+	-4050 9500 -3950 9500
 Wire Wire Line
-	-3950 6850 -3850 6850
-Text GLabel -3950 6850 0    50   Input ~ 0
+	-4050 9600 -3950 9600
+Text GLabel -4050 9600 0    50   Input ~ 0
 ACC_9_INT2
-Text GLabel -1300 1450 0    50   Input ~ 0
+Text GLabel -1400 1450 0    50   Input ~ 0
 MCU_10_AD3_DRDY
 Wire Wire Line
 	650  1450 750  1450
-Text GLabel -1300 1550 0    50   Input ~ 0
+Text GLabel -1400 1550 0    50   Input ~ 0
 MCU_11_AD3_START
 Wire Wire Line
 	650  1550 750  1550
-Text GLabel -250 1650 0    50   Input ~ 0
+Text GLabel -500 1650 0    50   Input ~ 0
 MCU_12_ACC_INT1
 Wire Wire Line
 	650  1650 750  1650
-Text GLabel -250 1750 0    50   Input ~ 0
+Text GLabel -500 1750 0    50   Input ~ 0
 MCU_13_ACC_INT2
 Wire Wire Line
 	650  1750 750  1750
-Text GLabel -3800 6750 2    50   Input ~ 0
+Text GLabel -3900 9500 2    50   Input ~ 0
 MCU_12_ACC_INT1
 Wire Wire Line
 	-9000 14050 -9100 14050
-Text GLabel -3800 6850 2    50   Input ~ 0
+Text GLabel -3900 9600 2    50   Input ~ 0
 MCU_13_ACC_INT2
 Wire Wire Line
 	-9000 14150 -9100 14150
@@ -4075,996 +4069,996 @@ F 5 "Bourns" V -9200 14150 50  0001 C CNN "Manufacturer"
 	1    -9200 14150
 	0    -1   1    0   
 $EndComp
-Text GLabel -3950 8950 0    50   Input ~ 0
+Text GLabel -3400 4200 0    50   Input ~ 0
 ISO_UART_14_OUTA
 Wire Wire Line
-	-3950 8950 -3850 8950
-Text GLabel -3950 8750 0    50   Input ~ 0
+	-3400 4200 -3300 4200
+Text GLabel -3400 4000 0    50   Input ~ 0
 ISO_UART_13_OUTB
 Wire Wire Line
-	-3950 8750 -3850 8750
-Text GLabel -3950 8850 0    50   Input ~ 0
+	-3400 4000 -3300 4000
+Text GLabel -3400 4100 0    50   Input ~ 0
 ISO_UART_11_IND
 Wire Wire Line
-	-3950 8850 -3850 8850
+	-3400 4100 -3300 4100
 Wire Wire Line
-	-3950 9050 -3850 9050
-Text GLabel -3950 9050 0    50   Input ~ 0
+	-3400 4300 -3300 4300
+Text GLabel -3400 4300 0    50   Input ~ 0
 ISO_UART_12_INC
-Text GLabel -3950 6050 0    50   Input ~ 0
+Text GLabel -3400 3550 0    50   Input ~ 0
 ISO_SPI_14_OUTA
 Wire Wire Line
-	-3950 6050 -3850 6050
-Text GLabel -3950 6150 0    50   Input ~ 0
+	-3400 3550 -3300 3550
+Text GLabel -3400 3650 0    50   Input ~ 0
 ISO_SPI_13_OUTB
 Wire Wire Line
-	-3950 6150 -3850 6150
-Text GLabel -3950 6350 0    50   Input ~ 0
+	-3400 3650 -3300 3650
+Text GLabel -3400 3850 0    50   Input ~ 0
 ISO_SPI_11_IND
 Wire Wire Line
-	-3950 6350 -3850 6350
+	-3400 3850 -3300 3850
 Wire Wire Line
-	-3950 6250 -3850 6250
-Text GLabel -3950 6250 0    50   Input ~ 0
+	-3400 3750 -3300 3750
+Text GLabel -3400 3750 0    50   Input ~ 0
 ISO_SPI_12_OUTC
-Text GLabel -200 750  0    50   Input ~ 0
+Text GLabel -450 750  0    50   Input ~ 0
 MCU_3_SPI4_NSS
-Text GLabel -200 850  0    50   Input ~ 0
+Text GLabel -450 850  0    50   Input ~ 0
 MCU_4_SPI4_MISO
-Text GLabel -200 950  0    50   Input ~ 0
+Text GLabel -500 950  0    50   Input ~ 0
 MCU_5_SAI2_SD_A
-Text GLabel -250 1450 0    50   Input ~ 0
-MCU_10_I2C2_SDA
-Text GLabel -250 1550 0    50   Input ~ 0
-MCU_11_I2C2_SCL
+Text GLabel 650  1450 0    50   Input ~ 0
+MCU_10_PF0_I2C2_SDA
+Text GLabel 650  1550 0    50   Input ~ 0
+MCU_11_PF1_I2C2_SCL
 Text GLabel 650  2250 0    50   Input ~ 0
-MCU_18_SAI1_SD_B
-Text GLabel -250 2250 0    50   Input ~ 0
+MCU_18_PF6_SAI1_SD_B
+Text GLabel -500 2250 0    50   Input ~ 0
 MCU_18_SPI5_NSS
-Text GLabel -250 2350 0    50   Input ~ 0
+Text GLabel -500 2350 0    50   Input ~ 0
 MCU_19_SPI5_SCK
-Text GLabel -250 2450 0    50   Input ~ 0
+Text GLabel -500 2450 0    50   Input ~ 0
 MCU_20_SPI5_MISO
-Text GLabel -250 2550 0    50   Input ~ 0
+Text GLabel -500 2550 0    50   Input ~ 0
 MCU_21_SPI5_MOSI
 Text GLabel 650  3350 0    50   Input ~ 0
-MCU_29_SPI2_MOSI
-Text GLabel -1100 4450 0    50   Input ~ 0
+MCU_29_PC3_SPI2_MOSI
+Text GLabel -1350 4450 0    50   Input ~ 0
 MCU_40_SPI3_NSS
-Text GLabel -250 4550 0    50   Input ~ 0
+Text GLabel -500 4550 0    50   Input ~ 0
 MCU_41_SPI6_SCK
-Text GLabel -250 4650 0    50   Input ~ 0
+Text GLabel -500 4650 0    50   Input ~ 0
 MCU_42_SPI6_MISO
-Text GLabel -250 4750 0    50   Input ~ 0
+Text GLabel -500 4750 0    50   Input ~ 0
 MCU_43_SPI6_MOSI
-Text GLabel -250 4450 0    50   Input ~ 0
+Text GLabel -500 4450 0    50   Input ~ 0
 MCU_40_SPI6_NSS
-Text GLabel -200 5250 0    50   Input ~ 0
+Text GLabel -350 5250 0    50   Input ~ 0
 MCU_48_SAI1_SD_A
-Text GLabel -1050 5250 0    50   Input ~ 0
+Text GLabel -1300 5250 0    50   Input ~ 0
 MCU_48_SPI3_MOSI
-Text GLabel -200 5350 0    50   Input ~ 0
+Text GLabel 550  5350 0    50   Input ~ 0
 MCU_49_SAI2_SD_B
-Text GLabel -1050 5350 0    50   Input ~ 0
+Text GLabel -450 5350 0    50   Input ~ 0
 MCU_49_SPI5_MOSI
-Text GLabel -250 5850 0    50   Input ~ 0
-MCU_54_I2C4_SCL
-Text GLabel -250 5950 0    50   Input ~ 0
-MCU_55_I2C4_SDA
+Text GLabel 650  5850 0    50   Input ~ 0
+MCU_54_PF14_I2C4_SCL
+Text GLabel 650  5950 0    50   Input ~ 0
+MCU_55_PF15_I2C4_SDA
 Text GLabel 650  6450 0    50   Input ~ 0
-MCU_60_TIM1_CH1
+MCU_60_PE9_TIM1_CH1
 Text GLabel 650  6250 0    50   Input ~ 0
-MCU_58_TIM1_ETR
-Text GLabel -250 6850 0    50   Input ~ 0
+MCU_58_PE7_TIM1_ETR
+Text GLabel -500 6850 0    50   Input ~ 0
 MCU_64_SAI2_SD_B
-Text GLabel -1150 6850 0    50   Input ~ 0
+Text GLabel -1350 6850 0    50   Input ~ 0
 MCU_64_TIM1_CH2
-Text GLabel -250 6950 0    50   Input ~ 0
+Text GLabel -500 6950 0    50   Input ~ 0
 MCU_65_SAI2_SCK_B
 Text GLabel 650  6950 0    50   Input ~ 0
-MCU_65_SPI4_SCK
-Text GLabel -250 7050 0    50   Input ~ 0
+MCU_65_PE12_SPI4_SCK
+Text GLabel -500 7050 0    50   Input ~ 0
 MCU_66_SAI2_FS_B
-Text GLabel -1150 7050 0    50   Input ~ 0
+Text GLabel -1400 7050 0    50   Input ~ 0
 MCU_66_TIM1_CH3
 Text GLabel 650  7150 0    50   Input ~ 0
-MCU_67_SPI4_MOSI
-Text GLabel -1150 7150 0    50   Input ~ 0
+MCU_67_PE14_SPI4_MOSI
+Text GLabel -1400 7150 0    50   Input ~ 0
 MCU_67_TIM1_CH4
-Text GLabel -1150 7350 0    50   Input ~ 0
+Text GLabel -1550 7350 0    50   Input ~ 0
 MCU_69_SPI2_SCK
-Text GLabel 3000 7450 2    50   Input ~ 0
+Text GLabel 3300 7450 2    50   Input ~ 0
 MCU_75_SPI2_MISO
-Text GLabel 3850 7450 2    50   Input ~ 0
+Text GLabel 4150 7450 2    50   Input ~ 0
 MCU_75_UART1_TX
-Text GLabel 3000 7350 2    50   Input ~ 0
+Text GLabel 3300 7350 2    50   Input ~ 0
 MCU_76_SPI2_MOSI
-Text GLabel 3850 7350 2    50   Input ~ 0
+Text GLabel 4150 7350 2    50   Input ~ 0
 MCU_76_UART1_RX
-Text GLabel 3000 6850 2    50   Input ~ 0
+Text GLabel 3300 6850 2    50   Input ~ 0
 MCU_81_I2C4_SCL
-Text GLabel 3000 6750 2    50   Input ~ 0
+Text GLabel 3300 6750 2    50   Input ~ 0
 MCU_82_I2C4_SDA
-Text GLabel 3050 5250 2    50   Input ~ 0
+Text GLabel 3300 5250 2    50   Input ~ 0
 MCU_97_TIM8_CH2
-Text GLabel 3050 5150 2    50   Input ~ 0
+Text GLabel 3350 5150 2    50   Input ~ 0
 MCU_98_TIM8_CH3
-Text GLabel 3050 5050 2    50   Input ~ 0
+Text GLabel 3350 5050 2    50   Input ~ 0
 MCU_99_TIM8_CH4
-Text GLabel 3900 5050 2    50   Input ~ 0
+Text GLabel 4200 5050 2    50   Input ~ 0
 MCU_99_I2C_SDA
-Text GLabel 3900 4950 2    50   Input ~ 0
+Text GLabel 4200 4950 2    50   Input ~ 0
 MCU_100_I2C_SCL
-Text GLabel 3050 4950 2    50   Input ~ 0
-MCU_100_TIM1_CH1
-Text GLabel 3050 4850 2    50   Input ~ 0
+Text GLabel 3100 4950 2    50   Input ~ 0
+MCU_100_PA8_TIM1_CH1
+Text GLabel 3350 4850 2    50   Input ~ 0
 MCU_101_TIM1_CH2
-Text GLabel 3900 4850 2    50   Input ~ 0
+Text GLabel 4200 4850 2    50   Input ~ 0
 MCU_101_SPI2_SCK
-Text GLabel 3050 4750 2    50   Input ~ 0
+Text GLabel 3350 4750 2    50   Input ~ 0
 MCU_102_TIM1_CH3
-Text GLabel 3050 4650 2    50   Input ~ 0
+Text GLabel 3350 4650 2    50   Input ~ 0
 MCU_103_TIM1_CH4
-Text GLabel 3900 4650 2    50   Input ~ 0
+Text GLabel 4200 4650 2    50   Input ~ 0
 MCU_103_SPI2_NSS
-Text GLabel 3050 4550 2    50   Input ~ 0
+Text GLabel 3350 4550 2    50   Input ~ 0
 MCU_104_TIM1_ETR
-Text GLabel 3900 4550 2    50   Input ~ 0
+Text GLabel 4200 4550 2    50   Input ~ 0
 MCU_104_SPI2_SCK
-Text GLabel 4750 4550 2    50   Input ~ 0
+Text GLabel 5050 4550 2    50   Input ~ 0
 MCU_104_SA2_FS_B
-Text GLabel 3050 3950 2    50   Input ~ 0
+Text GLabel 3350 3950 2    50   Input ~ 0
 MCU_110_SPI1_NSS
-Text GLabel 3900 3950 2    50   Input ~ 0
+Text GLabel 4200 3950 2    50   Input ~ 0
 MCU_110_SPI6_NSS
-Text GLabel 3050 3850 2    50   Input ~ 0
+Text GLabel 3350 3850 2    50   Input ~ 0
 MCU_111_SPI3_SCK
-Text GLabel 3050 3750 2    50   Input ~ 0
+Text GLabel 3350 3750 2    50   Input ~ 0
 MCU_112_SPI3_MISO
-Text GLabel 3050 3650 2    50   Input ~ 0
+Text GLabel 3350 3650 2    50   Input ~ 0
 MCU_114_SPI3_MOSI
-Text GLabel 2900 3250 2    50   Input ~ 0
-MCU_117_SPI2_SCK
-Text GLabel 3950 2750 2    50   Input ~ 0
+Text GLabel 3200 3250 2    50   Input ~ 0
+MCU_117_PD3_SPI2_SCK
+Text GLabel 4250 2750 2    50   Input ~ 0
 MCU_122_SPI3_MOSI
 Text GLabel 1950 2450 2    50   Input ~ 0
-MCU_125_SAI2_SD_B
-Text GLabel 2900 2450 2    50   Input ~ 0
+MCU_125_PG10_SAI2_SD_B
+Text GLabel 3200 2450 2    50   Input ~ 0
 MCU_125_SPI1_NSS
-Text GLabel 2800 2650 2    50   Input ~ 0
+Text GLabel 3150 2650 2    50   Input ~ 0
 MCU_123_SPI1_MOSI
 Text GLabel 1950 2550 2    50   Input ~ 0
-MCU_124_SAI2_FS_B
-Text GLabel 2900 2550 2    50   Input ~ 0
+MCU_124_PG9_SAI2_FS_B
+Text GLabel 3200 2550 2    50   Input ~ 0
 MCU_124_SPI1_MISO
-Text GLabel 2850 2350 2    50   Input ~ 0
+Text GLabel 3150 2350 2    50   Input ~ 0
 MCU_126_SPI1_SCK
-Text GLabel 2850 1650 2    50   Input ~ 0
+Text GLabel 3150 1650 2    50   Input ~ 0
 MCU_133_SPI1_SCK
-Text GLabel 3750 1650 2    50   Input ~ 0
+Text GLabel 4050 1650 2    50   Input ~ 0
 MCU_133_SPI6_SCK
-Text GLabel 2850 1550 2    50   Input ~ 0
+Text GLabel 3150 1550 2    50   Input ~ 0
 MCU_134_SPI1_MISO
-Text GLabel 3750 1550 2    50   Input ~ 0
+Text GLabel 4050 1550 2    50   Input ~ 0
 MCU_134_SPI6_MISO
-Text GLabel 4650 1550 2    50   Input ~ 0
+Text GLabel 4950 1550 2    50   Input ~ 0
 MCU_134_SPI2_NSS
-Text GLabel 2850 1450 2    50   Input ~ 0
+Text GLabel 3150 1450 2    50   Input ~ 0
 MCU_135_SPI1_MOSI
-Text GLabel 3750 1450 2    50   Input ~ 0
+Text GLabel 4050 1450 2    50   Input ~ 0
 MCU_135_SPI6_MOSI
-Text GLabel 2800 1350 2    50   Input ~ 0
+Text GLabel 3100 1350 2    50   Input ~ 0
 MCU_136_I2C4_SCL
-Text GLabel 3800 1350 2    50   Input ~ 0
+Text GLabel 4100 1350 2    50   Input ~ 0
 MCU_136_USART1_TX
-Text GLabel 2800 1250 2    50   Input ~ 0
+Text GLabel 3100 1250 2    50   Input ~ 0
 MCU_137_I2C4_SDA
-Text GLabel 3800 1250 2    50   Input ~ 0
+Text GLabel 4100 1250 2    50   Input ~ 0
 MCU_137_USART1_RX
-Text GLabel 3800 950  2    50   Input ~ 0
+Text GLabel 4100 950  2    50   Input ~ 0
 MCU_140_I2C1_SDA
-Text GLabel 3800 1050 2    50   Input ~ 0
+Text GLabel 4100 1050 2    50   Input ~ 0
 MCU_139_I2C1_SCL
-Text GLabel 4650 1050 2    50   Input ~ 0
+Text GLabel 4950 1050 2    50   Input ~ 0
 MCU_139_I2C4_SCL
-Text GLabel 4650 950  2    50   Input ~ 0
+Text GLabel 4950 950  2    50   Input ~ 0
 MCU_140_I2C4_SDA
-Text GLabel 2800 1000 2    50   Input ~ 0
+Text GLabel 3050 1000 2    50   Input ~ 0
 MCU_140_SPI2_NSS
-Text GLabel -14450 -500 2    50   Input ~ 0
+Text GLabel -18300 -2550 2    50   Input ~ 0
 MCU_66_SPI4_MISO
-Text GLabel -14450 -1550 2    50   Input ~ 0
+Text GLabel -18300 -3600 2    50   Input ~ 0
 MCU_64_SPI4_NSS
-Text GLabel -17350 -950 2    50   Input ~ 0
+Text GLabel -21200 -3000 2    50   Input ~ 0
 MCU_43_SPI1_MOSI
-Text GLabel -17350 -600 2    50   Input ~ 0
+Text GLabel -21200 -2650 2    50   Input ~ 0
 MCU_42_SPI1_MISO
-Text GLabel -17350 -1300 2    50   Input ~ 0
+Text GLabel -21200 -3350 2    50   Input ~ 0
 MCU_41_SPI1_SCK
-Text GLabel -17350 -1650 2    50   Input ~ 0
+Text GLabel -21200 -3700 2    50   Input ~ 0
 MCU_40_SPI1_NSS
-Text GLabel -14450 200  2    50   Input ~ 0
+Text GLabel -18300 -1850 2    50   Input ~ 0
 MCU_35_SAI2_SCK_B
-Text GLabel -14450 550  2    50   Input ~ 0
+Text GLabel -18300 -1500 2    50   Input ~ 0
 MCU_34_SAI2_SD_B
-Text GLabel -16350 -600 2    50   Input ~ 0
+Text GLabel -20200 -2650 2    50   Input ~ 0
 MCU_28_SPI2_MISO
-Text GLabel -16350 -950 2    50   Input ~ 0
+Text GLabel -20200 -3000 2    50   Input ~ 0
 MCU_27_SPI2_MOSI
-Text GLabel -14450 -150 2    50   Input ~ 0
+Text GLabel -18300 -2200 2    50   Input ~ 0
 MCU_26_SAI2_FS_B
-Text GLabel -14450 -1300 2    50   Input ~ 0
+Text GLabel -18300 -3350 2    50   Input ~ 0
 MCU_1_SPI4_SCK
-Text GLabel -16350 550  2    50   Input ~ 0
+Text GLabel -20200 -1500 2    50   Input ~ 0
 MCU_2_SAI1_SD_B
-Text GLabel -17350 -150 2    50   Input ~ 0
+Text GLabel -21200 -2200 2    50   Input ~ 0
 MCU_3_SAI1_FS_A
-Text GLabel -17350 200  2    50   Input ~ 0
+Text GLabel -21200 -1850 2    50   Input ~ 0
 MCU_4_SAI1_SCK_A
-Text GLabel -14450 -950 2    50   Input ~ 0
+Text GLabel -18300 -3000 2    50   Input ~ 0
 MCU_5_SPI4_MOSI
-Text GLabel -16350 200  2    50   Input ~ 0
+Text GLabel -20200 -1850 2    50   Input ~ 0
 MCU_20_SAI1_SCK_B
-Text GLabel -16350 -150 2    50   Input ~ 0
+Text GLabel -20200 -2200 2    50   Input ~ 0
 MCU_21_SAI1_FS_B
-Text GLabel -14450 -1650 2    50   Input ~ 0
+Text GLabel -18300 -3700 2    50   Input ~ 0
 MCU_3_SPI4_NSS
-Text GLabel -14450 -600 2    50   Input ~ 0
+Text GLabel -18300 -2650 2    50   Input ~ 0
 MCU_4_SPI4_MISO
-Text GLabel -15400 550  2    50   Input ~ 0
+Text GLabel -19250 -1500 2    50   Input ~ 0
 MCU_5_SAI2_SD_A
-Text GLabel -16350 650  2    50   Input ~ 0
+Text GLabel -20200 -1400 2    50   Input ~ 0
 MCU_18_SAI1_SD_B
-Text GLabel -8750 -2650 2    50   Input ~ 0
+Text GLabel -12600 -4700 2    50   Input ~ 0
 MCU_18_SPI5_NSS
-Text GLabel -8750 -2300 2    50   Input ~ 0
+Text GLabel -12600 -4350 2    50   Input ~ 0
 MCU_19_SPI5_SCK
-Text GLabel -8750 -1600 2    50   Input ~ 0
+Text GLabel -12600 -3650 2    50   Input ~ 0
 MCU_20_SPI5_MISO
-Text GLabel -8750 -1950 2    50   Input ~ 0
+Text GLabel -12600 -4000 2    50   Input ~ 0
 MCU_21_SPI5_MOSI
-Text GLabel -17350 550  2    50   Input ~ 0
+Text GLabel -21200 -1500 2    50   Input ~ 0
 MCU_27_SAI1_SD_A
-Text GLabel -16350 -850 2    50   Input ~ 0
+Text GLabel -20200 -2900 2    50   Input ~ 0
 MCU_29_SPI2_MOSI
-Text GLabel -15400 -1650 2    50   Input ~ 0
+Text GLabel -19250 -3700 2    50   Input ~ 0
 MCU_40_SPI3_NSS
-Text GLabel -13550 -1300 2    50   Input ~ 0
+Text GLabel -17400 -3350 2    50   Input ~ 0
 MCU_41_SPI6_SCK
-Text GLabel -13550 -600 2    50   Input ~ 0
+Text GLabel -17400 -2650 2    50   Input ~ 0
 MCU_42_SPI6_MISO
-Text GLabel -13550 -950 2    50   Input ~ 0
+Text GLabel -17400 -3000 2    50   Input ~ 0
 MCU_43_SPI6_MOSI
-Text GLabel -13550 -1650 2    50   Input ~ 0
+Text GLabel -17400 -3700 2    50   Input ~ 0
 MCU_40_SPI6_NSS
-Text GLabel -17350 650  2    50   Input ~ 0
+Text GLabel -21200 -1400 2    50   Input ~ 0
 MCU_48_SAI1_SD_A
-Text GLabel -15400 -950 2    50   Input ~ 0
+Text GLabel -19250 -3000 2    50   Input ~ 0
 MCU_48_SPI3_MOSI
-Text GLabel -16350 750  2    50   Input ~ 0
+Text GLabel -20200 -1300 2    50   Input ~ 0
 MCU_49_SAI2_SD_B
-Text GLabel -8750 -1850 2    50   Input ~ 0
+Text GLabel -12600 -3900 2    50   Input ~ 0
 MCU_49_SPI5_MOSI
-Text GLabel -14450 650  2    50   Input ~ 0
+Text GLabel -18300 -1400 2    50   Input ~ 0
 MCU_64_SAI2_SD_B
-Text GLabel -14450 300  2    50   Input ~ 0
+Text GLabel -18300 -1750 2    50   Input ~ 0
 MCU_65_SAI2_SCK_B
-Text GLabel -14450 -1200 2    50   Input ~ 0
+Text GLabel -18300 -3250 2    50   Input ~ 0
 MCU_65_SPI4_SCK
-Text GLabel -14450 -50  2    50   Input ~ 0
+Text GLabel -18300 -2100 2    50   Input ~ 0
 MCU_66_SAI2_FS_B
-Text GLabel -14450 -850 2    50   Input ~ 0
+Text GLabel -18300 -2900 2    50   Input ~ 0
 MCU_67_SPI4_MOSI
-Text GLabel -16350 -1300 2    50   Input ~ 0
+Text GLabel -20200 -3350 2    50   Input ~ 0
 MCU_69_SPI2_SCK
-Text GLabel -15400 -850 2    50   Input ~ 0
+Text GLabel -19250 -2900 2    50   Input ~ 0
 MCU_135_SPI3_MOSI
-Text GLabel -15400 -600 2    50   Input ~ 0
+Text GLabel -19250 -2650 2    50   Input ~ 0
 MCU_134_SPI3_MISO
-Text GLabel -15400 -1300 2    50   Input ~ 0
+Text GLabel -19250 -3350 2    50   Input ~ 0
 MCU_133_SPI3_SCK
-Text GLabel -13550 -850 2    50   Input ~ 0
+Text GLabel -17400 -2900 2    50   Input ~ 0
 MCU_129_SPI6_MOSI
-Text GLabel -13550 -1200 2    50   Input ~ 0
+Text GLabel -17400 -3250 2    50   Input ~ 0
 MCU_128_SPI6_SCK
-Text GLabel -13550 -500 2    50   Input ~ 0
+Text GLabel -17400 -2550 2    50   Input ~ 0
 MCU_127_SPI6_MISO
-Text GLabel -17350 750  2    50   Input ~ 0
+Text GLabel -21200 -1300 2    50   Input ~ 0
 MCU_122_SAI1_SD_A
-Text GLabel -15400 -1550 2    50   Input ~ 0
+Text GLabel -19250 -3600 2    50   Input ~ 0
 MCU_110_SPI3_NSS
-Text GLabel -13550 -1550 2    50   Input ~ 0
+Text GLabel -17400 -3600 2    50   Input ~ 0
 MCU_93_SPI6_NSS
-Text GLabel -15400 200  2    50   Input ~ 0
+Text GLabel -19250 -1850 2    50   Input ~ 0
 MCU_82_SAI2_SCK_A
-Text GLabel -15400 -150 2    50   Input ~ 0
+Text GLabel -19250 -2200 2    50   Input ~ 0
 MCU_81_SAI2_FS_A
-Text GLabel -15400 650  2    50   Input ~ 0
+Text GLabel -19250 -1400 2    50   Input ~ 0
 MCU_80_SAI2_SD_A
-Text GLabel -16350 -1200 2    50   Input ~ 0
+Text GLabel -20200 -3250 2    50   Input ~ 0
 MCU_74_SPI2_SCK
-Text GLabel -16350 -1650 2    50   Input ~ 0
+Text GLabel -20200 -3700 2    50   Input ~ 0
 MCU_73_SPI2_NSS
-Text GLabel -17350 -1550 2    50   Input ~ 0
+Text GLabel -21200 -3600 2    50   Input ~ 0
 MCU_110_SPI1_NSS
-Text GLabel -13550 -1450 2    50   Input ~ 0
+Text GLabel -17400 -3500 2    50   Input ~ 0
 MCU_110_SPI6_NSS
-Text GLabel -16350 -1100 2    50   Input ~ 0
+Text GLabel -20200 -3150 2    50   Input ~ 0
 MCU_117_SPI2_SCK
-Text GLabel -15400 -750 2    50   Input ~ 0
+Text GLabel -19250 -2800 2    50   Input ~ 0
 MCU_122_SPI3_MOSI
-Text GLabel -14450 750  2    50   Input ~ 0
+Text GLabel -18300 -1300 2    50   Input ~ 0
 MCU_125_SAI2_SD_B
-Text GLabel -17350 -1450 2    50   Input ~ 0
+Text GLabel -21200 -3500 2    50   Input ~ 0
 MCU_125_SPI1_NSS
-Text GLabel -17350 -850 2    50   Input ~ 0
+Text GLabel -21200 -2900 2    50   Input ~ 0
 MCU_123_SPI1_MOSI
-Text GLabel -14450 50   2    50   Input ~ 0
+Text GLabel -18300 -2000 2    50   Input ~ 0
 MCU_124_SAI2_FS_B
-Text GLabel -17350 -400 2    50   Input ~ 0
+Text GLabel -21200 -2450 2    50   Input ~ 0
 MCU_145_SPI1_MISO
-Text GLabel -17350 -1200 2    50   Input ~ 0
+Text GLabel -21200 -3250 2    50   Input ~ 0
 MCU_126_SPI1_SCK
-Text GLabel -17350 -1100 2    50   Input ~ 0
+Text GLabel -21200 -3150 2    50   Input ~ 0
 MCU_133_SPI1_SCK
-Text GLabel -13550 -1100 2    50   Input ~ 0
+Text GLabel -17400 -3150 2    50   Input ~ 0
 MCU_133_SPI6_SCK
-Text GLabel -17350 -500 2    50   Input ~ 0
+Text GLabel -21200 -2550 2    50   Input ~ 0
 MCU_134_SPI1_MISO
-Text GLabel -13550 -400 2    50   Input ~ 0
+Text GLabel -17400 -2450 2    50   Input ~ 0
 MCU_134_SPI6_MISO
-Text GLabel -16350 -1550 2    50   Input ~ 0
+Text GLabel -20200 -3600 2    50   Input ~ 0
 MCU_134_SPI2_NSS
-Text GLabel -17350 -750 2    50   Input ~ 0
+Text GLabel -21200 -2800 2    50   Input ~ 0
 MCU_135_SPI1_MOSI
-Text GLabel -13550 -750 2    50   Input ~ 0
+Text GLabel -17400 -2800 2    50   Input ~ 0
 MCU_135_SPI6_MOSI
-Text GLabel -16350 -1450 2    50   Input ~ 0
+Text GLabel -20200 -3500 2    50   Input ~ 0
 MCU_140_SPI2_NSS
-Text GLabel -9550 800  0    50   Input ~ 0
+Text GLabel -13400 -1250 0    50   Input ~ 0
 MCU_135_SPI3_MOSI
-Text GLabel -9550 700  0    50   Input ~ 0
+Text GLabel -13400 -1350 0    50   Input ~ 0
 MCU_134_SPI3_MISO
-Text GLabel -9550 600  0    50   Input ~ 0
+Text GLabel -13400 -1450 0    50   Input ~ 0
 MCU_133_SPI3_SCK
-Text GLabel -9550 300  0    50   Input ~ 0
+Text GLabel -13400 -1750 0    50   Input ~ 0
 MCU_122_SAI1_SD_A
-Text GLabel -9550 200  0    50   Input ~ 0
+Text GLabel -13400 -1850 0    50   Input ~ 0
 MCU_110_SPI3_NSS
-Text GLabel -9550 100  0    50   Input ~ 0
+Text GLabel -13400 -1950 0    50   Input ~ 0
 MCU_66_SPI4_MISO
-Text GLabel -9550 -100 0    50   Input ~ 0
+Text GLabel -13400 -2150 0    50   Input ~ 0
 MCU_64_SPI4_NSS
-Text GLabel -9550 -400 0    50   Input ~ 0
+Text GLabel -13400 -2450 0    50   Input ~ 0
 MCU_43_SPI1_MOSI
-Text GLabel -9550 -500 0    50   Input ~ 0
+Text GLabel -13400 -2550 0    50   Input ~ 0
 MCU_42_SPI1_MISO
-Text GLabel -9550 -600 0    50   Input ~ 0
+Text GLabel -13400 -2650 0    50   Input ~ 0
 MCU_41_SPI1_SCK
-Text GLabel -9550 -700 0    50   Input ~ 0
+Text GLabel -13400 -2750 0    50   Input ~ 0
 MCU_40_SPI1_NSS
-Text GLabel -10450 -800 0    50   Input ~ 0
+Text GLabel -14300 -2850 0    50   Input ~ 0
 MCU_27_SPI2_MOSI
-Text GLabel -9550 -1400 0    50   Input ~ 0
+Text GLabel -13400 -3450 0    50   Input ~ 0
 MCU_3_SAI1_FS_A
-Text GLabel -9550 -1300 0    50   Input ~ 0
+Text GLabel -13400 -3350 0    50   Input ~ 0
 MCU_4_SAI1_SCK_A
-Text GLabel -9550 -1200 0    50   Input ~ 0
+Text GLabel -13400 -3250 0    50   Input ~ 0
 MCU_5_SPI4_MOSI
-Text GLabel -9550 -1000 0    50   Input ~ 0
+Text GLabel -13400 -3050 0    50   Input ~ 0
 MCU_20_SAI1_SCK_B
-Text GLabel -9550 -900 0    50   Input ~ 0
+Text GLabel -13400 -2950 0    50   Input ~ 0
 MCU_21_SAI1_FS_B
-Text GLabel -10450 -1400 0    50   Input ~ 0
+Text GLabel -14300 -3450 0    50   Input ~ 0
 MCU_3_SPI4_NSS
-Text GLabel -10450 -1300 0    50   Input ~ 0
+Text GLabel -14300 -3350 0    50   Input ~ 0
 MCU_4_SPI4_MISO
-Text GLabel -10450 -1200 0    50   Input ~ 0
+Text GLabel -14300 -3250 0    50   Input ~ 0
 MCU_5_SAI2_SD_A
-Text GLabel -9550 -1100 0    50   Input ~ 0
+Text GLabel -13400 -3150 0    50   Input ~ 0
 MCU_18_SAI1_SD_B
-Text GLabel -10450 -1100 0    50   Input ~ 0
+Text GLabel -14300 -3150 0    50   Input ~ 0
 MCU_18_SPI5_NSS
-Text GLabel -10450 -1000 0    50   Input ~ 0
+Text GLabel -14300 -3050 0    50   Input ~ 0
 MCU_20_SPI5_MISO
-Text GLabel -10450 -900 0    50   Input ~ 0
+Text GLabel -14300 -2950 0    50   Input ~ 0
 MCU_21_SPI5_MOSI
-Text GLabel -9550 -800 0    50   Input ~ 0
+Text GLabel -13400 -2850 0    50   Input ~ 0
 MCU_27_SAI1_SD_A
-Text GLabel -10450 -700 0    50   Input ~ 0
+Text GLabel -14300 -2750 0    50   Input ~ 0
 MCU_40_SPI3_NSS
-Text GLabel -10450 -600 0    50   Input ~ 0
+Text GLabel -14300 -2650 0    50   Input ~ 0
 MCU_41_SPI6_SCK
-Text GLabel -10450 -500 0    50   Input ~ 0
+Text GLabel -14300 -2550 0    50   Input ~ 0
 MCU_42_SPI6_MISO
-Text GLabel -10450 -400 0    50   Input ~ 0
+Text GLabel -14300 -2450 0    50   Input ~ 0
 MCU_43_SPI6_MOSI
-Text GLabel -11350 -700 0    50   Input ~ 0
+Text GLabel -15200 -2750 0    50   Input ~ 0
 MCU_40_SPI6_NSS
-Text GLabel -9550 -300 0    50   Input ~ 0
+Text GLabel -13400 -2350 0    50   Input ~ 0
 MCU_48_SAI1_SD_A
-Text GLabel -10450 -300 0    50   Input ~ 0
+Text GLabel -14300 -2350 0    50   Input ~ 0
 MCU_48_SPI3_MOSI
-Text GLabel -9550 -200 0    50   Input ~ 0
+Text GLabel -13400 -2250 0    50   Input ~ 0
 MCU_49_SAI2_SD_B
-Text GLabel -10450 -200 0    50   Input ~ 0
+Text GLabel -14300 -2250 0    50   Input ~ 0
 MCU_49_SPI5_MOSI
-Text GLabel -10450 -100 0    50   Input ~ 0
+Text GLabel -14300 -2150 0    50   Input ~ 0
 MCU_64_SAI2_SD_B
-Text GLabel -10450 0    0    50   Input ~ 0
+Text GLabel -14300 -2050 0    50   Input ~ 0
 MCU_65_SAI2_SCK_B
-Text GLabel -9550 0    0    50   Input ~ 0
+Text GLabel -13400 -2050 0    50   Input ~ 0
 MCU_65_SPI4_SCK
-Text GLabel -10450 100  0    50   Input ~ 0
+Text GLabel -14300 -1950 0    50   Input ~ 0
 MCU_66_SAI2_FS_B
-Text GLabel -10450 200  0    50   Input ~ 0
+Text GLabel -14300 -1850 0    50   Input ~ 0
 MCU_110_SPI1_NSS
-Text GLabel -11350 200  0    50   Input ~ 0
+Text GLabel -15200 -1850 0    50   Input ~ 0
 MCU_110_SPI6_NSS
-Text GLabel -10450 300  0    50   Input ~ 0
+Text GLabel -14300 -1750 0    50   Input ~ 0
 MCU_122_SPI3_MOSI
-Text GLabel -10450 500  0    50   Input ~ 0
+Text GLabel -14300 -1550 0    50   Input ~ 0
 MCU_125_SAI2_SD_B
-Text GLabel -9550 500  0    50   Input ~ 0
+Text GLabel -13400 -1550 0    50   Input ~ 0
 MCU_125_SPI1_NSS
-Text GLabel -10450 400  0    50   Input ~ 0
+Text GLabel -14300 -1650 0    50   Input ~ 0
 MCU_124_SAI2_FS_B
-Text GLabel -9550 400  0    50   Input ~ 0
+Text GLabel -13400 -1650 0    50   Input ~ 0
 MCU_124_SPI1_MISO
-Text GLabel -10450 600  0    50   Input ~ 0
+Text GLabel -14300 -1450 0    50   Input ~ 0
 MCU_133_SPI1_SCK
-Text GLabel -11350 600  0    50   Input ~ 0
+Text GLabel -15200 -1450 0    50   Input ~ 0
 MCU_133_SPI6_SCK
-Text GLabel -10450 700  0    50   Input ~ 0
+Text GLabel -14300 -1350 0    50   Input ~ 0
 MCU_134_SPI1_MISO
-Text GLabel -11350 700  0    50   Input ~ 0
+Text GLabel -15200 -1350 0    50   Input ~ 0
 MCU_134_SPI6_MISO
-Text GLabel -12250 700  0    50   Input ~ 0
+Text GLabel -16100 -1350 0    50   Input ~ 0
 MCU_134_SPI2_NSS
-Text GLabel -10450 800  0    50   Input ~ 0
+Text GLabel -14300 -1250 0    50   Input ~ 0
 MCU_135_SPI1_MOSI
-Text GLabel -11350 800  0    50   Input ~ 0
+Text GLabel -15200 -1250 0    50   Input ~ 0
 MCU_135_SPI6_MOSI
-NoConn ~ -17400 -1650
-NoConn ~ -17400 -1550
-NoConn ~ -17400 -1450
-NoConn ~ -17400 -1300
-NoConn ~ -17400 -1100
-NoConn ~ -17400 -950
-NoConn ~ -17400 -750
-NoConn ~ -17400 -600
-NoConn ~ -17400 -500
-NoConn ~ -17400 -150
-NoConn ~ -17400 200 
-NoConn ~ -17400 550 
-NoConn ~ -17400 650 
-NoConn ~ -17400 750 
-NoConn ~ -16400 -1550
-NoConn ~ -16400 -950
-NoConn ~ -16400 -150
-NoConn ~ -16400 200 
-NoConn ~ -16400 650 
-NoConn ~ -16400 750 
-NoConn ~ -15450 -1650
-NoConn ~ -15450 -1550
-NoConn ~ -15450 -1300
-NoConn ~ -15450 -950
-NoConn ~ -15450 -850
-NoConn ~ -15450 -750
-NoConn ~ -15450 -600
-NoConn ~ -15450 550 
-NoConn ~ -14500 -1650
-NoConn ~ -14500 -1550
-NoConn ~ -14500 -1200
-NoConn ~ -14500 -950
-NoConn ~ -14500 -600
-NoConn ~ -14500 -500
-NoConn ~ -14500 -50 
-NoConn ~ -14500 50  
-NoConn ~ -14500 300 
-NoConn ~ -14500 650 
-NoConn ~ -14500 750 
-NoConn ~ -13600 -1650
-NoConn ~ -13600 -1450
-NoConn ~ -13600 -1300
-NoConn ~ -13600 -1100
-NoConn ~ -13600 -950
-NoConn ~ -13600 -750
-NoConn ~ -13600 -600
-NoConn ~ -13600 -400
-Text GLabel -6450 -150 2    50   Input ~ 0
+NoConn ~ -21250 -3700
+NoConn ~ -21250 -3600
+NoConn ~ -21250 -3500
+NoConn ~ -21250 -3350
+NoConn ~ -21250 -3150
+NoConn ~ -21250 -3000
+NoConn ~ -21250 -2800
+NoConn ~ -21250 -2650
+NoConn ~ -21250 -2550
+NoConn ~ -21250 -2200
+NoConn ~ -21250 -1850
+NoConn ~ -21250 -1500
+NoConn ~ -21250 -1400
+NoConn ~ -21250 -1300
+NoConn ~ -20250 -3600
+NoConn ~ -20250 -3000
+NoConn ~ -20250 -2200
+NoConn ~ -20250 -1850
+NoConn ~ -20250 -1400
+NoConn ~ -20250 -1300
+NoConn ~ -19300 -3700
+NoConn ~ -19300 -3600
+NoConn ~ -19300 -3350
+NoConn ~ -19300 -3000
+NoConn ~ -19300 -2900
+NoConn ~ -19300 -2800
+NoConn ~ -19300 -2650
+NoConn ~ -19300 -1500
+NoConn ~ -18350 -3700
+NoConn ~ -18350 -3600
+NoConn ~ -18350 -3250
+NoConn ~ -18350 -3000
+NoConn ~ -18350 -2650
+NoConn ~ -18350 -2550
+NoConn ~ -18350 -2100
+NoConn ~ -18350 -2000
+NoConn ~ -18350 -1750
+NoConn ~ -18350 -1400
+NoConn ~ -18350 -1300
+NoConn ~ -17450 -3700
+NoConn ~ -17450 -3500
+NoConn ~ -17450 -3350
+NoConn ~ -17450 -3150
+NoConn ~ -17450 -3000
+NoConn ~ -17450 -2800
+NoConn ~ -17450 -2650
+NoConn ~ -17450 -2450
+Text GLabel -10300 -2200 2    50   Input ~ 0
 MCU_66_SPI4_MISO
-Text GLabel -6450 -1200 2    50   Input ~ 0
+Text GLabel -10300 -3250 2    50   Input ~ 0
 MCU_64_SPI4_NSS
-Text GLabel -9350 -600 2    50   Input ~ 0
+Text GLabel -13200 -2650 2    50   Input ~ 0
 MCU_43_SPI1_MOSI
-Text GLabel -9350 -250 2    50   Input ~ 0
+Text GLabel -13200 -2300 2    50   Input ~ 0
 MCU_42_SPI1_MISO
-Text GLabel -9350 -950 2    50   Input ~ 0
+Text GLabel -13200 -3000 2    50   Input ~ 0
 MCU_41_SPI1_SCK
-Text GLabel -9350 -1300 2    50   Input ~ 0
+Text GLabel -13200 -3350 2    50   Input ~ 0
 MCU_40_SPI1_NSS
-Text GLabel -6450 550  2    50   Input ~ 0
+Text GLabel -10300 -1500 2    50   Input ~ 0
 MCU_36_SAI2_SCK_B
-Text GLabel -6450 900  2    50   Input ~ 0
+Text GLabel -10300 -1150 2    50   Input ~ 0
 MCU_34_SAI2_SD_B
-Text GLabel -8350 -250 2    50   Input ~ 0
+Text GLabel -12200 -2300 2    50   Input ~ 0
 MCU_28_SPI2_MISO
-Text GLabel -8350 -600 2    50   Input ~ 0
+Text GLabel -12200 -2650 2    50   Input ~ 0
 MCU_27_SPI2_MOSI
-Text GLabel -6450 200  2    50   Input ~ 0
+Text GLabel -10300 -1850 2    50   Input ~ 0
 MCU_26_SAI2_FS_B
-Text GLabel -6450 -950 2    50   Input ~ 0
+Text GLabel -10300 -3000 2    50   Input ~ 0
 MCU_1_SPI4_SCK
-Text GLabel -8350 900  2    50   Input ~ 0
+Text GLabel -12200 -1150 2    50   Input ~ 0
 MCU_2_SAI1_SD_B
-Text GLabel -9350 200  2    50   Input ~ 0
+Text GLabel -13200 -1850 2    50   Input ~ 0
 MCU_3_SAI1_FS_A
-Text GLabel -9350 550  2    50   Input ~ 0
+Text GLabel -13200 -1500 2    50   Input ~ 0
 MCU_4_SAI1_SCK_A
-Text GLabel -8350 550  2    50   Input ~ 0
+Text GLabel -12200 -1500 2    50   Input ~ 0
 MCU_20_SAI1_SCK_B
-Text GLabel -8350 200  2    50   Input ~ 0
+Text GLabel -12200 -1850 2    50   Input ~ 0
 MCU_21_SAI1_FS_B
-Text GLabel -6450 -1300 2    50   Input ~ 0
+Text GLabel -10300 -3350 2    50   Input ~ 0
 MCU_3_SPI4_NSS
-Text GLabel -6450 -250 2    50   Input ~ 0
+Text GLabel -10300 -2300 2    50   Input ~ 0
 MCU_4_SPI4_MISO
-Text GLabel -8350 1000 2    50   Input ~ 0
+Text GLabel -12200 -1050 2    50   Input ~ 0
 MCU_18_SAI1_SD_B
-Text GLabel -9350 900  2    50   Input ~ 0
+Text GLabel -13200 -1150 2    50   Input ~ 0
 MCU_27_SAI1_SD_A
-Text GLabel -8350 -500 2    50   Input ~ 0
+Text GLabel -12200 -2550 2    50   Input ~ 0
 MCU_29_SPI2_MOSI
-Text GLabel -7400 -1300 2    50   Input ~ 0
+Text GLabel -11250 -3350 2    50   Input ~ 0
 MCU_40_SPI3_NSS
-Text GLabel -5550 -950 2    50   Input ~ 0
+Text GLabel -9400 -3000 2    50   Input ~ 0
 MCU_41_SPI6_SCK
-Text GLabel -5550 -250 2    50   Input ~ 0
+Text GLabel -9400 -2300 2    50   Input ~ 0
 MCU_42_SPI6_MISO
-Text GLabel -5550 -600 2    50   Input ~ 0
+Text GLabel -9400 -2650 2    50   Input ~ 0
 MCU_43_SPI6_MOSI
-Text GLabel -5550 -1300 2    50   Input ~ 0
+Text GLabel -9400 -3350 2    50   Input ~ 0
 MCU_40_SPI6_NSS
-Text GLabel -9350 1000 2    50   Input ~ 0
+Text GLabel -13200 -1050 2    50   Input ~ 0
 MCU_48_SAI1_SD_A
-Text GLabel -7400 -600 2    50   Input ~ 0
+Text GLabel -11250 -2650 2    50   Input ~ 0
 MCU_48_SPI3_MOSI
-Text GLabel -8350 1100 2    50   Input ~ 0
+Text GLabel -12200 -950 2    50   Input ~ 0
 MCU_49_SAI2_SD_B
-Text GLabel -6450 1000 2    50   Input ~ 0
+Text GLabel -10300 -1050 2    50   Input ~ 0
 MCU_64_SAI2_SD_B
-Text GLabel -6450 650  2    50   Input ~ 0
+Text GLabel -10300 -1400 2    50   Input ~ 0
 MCU_65_SAI2_SCK_B
-Text GLabel -6450 -850 2    50   Input ~ 0
+Text GLabel -10300 -2900 2    50   Input ~ 0
 MCU_65_SPI4_SCK
-Text GLabel -6450 300  2    50   Input ~ 0
+Text GLabel -10300 -1750 2    50   Input ~ 0
 MCU_66_SAI2_FS_B
-Text GLabel -6450 -500 2    50   Input ~ 0
+Text GLabel -10300 -2550 2    50   Input ~ 0
 MCU_67_SPI4_MOSI
-Text GLabel -8350 -950 2    50   Input ~ 0
+Text GLabel -12200 -3000 2    50   Input ~ 0
 MCU_69_SPI2_SCK
-Text GLabel -7400 -500 2    50   Input ~ 0
+Text GLabel -11250 -2550 2    50   Input ~ 0
 MCU_135_SPI3_MOSI
-Text GLabel -7400 -250 2    50   Input ~ 0
+Text GLabel -11250 -2300 2    50   Input ~ 0
 MCU_134_SPI3_MISO
-Text GLabel -7400 -950 2    50   Input ~ 0
+Text GLabel -11250 -3000 2    50   Input ~ 0
 MCU_133_SPI3_SCK
-Text GLabel -5550 -500 2    50   Input ~ 0
+Text GLabel -9400 -2550 2    50   Input ~ 0
 MCU_129_SPI6_MOSI
-Text GLabel -5550 -850 2    50   Input ~ 0
+Text GLabel -9400 -2900 2    50   Input ~ 0
 MCU_128_SPI6_SCK
-Text GLabel -5550 -150 2    50   Input ~ 0
+Text GLabel -9400 -2200 2    50   Input ~ 0
 MCU_127_SPI6_MISO
-Text GLabel -9350 1100 2    50   Input ~ 0
+Text GLabel -13200 -950 2    50   Input ~ 0
 MCU_122_SAI1_SD_A
-Text GLabel -7400 -1200 2    50   Input ~ 0
+Text GLabel -11250 -3250 2    50   Input ~ 0
 MCU_110_SPI3_NSS
-Text GLabel -5550 -1200 2    50   Input ~ 0
+Text GLabel -9400 -3250 2    50   Input ~ 0
 MCU_93_SPI6_NSS
-Text GLabel -7400 550  2    50   Input ~ 0
+Text GLabel -11250 -1500 2    50   Input ~ 0
 MCU_82_SAI2_SCK_A
-Text GLabel -7400 200  2    50   Input ~ 0
+Text GLabel -11250 -1850 2    50   Input ~ 0
 MCU_81_SAI2_FS_A
-Text GLabel -7400 1000 2    50   Input ~ 0
+Text GLabel -11250 -1050 2    50   Input ~ 0
 MCU_80_SAI2_SD_A
-Text GLabel -8350 -850 2    50   Input ~ 0
+Text GLabel -12200 -2900 2    50   Input ~ 0
 MCU_74_SPI2_SCK
-Text GLabel -8350 -1300 2    50   Input ~ 0
+Text GLabel -12200 -3350 2    50   Input ~ 0
 MCU_73_SPI2_NSS
-Text GLabel -9350 -1200 2    50   Input ~ 0
+Text GLabel -13200 -3250 2    50   Input ~ 0
 MCU_110_SPI1_NSS
-Text GLabel -5550 -1100 2    50   Input ~ 0
+Text GLabel -9400 -3150 2    50   Input ~ 0
 MCU_110_SPI6_NSS
-Text GLabel -8350 -750 2    50   Input ~ 0
+Text GLabel -12200 -2800 2    50   Input ~ 0
 MCU_117_SPI2_SCK
-Text GLabel -7400 -400 2    50   Input ~ 0
+Text GLabel -11250 -2450 2    50   Input ~ 0
 MCU_122_SPI3_MOSI
-Text GLabel -6450 1100 2    50   Input ~ 0
+Text GLabel -10300 -950 2    50   Input ~ 0
 MCU_125_SAI2_SD_B
-Text GLabel -9350 -1100 2    50   Input ~ 0
+Text GLabel -13200 -3150 2    50   Input ~ 0
 MCU_125_SPI1_NSS
-Text GLabel -9350 -500 2    50   Input ~ 0
+Text GLabel -13200 -2550 2    50   Input ~ 0
 MCU_123_SPI1_MOSI
-Text GLabel -6450 400  2    50   Input ~ 0
+Text GLabel -10300 -1650 2    50   Input ~ 0
 MCU_124_SAI2_FS_B
-Text GLabel -9350 -150 2    50   Input ~ 0
+Text GLabel -13200 -2200 2    50   Input ~ 0
 MCU_124_SPI1_MISO
-Text GLabel -9350 -850 2    50   Input ~ 0
+Text GLabel -13200 -2900 2    50   Input ~ 0
 MCU_126_SPI1_SCK
-Text GLabel -9350 -750 2    50   Input ~ 0
+Text GLabel -13200 -2800 2    50   Input ~ 0
 MCU_133_SPI1_SCK
-Text GLabel -5550 -750 2    50   Input ~ 0
+Text GLabel -9400 -2800 2    50   Input ~ 0
 MCU_133_SPI6_SCK
-Text GLabel -9350 -50  2    50   Input ~ 0
+Text GLabel -13200 -2100 2    50   Input ~ 0
 MCU_134_SPI1_MISO
-Text GLabel -5550 -50  2    50   Input ~ 0
+Text GLabel -9400 -2100 2    50   Input ~ 0
 MCU_134_SPI6_MISO
-Text GLabel -8350 -1200 2    50   Input ~ 0
+Text GLabel -12200 -3250 2    50   Input ~ 0
 MCU_134_SPI2_NSS
-Text GLabel -9350 -400 2    50   Input ~ 0
+Text GLabel -13200 -2450 2    50   Input ~ 0
 MCU_135_SPI1_MOSI
-Text GLabel -5550 -400 2    50   Input ~ 0
+Text GLabel -9400 -2450 2    50   Input ~ 0
 MCU_135_SPI6_MOSI
-Text GLabel -8350 -1100 2    50   Input ~ 0
+Text GLabel -12200 -3150 2    50   Input ~ 0
 MCU_140_SPI2_NSS
-NoConn ~ -9400 -1300
-NoConn ~ -9400 -1200
-NoConn ~ -9400 -1100
-NoConn ~ -9400 -950
-NoConn ~ -9400 -750
-NoConn ~ -9400 -600
-NoConn ~ -9400 -400
-NoConn ~ -9400 -250
-NoConn ~ -9400 -50 
-NoConn ~ -9400 200 
-NoConn ~ -9400 550 
-NoConn ~ -9400 900 
-NoConn ~ -9400 1000
-NoConn ~ -9400 1100
-NoConn ~ -8400 -1200
-NoConn ~ -8400 -600
-NoConn ~ -8400 200 
-NoConn ~ -8400 550 
-NoConn ~ -8400 1000
-NoConn ~ -8400 1100
-NoConn ~ -7450 -1300
-NoConn ~ -7450 -1200
-NoConn ~ -7450 -950
-NoConn ~ -7450 -600
-NoConn ~ -7450 -500
-NoConn ~ -7450 -400
-NoConn ~ -7450 -250
-NoConn ~ -7450 900 
-NoConn ~ -6500 -1300
-NoConn ~ -6500 -1200
-NoConn ~ -6500 -850
-NoConn ~ -6500 -600
-NoConn ~ -6500 -250
-NoConn ~ -6500 -150
-NoConn ~ -6500 300 
-NoConn ~ -6500 400 
-NoConn ~ -6500 650 
-NoConn ~ -6500 1000
-NoConn ~ -6500 1100
-NoConn ~ -5600 -1300
-NoConn ~ -5600 -1100
-NoConn ~ -5600 -950
-NoConn ~ -5600 -750
-NoConn ~ -5600 -600
-NoConn ~ -5600 -400
-NoConn ~ -5600 -250
-NoConn ~ -5600 -50 
-Text GLabel -6450 -600 2    50   Input ~ 0
+NoConn ~ -13250 -3350
+NoConn ~ -13250 -3250
+NoConn ~ -13250 -3150
+NoConn ~ -13250 -3000
+NoConn ~ -13250 -2800
+NoConn ~ -13250 -2650
+NoConn ~ -13250 -2450
+NoConn ~ -13250 -2300
+NoConn ~ -13250 -2100
+NoConn ~ -13250 -1850
+NoConn ~ -13250 -1500
+NoConn ~ -13250 -1150
+NoConn ~ -13250 -1050
+NoConn ~ -13250 -950
+NoConn ~ -12250 -3250
+NoConn ~ -12250 -2650
+NoConn ~ -12250 -1850
+NoConn ~ -12250 -1500
+NoConn ~ -12250 -1050
+NoConn ~ -12250 -950
+NoConn ~ -11300 -3350
+NoConn ~ -11300 -3250
+NoConn ~ -11300 -3000
+NoConn ~ -11300 -2650
+NoConn ~ -11300 -2550
+NoConn ~ -11300 -2450
+NoConn ~ -11300 -2300
+NoConn ~ -11300 -1150
+NoConn ~ -10350 -3350
+NoConn ~ -10350 -3250
+NoConn ~ -10350 -2900
+NoConn ~ -10350 -2650
+NoConn ~ -10350 -2300
+NoConn ~ -10350 -2200
+NoConn ~ -10350 -1750
+NoConn ~ -10350 -1650
+NoConn ~ -10350 -1400
+NoConn ~ -10350 -1050
+NoConn ~ -10350 -950
+NoConn ~ -9450 -3350
+NoConn ~ -9450 -3150
+NoConn ~ -9450 -3000
+NoConn ~ -9450 -2800
+NoConn ~ -9450 -2650
+NoConn ~ -9450 -2450
+NoConn ~ -9450 -2300
+NoConn ~ -9450 -2100
+Text GLabel -10300 -2650 2    50   Input ~ 0
 MCU_5_SPI4_MOSI
-Text GLabel -7400 900  2    50   Input ~ 0
+Text GLabel -11250 -1150 2    50   Input ~ 0
 MCU_5_SAI2_SD_A
 Wire Wire Line
-	-7400 200  -6650 200 
+	-11250 -1850 -10500 -1850
 Wire Wire Line
-	-7400 1000 -6650 1000
+	-11250 -1050 -10500 -1050
 Wire Wire Line
-	-6450 900  -5700 900 
+	-10300 -1150 -9550 -1150
 Wire Wire Line
-	-6450 550  -5650 550 
+	-10300 -1500 -9500 -1500
 Wire Wire Line
-	-6450 200  -5700 200 
+	-10300 -1850 -9550 -1850
 Wire Wire Line
-	-7400 550  -6600 550 
+	-11250 -1500 -10450 -1500
 Wire Wire Line
-	-6450 -1200 -5750 -1200
+	-10300 -3250 -9600 -3250
 Wire Wire Line
-	-6450 -850 -5750 -850
+	-10300 -2900 -9600 -2900
 Wire Wire Line
-	-6450 -500 -5700 -500
+	-10300 -2550 -9550 -2550
 Wire Wire Line
-	-6450 -150 -5700 -150
+	-10300 -2200 -9550 -2200
 Wire Bus Line
-	-6450 300  -5700 300 
+	-10300 -1750 -9550 -1750
 Wire Bus Line
-	-6450 650  -5650 650 
+	-10300 -1400 -9500 -1400
 Wire Bus Line
-	-6450 1000 -5700 1000
+	-10300 -1050 -9550 -1050
 Wire Wire Line
-	-9350 200  -8650 200 
+	-13200 -1850 -12500 -1850
 Wire Wire Line
-	-9350 550  -8600 550 
+	-13200 -1500 -12450 -1500
 Wire Wire Line
-	-8350 200  -7600 200 
+	-12200 -1850 -11450 -1850
 Wire Wire Line
-	-8350 550  -7550 550 
+	-12200 -1500 -11400 -1500
 Wire Wire Line
-	-8350 -250 -7600 -250
+	-12200 -2300 -11450 -2300
 Wire Wire Line
-	-7400 -950 -6650 -950
+	-11250 -3000 -10500 -3000
 Wire Wire Line
-	-7400 -250 -6600 -250
+	-11250 -2300 -10450 -2300
 Wire Wire Line
-	-9350 900  -8600 900 
+	-13200 -1150 -12450 -1150
 Wire Wire Line
-	-8350 -500 -7600 -500
+	-12200 -2550 -11450 -2550
 Wire Bus Line
-	-8350 -600 -7600 -600
+	-12200 -2650 -11450 -2650
 Wire Bus Line
-	-5550 -50  -4750 -50 
+	-9400 -2100 -8600 -2100
 Wire Bus Line
-	-9350 -750 -8600 -750
+	-13200 -2800 -12450 -2800
 Wire Bus Line
-	-8350 -1200 -7600 -1200
+	-12200 -3250 -11450 -3250
 Wire Wire Line
-	-8350 -1300 -7600 -1300
+	-12200 -3350 -11450 -3350
 Wire Wire Line
-	-8350 -850 -7650 -850
+	-12200 -2900 -11500 -2900
 Wire Wire Line
-	-8350 1000 -7600 1000
+	-12200 -1050 -11450 -1050
 Wire Bus Line
-	-8750 -1600 -8000 -1600
+	-12600 -3650 -11850 -3650
 Wire Bus Line
-	-8750 -1950 -8000 -1950
+	-12600 -4000 -11850 -4000
 Wire Bus Line
-	-8750 -2650 -8000 -2650
+	-12600 -4700 -11850 -4700
 Wire Wire Line
-	-9350 -1300 -8600 -1300
+	-13200 -3350 -12450 -3350
 Wire Wire Line
-	-9350 -950 -8600 -950
+	-13200 -3000 -12450 -3000
 Wire Wire Line
-	-9350 -600 -8600 -600
+	-13200 -2650 -12450 -2650
 Wire Wire Line
-	-9350 -250 -8600 -250
+	-13200 -2300 -12450 -2300
 Wire Bus Line
-	-7400 -1300 -6650 -1300
+	-11250 -3350 -10500 -3350
 Wire Bus Line
-	-9350 -50  -8550 -50 
+	-13200 -2100 -12400 -2100
 Wire Bus Line
-	-5550 -950 -4800 -950
+	-9400 -3000 -8650 -3000
 Wire Bus Line
-	-5550 -1300 -4800 -1300
+	-9400 -3350 -8650 -3350
 Wire Wire Line
-	-7400 -1200 -6600 -1200
+	-11250 -3250 -10450 -3250
 Wire Bus Line
-	-5550 -1100 -4750 -1100
+	-9400 -3150 -8600 -3150
 Wire Wire Line
-	-5550 -1200 -4800 -1200
+	-9400 -3250 -8650 -3250
 Wire Bus Line
-	-5550 -600 -4750 -600
+	-9400 -2650 -8600 -2650
 Wire Bus Line
-	-5550 -250 -4750 -250
+	-9400 -2300 -8600 -2300
 Wire Wire Line
-	-7400 -500 -6600 -500
+	-11250 -2550 -10450 -2550
 Wire Bus Line
-	-9350 -400 -8500 -400
+	-13200 -2450 -12350 -2450
 Wire Wire Line
-	-5550 -150 -4750 -150
+	-9400 -2200 -8600 -2200
 Wire Bus Line
-	-5550 -400 -4750 -400
+	-9400 -2450 -8600 -2450
 Wire Wire Line
-	-5550 -850 -4750 -850
+	-9400 -2900 -8600 -2900
 Wire Wire Line
-	-5550 -500 -4750 -500
-Text GLabel -7100 3150 2    50   Input ~ 0
+	-9400 -2550 -8600 -2550
+Text GLabel -10950 1100 2    50   Input ~ 0
 MCU_66_SPI4_MISO
-Text GLabel -7100 2100 2    50   Input ~ 0
+Text GLabel -10950 50   2    50   Input ~ 0
 MCU_64_SPI4_NSS
-Text GLabel -10000 2700 2    50   Input ~ 0
+Text GLabel -13850 650  2    50   Input ~ 0
 MCU_43_SPI1_MOSI
-Text GLabel -10000 3050 2    50   Input ~ 0
+Text GLabel -13850 1000 2    50   Input ~ 0
 MCU_42_SPI1_MISO
-Text GLabel -10000 2350 2    50   Input ~ 0
+Text GLabel -13850 300  2    50   Input ~ 0
 MCU_41_SPI1_SCK
-Text GLabel -10000 2000 2    50   Input ~ 0
+Text GLabel -13850 -50  2    50   Input ~ 0
 MCU_40_SPI1_NSS
-Text GLabel -7100 3850 2    50   Input ~ 0
+Text GLabel -10950 1800 2    50   Input ~ 0
 MCU_36_SAI2_SCK_B
-Text GLabel -7100 4200 2    50   Input ~ 0
+Text GLabel -10950 2150 2    50   Input ~ 0
 MCU_34_SAI2_SD_B
-Text GLabel -9000 3050 2    50   Input ~ 0
+Text GLabel -12850 1000 2    50   Input ~ 0
 MCU_28_SPI2_MISO
-Text GLabel -7100 3500 2    50   Input ~ 0
+Text GLabel -10950 1450 2    50   Input ~ 0
 MCU_26_SAI2_FS_B
-Text GLabel -7100 2350 2    50   Input ~ 0
+Text GLabel -10950 300  2    50   Input ~ 0
 MCU_1_SPI4_SCK
-Text GLabel -9000 4200 2    50   Input ~ 0
+Text GLabel -12850 2150 2    50   Input ~ 0
 MCU_2_SAI1_SD_B
-Text GLabel -10000 3500 2    50   Input ~ 0
+Text GLabel -13850 1450 2    50   Input ~ 0
 MCU_3_SAI1_FS_A
-Text GLabel -10000 3850 2    50   Input ~ 0
+Text GLabel -13850 1800 2    50   Input ~ 0
 MCU_4_SAI1_SCK_A
-Text GLabel -9000 3850 2    50   Input ~ 0
+Text GLabel -12850 1800 2    50   Input ~ 0
 MCU_20_SAI1_SCK_B
-Text GLabel -9000 3500 2    50   Input ~ 0
+Text GLabel -12850 1450 2    50   Input ~ 0
 MCU_21_SAI1_FS_B
-Text GLabel -9000 4300 2    50   Input ~ 0
+Text GLabel -12850 2250 2    50   Input ~ 0
 MCU_18_SAI1_SD_B
-Text GLabel -10000 4200 2    50   Input ~ 0
+Text GLabel -13850 2150 2    50   Input ~ 0
 MCU_27_SAI1_SD_A
-Text GLabel -9000 2800 2    50   Input ~ 0
+Text GLabel -12850 750  2    50   Input ~ 0
 MCU_29_SPI2_MOSI
-Text GLabel -10000 4300 2    50   Input ~ 0
+Text GLabel -13850 2250 2    50   Input ~ 0
 MCU_48_SAI1_SD_A
-Text GLabel -8050 2700 2    50   Input ~ 0
+Text GLabel -11900 650  2    50   Input ~ 0
 MCU_48_SPI3_MOSI
-Text GLabel -9000 4400 2    50   Input ~ 0
+Text GLabel -12850 2350 2    50   Input ~ 0
 MCU_49_SAI2_SD_B
-Text GLabel -7100 2450 2    50   Input ~ 0
+Text GLabel -10950 400  2    50   Input ~ 0
 MCU_65_SPI4_SCK
-Text GLabel -7100 2800 2    50   Input ~ 0
+Text GLabel -10950 750  2    50   Input ~ 0
 MCU_67_SPI4_MOSI
-Text GLabel -9000 2350 2    50   Input ~ 0
+Text GLabel -12850 300  2    50   Input ~ 0
 MCU_69_SPI2_SCK
-Text GLabel -8050 2800 2    50   Input ~ 0
+Text GLabel -11900 750  2    50   Input ~ 0
 MCU_135_SPI3_MOSI
-Text GLabel -8050 3050 2    50   Input ~ 0
+Text GLabel -11900 1000 2    50   Input ~ 0
 MCU_134_SPI3_MISO
-Text GLabel -8050 2350 2    50   Input ~ 0
+Text GLabel -11900 300  2    50   Input ~ 0
 MCU_133_SPI3_SCK
-Text GLabel -6200 2800 2    50   Input ~ 0
+Text GLabel -10050 750  2    50   Input ~ 0
 MCU_129_SPI6_MOSI
-Text GLabel -6200 2450 2    50   Input ~ 0
+Text GLabel -10050 400  2    50   Input ~ 0
 MCU_128_SPI6_SCK
-Text GLabel -6200 3150 2    50   Input ~ 0
+Text GLabel -10050 1100 2    50   Input ~ 0
 MCU_127_SPI6_MISO
-Text GLabel -10000 4400 2    50   Input ~ 0
+Text GLabel -13850 2350 2    50   Input ~ 0
 MCU_122_SAI1_SD_A
-Text GLabel -8050 2100 2    50   Input ~ 0
+Text GLabel -11900 50   2    50   Input ~ 0
 MCU_110_SPI3_NSS
-Text GLabel -6200 2100 2    50   Input ~ 0
+Text GLabel -10050 50   2    50   Input ~ 0
 MCU_93_SPI6_NSS
-Text GLabel -8050 3850 2    50   Input ~ 0
+Text GLabel -11900 1800 2    50   Input ~ 0
 MCU_82_SAI2_SCK_A
-Text GLabel -8050 3500 2    50   Input ~ 0
+Text GLabel -11900 1450 2    50   Input ~ 0
 MCU_81_SAI2_FS_A
-Text GLabel -8050 4300 2    50   Input ~ 0
+Text GLabel -11900 2250 2    50   Input ~ 0
 MCU_80_SAI2_SD_A
-Text GLabel -9000 2450 2    50   Input ~ 0
+Text GLabel -12850 400  2    50   Input ~ 0
 MCU_74_SPI2_SCK
-Text GLabel -9000 2000 2    50   Input ~ 0
+Text GLabel -12850 -50  2    50   Input ~ 0
 MCU_73_SPI2_NSS
-Text GLabel -10000 2100 2    50   Input ~ 0
+Text GLabel -13850 50   2    50   Input ~ 0
 MCU_110_SPI1_NSS
-Text GLabel -9000 2550 2    50   Input ~ 0
+Text GLabel -12850 500  2    50   Input ~ 0
 MCU_117_SPI2_SCK
-Text GLabel -8050 2900 2    50   Input ~ 0
+Text GLabel -11900 850  2    50   Input ~ 0
 MCU_122_SPI3_MOSI
-Text GLabel -7100 4400 2    50   Input ~ 0
+Text GLabel -10950 2350 2    50   Input ~ 0
 MCU_125_SAI2_SD_B
-Text GLabel -10000 2200 2    50   Input ~ 0
+Text GLabel -13850 150  2    50   Input ~ 0
 MCU_125_SPI1_NSS
-Text GLabel -10000 2800 2    50   Input ~ 0
+Text GLabel -13850 750  2    50   Input ~ 0
 MCU_123_SPI1_MOSI
-Text GLabel -7100 3700 2    50   Input ~ 0
+Text GLabel -10950 1650 2    50   Input ~ 0
 MCU_124_SAI2_FS_B
-Text GLabel -10000 3150 2    50   Input ~ 0
+Text GLabel -13850 1100 2    50   Input ~ 0
 MCU_124_SPI1_MISO
-Text GLabel -10000 2450 2    50   Input ~ 0
+Text GLabel -13850 400  2    50   Input ~ 0
 MCU_126_SPI1_SCK
-Text GLabel -9000 2200 2    50   Input ~ 0
+Text GLabel -12850 150  2    50   Input ~ 0
 MCU_140_SPI2_NSS
-NoConn ~ -10050 2000
-NoConn ~ -10050 2100
-NoConn ~ -10050 2200
-NoConn ~ -10050 2350
-NoConn ~ -10050 2700
-NoConn ~ -10050 3050
-NoConn ~ -10050 3500
-NoConn ~ -10050 3850
-NoConn ~ -10050 4200
-NoConn ~ -10050 4300
-NoConn ~ -10050 4400
-NoConn ~ -9050 3500
-NoConn ~ -9050 3850
-NoConn ~ -9050 4300
-NoConn ~ -9050 4400
-NoConn ~ -8100 2100
-NoConn ~ -8100 2350
-NoConn ~ -8100 2700
-NoConn ~ -8100 2800
-NoConn ~ -8100 2900
-NoConn ~ -8100 3050
-NoConn ~ -8100 4200
-NoConn ~ -7150 2100
-NoConn ~ -7150 2450
-NoConn ~ -7150 2700
-NoConn ~ -7150 3150
-NoConn ~ -7150 3700
-NoConn ~ -7150 4400
-Text GLabel -7100 2700 2    50   Input ~ 0
+NoConn ~ -13900 -50 
+NoConn ~ -13900 50  
+NoConn ~ -13900 150 
+NoConn ~ -13900 300 
+NoConn ~ -13900 650 
+NoConn ~ -13900 1000
+NoConn ~ -13900 1450
+NoConn ~ -13900 1800
+NoConn ~ -13900 2150
+NoConn ~ -13900 2250
+NoConn ~ -13900 2350
+NoConn ~ -12900 1450
+NoConn ~ -12900 1800
+NoConn ~ -12900 2250
+NoConn ~ -12900 2350
+NoConn ~ -11950 50  
+NoConn ~ -11950 300 
+NoConn ~ -11950 650 
+NoConn ~ -11950 750 
+NoConn ~ -11950 850 
+NoConn ~ -11950 1000
+NoConn ~ -11950 2150
+NoConn ~ -11000 50  
+NoConn ~ -11000 400 
+NoConn ~ -11000 650 
+NoConn ~ -11000 1100
+NoConn ~ -11000 1650
+NoConn ~ -11000 2350
+Text GLabel -10950 650  2    50   Input ~ 0
 MCU_5_SPI4_MOSI
-Text GLabel -8050 4200 2    50   Input ~ 0
+Text GLabel -11900 2150 2    50   Input ~ 0
 MCU_5_SAI2_SD_A
 Wire Wire Line
-	-8050 3500 -7300 3500
+	-11900 1450 -11150 1450
 Wire Wire Line
-	-8050 4300 -7300 4300
+	-11900 2250 -11150 2250
 Wire Wire Line
-	-7100 4200 -6350 4200
+	-10950 2150 -10200 2150
 Wire Wire Line
-	-7100 3850 -6300 3850
+	-10950 1800 -10150 1800
 Wire Wire Line
-	-7100 3500 -6350 3500
+	-10950 1450 -10200 1450
 Wire Wire Line
-	-8050 3850 -7250 3850
+	-11900 1800 -11100 1800
 Wire Wire Line
-	-7100 2100 -6400 2100
+	-10950 50   -10250 50  
 Wire Wire Line
-	-7100 2450 -6400 2450
+	-10950 400  -10250 400 
 Wire Wire Line
-	-7100 2800 -6350 2800
+	-10950 750  -10200 750 
 Wire Wire Line
-	-7100 3150 -6350 3150
+	-10950 1100 -10200 1100
 Wire Wire Line
-	-10000 3500 -9300 3500
+	-13850 1450 -13150 1450
 Wire Wire Line
-	-10000 3850 -9250 3850
+	-13850 1800 -13100 1800
 Wire Wire Line
-	-9000 3500 -8250 3500
+	-12850 1450 -12100 1450
 Wire Wire Line
-	-9000 3850 -8200 3850
+	-12850 1800 -12050 1800
 Wire Wire Line
-	-9000 3050 -8250 3050
+	-12850 1000 -12100 1000
 Wire Wire Line
-	-8050 2350 -7300 2350
+	-11900 300  -11150 300 
 Wire Wire Line
-	-8050 3050 -7250 3050
+	-11900 1000 -11100 1000
 Wire Wire Line
-	-10000 4200 -9250 4200
+	-13850 2150 -13100 2150
 Wire Wire Line
-	-9000 2800 -8250 2800
+	-12850 750  -12100 750 
 Wire Wire Line
-	-9000 2000 -8250 2000
+	-12850 -50  -12100 -50 
 Wire Wire Line
-	-9000 2450 -8300 2450
+	-12850 400  -12150 400 
 Wire Wire Line
-	-9000 4300 -8250 4300
+	-12850 2250 -12100 2250
 Wire Wire Line
-	-10000 2000 -9250 2000
+	-13850 -50  -13100 -50 
 Wire Wire Line
-	-10000 2350 -9250 2350
+	-13850 300  -13100 300 
 Wire Wire Line
-	-10000 2700 -9250 2700
+	-13850 650  -13100 650 
 Wire Wire Line
-	-10000 3050 -9250 3050
+	-13850 1000 -13100 1000
 Wire Wire Line
-	-8050 2100 -7250 2100
+	-11900 50   -11100 50  
 Wire Wire Line
-	-6200 2100 -5450 2100
+	-10050 50   -9300 50  
 Wire Wire Line
-	-8050 2800 -7250 2800
+	-11900 750  -11100 750 
 Wire Wire Line
-	-6200 3150 -5400 3150
+	-10050 1100 -9250 1100
 Wire Wire Line
-	-6200 2450 -5400 2450
+	-10050 400  -9250 400 
 Wire Wire Line
-	-6200 2800 -5400 2800
+	-10050 750  -9250 750 
 Wire Bus Line
-	-6450 -1300 -5750 -1300
+	-10300 -3350 -9600 -3350
 Wire Bus Line
-	-6450 -250 -5700 -250
+	-10300 -2300 -9550 -2300
 Wire Bus Line
-	-5550 -750 -4750 -750
-Text GLabel -200 3150 0    50   Input ~ 0
+	-9400 -2800 -8600 -2800
+Text GLabel -450 3150 0    50   Input ~ 0
 MCU_27_SPI2_MOSI
 Text GLabel 650  3150 0    50   Input ~ 0
-MCU_27_SAI1_SD_A
+MCU_27_PC1_SAI1_SD_A
 Wire Wire Line
 	1950 1450 1850 1450
 Wire Wire Line
@@ -5113,14 +5107,14 @@ Wire Wire Line
 	1950 3250 1850 3250
 Wire Wire Line
 	750  3150 650  3150
-Text GLabel -3850 6250 2    50   Input ~ 0
-MCU_43_SPI1_MOSI
-Text GLabel -3850 6350 2    50   Input ~ 0
-MCU_42_SPI1_MISO
-Text GLabel -3850 6150 2    50   Input ~ 0
-MCU_41_SPI1_SCK
-Text GLabel -3850 6050 2    50   Input ~ 0
-MCU_40_SPI1_NSS
+Text GLabel -3300 3750 2    50   Input ~ 0
+MCU_43_PA7_SPI1_MOSI
+Text GLabel -3300 3850 2    50   Input ~ 0
+MCU_42_PA6_SPI1_MISO
+Text GLabel -3300 3650 2    50   Input ~ 0
+MCU_41_PA5_SPI1_SCK
+Text GLabel -3300 3550 2    50   Input ~ 0
+MCU_40_PA4_SPI1_NSS
 Wire Wire Line
 	650  4450 750  4450
 Wire Wire Line
@@ -5129,9 +5123,9 @@ Wire Wire Line
 	750  4650 650  4650
 Wire Wire Line
 	650  4750 750  4750
-Text GLabel -3800 6550 2    50   Input ~ 0
+Text GLabel -3900 9300 2    50   Input ~ 0
 MCU_10_I2C2_SDA
-Text GLabel -3800 6650 2    50   Input ~ 0
+Text GLabel -3900 9400 2    50   Input ~ 0
 MCU_11_I2C2_SCL
 Wire Wire Line
 	650  3350 750  3350
@@ -5155,7 +5149,7 @@ Wire Wire Line
 	15800 3900 15700 3900
 Text GLabel 15700 3900 0    50   Input ~ 0
 CRYSTAL_3_OUT
-Text GLabel 15800 3900 2    50   Input ~ 0
+Text GLabel 15850 3900 2    50   Input ~ 0
 ADC3_32_XTAL2_MCLK
 Wire Wire Line
 	15800 4000 15700 4000
@@ -5179,7 +5173,7 @@ Wire Wire Line
 	13650 8500 13550 8500
 Text GLabel 13550 8500 0    50   Input ~ 0
 CRYSTAL_3_OUT
-Text GLabel 13650 8500 2    50   Input ~ 0
+Text GLabel 13700 8500 2    50   Input ~ 0
 ADC2_32_XTAL2_MCLK
 Wire Wire Line
 	13650 8600 13550 8600
@@ -5203,7 +5197,7 @@ Wire Wire Line
 	17250 8400 17150 8400
 Text GLabel 17150 8400 0    50   Input ~ 0
 CRYSTAL_3_OUT
-Text GLabel 17250 8400 2    50   Input ~ 0
+Text GLabel 17300 8400 2    50   Input ~ 0
 ADC1_32_XTAL2_MCLK
 Wire Wire Line
 	17250 8500 17150 8500
@@ -5503,43 +5497,43 @@ Wire Wire Line
 	17250 9600 17150 9600
 Wire Wire Line
 	17250 9700 17150 9700
-Text GLabel 3000 7250 2    50   Input ~ 0
+Text GLabel 3300 7250 2    50   Input ~ 0
 MCU_77_ACC_INT1
 Wire Wire Line
 	1950 7150 1850 7150
-Text GLabel 3000 7150 2    50   Input ~ 0
+Text GLabel 3300 7150 2    50   Input ~ 0
 MCU_78_ACC_INT2
 Wire Wire Line
 	1950 7250 1850 7250
 Wire Wire Line
-	-3950 7050 -3850 7050
-Text GLabel -3950 7050 0    50   Input ~ 0
+	-4050 9800 -3950 9800
+Text GLabel -4050 9800 0    50   Input ~ 0
 ACC_13_SCL
 Wire Wire Line
-	-3950 6950 -3850 6950
-Text GLabel -3950 6950 0    50   Input ~ 0
+	-4050 9700 -3950 9700
+Text GLabel -4050 9700 0    50   Input ~ 0
 ACC_14_SDA
-Text GLabel -3950 7150 0    50   Input ~ 0
+Text GLabel -4050 9900 0    50   Input ~ 0
 ACC_4_INT1
 Wire Wire Line
-	-3950 7150 -3850 7150
+	-4050 9900 -3950 9900
 Wire Wire Line
-	-3950 7250 -3850 7250
-Text GLabel -3950 7250 0    50   Input ~ 0
+	-4050 10000 -3950 10000
+Text GLabel -4050 10000 0    50   Input ~ 0
 ACC_9_INT2
-Text GLabel -3800 7150 2    50   Input ~ 0
+Text GLabel -3900 9900 2    50   Input ~ 0
 MCU_77_ACC_INT1
-Text GLabel -3800 7250 2    50   Input ~ 0
+Text GLabel -3900 10000 2    50   Input ~ 0
 MCU_78_ACC_INT2
-Text GLabel -3800 6950 2    50   Input ~ 0
+Text GLabel -3900 9700 2    50   Input ~ 0
 MCU_70_I2C2_SDA
-Text GLabel -3800 7050 2    50   Input ~ 0
+Text GLabel -3900 9800 2    50   Input ~ 0
 MCU_69_I2C2_SCL
 $Sheet
 S -850 8200 800  350 
 U 8F1DEE33
 F0 "USB_DATA" 50
-F1 "USB.sch" 50
+F1 "USB_DATA.sch" 50
 F2 "1_VBUS" I L -850 8250 50 
 F3 "3_D+" I L -850 8350 50 
 F4 "2_D-" I R -50 8250 50 
@@ -5704,35 +5698,35 @@ VDD_5_OUT
 Text GLabel 2250 12400 2    50   Input ~ 0
 VDD_2_GND
 Wire Wire Line
-	-3950 7450 -3850 7450
-Text GLabel -3950 7450 0    50   Input ~ 0
+	-3400 4550 -3300 4550
+Text GLabel -3400 4550 0    50   Input ~ 0
 ACC_13_SCL
 Wire Wire Line
-	-3950 7350 -3850 7350
-Text GLabel -3950 7350 0    50   Input ~ 0
+	-3400 4450 -3300 4450
+Text GLabel -3400 4450 0    50   Input ~ 0
 ACC_14_SDA
-Text GLabel -3950 7550 0    50   Input ~ 0
+Text GLabel -3400 4650 0    50   Input ~ 0
 ACC_4_INT1
 Wire Wire Line
-	-3950 7550 -3850 7550
+	-3400 4650 -3300 4650
 Wire Wire Line
-	-3950 7650 -3850 7650
-Text GLabel -3950 7650 0    50   Input ~ 0
+	-3400 4750 -3300 4750
+Text GLabel -3400 4750 0    50   Input ~ 0
 ACC_9_INT2
 Wire Wire Line
 	1850 950  1950 950 
 Text GLabel 1950 850  2    50   Input ~ 0
-MCU_141_ACC_INT1
+MCU_141_PE0_ACC_INT1
 Wire Wire Line
 	1950 750  1850 750 
 Text GLabel 1950 750  2    50   Input ~ 0
-MCU_142_ACC_INT2
+MCU_142_PE1_ACC_INT2
 Wire Wire Line
 	1950 850  1850 850 
-Text GLabel -3850 7550 2    50   Input ~ 0
-MCU_141_ACC_INT1
-Text GLabel -3850 7650 2    50   Input ~ 0
-MCU_142_ACC_INT2
+Text GLabel -3300 4650 2    50   Input ~ 0
+MCU_141_PE0_ACC_INT1
+Text GLabel -3300 4750 2    50   Input ~ 0
+MCU_142_PE1_ACC_INT2
 Text GLabel 5950 7450 0    50   Input ~ 0
 MCU_32_VREF+
 Text GLabel 5950 7550 0    50   Input ~ 0
@@ -5769,130 +5763,114 @@ Text GLabel 2100 9400 0    50   Input ~ 0
 ISO_USB_14_VDD2
 Text GLabel 2100 9500 0    50   Input ~ 0
 ISO_USB_14_VDD2
-Text GLabel -3950 1600 0    50   Input ~ 0
+Text GLabel -5800 1800 0    50   Input ~ 0
 ADC3_27_DOUT1
 Wire Wire Line
-	-3950 1600 -3850 1600
-Text GLabel -3950 1700 0    50   Input ~ 0
+	-5800 1800 -5700 1800
+Text GLabel -5800 1900 0    50   Input ~ 0
 ADC4_27_DOUT1
 Wire Wire Line
-	-3950 1700 -3850 1700
-Text GLabel -3950 1500 0    50   Input ~ 0
+	-5800 1900 -5700 1900
+Text GLabel -5800 1700 0    50   Input ~ 0
 ADC2_27_DOUT1
 Wire Wire Line
-	-3950 1500 -3850 1500
-Text GLabel -3950 1400 0    50   Input ~ 0
+	-5800 1700 -5700 1700
+Text GLabel -5800 1600 0    50   Input ~ 0
 ADC1_27_DOUT1
 Wire Wire Line
-	-3950 1400 -3850 1400
-Text GLabel -3850 1400 2    50   Input ~ 0
-MCU_122_SAI4_SD_A
-Text GLabel -3850 1500 2    50   Input ~ 0
-MCU_2_SAI4_SD_B
-Text GLabel -3850 1700 2    50   Input ~ 0
-MCU_78_SAI3_SD_B
-Text GLabel -3850 1600 2    50   Input ~ 0
-MCU_115_SAI3_SD_A
+	-5800 1600 -5700 1600
+Text GLabel -5700 1600 2    50   Input ~ 0
+MCU_122_PD6_SAI4_SD_A
+Text GLabel -5700 1700 2    50   Input ~ 0
+MCU_2_PE3_SAI4_SD_B
+Text GLabel -5700 1900 2    50   Input ~ 0
+MCU_78_PD9_SAI3_SD_B
+Text GLabel -5700 1800 2    50   Input ~ 0
+MCU_115_PD1_SAI3_SD_A
 Text GLabel 1950 2750 2    50   Input ~ 0
-MCU_122_SAI4_SD_A
+MCU_122_PD6_SAI4_SD_A
 Text GLabel 1950 7150 2    50   Input ~ 0
-MCU_78_SAI3_SD_B
+MCU_78_PD9_SAI3_SD_B
 Text GLabel 650  650  0    50   Input ~ 0
-MCU_2_SAI4_SD_B
+MCU_2_PE3_SAI4_SD_B
 Text GLabel 1950 3450 2    50   Input ~ 0
-MCU_115_SAI3_SD_A
+MCU_115_PD1_SAI3_SD_A
 Wire Wire Line
 	1850 3450 1950 3450
-Text GLabel 11050 4200 2    50   Input ~ 0
+Text GLabel 12500 3200 2    50   Input ~ 0
 ADC1_35_SYNC_IN
-Text GLabel 10950 4200 0    50   Input ~ 0
+Text GLabel 12350 3200 0    50   Input ~ 0
 ADC1_34_SYNC_OUT
-Text GLabel 11050 4300 2    50   Input ~ 0
+Text GLabel 12500 3300 2    50   Input ~ 0
 ADC2_35_SYNC_IN
-Text GLabel 11050 4400 2    50   Input ~ 0
+Text GLabel 12500 3400 2    50   Input ~ 0
 ADC3_35_SYNC_IN
-Text GLabel 11050 4500 2    50   Input ~ 0
+Text GLabel 12500 3500 2    50   Input ~ 0
 ADC4_35_SYNC_IN
-Text GLabel 10950 4300 0    50   Input ~ 0
+Text GLabel 12350 3300 0    50   Input ~ 0
 ADC1_34_SYNC_OUT
-Text GLabel 10950 4400 0    50   Input ~ 0
+Text GLabel 12350 3400 0    50   Input ~ 0
 ADC1_34_SYNC_OUT
-Text GLabel 10950 4500 0    50   Input ~ 0
+Text GLabel 12350 3500 0    50   Input ~ 0
 ADC1_34_SYNC_OUT
 Wire Wire Line
-	10950 4200 11050 4200
+	12350 3200 12450 3200
 Wire Wire Line
-	11050 4300 10950 4300
+	12450 3300 12350 3300
 Wire Wire Line
-	10950 4400 11050 4400
+	12350 3400 12450 3400
 Wire Wire Line
-	11050 4500 10950 4500
-Text GLabel -3950 1100 0    50   Input ~ 0
+	12450 3500 12350 3500
+Text GLabel -5800 6150 0    50   Input ~ 0
 ADC4_36_RESET
-Text GLabel -3950 1200 0    50   Input ~ 0
+Text GLabel -5800 6250 0    50   Input ~ 0
 ADC4_33_START
-Text GLabel -3950 850  0    50   Input ~ 0
+Text GLabel -5800 5900 0    50   Input ~ 0
 ADC3_36_RESET
-Text GLabel -3950 950  0    50   Input ~ 0
+Text GLabel -5800 6000 0    50   Input ~ 0
 ADC3_33_START
-Text GLabel -3950 600  0    50   Input ~ 0
+Text GLabel -5800 5650 0    50   Input ~ 0
 ADC2_36_RESET
-Text GLabel -3950 700  0    50   Input ~ 0
+Text GLabel -5800 5750 0    50   Input ~ 0
 ADC2_33_START
-Text GLabel -3950 350  0    50   Input ~ 0
+Text GLabel -5800 5400 0    50   Input ~ 0
 ADC1_36_RESET
-Text GLabel -3950 450  0    50   Input ~ 0
+Text GLabel -5800 5500 0    50   Input ~ 0
 ADC1_33_START
-Text GLabel -3850 350  2    50   Input ~ 0
-MCU_119_ADC1_RESET
-Text GLabel -3850 450  2    50   Input ~ 0
-MCU_118_ADC1_START
 Wire Wire Line
-	-3950 350  -3850 350 
+	-5800 5400 -5700 5400
 Wire Wire Line
-	-3850 450  -3950 450 
+	-5700 5500 -5800 5500
 Text GLabel 1950 3050 2    50   Input ~ 0
-MCU_119_ADC1_RESET
+MCU_119_PD5_ADC1_RESET
 Text GLabel 1950 3150 2    50   Input ~ 0
-MCU_118_ADC1_START
-Text GLabel -3850 600  2    50   Input ~ 0
-MCU_15_ADC2_RESET
-Text GLabel -3850 700  2    50   Input ~ 0
-MCU_14_ADC2_START
+MCU_118_PD4_ADC1_START
 Wire Wire Line
-	-3950 600  -3850 600 
+	-5800 5650 -5700 5650
 Wire Wire Line
-	-3850 700  -3950 700 
-Text GLabel -3850 850  2    50   Input ~ 0
-MCU_47_ADC3_RESET
-Text GLabel -3850 950  2    50   Input ~ 0
-MCU_46_ADC3_START
+	-5700 5750 -5800 5750
 Wire Wire Line
-	-3950 850  -3850 850 
+	-5800 5900 -5700 5900
 Wire Wire Line
-	-3850 950  -3950 950 
-Text GLabel -3850 1100 2    50   Input ~ 0
-MCU_88_ADC4_RESET
-Text GLabel -3850 1200 2    50   Input ~ 0
-MCU_87_ADC4_START
+	-5700 6000 -5800 6000
 Wire Wire Line
-	-3950 1100 -3850 1100
+	-5800 6150 -5700 6150
 Wire Wire Line
-	-3850 1200 -3950 1200
+	-5700 6250 -5800 6250
 Text GLabel 650  1950 0    50   Input ~ 0
-MCU_15_ADC2_RESET
+MCU_15_PF5_ADC2_RESET
 Text GLabel 650  1850 0    50   Input ~ 0
-MCU_14_ADC2_START
+MCU_14_PF4_ADC2_START
 Wire Wire Line
 	650  1850 750  1850
 Text GLabel 650  5150 0    50   Input ~ 0
-MCU_47_ADC3_RESET
+MCU_47_PB1_ADC3_RESET
 Text GLabel 650  5050 0    50   Input ~ 0
-MCU_46_ADC3_START
+MCU_46_PB0_ADC3_START
 Text GLabel 1950 6150 2    50   Input ~ 0
-MCU_88_ADC4_RESET
+MCU_88_PG3_ADC4_RESET
 Text GLabel 1950 6250 2    50   Input ~ 0
-MCU_87_ADC4_START
+MCU_87_PG2_ADC4_START
 Wire Wire Line
 	1850 6150 1950 6150
 Wire Wire Line
@@ -5904,101 +5882,95 @@ Wire Wire Line
 Text GLabel 2200 9600 2    50   Input ~ 0
 ISO_USB_16_VBUS2
 Text GLabel 650  3850 0    50   Input ~ 0
-MCU_34_TIM8_ETR
+MCU_34_PA0_TIM8_ETR
 Text GLabel 1950 5350 2    50   Input ~ 0
-MCU_96_TIM8_CH1
-Text GLabel 650  950  0    50   Input ~ 0
+MCU_96_PC6_TIM8_CH1
+Text GLabel 550  950  0    50   Input ~ 0
 MCU_5_TIM15_CH2
-Text GLabel -2800 150  2    50   Input ~ 0
+Text GLabel -2050 250  2    50   Input ~ 0
 MCU_5_TIM15_CH2
-Text GLabel -2800 -250 2    50   Input ~ 0
-MCU_34_TIM8_ETR
-Text GLabel -2800 -150 2    50   Input ~ 0
-MCU_96_TIM8_CH1
-Text GLabel -2800 -50  2    50   Input ~ 0
-MCU_58_TIM1_ETR
-Text GLabel -2800 50   2    50   Input ~ 0
-MCU_60_TIM1_CH1
-Text GLabel -3950 -150 0    50   Input ~ 0
-ADC1_30_DRDY
-Text GLabel -3950 150  0    50   Input ~ 0
-ADC2_30_DRDY
-Text GLabel -3950 -250 0    50   Input ~ 0
-ADC1_29_DCLK
-Text GLabel -2300 500  0    50   Input ~ 0
+Text GLabel -3200 2200 2    50   Input ~ 0
+MCU_34_PA0_TIM8_ETR
+Text GLabel -3200 2100 2    50   Input ~ 0
+MCU_96_PC6_TIM8_CH1
+Text GLabel -3200 3250 2    50   Input ~ 0
+MCU_58_PE7_TIM1_ETR
+Text GLabel -3200 3150 2    50   Input ~ 0
+MCU_60_PE9_TIM1_CH1
+Text GLabel -1850 450  0    50   Input ~ 0
 ADC3_30_DRDY
 $Comp
 L Device:R_Small R103
 U 1 1 9A28B066
-P -3750 -850
-F 0 "R103" V -3946 -850 50  0000 C CNN
-F 1 "0" V -3855 -850 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H -3750 -850 50  0001 C CNN
-F 3 "~" H -3750 -850 50  0001 C CNN
-F 4 "CR0402-J/-000GLF" V -3750 -850 50  0001 C CNN "MNP"
-F 5 "Bourns" V -3750 -850 50  0001 C CNN "Manufacturer"
-	1    -3750 -850
+P -3800 -1450
+F 0 "R103" V -3996 -1450 50  0000 C CNN
+F 1 "0" V -3905 -1450 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H -3800 -1450 50  0001 C CNN
+F 3 "~" H -3800 -1450 50  0001 C CNN
+F 4 "CR0402-J/-000GLF" V -3800 -1450 50  0001 C CNN "MNP"
+F 5 "Bourns" V -3800 -1450 50  0001 C CNN "Manufacturer"
+	1    -3800 -1450
 	0    -1   1    0   
 $EndComp
 $Comp
 L Device:R_Small R104
 U 1 1 9A28B06F
-P -3750 -750
-F 0 "R104" V -3946 -750 50  0000 C CNN
-F 1 "0" V -3855 -750 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H -3750 -750 50  0001 C CNN
-F 3 "~" H -3750 -750 50  0001 C CNN
-F 4 "CR0402-J/-000GLF" V -3750 -750 50  0001 C CNN "MNP"
-F 5 "Bourns" V -3750 -750 50  0001 C CNN "Manufacturer"
-	1    -3750 -750
+P -3800 -1350
+F 0 "R104" V -3996 -1350 50  0000 C CNN
+F 1 "0" V -3905 -1350 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H -3800 -1350 50  0001 C CNN
+F 3 "~" H -3800 -1350 50  0001 C CNN
+F 4 "CR0402-J/-000GLF" V -3800 -1350 50  0001 C CNN "MNP"
+F 5 "Bourns" V -3800 -1350 50  0001 C CNN "Manufacturer"
+	1    -3800 -1350
 	0    -1   1    0   
 $EndComp
 $Comp
 L Device:R_Small R105
 U 1 1 9A28B078
-P -3750 -650
-F 0 "R105" V -3946 -650 50  0000 C CNN
-F 1 "0" V -3855 -650 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H -3750 -650 50  0001 C CNN
-F 3 "~" H -3750 -650 50  0001 C CNN
-F 4 "CR0402-J/-000GLF" V -3750 -650 50  0001 C CNN "MNP"
-F 5 "Bourns" V -3750 -650 50  0001 C CNN "Manufacturer"
-	1    -3750 -650
+P -3800 -1250
+F 0 "R105" V -3996 -1250 50  0000 C CNN
+F 1 "0" V -3905 -1250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H -3800 -1250 50  0001 C CNN
+F 3 "~" H -3800 -1250 50  0001 C CNN
+F 4 "CR0402-J/-000GLF" V -3800 -1250 50  0001 C CNN "MNP"
+F 5 "Bourns" V -3800 -1250 50  0001 C CNN "Manufacturer"
+	1    -3800 -1250
 	0    -1   1    0   
 $EndComp
 $Comp
 L Device:R_Small R106
 U 1 1 9A28B081
-P -3750 -550
-F 0 "R106" V -3946 -550 50  0000 C CNN
-F 1 "0" V -3855 -550 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H -3750 -550 50  0001 C CNN
-F 3 "~" H -3750 -550 50  0001 C CNN
-F 4 "CR0402-J/-000GLF" V -3750 -550 50  0001 C CNN "MNP"
-F 5 "Bourns" V -3750 -550 50  0001 C CNN "Manufacturer"
-	1    -3750 -550
+P -3800 -1150
+F 0 "R106" V -3996 -1150 50  0000 C CNN
+F 1 "0" V -3905 -1150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H -3800 -1150 50  0001 C CNN
+F 3 "~" H -3800 -1150 50  0001 C CNN
+F 4 "CR0402-J/-000GLF" V -3800 -1150 50  0001 C CNN "MNP"
+F 5 "Bourns" V -3800 -1150 50  0001 C CNN "Manufacturer"
+	1    -3800 -1150
 	0    -1   1    0   
 $EndComp
 $Comp
 L Device:R_Small R107
 U 1 1 9A28B08A
-P -3750 -450
-F 0 "R107" V -3946 -450 50  0000 C CNN
-F 1 "0" V -3855 -450 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" H -3750 -450 50  0001 C CNN
-F 3 "~" H -3750 -450 50  0001 C CNN
-F 4 "CR0402-J/-000GLF" V -3750 -450 50  0001 C CNN "MNP"
-F 5 "Bourns" V -3750 -450 50  0001 C CNN "Manufacturer"
-	1    -3750 -450
+P -3800 -1050
+F 0 "R107" V -3996 -1050 50  0000 C CNN
+F 1 "0" V -3905 -1050 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H -3800 -1050 50  0001 C CNN
+F 3 "~" H -3800 -1050 50  0001 C CNN
+F 4 "CR0402-J/-000GLF" V -3800 -1050 50  0001 C CNN "MNP"
+F 5 "Bourns" V -3800 -1050 50  0001 C CNN "Manufacturer"
+	1    -3800 -1050
 	0    -1   1    0   
 $EndComp
 Text GLabel 6800 2000 2    50   Input ~ 0
 MCU_138_BOOT0
-Text GLabel 6400 850  0    50   Input ~ 0
+Text GLabel 6350 850  0    50   Input ~ 0
 MCU_109_SYS_JTCK-SWCLK
-Text GLabel 6400 750  0    50   Input ~ 0
+Text GLabel 6350 750  0    50   Input ~ 0
 MCU_105_SYS_JTMS-SWDIO
-Text GLabel 6400 650  0    50   Input ~ 0
+Text GLabel 6350 650  0    50   Input ~ 0
 MCU_25_NRST
 Text GLabel 1950 650  2    50   Input ~ 0
 MCU_143_PDR_ON
@@ -6007,19 +5979,19 @@ Wire Wire Line
 Text GLabel 5950 5950 0    50   Input ~ 0
 MCU_143_PDR_ON
 Text GLabel 6800 2850 2    50   Input ~ 0
-MCU_48_BOOT1
+MCU_48_PB2_BOOT1
 Wire Wire Line
-	6400 1100 6500 1100
+	6350 1100 6450 1100
 Wire Wire Line
-	6400 1000 6500 1000
-Text GLabel 6400 1100 0    50   Input ~ 0
+	6350 1000 6450 1000
+Text GLabel 6350 1100 0    50   Input ~ 0
 VDD_5_OUT
-Text GLabel 6400 1000 0    50   Input ~ 0
+Text GLabel 6350 1000 0    50   Input ~ 0
 VDD_2_GND
-Text GLabel 6400 1200 0    50   Input ~ 0
+Text GLabel 6350 1200 0    50   Input ~ 0
 VDD_1_IN
 Wire Wire Line
-	6400 1200 6500 1200
+	6350 1200 6450 1200
 $Comp
 L Connector_Generic:Conn_01x03 J?
 U 1 1 9C4BBFD5
@@ -6163,11 +6135,11 @@ Wire Wire Line
 Wire Wire Line
 	6700 2850 6800 2850
 Wire Wire Line
-	6400 650  6500 650 
+	6350 650  6450 650 
 Wire Wire Line
-	6500 750  6400 750 
+	6450 750  6350 750 
 Wire Wire Line
-	6400 850  6500 850 
+	6350 850  6450 850 
 Text GLabel 5950 7650 0    50   Input ~ 0
 MCU_144_VDD
 Wire Wire Line
@@ -6207,35 +6179,31 @@ ADC4_AIN3+
 Wire Wire Line
 	8400 1850 8500 1850
 Wire Wire Line
-	-3000 -250 -2800 -250
+	-3400 2200 -3200 2200
 Wire Wire Line
-	-3000 -150 -2800 -150
+	-3400 2100 -3200 2100
 Wire Wire Line
-	-3000 -50  -2800 -50 
+	-3400 3250 -3200 3250
 Wire Wire Line
-	-3000 50   -2800 50  
+	-3400 3150 -3200 3150
 Wire Wire Line
-	-3000 150  -2800 150 
-Text GLabel -3000 -250 0    50   Input ~ 0
-MCU_36_SAI2_SCK_B
-Text GLabel -3000 -150 0    50   Input ~ 0
-MCU_124_SAI2_FS_B
-Text GLabel -3000 150  0    50   Input ~ 0
-MCU_3_SAI1_FS_A
-Text GLabel -2200 500  2    50   Input ~ 0
+	-3400 2450 -3200 2450
+Text GLabel -3400 2200 0    50   Input ~ 0
+MCU_36_PA2_SAI2_SCK_B
+Text GLabel -3400 2100 0    50   Input ~ 0
+MCU_124_PG9_SAI2_FS_B
+Text GLabel -3400 2450 0    50   Input ~ 0
+MCU_3_PE4_SAI1_FS_A
+Text GLabel -1750 450  2    50   Input ~ 0
 MCU_21_SAI1_FS_B
 Wire Wire Line
 	1850 4950 1950 4950
-Text GLabel -2000 50   2    50   Input ~ 0
+Text GLabel -1500 50   2    50   Input ~ 0
 MCU_100_TIM1_CH1
-Text GLabel -3950 50   0    50   Input ~ 0
-ADC4_30_DRDY
-Text GLabel -3950 -50  0    50   Input ~ 0
-ADC4_29_DCLK
-Text GLabel -3000 -50  0    50   Input ~ 0
-MCU_82_SAI2_SCK_A
-Text GLabel -3000 50   0    50   Input ~ 0
-MCU_81_SAI2_FS_A
+Text GLabel -3400 3250 0    50   Input ~ 0
+MCU_82_PD13_SAI2_SCK_A
+Text GLabel -3400 3150 0    50   Input ~ 0
+MCU_81_P12_SAI2_FS_A
 Wire Wire Line
 	650  1150 750  1150
 Wire Wire Line
@@ -6296,6 +6264,34 @@ Wire Wire Line
 	650  7250 750  7250
 Wire Wire Line
 	650  7550 750  7550
+NoConn ~ 1950 7250
+NoConn ~ 1950 7050
+NoConn ~ 1950 6450
+NoConn ~ 1950 6350
+NoConn ~ 1950 5850
+NoConn ~ 1950 5750
+NoConn ~ 650  5750
+NoConn ~ 650  6050
+NoConn ~ 650  6150
+NoConn ~ 650  6350
+NoConn ~ 650  6750
+NoConn ~ 650  7250
+NoConn ~ 650  7550
+NoConn ~ 650  5450
+NoConn ~ 1950 4350
+NoConn ~ 650  3950
+NoConn ~ 650  4150
+NoConn ~ 650  4850
+NoConn ~ 650  4950
+NoConn ~ 650  2750
+NoConn ~ 650  2850
+NoConn ~ 650  2350
+NoConn ~ 650  1250
+NoConn ~ 650  1350
+NoConn ~ 1950 1050
+NoConn ~ 650  1750
+NoConn ~ 650  1650
+NoConn ~ 1950 1750
 Text GLabel 8400 1950 0    50   Input ~ 0
 ADC4_13_MODE0_GPIO0
 Wire Wire Line
@@ -6329,27 +6325,848 @@ ADC1_14_MODE1_GPIO1
 Wire Wire Line
 	16400 5800 16500 5800
 Wire Wire Line
-	10900 4850 11000 4850
-Text GLabel 10900 4750 0    50   Input ~ 0
+	12350 3750 12450 3750
+Text GLabel 12350 3650 0    50   Input ~ 0
 ADC1_14_MODE1_GPIO1
 Wire Wire Line
-	10900 4750 11000 4750
-Text GLabel 11000 4750 2    50   Input ~ 0
+	12350 3650 12450 3650
+Text GLabel 12500 3650 2    50   Input ~ 0
 ADC1_13_MODE0_GPIO0
-Text GLabel 10900 4850 0    50   Input ~ 0
+Text GLabel 12350 3750 0    50   Input ~ 0
 ADC1_14_MODE1_GPIO1
-Text GLabel 11000 4850 2    50   Input ~ 0
+Text GLabel 12500 3750 2    50   Input ~ 0
 ADC2_13_MODE0_GPIO0
 Wire Wire Line
-	10900 4950 11000 4950
-Text GLabel 10900 4950 0    50   Input ~ 0
+	12350 3850 12450 3850
+Text GLabel 12350 3850 0    50   Input ~ 0
 ADC1_14_MODE1_GPIO1
-Text GLabel 11000 4950 2    50   Input ~ 0
+Text GLabel 12500 3850 2    50   Input ~ 0
 ADC3_13_MODE0_GPIO0
 Wire Wire Line
-	10900 5050 11000 5050
-Text GLabel 10900 5050 0    50   Input ~ 0
+	12350 3950 12450 3950
+Text GLabel 12350 3950 0    50   Input ~ 0
 ADC1_14_MODE1_GPIO1
-Text GLabel 11000 5050 2    50   Input ~ 0
+Text GLabel 12500 3950 2    50   Input ~ 0
 ADC4_13_MODE0_GPIO0
+Text GLabel 1950 5950 2    50   Input ~ 0
+MCU_90_PG5_ADC1_DRDY
+Text GLabel -2750 -1000 2    50   Input ~ 0
+MCU_90_PG5
+Text GLabel -2850 -1000 0    50   Input ~ 0
+ADC4_30_DRDY
+Text GLabel -1350 -1100 0    50   Input ~ 0
+MCU_3_PE4
+Text GLabel -950 -900 2    50   Input ~ 0
+MCU_5_PE6_TIM15_CH2
+Text GLabel -1950 -150 2    50   Input ~ 0
+MCU_60_PE9_TIM1_CH1
+Text GLabel -1950 -550 2    50   Input ~ 0
+MCU_96_PC6_TIM8_CH1
+Text GLabel -3300 5900 2    50   Input ~ 0
+MCU_97_PC7_SDMMC1_DETECT
+Text GLabel -1950 -450 2    50   Input ~ 0
+MCU_97_PC7_TIM8_CH2
+Text GLabel -1950 -350 2    50   Input ~ 0
+MCU_64_PE11_TIM1_CH2
+Text GLabel -8350 4550 2    50   Input ~ 0
+MCU_5_SPI4_MOSI
+Text GLabel -3400 2800 0    50   Input ~ 0
+MCU_21_PF9_SAI1_FS_B
+Wire Wire Line
+	-3400 2800 -3200 2800
+Text GLabel 600  -500 2    50   Input ~ 0
+MCU_97_TIM8_CH2
+Text GLabel 600  -400 2    50   Input ~ 0
+MCU_64_TIM1_CH2
+Text GLabel 1950 5250 2    50   Input ~ 0
+MCU_97_PC7_SDMMC1_DETECT
+Text GLabel 650  2650 0    50   Input ~ 0
+MCU_22_PF10_ADC3_DRDY
+Text GLabel -5150 -500 0    50   Input ~ 0
+MCU_21_SAI1_FS_B
+$Comp
+L Device:R_Small R112
+U 1 1 64B7FB8A
+P 1100 -1600
+F 0 "R112" V 904 -1600 50  0000 C CNN
+F 1 "0" V 995 -1600 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 1100 -1600 50  0001 C CNN
+F 3 "~" H 1100 -1600 50  0001 C CNN
+F 4 "CR0402-J/-000GLF" V 1100 -1600 50  0001 C CNN "MNP"
+F 5 "Bourns" V 1100 -1600 50  0001 C CNN "Manufacturer"
+	1    1100 -1600
+	0    -1   1    0   
+$EndComp
+Text GLabel -3200 2800 2    50   Input ~ 0
+MCU_22_PF10_ADC3_DRDY
+Text GLabel -5200 -850 0    50   Input ~ 0
+MCU_3_PE4_SAI1_FS_A
+Text GLabel -4750 -850 2    50   Input ~ 0
+MCU_7_PC13
+Text GLabel -5250 -400 0    50   Input ~ 0
+MCU_21_PF9_SAI1_FS_B
+Text GLabel -5150 -950 0    50   Input ~ 0
+MCU_3_SAI1_FS_A
+$Comp
+L Device:R_Small R111
+U 1 1 65A18BD2
+P 1100 -1950
+F 0 "R111" V 904 -1950 50  0000 C CNN
+F 1 "0" V 995 -1950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 1100 -1950 50  0001 C CNN
+F 3 "~" H 1100 -1950 50  0001 C CNN
+F 4 "CR0402-J/-000GLF" V 1100 -1950 50  0001 C CNN "MNP"
+F 5 "Bourns" V 1100 -1950 50  0001 C CNN "Manufacturer"
+	1    1100 -1950
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	-4850 -850 -4750 -850
+Wire Wire Line
+	-5150 -850 -5050 -850
+Text GLabel -3200 2450 2    50   Input ~ 0
+MCU_7_PC13_ADC2_DRDY
+$Comp
+L Device:R_Small R110
+U 1 1 65BBAC30
+P 1100 -2050
+F 0 "R110" V 904 -2050 50  0000 C CNN
+F 1 "0" V 995 -2050 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 1100 -2050 50  0001 C CNN
+F 3 "~" H 1100 -2050 50  0001 C CNN
+F 4 "CR0402-J/-000GLF" V 1100 -2050 50  0001 C CNN "MNP"
+F 5 "Bourns" V 1100 -2050 50  0001 C CNN "Manufacturer"
+	1    1100 -2050
+	0    -1   1    0   
+$EndComp
+$Comp
+L Device:R_Small R113
+U 1 1 65D5ED9A
+P 1100 -1500
+F 0 "R113" V 904 -1500 50  0000 C CNN
+F 1 "0" V 995 -1500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 1100 -1500 50  0001 C CNN
+F 3 "~" H 1100 -1500 50  0001 C CNN
+F 4 "CR0402-J/-000GLF" V 1100 -1500 50  0001 C CNN "MNP"
+F 5 "Bourns" V 1100 -1500 50  0001 C CNN "Manufacturer"
+	1    1100 -1500
+	0    -1   1    0   
+$EndComp
+Text GLabel -4750 -400 2    50   Input ~ 0
+MCU_22_PF10
+Wire Wire Line
+	-4850 -400 -4750 -400
+Wire Wire Line
+	-5150 -400 -5050 -400
+Text GLabel 650  1150 0    50   Input ~ 0
+MCU_7_PC13_ADC2_DRDY
+$Comp
+L Connector_Generic:Conn_01x02 J68
+U 1 1 66C74439
+P 12150 -1100
+F 0 "J68" H 12230 -1108 50  0000 L CNN
+F 1 "Conn_01x02" H 12230 -1199 50  0000 L CNN
+F 2 "Connector_PinSocket_1.27mm:PinSocket_1x02_P1.27mm_Vertical" H 12150 -1100 50  0001 C CNN
+F 3 "~" H 12150 -1100 50  0001 C CNN
+	1    12150 -1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J67
+U 1 1 66C745AB
+P 12150 -1300
+F 0 "J67" H 12230 -1308 50  0000 L CNN
+F 1 "Conn_01x02" H 12230 -1399 50  0000 L CNN
+F 2 "Connector_PinSocket_1.27mm:PinSocket_1x02_P1.27mm_Vertical" H 12150 -1300 50  0001 C CNN
+F 3 "~" H 12150 -1300 50  0001 C CNN
+	1    12150 -1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J66
+U 1 1 66C746A5
+P 12150 -1500
+F 0 "J66" H 12230 -1508 50  0000 L CNN
+F 1 "Conn_01x02" H 12230 -1599 50  0000 L CNN
+F 2 "Connector_PinSocket_1.27mm:PinSocket_1x02_P1.27mm_Vertical" H 12150 -1500 50  0001 C CNN
+F 3 "~" H 12150 -1500 50  0001 C CNN
+	1    12150 -1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J65
+U 1 1 66C747A1
+P 14300 -2300
+F 0 "J65" H 14380 -2308 50  0000 L CNN
+F 1 "Conn_01x02" H 14380 -2399 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 14300 -2300 50  0001 C CNN
+F 3 "~" H 14300 -2300 50  0001 C CNN
+	1    14300 -2300
+	1    0    0    -1  
+$EndComp
+Text GLabel 14000 -2300 0    50   Input ~ 0
+ADC1_35_SYNC_IN
+Text GLabel 11800 -1400 0    50   Input ~ 0
+ADC2_35_SYNC_IN
+Text GLabel 11800 -1200 0    50   Input ~ 0
+ADC3_35_SYNC_IN
+Text GLabel 11800 -1000 0    50   Input ~ 0
+ADC4_35_SYNC_IN
+Wire Wire Line
+	14100 -2200 14000 -2200
+Wire Wire Line
+	11850 -1400 11950 -1400
+Wire Wire Line
+	11950 -1200 11850 -1200
+Wire Wire Line
+	11850 -1000 11950 -1000
+Wire Wire Line
+	11950 -300 11850 -300
+Wire Wire Line
+	14100 -2000 14000 -2000
+Text GLabel 14000 -2100 0    50   Input ~ 0
+ADC1_13_MODE0_GPIO0
+Text GLabel 11800 -300 0    50   Input ~ 0
+ADC2_13_MODE0_GPIO0
+Wire Wire Line
+	11950 -100 11850 -100
+Text GLabel 11800 -100 0    50   Input ~ 0
+ADC3_13_MODE0_GPIO0
+Wire Wire Line
+	11950 100  11850 100 
+Text GLabel 11800 100  0    50   Input ~ 0
+ADC4_13_MODE0_GPIO0
+$Comp
+L Connector_Generic:Conn_01x02 J72
+U 1 1 674D2BCF
+P 12150 0
+F 0 "J72" H 12230 -8  50  0000 L CNN
+F 1 "Conn_01x02" H 12230 -99 50  0000 L CNN
+F 2 "" H 12150 0   50  0001 C CNN
+F 3 "~" H 12150 0   50  0001 C CNN
+	1    12150 0   
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J71
+U 1 1 674D2BD6
+P 12150 -200
+F 0 "J71" H 12230 -208 50  0000 L CNN
+F 1 "Conn_01x02" H 12230 -299 50  0000 L CNN
+F 2 "" H 12150 -200 50  0001 C CNN
+F 3 "~" H 12150 -200 50  0001 C CNN
+	1    12150 -200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J70
+U 1 1 674D2BDD
+P 12150 -400
+F 0 "J70" H 12230 -408 50  0000 L CNN
+F 1 "Conn_01x02" H 12230 -499 50  0000 L CNN
+F 2 "" H 12150 -400 50  0001 C CNN
+F 3 "~" H 12150 -400 50  0001 C CNN
+	1    12150 -400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J69
+U 1 1 674D2BE4
+P 14300 -2100
+F 0 "J69" H 14380 -2108 50  0000 L CNN
+F 1 "Conn_01x02" H 14380 -2199 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 14300 -2100 50  0001 C CNN
+F 3 "~" H 14300 -2100 50  0001 C CNN
+	1    14300 -2100
+	1    0    0    -1  
+$EndComp
+Text GLabel 14000 -2200 0    50   Input ~ 0
+ADC1_34_SYNC_OUT
+Text GLabel 11800 -1500 0    50   Input ~ 0
+ADC2_35_SYNC_OUT
+Text GLabel 11800 -1300 0    50   Input ~ 0
+ADC3_35_SYNC_OUT
+Text GLabel 11800 -1100 0    50   Input ~ 0
+ADC4_35_SYNC_OUT
+Wire Wire Line
+	14100 -2300 14000 -2300
+Wire Wire Line
+	11850 -1500 11950 -1500
+Wire Wire Line
+	11950 -1300 11850 -1300
+Wire Wire Line
+	11850 -1100 11950 -1100
+Wire Wire Line
+	11950 -400 11850 -400
+Wire Wire Line
+	14100 -2100 14000 -2100
+Text GLabel 14000 -2000 0    50   Input ~ 0
+ADC1_14_MODE1_GPIO1
+Text GLabel 11800 -400 0    50   Input ~ 0
+ADC2_13_MODE0_GPIO1
+Wire Wire Line
+	11950 -200 11850 -200
+Text GLabel 11800 -200 0    50   Input ~ 0
+ADC3_13_MODE0_GPIO1
+Wire Wire Line
+	11950 0    11850 0   
+Text GLabel 11800 0    0    50   Input ~ 0
+ADC4_13_MODE0_GPIO1
+Text GLabel 14000 -1800 0    50   Input ~ 0
+CRYSTAL_3_OUT
+Text GLabel 14000 -1900 0    50   Input ~ 0
+ADC1_32_XTAL2_MCLK
+Wire Wire Line
+	11950 800  11850 800 
+Wire Wire Line
+	14100 -1800 14000 -1800
+Wire Wire Line
+	11950 1000 11850 1000
+Wire Wire Line
+	11950 1200 11850 1200
+$Comp
+L Connector_Generic:Conn_01x02 J76
+U 1 1 68FDE1C3
+P 12150 1100
+F 0 "J76" H 12230 1092 50  0000 L CNN
+F 1 "Conn_01x02" H 12230 1001 50  0000 L CNN
+F 2 "" H 12150 1100 50  0001 C CNN
+F 3 "~" H 12150 1100 50  0001 C CNN
+	1    12150 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J75
+U 1 1 68FDE1CA
+P 12150 900
+F 0 "J75" H 12230 892 50  0000 L CNN
+F 1 "Conn_01x02" H 12230 801 50  0000 L CNN
+F 2 "" H 12150 900 50  0001 C CNN
+F 3 "~" H 12150 900 50  0001 C CNN
+	1    12150 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J74
+U 1 1 68FDE1D1
+P 12150 700
+F 0 "J74" H 12230 692 50  0000 L CNN
+F 1 "Conn_01x02" H 12230 601 50  0000 L CNN
+F 2 "" H 12150 700 50  0001 C CNN
+F 3 "~" H 12150 700 50  0001 C CNN
+	1    12150 700 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J73
+U 1 1 68FDE1D8
+P 14300 -1900
+F 0 "J73" H 14380 -1908 50  0000 L CNN
+F 1 "Conn_01x02" H 14380 -1999 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 14300 -1900 50  0001 C CNN
+F 3 "~" H 14300 -1900 50  0001 C CNN
+	1    14300 -1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11950 700  11850 700 
+Wire Wire Line
+	14100 -1900 14000 -1900
+Wire Wire Line
+	11950 900  11850 900 
+Wire Wire Line
+	11950 1100 11850 1100
+Text GLabel 11800 700  0    50   Input ~ 0
+CRYSTAL_3_OUT
+Text GLabel 11800 800  0    50   Input ~ 0
+ADC2_32_XTAL2_MCLK
+Text GLabel 11800 900  0    50   Input ~ 0
+CRYSTAL_3_OUT
+Text GLabel 11800 1000 0    50   Input ~ 0
+ADC3_32_XTAL2_MCLK
+Text GLabel 11800 1100 0    50   Input ~ 0
+CRYSTAL_3_OUT
+Text GLabel 11800 1200 0    50   Input ~ 0
+ADC4_32_XTAL2_MCLK
+Text GLabel -400 7350 0    50   Input ~ 0
+MCU_69_PB10_USART3_RX
+Text GLabel -400 7450 0    50   Input ~ 0
+MCU_70_PB11_USART3_TX
+Text GLabel 12550 -3450 0    50   Input ~ 0
+AVDD_5_OUT
+Text GLabel 14000 -2400 0    50   Input ~ 0
+IOVDD_5_OUT
+Text GLabel 14050 -3350 0    50   Input ~ 0
+POWER_4_OUT1B2A
+Text GLabel 14050 -3250 0    50   Input ~ 0
+POWER_3_OUT1A2B_DIODES
+Text GLabel 14050 -3450 0    50   Input ~ 0
+REF_6_OUT
+Text GLabel 12550 -3200 0    50   Input ~ 0
+VDD_5_OUT
+Text GLabel 14050 -3950 0    50   Input ~ 0
+MCU_70_PB11_I2C2_SDA
+Text GLabel 14050 -3850 0    50   Input ~ 0
+MCU_69_PB10_I2C2_SCL
+Text GLabel 14050 -3650 0    50   Input ~ 0
+MCU_10_PF0_I2C2_SDA
+Text GLabel 14050 -3750 0    50   Input ~ 0
+MCU_11_PF1_I2C2_SCL
+$Comp
+L Connector_Generic:Conn_01x02 J81
+U 1 1 5EC06835
+P 14350 -3350
+F 0 "J81" H 14430 -3358 50  0000 L CNN
+F 1 "Conn_01x02" H 14430 -3449 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 14350 -3350 50  0001 C CNN
+F 3 "~" H 14350 -3350 50  0001 C CNN
+	1    14350 -3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J80
+U 1 1 5EC06843
+P 14300 -2500
+F 0 "J80" H 14380 -2508 50  0000 L CNN
+F 1 "Conn_01x02" H 14380 -2599 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 14300 -2500 50  0001 C CNN
+F 3 "~" H 14300 -2500 50  0001 C CNN
+	1    14300 -2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14000 -2400 14100 -2400
+Wire Wire Line
+	14050 -3250 14150 -3250
+Wire Wire Line
+	14000 -2500 14100 -2500
+Wire Wire Line
+	14050 -3350 14150 -3350
+$Comp
+L Connector_Generic:Conn_01x02 J78
+U 1 1 5EDC2A21
+P 14350 -3750
+F 0 "J78" H 14430 -3758 50  0000 L CNN
+F 1 "Conn_01x02" H 14430 -3849 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 14350 -3750 50  0001 C CNN
+F 3 "~" H 14350 -3750 50  0001 C CNN
+	1    14350 -3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J77
+U 1 1 5EDC2A28
+P 14350 -3950
+F 0 "J77" H 14430 -3958 50  0000 L CNN
+F 1 "Conn_01x02" H 14430 -4049 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 14350 -3950 50  0001 C CNN
+F 3 "~" H 14350 -3950 50  0001 C CNN
+	1    14350 -3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14150 -3850 14050 -3850
+Wire Wire Line
+	14050 -3650 14150 -3650
+Wire Wire Line
+	14150 -3950 14050 -3950
+Wire Wire Line
+	14050 -3750 14150 -3750
+$Comp
+L Connector_Generic:Conn_01x02 J79
+U 1 1 5F2FFA0B
+P 14350 -3550
+F 0 "J79" H 14430 -3558 50  0000 L CNN
+F 1 "Conn_01x02" H 14430 -3649 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 14350 -3550 50  0001 C CNN
+F 3 "~" H 14350 -3550 50  0001 C CNN
+	1    14350 -3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14150 -3550 14050 -3550
+Text GLabel 12550 -3100 0    50   Input ~ 0
+VDD_2_GND
+Text GLabel 12800 -2500 0    50   Input ~ 0
+IOVDD_2_GND
+Text GLabel 12750 -2700 0    50   Input ~ 0
+AVDD_2_GND
+Text GLabel 12650 -2850 0    50   Input ~ 0
+REF_4_GND
+Text GLabel 14000 -2500 0    50   Input ~ 0
+CRYSTAL_4_Vin
+Text GLabel 12850 -3550 0    50   Input ~ 0
+CRYSTAL_2_GND
+Wire Wire Line
+	12850 -3550 12950 -3550
+Wire Wire Line
+	12550 -3450 12650 -3450
+Text GLabel 14050 -3550 0    50   Input ~ 0
+REF_4_GND
+Wire Wire Line
+	14150 -3450 14050 -3450
+Wire Wire Line
+	12450 2950 12350 2950
+Text GLabel 12350 2950 0    50   Input ~ 0
+CRYSTAL_3_OUT
+Text GLabel 12500 2950 2    50   Input ~ 0
+ADC3_32_XTAL2_MCLK
+Wire Wire Line
+	12450 2850 12350 2850
+Text GLabel 12350 2850 0    50   Input ~ 0
+CRYSTAL_3_OUT
+Text GLabel 12500 2850 2    50   Input ~ 0
+ADC2_32_XTAL2_MCLK
+Wire Wire Line
+	12450 2750 12350 2750
+Text GLabel 12350 2750 0    50   Input ~ 0
+CRYSTAL_3_OUT
+Text GLabel 12500 2750 2    50   Input ~ 0
+ADC1_32_XTAL2_MCLK
+Wire Wire Line
+	12450 1650 12350 1650
+Text GLabel 12350 1650 0    50   Input ~ 0
+ADC1_32_XTAL2_MCLK
+Text GLabel 12450 1650 2    50   Input ~ 0
+ADC4_32_XTAL2_MCLK
+Text GLabel 12450 1800 2    50   Input ~ 0
+ADC1_35_SYNC_IN
+Text GLabel 12350 1800 0    50   Input ~ 0
+ADC1_35_SYNC_IN
+Text GLabel 12450 1900 2    50   Input ~ 0
+ADC2_35_SYNC_IN
+Text GLabel 12450 2000 2    50   Input ~ 0
+ADC3_35_SYNC_IN
+Text GLabel 12450 2100 2    50   Input ~ 0
+ADC4_35_SYNC_IN
+Text GLabel 12350 1900 0    50   Input ~ 0
+ADC1_35_SYNC_IN
+Text GLabel 12350 2000 0    50   Input ~ 0
+ADC1_35_SYNC_IN
+Text GLabel 12350 2100 0    50   Input ~ 0
+ADC1_35_SYNC_IN
+Wire Wire Line
+	12350 1800 12450 1800
+Wire Wire Line
+	12450 1900 12350 1900
+Wire Wire Line
+	12350 2000 12450 2000
+Wire Wire Line
+	12450 2100 12350 2100
+Wire Wire Line
+	12350 2350 12450 2350
+Text GLabel 12350 2250 0    50   Input ~ 0
+ADC1_13_MODE0_GPIO0
+Wire Wire Line
+	12350 2250 12450 2250
+Text GLabel 12450 2250 2    50   Input ~ 0
+ADC1_13_MODE0_GPIO0
+Text GLabel 12350 2350 0    50   Input ~ 0
+ADC1_13_MODE0_GPIO0
+Text GLabel 12450 2350 2    50   Input ~ 0
+ADC2_13_MODE0_GPIO0
+Wire Wire Line
+	12350 2450 12450 2450
+Text GLabel 12350 2450 0    50   Input ~ 0
+ADC1_13_MODE0_GPIO0
+Text GLabel 12450 2450 2    50   Input ~ 0
+ADC3_13_MODE0_GPIO0
+Wire Wire Line
+	12350 2550 12450 2550
+Text GLabel 12350 2550 0    50   Input ~ 0
+ADC1_13_MODE0_GPIO0
+Text GLabel 12450 2550 2    50   Input ~ 0
+ADC4_13_MODE0_GPIO0
+Wire Wire Line
+	12450 1550 12350 1550
+Text GLabel 12350 1550 0    50   Input ~ 0
+ADC1_32_XTAL2_MCLK
+Text GLabel 12450 1550 2    50   Input ~ 0
+ADC3_32_XTAL2_MCLK
+Wire Wire Line
+	12450 1450 12350 1450
+Text GLabel 12350 1450 0    50   Input ~ 0
+ADC1_32_XTAL2_MCLK
+Text GLabel 12450 1450 2    50   Input ~ 0
+ADC2_32_XTAL2_MCLK
+Wire Wire Line
+	12450 1350 12350 1350
+Text GLabel 12350 1350 0    50   Input ~ 0
+ADC1_32_XTAL2_MCLK
+Text GLabel 12450 1350 2    50   Input ~ 0
+ADC1_32_XTAL2_MCLK
+Text GLabel -5800 1300 0    50   Input ~ 0
+ADC3_30_DRDY
+Wire Wire Line
+	-5800 1300 -5700 1300
+Text GLabel -5800 1400 0    50   Input ~ 0
+ADC4_30_DRDY
+Wire Wire Line
+	-5800 1400 -5700 1400
+Text GLabel -5800 1200 0    50   Input ~ 0
+ADC2_30_DRDY
+Wire Wire Line
+	-5800 1200 -5700 1200
+Text GLabel -5800 1100 0    50   Input ~ 0
+ADC1_30_DRDY
+Wire Wire Line
+	-5800 1100 -5700 1100
+Text GLabel -5700 1100 2    50   Input ~ 0
+MCU_124_PG9_SAI2_FS_B
+Text GLabel -5700 1200 2    50   Input ~ 0
+MCU_3_PE4_SAI1_FS_A
+Text GLabel -5700 1300 2    50   Input ~ 0
+MCU_21_PF9_SAI1_FS_B
+Text GLabel -5700 1400 2    50   Input ~ 0
+MCU_81_P12_SAI2_FS_A
+$Comp
+L Connector_Generic:Conn_02x02_Odd_Even J83
+U 1 1 5D6156B6
+P 6650 100
+F 0 "J83" H 6700 317 50  0000 C CNN
+F 1 "Conn_02x02_Odd_Even" H 6700 226 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x02_P2.54mm_Horizontal" H 6650 100 50  0001 C CNN
+F 3 "~" H 6650 100 50  0001 C CNN
+	1    6650 100 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x02_Odd_Even J82
+U 1 1 5D6157D6
+P 6650 -350
+F 0 "J82" H 6700 -133 50  0000 C CNN
+F 1 "Conn_02x02_Odd_Even" H 6700 -224 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x02_P2.54mm_Horizontal" H 6650 -350 50  0001 C CNN
+F 3 "~" H 6650 -350 50  0001 C CNN
+	1    6650 -350
+	1    0    0    -1  
+$EndComp
+Text GLabel 6350 -350 0    50   Input ~ 0
+MCU_109_PA14_SYS_JTCK-SWCLK
+Text GLabel 7050 -350 2    50   Input ~ 0
+MCU_105_PA13_SYS_JTMS-SWDIO
+Text GLabel 7050 -250 2    50   Input ~ 0
+MCU_25_NRST
+Wire Wire Line
+	6350 200  6450 200 
+Wire Wire Line
+	6350 100  6450 100 
+Text GLabel 6350 200  0    50   Input ~ 0
+VDD_5_OUT
+Text GLabel 7050 200  2    50   Input ~ 0
+VDD_2_GND
+Text GLabel 7050 100  2    50   Input ~ 0
+VDD_1_IN
+Wire Wire Line
+	7050 200  6950 200 
+Wire Wire Line
+	7050 -350 6950 -350
+Wire Wire Line
+	6450 -350 6350 -350
+Wire Wire Line
+	6350 -250 6450 -250
+Text GLabel 6350 100  0    50   Input ~ 0
+MCU_138_BOOT0
+Text GLabel 6350 -250 0    50   Input ~ 0
+MCU_48_PB2_BOOT1
+Wire Wire Line
+	7050 100  6950 100 
+Wire Wire Line
+	7050 -250 6950 -250
+$Comp
+L Device:R_Small R114
+U 1 1 61850398
+P 16900 -2600
+F 0 "R114" V 16704 -2600 50  0000 C CNN
+F 1 "0" V 16795 -2600 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 16900 -2600 50  0001 C CNN
+F 3 "~" H 16900 -2600 50  0001 C CNN
+	1    16900 -2600
+	0    1    1    0   
+$EndComp
+Text GLabel 16700 -2400 0    50   Input ~ 0
+ADC1_35_SYNC_IN
+Text GLabel 16700 -2200 0    50   Input ~ 0
+ADC1_13_MODE0_GPIO0
+Text GLabel 16700 -2300 0    50   Input ~ 0
+ADC1_34_SYNC_OUT
+Wire Wire Line
+	16800 -2400 16700 -2400
+Wire Wire Line
+	16800 -2200 16700 -2200
+Text GLabel 16700 -2100 0    50   Input ~ 0
+ADC1_14_MODE1_GPIO1
+Text GLabel 16700 -1900 0    50   Input ~ 0
+CRYSTAL_3_OUT
+Text GLabel 16700 -2000 0    50   Input ~ 0
+ADC1_32_XTAL2_MCLK
+Wire Wire Line
+	16800 -2000 16700 -2000
+Text GLabel 16700 -2500 0    50   Input ~ 0
+IOVDD_5_OUT
+Wire Wire Line
+	16700 -2600 16800 -2600
+Text GLabel 16700 -2600 0    50   Input ~ 0
+CRYSTAL_4_Vin
+$Comp
+L Device:R_Small R115
+U 1 1 61C05106
+P 16900 -2400
+F 0 "R115" V 16704 -2400 50  0000 C CNN
+F 1 "0" V 16795 -2400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 16900 -2400 50  0001 C CNN
+F 3 "~" H 16900 -2400 50  0001 C CNN
+	1    16900 -2400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R116
+U 1 1 61C0522E
+P 16900 -2200
+F 0 "R116" V 16704 -2200 50  0000 C CNN
+F 1 "0" V 16795 -2200 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 16900 -2200 50  0001 C CNN
+F 3 "~" H 16900 -2200 50  0001 C CNN
+	1    16900 -2200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R117
+U 1 1 61C05350
+P 16900 -2000
+F 0 "R117" V 16704 -2000 50  0000 C CNN
+F 1 "0" V 16795 -2000 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 16900 -2000 50  0001 C CNN
+F 3 "~" H 16900 -2000 50  0001 C CNN
+	1    16900 -2000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	17000 -2600 17000 -2500
+Wire Wire Line
+	16700 -2500 17000 -2500
+Wire Wire Line
+	17000 -2400 17000 -2300
+Wire Wire Line
+	16700 -2300 17000 -2300
+Wire Wire Line
+	17000 -2200 17000 -2100
+Wire Wire Line
+	16700 -2100 17000 -2100
+Wire Wire Line
+	17000 -2000 17000 -1900
+Wire Wire Line
+	16700 -1900 17000 -1900
+Text GLabel 14050 -4150 0    50   Input ~ 0
+MCU_54_PF14_I2C4_SCL
+Text GLabel 14050 -4050 0    50   Input ~ 0
+MCU_55_PF15_I2C4_SDA
+$Comp
+L Connector_Generic:Conn_01x02 J84
+U 1 1 62AF472D
+P 14350 -4150
+F 0 "J84" H 14430 -4158 50  0000 L CNN
+F 1 "Conn_01x02" H 14430 -4249 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 14350 -4150 50  0001 C CNN
+F 3 "~" H 14350 -4150 50  0001 C CNN
+	1    14350 -4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14150 -4050 14050 -4050
+Wire Wire Line
+	14150 -4150 14050 -4150
+$Comp
+L Connector_Generic:Conn_01x02 J85
+U 1 1 63093A56
+P 14350 -3150
+F 0 "J85" H 14430 -3158 50  0000 L CNN
+F 1 "Conn_01x02" H 14430 -3249 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 14350 -3150 50  0001 C CNN
+F 3 "~" H 14350 -3150 50  0001 C CNN
+	1    14350 -3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14150 -3050 14050 -3050
+Wire Wire Line
+	14150 -3150 14050 -3150
+Text GLabel 14050 -3150 0    50   Input ~ 0
+VDD_5_OUT
+Text GLabel 14050 -3050 0    50   Input ~ 0
+AVDD_5_OUT
+$Comp
+L Connector_Generic:Conn_01x02 J86
+U 1 1 63455A92
+P 14350 -2950
+F 0 "J86" H 14430 -2958 50  0000 L CNN
+F 1 "Conn_01x02" H 14430 -3049 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 14350 -2950 50  0001 C CNN
+F 3 "~" H 14350 -2950 50  0001 C CNN
+	1    14350 -2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14150 -2850 14050 -2850
+Wire Wire Line
+	14150 -2950 14050 -2950
+Text GLabel 14050 -2850 0    50   Input ~ 0
+AVDD_5_OUT
+$Comp
+L Connector_Generic:Conn_01x02 J87
+U 1 1 6363758E
+P 14350 -2750
+F 0 "J87" H 14430 -2758 50  0000 L CNN
+F 1 "Conn_01x02" H 14430 -2849 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 14350 -2750 50  0001 C CNN
+F 3 "~" H 14350 -2750 50  0001 C CNN
+	1    14350 -2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14150 -2650 14050 -2650
+Wire Wire Line
+	14150 -2750 14050 -2750
+Text GLabel 14050 -2650 0    50   Input ~ 0
+VDD_5_OUT
+Text GLabel 14050 -2950 0    50   Input ~ 0
+AVDD_2_GND
+Text GLabel 14050 -2750 0    50   Input ~ 0
+VDD_2_GND
+Text GLabel -5700 5650 2    50   Input ~ 0
+MCU_15_PF5_ADC2_RESET
+Text GLabel -5700 5750 2    50   Input ~ 0
+MCU_14_PF4_ADC2_START
+Text GLabel -5700 5900 2    50   Input ~ 0
+MCU_47_PB1_ADC3_RESET
+Text GLabel -5700 6000 2    50   Input ~ 0
+MCU_46_PB0_ADC3_START
+Text GLabel -5700 5400 2    50   Input ~ 0
+MCU_119_PD5_ADC1_RESET
+Text GLabel -5700 5500 2    50   Input ~ 0
+MCU_118_PD4_ADC1_START
+Text GLabel -5700 6150 2    50   Input ~ 0
+MCU_88_PG3_ADC4_RESET
+Text GLabel -5700 6250 2    50   Input ~ 0
+MCU_87_PG2_ADC4_START
+Text GLabel -5700 4200 2    50   Input ~ 0
+MCU_135_PB5_SPI3_MOSI
+Text GLabel -5700 4300 2    50   Input ~ 0
+MCU_134_PB4_SPI3_MISO
+Text GLabel -5700 4100 2    50   Input ~ 0
+MCU_133_PB3_SPI3_SCK
+Text GLabel -3200 3050 2    50   Input ~ 0
+MCU_89_PG4_ADC4_DRDY
+Wire Wire Line
+	-3400 3050 -3200 3050
+Text GLabel -3400 3050 0    50   Input ~ 0
+MCU_81_P12_SAI2_FS_A
+Text GLabel 1950 6050 2    50   Input ~ 0
+MCU_89_PG4_ADC4_DRDY
+Text GLabel -3200 2000 2    50   Input ~ 0
+MCU_90_PG5_ADC1_DRDY
+Wire Wire Line
+	-3400 2000 -3200 2000
+Text GLabel -3400 2000 0    50   Input ~ 0
+MCU_124_PG9_SAI2_FS_B
 $EndSCHEMATC

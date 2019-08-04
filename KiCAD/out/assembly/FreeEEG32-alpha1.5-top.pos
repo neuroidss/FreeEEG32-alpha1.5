@@ -1,4 +1,4 @@
-### Module positions - created on Пт 02 авг 2019 00:49:37 ###
+### Module positions - created on Сб 03 авг 2019 19:28:29 ###
 ### Printed by Pcbnew version kicad 5.0.2-bee76a0~70~ubuntu16.04.1
 ## Unit = mm, Angle = deg.
 ## Side : top
@@ -19,8 +19,8 @@ C136      100n                       C_0402_1005Metric                          
 C139      100n                       C_0402_1005Metric                                             174.7650  -119.0500   45.0000  top
 J37       USB_B_Micro                USB_Micro-B_Molex-105017-0001                                 172.8600   -77.1587  135.0000  top
 R10       R_EXT                      R_0402_1005Metric                                             138.1890  -108.5090  135.0000  top
-R108      4k7                        R_0402_1005Metric                                             169.0500  -124.7650  225.0000  top
-SW1       SW_Push                    SW_SPST_B3U-1000P-B                                           170.9550  -126.6700   45.0000  top
+R108      4k7                        R_0402_1005Metric                                             169.0500  -124.7650   45.0000  top
+SW1       SW_Push                    SW_SPST_B3U-1000P-B                                           170.9550  -126.6700  225.0000  top
 SW2       SW_Push                    SW_SPST_B3U-1000P-B                                           176.6700  -120.9550   45.0000  top
 U1        AD7779                     QFN-64-1EP_9x9mm_P0.5mm_EP7.3x7.3mm                           165.2400  -100.0000  270.0000  top
 U2        AD7779                     QFN-64-1EP_9x9mm_P0.5mm_EP7.3x7.3mm                           150.0000  -115.2400  180.0000  top
