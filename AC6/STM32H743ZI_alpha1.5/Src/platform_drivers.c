@@ -41,9 +41,7 @@
 /***************************** Include Files **********************************/
 /******************************************************************************/
 
-//#include "stm32f10x.h"
-#include "stm32f7xx_hal.h"
-#include "stm32f7xx_hal.h"
+#include "stm32h7xx_hal.h"
 
 #include "main.h"
 #include "platform_drivers.h"
@@ -321,12 +319,18 @@ int32_t spi_write_and_read(SPI_HandleTypeDef* spi_dev,
               Error_Handler();
             }
         } else {
-            HAL_GPIO_WritePin(chip_select_port, chip_select_pin, GPIO_PIN_RESET);
+        	if(SPI_NSS_SOFTWARE)
+        	{
+                HAL_GPIO_WritePin(chip_select_port, chip_select_pin, GPIO_PIN_RESET);
+        	}
             if(HAL_SPI_TransmitReceive(spi_dev, txdata, rxdata, uint8_ts_number, 5000) != HAL_OK)
             {
               Error_Handler();
             }
-            HAL_GPIO_WritePin(chip_select_port, chip_select_pin, GPIO_PIN_SET);
+        	if(SPI_NSS_SOFTWARE)
+        	{
+                HAL_GPIO_WritePin(chip_select_port, chip_select_pin, GPIO_PIN_SET);
+        	}
         }
 
 
