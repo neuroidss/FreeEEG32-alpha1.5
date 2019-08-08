@@ -84,41 +84,41 @@ Wire Wire Line
 $Comp
 L Connector_Generic:Conn_01x03 J?
 U 1 1 5CDC27EB
-P 2500 6300
+P 2200 6300
 AR Path="/5CDC27EB" Ref="J?"  Part="1" 
 AR Path="/5CDAC31F/5CDC27EB" Ref="J?"  Part="1" 
 AR Path="/5CDACBFB/5CDC27EB" Ref="J?"  Part="1" 
 AR Path="/5D23D721/5CDC27EB" Ref="J?"  Part="1" 
 AR Path="/5CDC1D3D/5CDC27EB" Ref="J32"  Part="1" 
-F 0 "J32" H 2580 6342 50  0000 L CNN
-F 1 "Conn_01x03" H 2580 6251 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 2500 6300 50  0001 C CNN
-F 3 "~" H 2500 6300 50  0001 C CNN
-	1    2500 6300
+F 0 "J32" H 2280 6342 50  0000 L CNN
+F 1 "Conn_01x03" H 2280 6251 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 2200 6300 50  0001 C CNN
+F 3 "~" H 2200 6300 50  0001 C CNN
+	1    2200 6300
 	-1   0    0    1   
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x04 J?
 U 1 1 5CDC2CFF
-P 2500 6000
+P 2200 6000
 AR Path="/5CDC2CFF" Ref="J?"  Part="1" 
 AR Path="/5CDACD1E/5CDC2CFF" Ref="J?"  Part="1" 
 AR Path="/5CDC1D3D/5CDC2CFF" Ref="J31"  Part="1" 
-F 0 "J31" H 2420 5575 50  0000 C CNN
-F 1 "Conn_01x04" H 2420 5666 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 2500 6000 50  0001 C CNN
-F 3 "~" H 2500 6000 50  0001 C CNN
-	1    2500 6000
+F 0 "J31" H 2120 5575 50  0000 C CNN
+F 1 "Conn_01x04" H 2120 5666 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 2200 6000 50  0001 C CNN
+F 3 "~" H 2200 6000 50  0001 C CNN
+	1    2200 6000
 	-1   0    0    1   
 $EndComp
-Text HLabel 2900 6200 2    50   Input ~ 0
+Text HLabel 2600 6200 2    50   Input ~ 0
 5_VDDIO
 Wire Wire Line
-	2900 6200 2800 6200
-Text HLabel 2900 6400 2    50   Input ~ 0
+	2600 6200 2500 6200
+Text HLabel 2600 6400 2    50   Input ~ 0
 7_GND
 Wire Wire Line
-	2900 6400 2800 6400
+	2600 6400 2500 6400
 $Comp
 L Device:C_Small C?
 U 1 1 5CDC2D0B
@@ -137,14 +137,14 @@ F 3 "~" H 4900 6800 50  0001 C CNN
 	1    4900 6800
 	1    0    0    -1  
 $EndComp
-Text HLabel 2900 5800 2    50   Input ~ 0
+Text HLabel 2600 5800 2    50   Input ~ 0
 1_SDO/SA0
 Wire Wire Line
-	2900 5800 2800 5800
-Text HLabel 2900 6300 2    50   Input ~ 0
+	2600 5800 2500 5800
+Text HLabel 2600 6300 2    50   Input ~ 0
 6_GND
 Wire Wire Line
-	2900 6300 2800 6300
+	2600 6300 2500 6300
 $Comp
 L Device:C_Small C?
 U 1 1 5CDC2FDA
@@ -163,18 +163,18 @@ F 3 "~" H 3950 6800 50  0001 C CNN
 	1    3950 6800
 	1    0    0    -1  
 $EndComp
-Text HLabel 2900 5900 2    50   Input ~ 0
+Text HLabel 2600 5900 2    50   Input ~ 0
 2_SDx
 Wire Wire Line
-	2900 5900 2800 5900
-Text HLabel 2900 6100 2    50   Input ~ 0
+	2600 5900 2500 5900
+Text HLabel 2600 6100 2    50   Input ~ 0
 4_INT1
 Wire Wire Line
-	2900 6100 2800 6100
-Text HLabel 2900 6000 2    50   Input ~ 0
+	2600 6100 2500 6100
+Text HLabel 2600 6000 2    50   Input ~ 0
 3_SCx
 Wire Wire Line
-	2900 6000 2800 6000
+	2600 6000 2500 6000
 $Comp
 L Connector_Generic:Conn_01x03 J?
 U 1 1 5CDC4A8B

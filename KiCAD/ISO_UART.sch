@@ -246,38 +246,50 @@ $EndComp
 $Comp
 L Connector_Generic:Conn_02x03_Odd_Even J?
 U 1 1 981F3750
-P 1350 3900
+P 4850 3950
 AR Path="/6385C8DD/981F3750" Ref="J?"  Part="1" 
 AR Path="/637B2637/981F3750" Ref="J58"  Part="1" 
-F 0 "J58" H 1400 4217 50  0000 C CNN
-F 1 "Conn_02x03_Odd_Even" H 1400 4126 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x03_P2.54mm_Vertical" H 1350 3900 50  0001 C CNN
-F 3 "~" H 1350 3900 50  0001 C CNN
-	1    1350 3900
-	1    0    0    -1  
+F 0 "J58" H 4900 4267 50  0000 C CNN
+F 1 "Conn_02x03_Odd_Even" H 4900 4176 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x03_P2.54mm_Vertical" H 4850 3950 50  0001 C CNN
+F 3 "~" H 4850 3950 50  0001 C CNN
+	1    4850 3950
+	1    0    0    1   
 $EndComp
-Text HLabel 1050 3800 0    50   Input ~ 0
+Text HLabel 3650 3850 0    50   Input ~ 0
 1_VCC1
 Wire Wire Line
-	1050 3800 1150 3800
-Text HLabel 1750 3800 2    50   Input ~ 0
+	4550 3850 4650 3850
+Text HLabel 5850 3850 2    50   Input ~ 0
 2_GND1
 Wire Wire Line
-	1750 3800 1650 3800
-Text HLabel 1050 3900 0    50   Input ~ 0
+	5250 3850 5150 3850
+Text HLabel 3650 3950 0    50   Input ~ 0
 3_INA
 Wire Wire Line
-	1050 3900 1150 3900
-Text HLabel 1750 3900 2    50   Input ~ 0
+	4550 4050 4650 4050
+Text HLabel 5850 3950 2    50   Input ~ 0
 4_INB
 Wire Wire Line
-	1750 3900 1650 3900
-Text HLabel 1750 4000 2    50   Input ~ 0
+	5250 4050 5150 4050
+Text HLabel 5850 4050 2    50   Input ~ 0
 6_OUTD
 Wire Wire Line
-	1750 4000 1650 4000
+	5250 3950 5150 3950
 Wire Wire Line
-	1050 4000 1150 4000
-Text HLabel 1050 4000 0    50   Input ~ 0
+	4550 3950 4650 3950
+Text HLabel 3650 4050 0    50   Input ~ 0
 5_OUTC
+Text HLabel 4550 3850 0    50   Input ~ 0
+16_VCC2
+Text HLabel 5250 3850 2    50   Input ~ 0
+15_GND2
+Text HLabel 4550 3950 0    50   Input ~ 0
+14_OUTA
+Text HLabel 5250 3950 2    50   Input ~ 0
+13_OUTB
+Text HLabel 4550 4050 0    50   Input ~ 0
+12_INC
+Text HLabel 5250 4050 2    50   Input ~ 0
+11_IND
 $EndSCHEMATC

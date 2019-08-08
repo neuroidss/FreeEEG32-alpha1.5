@@ -638,13 +638,13 @@ Wire Wire Line
 	3150 -3950 3250 -3950
 Wire Wire Line
 	4050 -4050 4150 -4050
-Text GLabel -3400 6400 0    50   Input ~ 0
+Text GLabel -3400 6500 0    50   Input ~ 0
 USB_3_D+
 Wire Wire Line
-	-3300 6400 -3400 6400
-Wire Wire Line
 	-3300 6500 -3400 6500
-Text GLabel -3400 6500 0    50   Input ~ 0
+Wire Wire Line
+	-3300 6600 -3400 6600
+Text GLabel -3400 6600 0    50   Input ~ 0
 USB_2_D-
 Text GLabel 1950 4550 2    50   Input ~ 0
 MCU_104_PA12_USART1_RTS
@@ -2183,11 +2183,11 @@ Text GLabel 1950 7650 2    50   Input ~ 0
 MCU_73_PB12_SPI2_NSS
 Wire Wire Line
 	1850 7650 1950 7650
-Text GLabel 650  7450 0    50   Input ~ 0
+Text GLabel 250  7450 0    50   Input ~ 0
 MCU_70_PB11_I2C2_SDA
 Wire Wire Line
 	650  7450 750  7450
-Text GLabel 650  7350 0    50   Input ~ 0
+Text GLabel 250  7350 0    50   Input ~ 0
 MCU_69_PB10_I2C2_SCL
 Text GLabel 650  7050 0    50   Input ~ 0
 MCU_66_PE13_SPI4_MISO
@@ -2201,7 +2201,7 @@ Text GLabel -1100 5150 0    50   Input ~ 0
 MCU_47_AD4_START
 Wire Wire Line
 	650  5150 750  5150
-Text GLabel -1100 5050 0    50   Input ~ 0
+Text GLabel -1650 5050 0    50   Input ~ 0
 MCU_46_AD4_DRDY
 Wire Wire Line
 	650  5050 750  5050
@@ -2243,7 +2243,7 @@ Text GLabel 650  850  0    50   Input ~ 0
 MCU_4_PE5_SAI1_SCK_A
 Text GLabel -1350 950  0    50   Input ~ 0
 MCU_5_SPI4_MOSI
-Text GLabel -1400 1950 0    50   Input ~ 0
+Text GLabel -1100 1950 0    50   Input ~ 0
 MCU_15_AD3_RESET
 Wire Wire Line
 	650  1950 750  1950
@@ -2403,13 +2403,13 @@ Text GLabel -5700 2800 2    50   Input ~ 0
 MCU_21_PF9_SAI1_FS_B
 Wire Wire Line
 	-9000 7700 -9100 7700
-Text GLabel -3300 4000 2    50   Input ~ 0
+Text GLabel 5150 10400 2    50   Input ~ 0
 MCU_104_PA12_USART1_RTS
 Wire Wire Line
 	-9100 13450 -9000 13450
 Wire Wire Line
 	-9100 13550 -9000 13550
-Text GLabel -3300 4100 2    50   Input ~ 0
+Text GLabel 5150 10300 2    50   Input ~ 0
 MCU_103_PA11_USART1_CTS
 Text GLabel -3300 4450 2    50   Input ~ 0
 MCU_137_PB7_I2C1_SDA
@@ -2471,11 +2471,11 @@ Text GLabel -12200 9150 2    50   Input ~ 0
 MCU_105_SYS_JTMS-SWDIO
 Wire Wire Line
 	-12300 9150 -12200 9150
-Text GLabel -3300 4200 2    50   Input ~ 0
+Text GLabel 5150 10500 2    50   Input ~ 0
 MCU_102_PA10_USART1_RX
 Wire Wire Line
 	-9100 13650 -9000 13650
-Text GLabel -3300 4300 2    50   Input ~ 0
+Text GLabel 5150 10600 2    50   Input ~ 0
 MCU_101_PA9_USART1_TX
 Wire Wire Line
 	-9100 13750 -9000 13750
@@ -4003,13 +4003,13 @@ F 5 "Bourns" V -9200 11000 50  0001 C CNN "Manufacturer"
 	1    -9200 11000
 	0    -1   1    0   
 $EndComp
-Text GLabel -3300 6500 2    50   Input ~ 0
+Text GLabel -3300 6600 2    50   Input ~ 0
 ISO_USB_6_UD–
 Wire Wire Line
 	-9000 11350 -9100 11350
 Wire Wire Line
 	-9000 11250 -9100 11250
-Text GLabel -3300 6400 2    50   Input ~ 0
+Text GLabel -3300 6500 2    50   Input ~ 0
 ISO_USB_7_UD+
 Text GLabel -4050 9500 0    50   Input ~ 0
 ACC_4_INT1
@@ -4069,37 +4069,37 @@ F 5 "Bourns" V -9200 14150 50  0001 C CNN "Manufacturer"
 	1    -9200 14150
 	0    -1   1    0   
 $EndComp
-Text GLabel -3400 4200 0    50   Input ~ 0
+Text GLabel 4150 10500 0    50   Input ~ 0
 ISO_UART_14_OUTA
 Wire Wire Line
-	-3400 4200 -3300 4200
-Text GLabel -3400 4000 0    50   Input ~ 0
+	5050 10500 5150 10500
+Text GLabel 4150 10300 0    50   Input ~ 0
 ISO_UART_13_OUTB
 Wire Wire Line
-	-3400 4000 -3300 4000
-Text GLabel -3400 4100 0    50   Input ~ 0
+	5050 10300 5150 10300
+Text GLabel 4150 10400 0    50   Input ~ 0
 ISO_UART_11_IND
 Wire Wire Line
-	-3400 4100 -3300 4100
+	5050 10400 5150 10400
 Wire Wire Line
-	-3400 4300 -3300 4300
-Text GLabel -3400 4300 0    50   Input ~ 0
+	5050 10600 5150 10600
+Text GLabel 4150 10600 0    50   Input ~ 0
 ISO_UART_12_INC
-Text GLabel -3400 3550 0    50   Input ~ 0
+Text GLabel -3900 3550 0    50   Input ~ 0
 ISO_SPI_14_OUTA
 Wire Wire Line
-	-3400 3550 -3300 3550
-Text GLabel -3400 3650 0    50   Input ~ 0
+	-3150 3550 -3050 3550
+Text GLabel -3900 3650 0    50   Input ~ 0
 ISO_SPI_13_OUTB
 Wire Wire Line
-	-3400 3650 -3300 3650
-Text GLabel -3400 3850 0    50   Input ~ 0
+	-3150 3650 -3050 3650
+Text GLabel -3900 3850 0    50   Input ~ 0
 ISO_SPI_11_IND
 Wire Wire Line
-	-3400 3850 -3300 3850
+	-3150 3850 -3050 3850
 Wire Wire Line
-	-3400 3750 -3300 3750
-Text GLabel -3400 3750 0    50   Input ~ 0
+	-3150 3750 -3050 3750
+Text GLabel -3900 3750 0    50   Input ~ 0
 ISO_SPI_12_OUTC
 Text GLabel -450 750  0    50   Input ~ 0
 MCU_3_SPI4_NSS
@@ -4141,9 +4141,9 @@ Text GLabel 550  5350 0    50   Input ~ 0
 MCU_49_SAI2_SD_B
 Text GLabel -450 5350 0    50   Input ~ 0
 MCU_49_SPI5_MOSI
-Text GLabel 650  5850 0    50   Input ~ 0
+Text GLabel 150  5850 0    50   Input ~ 0
 MCU_54_PF14_I2C4_SCL
-Text GLabel 650  5950 0    50   Input ~ 0
+Text GLabel 150  5950 0    50   Input ~ 0
 MCU_55_PF15_I2C4_SDA
 Text GLabel 650  6450 0    50   Input ~ 0
 MCU_60_PE9_TIM1_CH1
@@ -4165,7 +4165,7 @@ Text GLabel 650  7150 0    50   Input ~ 0
 MCU_67_PE14_SPI4_MOSI
 Text GLabel -1400 7150 0    50   Input ~ 0
 MCU_67_TIM1_CH4
-Text GLabel -1550 7350 0    50   Input ~ 0
+Text GLabel -1950 7350 0    50   Input ~ 0
 MCU_69_SPI2_SCK
 Text GLabel 3300 7450 2    50   Input ~ 0
 MCU_75_SPI2_MISO
@@ -5107,13 +5107,13 @@ Wire Wire Line
 	1950 3250 1850 3250
 Wire Wire Line
 	750  3150 650  3150
-Text GLabel -3300 3750 2    50   Input ~ 0
+Text GLabel -3050 3750 2    50   Input ~ 0
 MCU_43_PA7_SPI1_MOSI
-Text GLabel -3300 3850 2    50   Input ~ 0
+Text GLabel -3050 3850 2    50   Input ~ 0
 MCU_42_PA6_SPI1_MISO
-Text GLabel -3300 3650 2    50   Input ~ 0
+Text GLabel -3050 3650 2    50   Input ~ 0
 MCU_41_PA5_SPI1_SCK
-Text GLabel -3300 3550 2    50   Input ~ 0
+Text GLabel -3050 3550 2    50   Input ~ 0
 MCU_40_PA4_SPI1_NSS
 Wire Wire Line
 	650  4450 750  4450
@@ -5673,25 +5673,25 @@ Text GLabel 2200 9000 2    50   Input ~ 0
 VDD_5_OUT
 Text GLabel 2200 9100 2    50   Input ~ 0
 VDD_2_GND
-Text GLabel 2200 10900 0    50   Input ~ 0
+Text GLabel 1100 10900 0    50   Input ~ 0
 ISO_UART_16_VCC2
 Wire Wire Line
 	2300 10900 2200 10900
 Wire Wire Line
 	2300 11000 2200 11000
-Text GLabel 2200 11000 0    50   Input ~ 0
+Text GLabel 1100 11000 0    50   Input ~ 0
 ISO_UART_15_GND2
 Text GLabel 2300 10900 2    50   Input ~ 0
 VDD_5_OUT
 Text GLabel 2300 11000 2    50   Input ~ 0
 VDD_2_GND
-Text GLabel 2150 12300 0    50   Input ~ 0
+Text GLabel 1250 12300 0    50   Input ~ 0
 ISO_SPI_16_VCC2
 Wire Wire Line
 	2250 12300 2150 12300
 Wire Wire Line
 	2250 12400 2150 12400
-Text GLabel 2150 12400 0    50   Input ~ 0
+Text GLabel 1250 12400 0    50   Input ~ 0
 ISO_SPI_15_GND2
 Text GLabel 2250 12300 2    50   Input ~ 0
 VDD_5_OUT
@@ -5715,7 +5715,7 @@ Text GLabel -3400 4750 0    50   Input ~ 0
 ACC_9_INT2
 Wire Wire Line
 	1850 950  1950 950 
-Text GLabel 1950 850  2    50   Input ~ 0
+Text GLabel 2150 850  2    50   Input ~ 0
 MCU_141_PE0_ACC_INT1
 Wire Wire Line
 	1950 750  1850 750 
@@ -5723,7 +5723,7 @@ Text GLabel 1950 750  2    50   Input ~ 0
 MCU_142_PE1_ACC_INT2
 Wire Wire Line
 	1950 850  1850 850 
-Text GLabel -3300 4650 2    50   Input ~ 0
+Text GLabel -3150 4650 2    50   Input ~ 0
 MCU_141_PE0_ACC_INT1
 Text GLabel -3300 4750 2    50   Input ~ 0
 MCU_142_PE1_ACC_INT2
@@ -5761,7 +5761,7 @@ Text GLabel 2200 9500 2    50   Input ~ 0
 ISO_USB_12_PIN
 Text GLabel 2100 9400 0    50   Input ~ 0
 ISO_USB_14_VDD2
-Text GLabel 2100 9500 0    50   Input ~ 0
+Text GLabel 1800 9500 0    50   Input ~ 0
 ISO_USB_14_VDD2
 Text GLabel -5800 1800 0    50   Input ~ 0
 ADC3_27_DOUT1
@@ -5865,7 +5865,7 @@ Wire Wire Line
 	650  1850 750  1850
 Text GLabel 650  5150 0    50   Input ~ 0
 MCU_47_PB1_ADC3_RESET
-Text GLabel 650  5050 0    50   Input ~ 0
+Text GLabel -550 5050 0    50   Input ~ 0
 MCU_46_PB0_ADC3_START
 Text GLabel 1950 6150 2    50   Input ~ 0
 MCU_88_PG3_ADC4_RESET
@@ -6282,13 +6282,10 @@ NoConn ~ 1950 4350
 NoConn ~ 650  3950
 NoConn ~ 650  4150
 NoConn ~ 650  4850
-NoConn ~ 650  4950
 NoConn ~ 650  2750
 NoConn ~ 650  2850
-NoConn ~ 650  2350
 NoConn ~ 650  1250
 NoConn ~ 650  1350
-NoConn ~ 1950 1050
 NoConn ~ 650  1750
 NoConn ~ 650  1650
 NoConn ~ 1950 1750
@@ -6348,7 +6345,7 @@ Text GLabel 12350 3950 0    50   Input ~ 0
 ADC1_14_MODE1_GPIO1
 Text GLabel 12500 3950 2    50   Input ~ 0
 ADC4_13_MODE0_GPIO0
-Text GLabel 1950 5950 2    50   Input ~ 0
+Text GLabel 2050 5950 2    50   Input ~ 0
 MCU_90_PG5_ADC1_DRDY
 Text GLabel -2750 -1000 2    50   Input ~ 0
 MCU_90_PG5
@@ -6688,9 +6685,9 @@ Text GLabel 11800 1100 0    50   Input ~ 0
 CRYSTAL_3_OUT
 Text GLabel 11800 1200 0    50   Input ~ 0
 ADC4_32_XTAL2_MCLK
-Text GLabel -400 7350 0    50   Input ~ 0
+Text GLabel -800 7350 0    50   Input ~ 0
 MCU_69_PB10_USART3_RX
-Text GLabel -400 7450 0    50   Input ~ 0
+Text GLabel -800 7450 0    50   Input ~ 0
 MCU_70_PB11_USART3_TX
 Text GLabel 12550 -3450 0    50   Input ~ 0
 AVDD_5_OUT
@@ -7139,7 +7136,7 @@ Text GLabel -5700 5750 2    50   Input ~ 0
 MCU_14_PF4_ADC2_START
 Text GLabel -5700 5900 2    50   Input ~ 0
 MCU_47_PB1_ADC3_RESET
-Text GLabel -5700 6000 2    50   Input ~ 0
+Text GLabel -4650 6000 2    50   Input ~ 0
 MCU_46_PB0_ADC3_START
 Text GLabel -5700 5400 2    50   Input ~ 0
 MCU_119_PD5_ADC1_RESET
@@ -7163,10 +7160,143 @@ Text GLabel -3400 3050 0    50   Input ~ 0
 MCU_81_P12_SAI2_FS_A
 Text GLabel 1950 6050 2    50   Input ~ 0
 MCU_89_PG4_ADC4_DRDY
-Text GLabel -3200 2000 2    50   Input ~ 0
+Text GLabel -3100 2000 2    50   Input ~ 0
 MCU_90_PG5_ADC1_DRDY
 Wire Wire Line
 	-3400 2000 -3200 2000
 Text GLabel -3400 2000 0    50   Input ~ 0
 MCU_124_PG9_SAI2_FS_B
+$Comp
+L Connector_Generic:Conn_01x02 J88
+U 1 1 5D6671F5
+P 14350 -4400
+F 0 "J88" H 14430 -4408 50  0000 L CNN
+F 1 "Conn_01x02" H 14430 -4499 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 14350 -4400 50  0001 C CNN
+F 3 "~" H 14350 -4400 50  0001 C CNN
+	1    14350 -4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14150 -4300 14050 -4300
+Wire Wire Line
+	14150 -4400 14050 -4400
+Text GLabel 14050 -4400 0    50   Input ~ 0
+VCM
+Text GLabel 14050 -4300 0    50   Input ~ 0
+AINREF-
+Text GLabel 16550 900  2    50   Input ~ 0
+ADC3_57_VCM
+Wire Wire Line
+	16550 900  16450 900 
+Text GLabel 10000 1450 2    50   Input ~ 0
+ADC4_57_VCM
+Wire Wire Line
+	10000 1450 9900 1450
+Text GLabel 14400 5500 2    50   Input ~ 0
+ADC2_57_VCM
+Wire Wire Line
+	14400 5500 14300 5500
+Text GLabel 18000 5200 2    50   Input ~ 0
+ADC1_57_VCM
+Wire Wire Line
+	18000 5200 17900 5200
+Text GLabel 14650 -5450 2    50   Input ~ 0
+ADC4_57_VCM
+Text GLabel 14650 -5550 2    50   Input ~ 0
+ADC3_57_VCM
+Text GLabel 14650 -5650 2    50   Input ~ 0
+ADC2_57_VCM
+Text GLabel 14650 -5750 2    50   Input ~ 0
+ADC1_57_VCM
+Text GLabel 14450 -5450 0    50   Input ~ 0
+VCM
+Text GLabel 14450 -5550 0    50   Input ~ 0
+VCM
+Text GLabel 14450 -5650 0    50   Input ~ 0
+VCM
+Text GLabel 14450 -5750 0    50   Input ~ 0
+VCM
+Wire Wire Line
+	14450 -5450 14650 -5450
+Wire Wire Line
+	14450 -5550 14650 -5550
+Wire Wire Line
+	14450 -5650 14650 -5650
+Wire Wire Line
+	14450 -5750 14650 -5750
+Text GLabel 2200 3550 2    50   Input ~ 0
+MCU_114_PD0_ADC1_DRDY
+Text GLabel -3100 1900 2    50   Input ~ 0
+MCU_114_PD0_ADC1_DRDY
+Text GLabel 1950 1050 2    50   Input ~ 0
+MCU_139_PB8_ACC_INT1
+Text GLabel -3300 4850 2    50   Input ~ 0
+MCU_139_PB8_ACC_INT1
+Text GLabel -3400 4850 0    50   Input ~ 0
+ACC_4_INT1
+Wire Wire Line
+	-3400 4850 -3300 4850
+Wire Wire Line
+	-3400 1900 -3200 1900
+Text GLabel -3400 1900 0    50   Input ~ 0
+MCU_124_PG9_SAI2_FS_B
+Text GLabel 650  4950 0    50   Input ~ 0
+MCU_45_PC5_ADC3_START
+Text GLabel -5700 6000 2    50   Input ~ 0
+MCU_45_PC5_ADC3_START
+Text GLabel 650  5050 0    50   Input ~ 0
+MCU_46_PB0_ADC1_DRDY
+Text GLabel -3200 1800 2    50   Input ~ 0
+MCU_46_PB0_ADC1_DRDY
+Wire Wire Line
+	-3400 1800 -3200 1800
+Text GLabel -3400 1800 0    50   Input ~ 0
+MCU_124_PG9_SAI2_FS_B
+Text GLabel 2150 12300 0    50   Input ~ 0
+ISO_SPI_1_VCC1
+Text GLabel 2150 12400 0    50   Input ~ 0
+ISO_SPI_2_GND1
+Text GLabel -3150 3550 0    50   Input ~ 0
+ISO_SPI_3_INA
+Text GLabel -3150 3650 0    50   Input ~ 0
+ISO_SPI_4_INB
+Text GLabel -3150 3850 0    50   Input ~ 0
+ISO_SPI_6_OUTD
+Text GLabel -3150 3750 0    50   Input ~ 0
+ISO_SPI_5_INC
+Text GLabel 5050 10400 0    50   Input ~ 0
+ISO_UART_3_INA
+Text GLabel 5050 10600 0    50   Input ~ 0
+ISO_UART_4_INB
+Text GLabel 5050 10500 0    50   Input ~ 0
+ISO_UART_6_OUTD
+Text GLabel 5050 10300 0    50   Input ~ 0
+ISO_UART_5_OUTC
+Text GLabel 2200 10900 0    50   Input ~ 0
+ISO_UART_1_VCC1
+Text GLabel 2200 11000 0    50   Input ~ 0
+ISO_UART_2_GND1
+Text GLabel -3400 4350 0    50   Input ~ 0
+ACC_1_SDO_SAO
+Text GLabel 1950 950  2    50   Input ~ 0
+MCU_140_PB9_ACC_SDO_SAO
+Text GLabel -3300 4350 2    50   Input ~ 0
+MCU_140_PB9_ACC_SDO_SAO
+Wire Wire Line
+	-3400 4350 -3300 4350
+Text GLabel 5100 9750 0    50   Input ~ 0
+ACC_12_CS
+Text GLabel 5200 9750 2    50   Input ~ 0
+VDD_5_OUT
+Wire Wire Line
+	5200 9750 5100 9750
+Wire Wire Line
+	-3400 6300 -3300 6300
+Text GLabel -3400 6300 0    50   Input ~ 0
+ISO_USB_12_PIN
+Text GLabel 650  2350 0    50   Input ~ 0
+MCU_19_PF7_ISO_USB_PIN
+Text GLabel -3300 6300 2    50   Input ~ 0
+MCU_19_PF7_ISO_USB_PIN
 $EndSCHEMATC
