@@ -7169,21 +7169,21 @@ MCU_124_PG9_SAI2_FS_B
 $Comp
 L Connector_Generic:Conn_01x02 J88
 U 1 1 5D6671F5
-P 14350 -4400
-F 0 "J88" H 14430 -4408 50  0000 L CNN
-F 1 "Conn_01x02" H 14430 -4499 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 14350 -4400 50  0001 C CNN
-F 3 "~" H 14350 -4400 50  0001 C CNN
-	1    14350 -4400
+P 16600 -3850
+F 0 "J88" H 16680 -3858 50  0000 L CNN
+F 1 "Conn_01x02" H 16680 -3949 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 16600 -3850 50  0001 C CNN
+F 3 "~" H 16600 -3850 50  0001 C CNN
+	1    16600 -3850
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	14150 -4300 14050 -4300
+	16400 -3750 16300 -3750
 Wire Wire Line
-	14150 -4400 14050 -4400
-Text GLabel 14050 -4400 0    50   Input ~ 0
+	16400 -3200 16300 -3200
+Text GLabel 16300 -3200 0    50   Input ~ 0
 VCM
-Text GLabel 14050 -4300 0    50   Input ~ 0
+Text GLabel 16300 -3750 0    50   Input ~ 0
 AINREF-
 Text GLabel 16550 900  2    50   Input ~ 0
 ADC3_57_VCM
@@ -7299,4 +7299,42 @@ Text GLabel 650  2350 0    50   Input ~ 0
 MCU_19_PF7_ISO_USB_PIN
 Text GLabel -3300 6300 2    50   Input ~ 0
 MCU_19_PF7_ISO_USB_PIN
+$Comp
+L Connector_Generic:Conn_01x02 J89
+U 1 1 5D6C1D06
+P 16600 -3300
+F 0 "J89" H 16680 -3308 50  0000 L CNN
+F 1 "Conn_01x02" H 16680 -3399 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 16600 -3300 50  0001 C CNN
+F 3 "~" H 16600 -3300 50  0001 C CNN
+	1    16600 -3300
+	1    0    0    -1  
+$EndComp
+Text GLabel 16300 -3300 0    50   Input ~ 0
+ADC1_32_XTAL2_MCLK
+Text GLabel 16300 -3100 0    50   Input ~ 0
+ADC1_13_MODE0_GPIO0
+$Comp
+L Connector_Generic:Conn_01x02 J90
+U 1 1 5D6C2072
+P 16600 -3100
+F 0 "J90" H 16680 -3108 50  0000 L CNN
+F 1 "Conn_01x02" H 16680 -3199 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 16600 -3100 50  0001 C CNN
+F 3 "~" H 16600 -3100 50  0001 C CNN
+	1    16600 -3100
+	1    0    0    -1  
+$EndComp
+Text GLabel 16300 -3000 0    50   Input ~ 0
+ADC1_35_SYNC_IN
+Text GLabel 16300 -3850 0    50   Input ~ 0
+IOVDD_5_OUT
+Wire Wire Line
+	16300 -3300 16400 -3300
+Wire Wire Line
+	16300 -3850 16400 -3850
+Wire Wire Line
+	16300 -3100 16400 -3100
+Wire Wire Line
+	16300 -3000 16400 -3000
 $EndSCHEMATC
