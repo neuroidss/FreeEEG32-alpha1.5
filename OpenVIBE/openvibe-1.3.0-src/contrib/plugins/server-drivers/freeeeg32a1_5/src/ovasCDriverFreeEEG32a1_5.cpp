@@ -350,11 +350,27 @@ OpenViBE::int16 CDriverFreeEEG32a1_5::parseByte(uint8 ui8Actbyte)
 			m_i16SampleNumber  = -1;
 			m_ui16ExtractPosition = 0;
 			m_ui8SampleBufferPosition = 0;
+			m_ui16SampleNumberExtractPosition = 0;
 			break;
 		// Byte 2: Sample Number
 		case 1:
-			m_i16SampleNumber = ui8Actbyte;
-			m_ui16Readstate++;
+//dma
+			if(EEGValueBufferSize==4)
+			{
+				if(m_ui16SampleNumberExtractPosition==3)
+				{
+					m_i16SampleNumber = ui8Actbyte;
+					//m_ui16Readstate++;
+				} else if(m_ui16SampleNumberExtractPosition==3+3)
+				{
+					//m_i16SampleNumber = ui8Actbyte;
+					m_ui16Readstate++;
+				}
+				m_ui16SampleNumberExtractPosition++;
+			} else {
+				m_i16SampleNumber = ui8Actbyte;
+				m_ui16Readstate++;
+			}
 			break;
 		// reading EEG data 
 		/* 

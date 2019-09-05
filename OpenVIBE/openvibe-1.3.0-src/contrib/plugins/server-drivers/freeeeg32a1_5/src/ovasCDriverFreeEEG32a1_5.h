@@ -120,8 +120,8 @@ namespace OpenViBEAcquisitionServer
 //		const static OpenViBE::uint8 EEGNbValuesPerSample = 4; // the board send EEG values 8 by 8 (will concatenate 2 samples with daisy module)
 //		const static OpenViBE::uint8 EEGNbValuesPerSample = 8; // the board send EEG values 8 by 8 (will concatenate 2 samples with daisy module)
 //		const static OpenViBE::uint8 EEGNbValuesPerSample = 16; // the board send EEG values 8 by 8 (will concatenate 2 samples with daisy module)
-		const static OpenViBE::uint8 EEGNbValuesPerSample = 24; // the board send EEG values 8 by 8 (will concatenate 2 samples with daisy module)
-//		const static OpenViBE::uint8 EEGNbValuesPerSample = 32; // the board send EEG values 8 by 8 (will concatenate 2 samples with daisy module)
+//		const static OpenViBE::uint8 EEGNbValuesPerSample = 24; // the board send EEG values 8 by 8 (will concatenate 2 samples with daisy module)
+		const static OpenViBE::uint8 EEGNbValuesPerSample = 32; // the board send EEG values 8 by 8 (will concatenate 2 samples with daisy module)
 //		const static OpenViBE::uint8 EEGNbValuesPerSample = 8; // the board send EEG values 8 by 8 (will concatenate 2 samples with daisy module)
 //		const static OpenViBE::uint8 AccNbValuesPerSample = 1; // 3 accelerometer data per sample
 //		const static OpenViBE::uint8 AccNbValuesPerSample = 3; // 3 accelerometer data per sample
@@ -144,6 +144,8 @@ namespace OpenViBEAcquisitionServer
 //		const static OpenViBE::uint16 DefaultSamplingRate = 250; // sampling rate with no daisy module (divided by 2 with daisy module)
 		
 		OpenViBE::uint16 m_ui16ExtractPosition; // used to situate sample reading both with EEG and accelerometer data
+		OpenViBE::uint16 m_ui16SampleNumberExtractPosition;
+
 		
 		OpenViBE::float32 ScaleFacuVoltsPerCount; // convert from int32 to microvolt
 		
