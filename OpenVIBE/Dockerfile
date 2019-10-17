@@ -18,13 +18,13 @@ RUN apt-get update \
     && apt clean all
 
 #TODO submit patch to change sources
-RUN wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=1CouIzOqKzLHiPNkZ79GCLhN2CjgHR388'  -O openvibe-2.1.0-src_FreeEEG32-alpha.tar.gz \
-    && tar -xzvf ./openvibe-2.1.0-src_FreeEEG32-alpha.tar.gz \
-    && cp -r ./openvibe-2.1.0-src_FreeEEG32-alpha/extras/contrib/common/* openvibe-2.1.0-src/extras/contrib/common/ \
-    && cp -r ./openvibe-2.1.0-src_FreeEEG32-alpha/extras/contrib/plugins/server-drivers/* openvibe-2.1.0-src/extras/contrib/plugins/server-drivers/ \
-    && cp -r ./openvibe-2.1.0-src_FreeEEG32-alpha/extras/applications/platform/acquisition-server/share/* openvibe-2.1.0-src/extras/applications/platform/acquisition-server/share/ \
-    && cp -r ./openvibe-2.1.0-src_FreeEEG32-alpha/extras/applications/platform/acquisition-server/src/* openvibe-2.1.0-src/extras/applications/platform/acquisition-server/src/ \
-    && rm ./openvibe-2.1.0-src_FreeEEG32-alpha.tar.gz \
+RUN wget https://github.com/neuroidss/FreeEEG32-alpha1.5/raw/master/OpenVIBE/openvibe-2.1.0-src_FreeEEG32-alpha1.5.tar.gz -O openvibe-2.1.0-src_FreeEEG32-alpha1.5.tar.gz \
+    && tar -xzvf ./openvibe-2.1.0-src_FreeEEG32-alpha1.5.tar.gz \
+    && cp -r ./openvibe-2.1.0-src_FreeEEG32-alpha1.5/extras/contrib/common/* openvibe-2.1.0-src/extras/contrib/common/ \
+    && cp -r ./openvibe-2.1.0-src_FreeEEG32-alpha1.5/extras/contrib/plugins/server-drivers/* openvibe-2.1.0-src/extras/contrib/plugins/server-drivers/ \
+    && cp -r ./openvibe-2.1.0-src_FreeEEG32-alpha1.5/extras/applications/platform/acquisition-server/share/* openvibe-2.1.0-src/extras/applications/platform/acquisition-server/share/ \
+    && cp -r ./openvibe-2.1.0-src_FreeEEG32-alpha1.5/extras/applications/platform/acquisition-server/src/* openvibe-2.1.0-src/extras/applications/platform/acquisition-server/src/ \
+    && rm ./openvibe-2.1.0-src_FreeEEG32-alpha1.5.tar.gz \
     && cd openvibe-2.1.0-src \
     && ./build.sh 
 
