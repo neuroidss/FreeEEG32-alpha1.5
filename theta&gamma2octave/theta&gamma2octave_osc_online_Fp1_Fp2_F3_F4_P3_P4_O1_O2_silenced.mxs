@@ -1,0 +1,5440 @@
+<OpenViBE-Scenario>
+	<FormatVersion>2</FormatVersion>
+	<Creator>OpenViBE Designer</Creator>
+	<CreatorVersion>2.2.0</CreatorVersion>
+	<Settings></Settings>
+	<Inputs></Inputs>
+	<Outputs></Outputs>
+	<Boxes>
+		<Box>
+			<Identifier>(0x00000a83, 0x00006fd7)</Identifier>
+			<Name>Player Controller</Name>
+			<AlgorithmClassIdentifier>(0x5f426dce, 0x08456e13)</AlgorithmClassIdentifier>
+			<Inputs>
+				<Input>
+					<TypeIdentifier>(0x6f752dd0, 0x082a321e)</TypeIdentifier>
+					<Name>Stimulations</Name>
+				</Input>
+			</Inputs>
+			<Settings>
+				<Setting>
+					<TypeIdentifier>(0x2c132d6e, 0x44ab0d97)</TypeIdentifier>
+					<Name>Stimulation name</Name>
+					<DefaultValue>OVTK_StimulationId_Label_00</DefaultValue>
+					<Value>OVTK_StimulationId_EndOfFile</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0xcc14d8d6, 0xf27ecb73)</TypeIdentifier>
+					<Name>Action to perform</Name>
+					<DefaultValue>Pause</DefaultValue>
+					<Value>Stop</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+			</Settings>
+			<Attributes>
+				<Attribute>
+					<Identifier>(0x1fa7a38f, 0x54edbe0b)</Identifier>
+					<Value>-592</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x207c9054, 0x3c841b63)</Identifier>
+					<Value>1328</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x341d3912, 0x1478de86)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x4e7b798a, 0x183beafb)</Identifier>
+					<Value>(0x568d148e, 0x650792b3)</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xc46b3d00, 0x3e0454e1)</Identifier>
+					<Value>(0x00000000, 0x00b16ab9)</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xc73e83ec, 0xf855c5bc)</Identifier>
+					<Value>false</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xce18836a, 0x9c0eb403)</Identifier>
+					<Value>2</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xcfad85b0, 0x7c6d841c)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+			</Attributes>
+		</Box>
+		<Box>
+			<Identifier>(0x2f9da22c, 0x53359d19)</Identifier>
+			<Name>Noise generator</Name>
+			<AlgorithmClassIdentifier>(0x0e3929f1, 0x15af76b9)</AlgorithmClassIdentifier>
+			<Outputs>
+				<Output>
+					<TypeIdentifier>(0x5ba36127, 0x195feae1)</TypeIdentifier>
+					<Name>Generated signal</Name>
+				</Output>
+			</Outputs>
+			<Settings>
+				<Setting>
+					<TypeIdentifier>(0x007deef9, 0x2f3e95c6)</TypeIdentifier>
+					<Name>Channel count</Name>
+					<DefaultValue>4</DefaultValue>
+					<Value>32</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x007deef9, 0x2f3e95c6)</TypeIdentifier>
+					<Name>Sampling frequency</Name>
+					<DefaultValue>512</DefaultValue>
+					<Value>512</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x007deef9, 0x2f3e95c6)</TypeIdentifier>
+					<Name>Generated epoch sample count</Name>
+					<DefaultValue>32</DefaultValue>
+					<Value>32</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x2e85e95e, 0x8a1a8365)</TypeIdentifier>
+					<Name>Noise type</Name>
+					<DefaultValue>Uniform</DefaultValue>
+					<Value>Uniform</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+			</Settings>
+			<Attributes>
+				<Attribute>
+					<Identifier>(0x1fa7a38f, 0x54edbe0b)</Identifier>
+					<Value>-544</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x207c9054, 0x3c841b63)</Identifier>
+					<Value>1488</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x341d3912, 0x1478de86)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x4e7b798a, 0x183beafb)</Identifier>
+					<Value>(0x88a4a7f6, 0x4180bdb0)</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xc80ce8af, 0xf699f813)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xce18836a, 0x9c0eb403)</Identifier>
+					<Value>4</Value>
+				</Attribute>
+			</Attributes>
+		</Box>
+		<Box>
+			<Identifier>(0x3595d6d8, 0x6623d6c1)</Identifier>
+			<Name>13-28Hz</Name>
+			<AlgorithmClassIdentifier>(0x0055be5f, 0x087bdd12)</AlgorithmClassIdentifier>
+			<Inputs>
+				<Input>
+					<TypeIdentifier>(0x5ba36127, 0x195feae1)</TypeIdentifier>
+					<Name>Data</Name>
+				</Input>
+				<Input>
+					<TypeIdentifier>(0x6f752dd0, 0x082a321e)</TypeIdentifier>
+					<Name>Stimulations</Name>
+				</Input>
+				<Input>
+					<TypeIdentifier>(0x6ab26b81, 0x0f8c02f3)</TypeIdentifier>
+					<Name>Channel Units</Name>
+				</Input>
+			</Inputs>
+			<Settings>
+				<Setting>
+					<TypeIdentifier>(0x5de046a6, 0x086340aa)</TypeIdentifier>
+					<Name>Display Mode</Name>
+					<DefaultValue>Scan</DefaultValue>
+					<Value>Scroll</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x33a30739, 0x00d5299b)</TypeIdentifier>
+					<Name>Auto vertical scale</Name>
+					<DefaultValue>Per channel</DefaultValue>
+					<Value>None</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x512a166f, 0x5c3ef83f)</TypeIdentifier>
+					<Name>Scale refresh interval (secs)</Name>
+					<DefaultValue>5</DefaultValue>
+					<Value>5</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x512a166f, 0x5c3ef83f)</TypeIdentifier>
+					<Name>Vertical Scale</Name>
+					<DefaultValue>100</DefaultValue>
+					<Value>15</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x512a166f, 0x5c3ef83f)</TypeIdentifier>
+					<Name>Vertical Offset</Name>
+					<DefaultValue>0</DefaultValue>
+					<Value>0</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x512a166f, 0x5c3ef83f)</TypeIdentifier>
+					<Name>Time Scale</Name>
+					<DefaultValue>10</DefaultValue>
+					<Value>10</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x2cdb2f0b, 0x12f231ea)</TypeIdentifier>
+					<Name>Bottom ruler</Name>
+					<DefaultValue>true</DefaultValue>
+					<Value>true</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x2cdb2f0b, 0x12f231ea)</TypeIdentifier>
+					<Name>Left ruler</Name>
+					<DefaultValue>false</DefaultValue>
+					<Value>true</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x2cdb2f0b, 0x12f231ea)</TypeIdentifier>
+					<Name>Multiview</Name>
+					<DefaultValue>false</DefaultValue>
+					<Value>false</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+			</Settings>
+			<Attributes>
+				<Attribute>
+					<Identifier>(0x1fa7a38f, 0x54edbe0b)</Identifier>
+					<Value>-416</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x207c9054, 0x3c841b63)</Identifier>
+					<Value>1760</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x341d3912, 0x1478de86)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x4e7b798a, 0x183beafb)</Identifier>
+					<Value>(0x92c056a7, 0x2dc71aff)</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x527ad68d, 0x16d746a0)</Identifier>
+					<Value></Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xce18836a, 0x9c0eb403)</Identifier>
+					<Value>9</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xcfad85b0, 0x7c6d841c)</Identifier>
+					<Value>3</Value>
+				</Attribute>
+			</Attributes>
+		</Box>
+		<Box>
+			<Identifier>(0x3595d6d8, 0x6623d6c2)</Identifier>
+			<Name>4-7Hz</Name>
+			<AlgorithmClassIdentifier>(0x0055be5f, 0x087bdd12)</AlgorithmClassIdentifier>
+			<Inputs>
+				<Input>
+					<TypeIdentifier>(0x5ba36127, 0x195feae1)</TypeIdentifier>
+					<Name>Data</Name>
+				</Input>
+				<Input>
+					<TypeIdentifier>(0x6f752dd0, 0x082a321e)</TypeIdentifier>
+					<Name>Stimulations</Name>
+				</Input>
+				<Input>
+					<TypeIdentifier>(0x6ab26b81, 0x0f8c02f3)</TypeIdentifier>
+					<Name>Channel Units</Name>
+				</Input>
+			</Inputs>
+			<Settings>
+				<Setting>
+					<TypeIdentifier>(0x5de046a6, 0x086340aa)</TypeIdentifier>
+					<Name>Display Mode</Name>
+					<DefaultValue>Scan</DefaultValue>
+					<Value>Scroll</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x33a30739, 0x00d5299b)</TypeIdentifier>
+					<Name>Auto vertical scale</Name>
+					<DefaultValue>Per channel</DefaultValue>
+					<Value>None</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x512a166f, 0x5c3ef83f)</TypeIdentifier>
+					<Name>Scale refresh interval (secs)</Name>
+					<DefaultValue>5</DefaultValue>
+					<Value>5</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x512a166f, 0x5c3ef83f)</TypeIdentifier>
+					<Name>Vertical Scale</Name>
+					<DefaultValue>100</DefaultValue>
+					<Value>15</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x512a166f, 0x5c3ef83f)</TypeIdentifier>
+					<Name>Vertical Offset</Name>
+					<DefaultValue>0</DefaultValue>
+					<Value>0</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x512a166f, 0x5c3ef83f)</TypeIdentifier>
+					<Name>Time Scale</Name>
+					<DefaultValue>10</DefaultValue>
+					<Value>10</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x2cdb2f0b, 0x12f231ea)</TypeIdentifier>
+					<Name>Bottom ruler</Name>
+					<DefaultValue>true</DefaultValue>
+					<Value>true</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x2cdb2f0b, 0x12f231ea)</TypeIdentifier>
+					<Name>Left ruler</Name>
+					<DefaultValue>false</DefaultValue>
+					<Value>true</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x2cdb2f0b, 0x12f231ea)</TypeIdentifier>
+					<Name>Multiview</Name>
+					<DefaultValue>false</DefaultValue>
+					<Value>false</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+			</Settings>
+			<Attributes>
+				<Attribute>
+					<Identifier>(0x1fa7a38f, 0x54edbe0b)</Identifier>
+					<Value>-400</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x207c9054, 0x3c841b63)</Identifier>
+					<Value>1088</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x341d3912, 0x1478de86)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x4e7b798a, 0x183beafb)</Identifier>
+					<Value>(0x92c056a7, 0x2dc71aff)</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x527ad68d, 0x16d746a0)</Identifier>
+					<Value></Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xce18836a, 0x9c0eb403)</Identifier>
+					<Value>9</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xcfad85b0, 0x7c6d841c)</Identifier>
+					<Value>3</Value>
+				</Attribute>
+			</Attributes>
+		</Box>
+		<Box>
+			<Identifier>(0x36631f89, 0x7741822b)</Identifier>
+			<Name>Temporal Filter</Name>
+			<AlgorithmClassIdentifier>(0xb4f9d042, 0x9d79f2e5)</AlgorithmClassIdentifier>
+			<Inputs>
+				<Input>
+					<TypeIdentifier>(0x5ba36127, 0x195feae1)</TypeIdentifier>
+					<Name>Input signal</Name>
+				</Input>
+			</Inputs>
+			<Outputs>
+				<Output>
+					<TypeIdentifier>(0x5ba36127, 0x195feae1)</TypeIdentifier>
+					<Name>Output signal</Name>
+				</Output>
+			</Outputs>
+			<Settings>
+				<Setting>
+					<TypeIdentifier>(0x2f2c606c, 0x8512ed68)</TypeIdentifier>
+					<Name>Filter Method</Name>
+					<DefaultValue>Butterworth</DefaultValue>
+					<Value>Butterworth</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0xfa20178e, 0x4cba62e9)</TypeIdentifier>
+					<Name>Filter Type</Name>
+					<DefaultValue>Band Pass</DefaultValue>
+					<Value>Band Pass</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x007deef9, 0x2f3e95c6)</TypeIdentifier>
+					<Name>Filter Order</Name>
+					<DefaultValue>4</DefaultValue>
+					<Value>4</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x512a166f, 0x5c3ef83f)</TypeIdentifier>
+					<Name>Low Cut-off Frequency (Hz)</Name>
+					<DefaultValue>1</DefaultValue>
+					<Value>30</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x512a166f, 0x5c3ef83f)</TypeIdentifier>
+					<Name>High Cut-off Frequency (Hz)</Name>
+					<DefaultValue>40</DefaultValue>
+					<Value>47</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x512a166f, 0x5c3ef83f)</TypeIdentifier>
+					<Name>Band Pass Ripple (dB)</Name>
+					<DefaultValue>0.5</DefaultValue>
+					<Value>0.5</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+			</Settings>
+			<Attributes>
+				<Attribute>
+					<Identifier>(0x1fa7a38f, 0x54edbe0b)</Identifier>
+					<Value>-384</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x207c9054, 0x3c841b63)</Identifier>
+					<Value>1200</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x4e7b798a, 0x183beafb)</Identifier>
+					<Value>(0x27a4ceec, 0x876d6384)</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xc80ce8af, 0xf699f813)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xce18836a, 0x9c0eb403)</Identifier>
+					<Value>6</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xcfad85b0, 0x7c6d841c)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+			</Attributes>
+		</Box>
+		<Box>
+			<Identifier>(0x36631f89, 0x7741822c)</Identifier>
+			<Name>Temporal Filter</Name>
+			<AlgorithmClassIdentifier>(0xb4f9d042, 0x9d79f2e5)</AlgorithmClassIdentifier>
+			<Inputs>
+				<Input>
+					<TypeIdentifier>(0x5ba36127, 0x195feae1)</TypeIdentifier>
+					<Name>Input signal</Name>
+				</Input>
+			</Inputs>
+			<Outputs>
+				<Output>
+					<TypeIdentifier>(0x5ba36127, 0x195feae1)</TypeIdentifier>
+					<Name>Output signal</Name>
+				</Output>
+			</Outputs>
+			<Settings>
+				<Setting>
+					<TypeIdentifier>(0x2f2c606c, 0x8512ed68)</TypeIdentifier>
+					<Name>Filter Method</Name>
+					<DefaultValue>Butterworth</DefaultValue>
+					<Value>Butterworth</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0xfa20178e, 0x4cba62e9)</TypeIdentifier>
+					<Name>Filter Type</Name>
+					<DefaultValue>Band Pass</DefaultValue>
+					<Value>Band Pass</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x007deef9, 0x2f3e95c6)</TypeIdentifier>
+					<Name>Filter Order</Name>
+					<DefaultValue>4</DefaultValue>
+					<Value>4</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x512a166f, 0x5c3ef83f)</TypeIdentifier>
+					<Name>Low Cut-off Frequency (Hz)</Name>
+					<DefaultValue>1</DefaultValue>
+					<Value>4</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x512a166f, 0x5c3ef83f)</TypeIdentifier>
+					<Name>High Cut-off Frequency (Hz)</Name>
+					<DefaultValue>40</DefaultValue>
+					<Value>7</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x512a166f, 0x5c3ef83f)</TypeIdentifier>
+					<Name>Band Pass Ripple (dB)</Name>
+					<DefaultValue>0.5</DefaultValue>
+					<Value>0.5</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+			</Settings>
+			<Attributes>
+				<Attribute>
+					<Identifier>(0x1fa7a38f, 0x54edbe0b)</Identifier>
+					<Value>-432</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x207c9054, 0x3c841b63)</Identifier>
+					<Value>1216</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x4e7b798a, 0x183beafb)</Identifier>
+					<Value>(0x27a4ceec, 0x876d6384)</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xc80ce8af, 0xf699f813)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xce18836a, 0x9c0eb403)</Identifier>
+					<Value>6</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xcfad85b0, 0x7c6d841c)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+			</Attributes>
+		</Box>
+		<Box>
+			<Identifier>(0x36631f89, 0x7741822d)</Identifier>
+			<Name>Temporal Filter</Name>
+			<AlgorithmClassIdentifier>(0xb4f9d042, 0x9d79f2e5)</AlgorithmClassIdentifier>
+			<Inputs>
+				<Input>
+					<TypeIdentifier>(0x5ba36127, 0x195feae1)</TypeIdentifier>
+					<Name>Input signal</Name>
+				</Input>
+			</Inputs>
+			<Outputs>
+				<Output>
+					<TypeIdentifier>(0x5ba36127, 0x195feae1)</TypeIdentifier>
+					<Name>Output signal</Name>
+				</Output>
+			</Outputs>
+			<Settings>
+				<Setting>
+					<TypeIdentifier>(0x2f2c606c, 0x8512ed68)</TypeIdentifier>
+					<Name>Filter Method</Name>
+					<DefaultValue>Butterworth</DefaultValue>
+					<Value>Butterworth</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0xfa20178e, 0x4cba62e9)</TypeIdentifier>
+					<Name>Filter Type</Name>
+					<DefaultValue>Band Pass</DefaultValue>
+					<Value>Band Pass</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x007deef9, 0x2f3e95c6)</TypeIdentifier>
+					<Name>Filter Order</Name>
+					<DefaultValue>4</DefaultValue>
+					<Value>4</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x512a166f, 0x5c3ef83f)</TypeIdentifier>
+					<Name>Low Cut-off Frequency (Hz)</Name>
+					<DefaultValue>1</DefaultValue>
+					<Value>8</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x512a166f, 0x5c3ef83f)</TypeIdentifier>
+					<Name>High Cut-off Frequency (Hz)</Name>
+					<DefaultValue>40</DefaultValue>
+					<Value>12</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x512a166f, 0x5c3ef83f)</TypeIdentifier>
+					<Name>Band Pass Ripple (dB)</Name>
+					<DefaultValue>0.5</DefaultValue>
+					<Value>0.5</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+			</Settings>
+			<Attributes>
+				<Attribute>
+					<Identifier>(0x1fa7a38f, 0x54edbe0b)</Identifier>
+					<Value>-400</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x207c9054, 0x3c841b63)</Identifier>
+					<Value>1472</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x341d3912, 0x1478de86)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x4e7b798a, 0x183beafb)</Identifier>
+					<Value>(0x27a4ceec, 0x876d6384)</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xc80ce8af, 0xf699f813)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xce18836a, 0x9c0eb403)</Identifier>
+					<Value>6</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xcfad85b0, 0x7c6d841c)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+			</Attributes>
+		</Box>
+		<Box>
+			<Identifier>(0x36631f89, 0x7741822f)</Identifier>
+			<Name>Temporal Filter</Name>
+			<AlgorithmClassIdentifier>(0xb4f9d042, 0x9d79f2e5)</AlgorithmClassIdentifier>
+			<Inputs>
+				<Input>
+					<TypeIdentifier>(0x5ba36127, 0x195feae1)</TypeIdentifier>
+					<Name>Input signal</Name>
+				</Input>
+			</Inputs>
+			<Outputs>
+				<Output>
+					<TypeIdentifier>(0x5ba36127, 0x195feae1)</TypeIdentifier>
+					<Name>Output signal</Name>
+				</Output>
+			</Outputs>
+			<Settings>
+				<Setting>
+					<TypeIdentifier>(0x2f2c606c, 0x8512ed68)</TypeIdentifier>
+					<Name>Filter Method</Name>
+					<DefaultValue>Butterworth</DefaultValue>
+					<Value>Butterworth</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0xfa20178e, 0x4cba62e9)</TypeIdentifier>
+					<Name>Filter Type</Name>
+					<DefaultValue>Band Pass</DefaultValue>
+					<Value>Band Pass</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x007deef9, 0x2f3e95c6)</TypeIdentifier>
+					<Name>Filter Order</Name>
+					<DefaultValue>4</DefaultValue>
+					<Value>4</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x512a166f, 0x5c3ef83f)</TypeIdentifier>
+					<Name>Low Cut-off Frequency (Hz)</Name>
+					<DefaultValue>1</DefaultValue>
+					<Value>13</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x512a166f, 0x5c3ef83f)</TypeIdentifier>
+					<Name>High Cut-off Frequency (Hz)</Name>
+					<DefaultValue>40</DefaultValue>
+					<Value>28</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x512a166f, 0x5c3ef83f)</TypeIdentifier>
+					<Name>Band Pass Ripple (dB)</Name>
+					<DefaultValue>0.5</DefaultValue>
+					<Value>0.5</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+			</Settings>
+			<Attributes>
+				<Attribute>
+					<Identifier>(0x1fa7a38f, 0x54edbe0b)</Identifier>
+					<Value>-400</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x207c9054, 0x3c841b63)</Identifier>
+					<Value>1616</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x341d3912, 0x1478de86)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x4e7b798a, 0x183beafb)</Identifier>
+					<Value>(0x27a4ceec, 0x876d6384)</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xc80ce8af, 0xf699f813)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xce18836a, 0x9c0eb403)</Identifier>
+					<Value>6</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xcfad85b0, 0x7c6d841c)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+			</Attributes>
+		</Box>
+		<Box>
+			<Identifier>(0x3c200145, 0x6dd15731)</Identifier>
+			<Name>F3</Name>
+			<AlgorithmClassIdentifier>(0x361722e8, 0x311574e8)</AlgorithmClassIdentifier>
+			<Inputs>
+				<Input>
+					<TypeIdentifier>(0x5ba36127, 0x195feae1)</TypeIdentifier>
+					<Name>Input signal</Name>
+				</Input>
+			</Inputs>
+			<Outputs>
+				<Output>
+					<TypeIdentifier>(0x5ba36127, 0x195feae1)</TypeIdentifier>
+					<Name>Output signal</Name>
+				</Output>
+			</Outputs>
+			<Settings>
+				<Setting>
+					<TypeIdentifier>(0x79a9edeb, 0x245d83fc)</TypeIdentifier>
+					<Name>Channel List</Name>
+					<DefaultValue>:</DefaultValue>
+					<Value>F3</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x3bcf9e67, 0x0c23994d)</TypeIdentifier>
+					<Name>Action</Name>
+					<DefaultValue>Select</DefaultValue>
+					<Value>Select</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x666f25e9, 0x3e5738d6)</TypeIdentifier>
+					<Name>Channel Matching Method</Name>
+					<DefaultValue>Smart</DefaultValue>
+					<Value>Smart</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+			</Settings>
+			<Attributes>
+				<Attribute>
+					<Identifier>(0x1fa7a38f, 0x54edbe0b)</Identifier>
+					<Value>-256</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x207c9054, 0x3c841b63)</Identifier>
+					<Value>1472</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x30a4e5c9, 0x83502953)</Identifier>
+					<Value></Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x341d3912, 0x1478de86)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x4e7b798a, 0x183beafb)</Identifier>
+					<Value>(0x277826e1, 0xa30a3bd0)</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x527ad68d, 0x16d746a0)</Identifier>
+					<Value></Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xc80ce8af, 0xf699f813)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xce18836a, 0x9c0eb403)</Identifier>
+					<Value>3</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xcfad85b0, 0x7c6d841c)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+			</Attributes>
+		</Box>
+		<Box>
+			<Identifier>(0x3c200145, 0x6dd15732)</Identifier>
+			<Name>Fp1;Fp2;F3;F4;P3;P4;O1;O2</Name>
+			<AlgorithmClassIdentifier>(0x361722e8, 0x311574e8)</AlgorithmClassIdentifier>
+			<Inputs>
+				<Input>
+					<TypeIdentifier>(0x5ba36127, 0x195feae1)</TypeIdentifier>
+					<Name>Input signal</Name>
+				</Input>
+			</Inputs>
+			<Outputs>
+				<Output>
+					<TypeIdentifier>(0x5ba36127, 0x195feae1)</TypeIdentifier>
+					<Name>Output signal</Name>
+				</Output>
+			</Outputs>
+			<Settings>
+				<Setting>
+					<TypeIdentifier>(0x79a9edeb, 0x245d83fc)</TypeIdentifier>
+					<Name>Channel List</Name>
+					<DefaultValue>:</DefaultValue>
+					<Value>Fp1;Fp2;F3;F4;P3;P4;O1;O2</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x3bcf9e67, 0x0c23994d)</TypeIdentifier>
+					<Name>Action</Name>
+					<DefaultValue>Select</DefaultValue>
+					<Value>Select</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x666f25e9, 0x3e5738d6)</TypeIdentifier>
+					<Name>Channel Matching Method</Name>
+					<DefaultValue>Smart</DefaultValue>
+					<Value>Smart</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+			</Settings>
+			<Attributes>
+				<Attribute>
+					<Identifier>(0x1fa7a38f, 0x54edbe0b)</Identifier>
+					<Value>-496</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x207c9054, 0x3c841b63)</Identifier>
+					<Value>1152</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x30a4e5c9, 0x83502953)</Identifier>
+					<Value></Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x4e7b798a, 0x183beafb)</Identifier>
+					<Value>(0x277826e1, 0xa30a3bd0)</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x527ad68d, 0x16d746a0)</Identifier>
+					<Value></Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xc80ce8af, 0xf699f813)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xce18836a, 0x9c0eb403)</Identifier>
+					<Value>3</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xcfad85b0, 0x7c6d841c)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+			</Attributes>
+		</Box>
+		<Box>
+			<Identifier>(0x3c200145, 0x6dd15733)</Identifier>
+			<Name>F4</Name>
+			<AlgorithmClassIdentifier>(0x361722e8, 0x311574e8)</AlgorithmClassIdentifier>
+			<Inputs>
+				<Input>
+					<TypeIdentifier>(0x5ba36127, 0x195feae1)</TypeIdentifier>
+					<Name>Input signal</Name>
+				</Input>
+			</Inputs>
+			<Outputs>
+				<Output>
+					<TypeIdentifier>(0x5ba36127, 0x195feae1)</TypeIdentifier>
+					<Name>Output signal</Name>
+				</Output>
+			</Outputs>
+			<Settings>
+				<Setting>
+					<TypeIdentifier>(0x79a9edeb, 0x245d83fc)</TypeIdentifier>
+					<Name>Channel List</Name>
+					<DefaultValue>:</DefaultValue>
+					<Value>F4</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x3bcf9e67, 0x0c23994d)</TypeIdentifier>
+					<Name>Action</Name>
+					<DefaultValue>Select</DefaultValue>
+					<Value>Select</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x666f25e9, 0x3e5738d6)</TypeIdentifier>
+					<Name>Channel Matching Method</Name>
+					<DefaultValue>Smart</DefaultValue>
+					<Value>Smart</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+			</Settings>
+			<Attributes>
+				<Attribute>
+					<Identifier>(0x1fa7a38f, 0x54edbe0b)</Identifier>
+					<Value>-256</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x207c9054, 0x3c841b63)</Identifier>
+					<Value>1760</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x30a4e5c9, 0x83502953)</Identifier>
+					<Value></Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x341d3912, 0x1478de86)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x4e7b798a, 0x183beafb)</Identifier>
+					<Value>(0x277826e1, 0xa30a3bd0)</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x527ad68d, 0x16d746a0)</Identifier>
+					<Value></Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xc80ce8af, 0xf699f813)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xce18836a, 0x9c0eb403)</Identifier>
+					<Value>3</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xcfad85b0, 0x7c6d841c)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+			</Attributes>
+		</Box>
+		<Box>
+			<Identifier>(0x3c200145, 0x6dd15734)</Identifier>
+			<Name>F4</Name>
+			<AlgorithmClassIdentifier>(0x361722e8, 0x311574e8)</AlgorithmClassIdentifier>
+			<Inputs>
+				<Input>
+					<TypeIdentifier>(0x5ba36127, 0x195feae1)</TypeIdentifier>
+					<Name>Input signal</Name>
+				</Input>
+			</Inputs>
+			<Outputs>
+				<Output>
+					<TypeIdentifier>(0x5ba36127, 0x195feae1)</TypeIdentifier>
+					<Name>Output signal</Name>
+				</Output>
+			</Outputs>
+			<Settings>
+				<Setting>
+					<TypeIdentifier>(0x79a9edeb, 0x245d83fc)</TypeIdentifier>
+					<Name>Channel List</Name>
+					<DefaultValue>:</DefaultValue>
+					<Value>F4</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x3bcf9e67, 0x0c23994d)</TypeIdentifier>
+					<Name>Action</Name>
+					<DefaultValue>Select</DefaultValue>
+					<Value>Select</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x666f25e9, 0x3e5738d6)</TypeIdentifier>
+					<Name>Channel Matching Method</Name>
+					<DefaultValue>Smart</DefaultValue>
+					<Value>Smart</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+			</Settings>
+			<Attributes>
+				<Attribute>
+					<Identifier>(0x1fa7a38f, 0x54edbe0b)</Identifier>
+					<Value>-256</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x207c9054, 0x3c841b63)</Identifier>
+					<Value>1616</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x30a4e5c9, 0x83502953)</Identifier>
+					<Value></Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x341d3912, 0x1478de86)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x4e7b798a, 0x183beafb)</Identifier>
+					<Value>(0x277826e1, 0xa30a3bd0)</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x527ad68d, 0x16d746a0)</Identifier>
+					<Value></Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xc80ce8af, 0xf699f813)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xce18836a, 0x9c0eb403)</Identifier>
+					<Value>3</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xcfad85b0, 0x7c6d841c)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+			</Attributes>
+		</Box>
+		<Box>
+			<Identifier>(0x3c200145, 0x6dd15735)</Identifier>
+			<Name>Fp2</Name>
+			<AlgorithmClassIdentifier>(0x361722e8, 0x311574e8)</AlgorithmClassIdentifier>
+			<Inputs>
+				<Input>
+					<TypeIdentifier>(0x5ba36127, 0x195feae1)</TypeIdentifier>
+					<Name>Input signal</Name>
+				</Input>
+			</Inputs>
+			<Outputs>
+				<Output>
+					<TypeIdentifier>(0x5ba36127, 0x195feae1)</TypeIdentifier>
+					<Name>Output signal</Name>
+				</Output>
+			</Outputs>
+			<Settings>
+				<Setting>
+					<TypeIdentifier>(0x79a9edeb, 0x245d83fc)</TypeIdentifier>
+					<Name>Channel List</Name>
+					<DefaultValue>:</DefaultValue>
+					<Value>Fp2</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x3bcf9e67, 0x0c23994d)</TypeIdentifier>
+					<Name>Action</Name>
+					<DefaultValue>Select</DefaultValue>
+					<Value>Select</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x666f25e9, 0x3e5738d6)</TypeIdentifier>
+					<Name>Channel Matching Method</Name>
+					<DefaultValue>Smart</DefaultValue>
+					<Value>Smart</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+			</Settings>
+			<Attributes>
+				<Attribute>
+					<Identifier>(0x1fa7a38f, 0x54edbe0b)</Identifier>
+					<Value>-256</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x207c9054, 0x3c841b63)</Identifier>
+					<Value>1216</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x30a4e5c9, 0x83502953)</Identifier>
+					<Value></Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x4e7b798a, 0x183beafb)</Identifier>
+					<Value>(0x277826e1, 0xa30a3bd0)</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x527ad68d, 0x16d746a0)</Identifier>
+					<Value></Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xc80ce8af, 0xf699f813)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xce18836a, 0x9c0eb403)</Identifier>
+					<Value>3</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xcfad85b0, 0x7c6d841c)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+			</Attributes>
+		</Box>
+		<Box>
+			<Identifier>(0x3c200145, 0x6dd15736)</Identifier>
+			<Name>F3</Name>
+			<AlgorithmClassIdentifier>(0x361722e8, 0x311574e8)</AlgorithmClassIdentifier>
+			<Inputs>
+				<Input>
+					<TypeIdentifier>(0x5ba36127, 0x195feae1)</TypeIdentifier>
+					<Name>Input signal</Name>
+				</Input>
+			</Inputs>
+			<Outputs>
+				<Output>
+					<TypeIdentifier>(0x5ba36127, 0x195feae1)</TypeIdentifier>
+					<Name>Output signal</Name>
+				</Output>
+			</Outputs>
+			<Settings>
+				<Setting>
+					<TypeIdentifier>(0x79a9edeb, 0x245d83fc)</TypeIdentifier>
+					<Name>Channel List</Name>
+					<DefaultValue>:</DefaultValue>
+					<Value>F3</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x3bcf9e67, 0x0c23994d)</TypeIdentifier>
+					<Name>Action</Name>
+					<DefaultValue>Select</DefaultValue>
+					<Value>Select</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x666f25e9, 0x3e5738d6)</TypeIdentifier>
+					<Name>Channel Matching Method</Name>
+					<DefaultValue>Smart</DefaultValue>
+					<Value>Smart</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+			</Settings>
+			<Attributes>
+				<Attribute>
+					<Identifier>(0x1fa7a38f, 0x54edbe0b)</Identifier>
+					<Value>-256</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x207c9054, 0x3c841b63)</Identifier>
+					<Value>1344</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x30a4e5c9, 0x83502953)</Identifier>
+					<Value></Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x341d3912, 0x1478de86)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x4e7b798a, 0x183beafb)</Identifier>
+					<Value>(0x277826e1, 0xa30a3bd0)</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x527ad68d, 0x16d746a0)</Identifier>
+					<Value></Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xc80ce8af, 0xf699f813)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xce18836a, 0x9c0eb403)</Identifier>
+					<Value>3</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xcfad85b0, 0x7c6d841c)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+			</Attributes>
+		</Box>
+		<Box>
+			<Identifier>(0x3c200145, 0x6dd15737)</Identifier>
+			<Name>Fp1</Name>
+			<AlgorithmClassIdentifier>(0x361722e8, 0x311574e8)</AlgorithmClassIdentifier>
+			<Inputs>
+				<Input>
+					<TypeIdentifier>(0x5ba36127, 0x195feae1)</TypeIdentifier>
+					<Name>Input signal</Name>
+				</Input>
+			</Inputs>
+			<Outputs>
+				<Output>
+					<TypeIdentifier>(0x5ba36127, 0x195feae1)</TypeIdentifier>
+					<Name>Output signal</Name>
+				</Output>
+			</Outputs>
+			<Settings>
+				<Setting>
+					<TypeIdentifier>(0x79a9edeb, 0x245d83fc)</TypeIdentifier>
+					<Name>Channel List</Name>
+					<DefaultValue>:</DefaultValue>
+					<Value>Fp1</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x3bcf9e67, 0x0c23994d)</TypeIdentifier>
+					<Name>Action</Name>
+					<DefaultValue>Select</DefaultValue>
+					<Value>Select</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x666f25e9, 0x3e5738d6)</TypeIdentifier>
+					<Name>Channel Matching Method</Name>
+					<DefaultValue>Smart</DefaultValue>
+					<Value>Smart</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+			</Settings>
+			<Attributes>
+				<Attribute>
+					<Identifier>(0x1fa7a38f, 0x54edbe0b)</Identifier>
+					<Value>-256</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x207c9054, 0x3c841b63)</Identifier>
+					<Value>1088</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x30a4e5c9, 0x83502953)</Identifier>
+					<Value></Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x4e7b798a, 0x183beafb)</Identifier>
+					<Value>(0x277826e1, 0xa30a3bd0)</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x527ad68d, 0x16d746a0)</Identifier>
+					<Value></Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xc80ce8af, 0xf699f813)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xce18836a, 0x9c0eb403)</Identifier>
+					<Value>3</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xcfad85b0, 0x7c6d841c)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+			</Attributes>
+		</Box>
+		<Box>
+			<Identifier>(0x3c200145, 0x6dd15738)</Identifier>
+			<Name>F3</Name>
+			<AlgorithmClassIdentifier>(0x361722e8, 0x311574e8)</AlgorithmClassIdentifier>
+			<Inputs>
+				<Input>
+					<TypeIdentifier>(0x5ba36127, 0x195feae1)</TypeIdentifier>
+					<Name>Input signal</Name>
+				</Input>
+			</Inputs>
+			<Outputs>
+				<Output>
+					<TypeIdentifier>(0x5ba36127, 0x195feae1)</TypeIdentifier>
+					<Name>Output signal</Name>
+				</Output>
+			</Outputs>
+			<Settings>
+				<Setting>
+					<TypeIdentifier>(0x79a9edeb, 0x245d83fc)</TypeIdentifier>
+					<Name>Channel List</Name>
+					<DefaultValue>:</DefaultValue>
+					<Value>F3</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x3bcf9e67, 0x0c23994d)</TypeIdentifier>
+					<Name>Action</Name>
+					<DefaultValue>Select</DefaultValue>
+					<Value>Select</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x666f25e9, 0x3e5738d6)</TypeIdentifier>
+					<Name>Channel Matching Method</Name>
+					<DefaultValue>Smart</DefaultValue>
+					<Value>Smart</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+			</Settings>
+			<Attributes>
+				<Attribute>
+					<Identifier>(0x1fa7a38f, 0x54edbe0b)</Identifier>
+					<Value>-128</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x207c9054, 0x3c841b63)</Identifier>
+					<Value>1472</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x30a4e5c9, 0x83502953)</Identifier>
+					<Value></Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x341d3912, 0x1478de86)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x4e7b798a, 0x183beafb)</Identifier>
+					<Value>(0x277826e1, 0xa30a3bd0)</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x527ad68d, 0x16d746a0)</Identifier>
+					<Value></Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xc80ce8af, 0xf699f813)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xce18836a, 0x9c0eb403)</Identifier>
+					<Value>3</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xcfad85b0, 0x7c6d841c)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+			</Attributes>
+		</Box>
+		<Box>
+			<Identifier>(0x3c200145, 0x6dd15739)</Identifier>
+			<Name>F4</Name>
+			<AlgorithmClassIdentifier>(0x361722e8, 0x311574e8)</AlgorithmClassIdentifier>
+			<Inputs>
+				<Input>
+					<TypeIdentifier>(0x5ba36127, 0x195feae1)</TypeIdentifier>
+					<Name>Input signal</Name>
+				</Input>
+			</Inputs>
+			<Outputs>
+				<Output>
+					<TypeIdentifier>(0x5ba36127, 0x195feae1)</TypeIdentifier>
+					<Name>Output signal</Name>
+				</Output>
+			</Outputs>
+			<Settings>
+				<Setting>
+					<TypeIdentifier>(0x79a9edeb, 0x245d83fc)</TypeIdentifier>
+					<Name>Channel List</Name>
+					<DefaultValue>:</DefaultValue>
+					<Value>F4</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x3bcf9e67, 0x0c23994d)</TypeIdentifier>
+					<Name>Action</Name>
+					<DefaultValue>Select</DefaultValue>
+					<Value>Select</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x666f25e9, 0x3e5738d6)</TypeIdentifier>
+					<Name>Channel Matching Method</Name>
+					<DefaultValue>Smart</DefaultValue>
+					<Value>Smart</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+			</Settings>
+			<Attributes>
+				<Attribute>
+					<Identifier>(0x1fa7a38f, 0x54edbe0b)</Identifier>
+					<Value>-128</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x207c9054, 0x3c841b63)</Identifier>
+					<Value>1760</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x30a4e5c9, 0x83502953)</Identifier>
+					<Value></Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x341d3912, 0x1478de86)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x4e7b798a, 0x183beafb)</Identifier>
+					<Value>(0x277826e1, 0xa30a3bd0)</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x527ad68d, 0x16d746a0)</Identifier>
+					<Value></Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xc80ce8af, 0xf699f813)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xce18836a, 0x9c0eb403)</Identifier>
+					<Value>3</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xcfad85b0, 0x7c6d841c)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+			</Attributes>
+		</Box>
+		<Box>
+			<Identifier>(0x3c200145, 0x6dd1573a)</Identifier>
+			<Name>F4</Name>
+			<AlgorithmClassIdentifier>(0x361722e8, 0x311574e8)</AlgorithmClassIdentifier>
+			<Inputs>
+				<Input>
+					<TypeIdentifier>(0x5ba36127, 0x195feae1)</TypeIdentifier>
+					<Name>Input signal</Name>
+				</Input>
+			</Inputs>
+			<Outputs>
+				<Output>
+					<TypeIdentifier>(0x5ba36127, 0x195feae1)</TypeIdentifier>
+					<Name>Output signal</Name>
+				</Output>
+			</Outputs>
+			<Settings>
+				<Setting>
+					<TypeIdentifier>(0x79a9edeb, 0x245d83fc)</TypeIdentifier>
+					<Name>Channel List</Name>
+					<DefaultValue>:</DefaultValue>
+					<Value>F4</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x3bcf9e67, 0x0c23994d)</TypeIdentifier>
+					<Name>Action</Name>
+					<DefaultValue>Select</DefaultValue>
+					<Value>Select</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x666f25e9, 0x3e5738d6)</TypeIdentifier>
+					<Name>Channel Matching Method</Name>
+					<DefaultValue>Smart</DefaultValue>
+					<Value>Smart</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+			</Settings>
+			<Attributes>
+				<Attribute>
+					<Identifier>(0x1fa7a38f, 0x54edbe0b)</Identifier>
+					<Value>-128</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x207c9054, 0x3c841b63)</Identifier>
+					<Value>1616</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x30a4e5c9, 0x83502953)</Identifier>
+					<Value></Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x341d3912, 0x1478de86)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x4e7b798a, 0x183beafb)</Identifier>
+					<Value>(0x277826e1, 0xa30a3bd0)</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x527ad68d, 0x16d746a0)</Identifier>
+					<Value></Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xc80ce8af, 0xf699f813)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xce18836a, 0x9c0eb403)</Identifier>
+					<Value>3</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xcfad85b0, 0x7c6d841c)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+			</Attributes>
+		</Box>
+		<Box>
+			<Identifier>(0x3c200145, 0x6dd1573b)</Identifier>
+			<Name>F4</Name>
+			<AlgorithmClassIdentifier>(0x361722e8, 0x311574e8)</AlgorithmClassIdentifier>
+			<Inputs>
+				<Input>
+					<TypeIdentifier>(0x5ba36127, 0x195feae1)</TypeIdentifier>
+					<Name>Input signal</Name>
+				</Input>
+			</Inputs>
+			<Outputs>
+				<Output>
+					<TypeIdentifier>(0x5ba36127, 0x195feae1)</TypeIdentifier>
+					<Name>Output signal</Name>
+				</Output>
+			</Outputs>
+			<Settings>
+				<Setting>
+					<TypeIdentifier>(0x79a9edeb, 0x245d83fc)</TypeIdentifier>
+					<Name>Channel List</Name>
+					<DefaultValue>:</DefaultValue>
+					<Value>F4</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x3bcf9e67, 0x0c23994d)</TypeIdentifier>
+					<Name>Action</Name>
+					<DefaultValue>Select</DefaultValue>
+					<Value>Select</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x666f25e9, 0x3e5738d6)</TypeIdentifier>
+					<Name>Channel Matching Method</Name>
+					<DefaultValue>Smart</DefaultValue>
+					<Value>Smart</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+			</Settings>
+			<Attributes>
+				<Attribute>
+					<Identifier>(0x1fa7a38f, 0x54edbe0b)</Identifier>
+					<Value>-128</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x207c9054, 0x3c841b63)</Identifier>
+					<Value>1216</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x30a4e5c9, 0x83502953)</Identifier>
+					<Value></Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x4e7b798a, 0x183beafb)</Identifier>
+					<Value>(0x277826e1, 0xa30a3bd0)</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x527ad68d, 0x16d746a0)</Identifier>
+					<Value></Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xc80ce8af, 0xf699f813)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xce18836a, 0x9c0eb403)</Identifier>
+					<Value>3</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xcfad85b0, 0x7c6d841c)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+			</Attributes>
+		</Box>
+		<Box>
+			<Identifier>(0x3c200145, 0x6dd1573c)</Identifier>
+			<Name>F3</Name>
+			<AlgorithmClassIdentifier>(0x361722e8, 0x311574e8)</AlgorithmClassIdentifier>
+			<Inputs>
+				<Input>
+					<TypeIdentifier>(0x5ba36127, 0x195feae1)</TypeIdentifier>
+					<Name>Input signal</Name>
+				</Input>
+			</Inputs>
+			<Outputs>
+				<Output>
+					<TypeIdentifier>(0x5ba36127, 0x195feae1)</TypeIdentifier>
+					<Name>Output signal</Name>
+				</Output>
+			</Outputs>
+			<Settings>
+				<Setting>
+					<TypeIdentifier>(0x79a9edeb, 0x245d83fc)</TypeIdentifier>
+					<Name>Channel List</Name>
+					<DefaultValue>:</DefaultValue>
+					<Value>F3</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x3bcf9e67, 0x0c23994d)</TypeIdentifier>
+					<Name>Action</Name>
+					<DefaultValue>Select</DefaultValue>
+					<Value>Select</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x666f25e9, 0x3e5738d6)</TypeIdentifier>
+					<Name>Channel Matching Method</Name>
+					<DefaultValue>Smart</DefaultValue>
+					<Value>Smart</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+			</Settings>
+			<Attributes>
+				<Attribute>
+					<Identifier>(0x1fa7a38f, 0x54edbe0b)</Identifier>
+					<Value>-128</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x207c9054, 0x3c841b63)</Identifier>
+					<Value>1344</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x30a4e5c9, 0x83502953)</Identifier>
+					<Value></Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x341d3912, 0x1478de86)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x4e7b798a, 0x183beafb)</Identifier>
+					<Value>(0x277826e1, 0xa30a3bd0)</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x527ad68d, 0x16d746a0)</Identifier>
+					<Value></Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xc80ce8af, 0xf699f813)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xce18836a, 0x9c0eb403)</Identifier>
+					<Value>3</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xcfad85b0, 0x7c6d841c)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+			</Attributes>
+		</Box>
+		<Box>
+			<Identifier>(0x3c200145, 0x6dd1573d)</Identifier>
+			<Name>F3</Name>
+			<AlgorithmClassIdentifier>(0x361722e8, 0x311574e8)</AlgorithmClassIdentifier>
+			<Inputs>
+				<Input>
+					<TypeIdentifier>(0x5ba36127, 0x195feae1)</TypeIdentifier>
+					<Name>Input signal</Name>
+				</Input>
+			</Inputs>
+			<Outputs>
+				<Output>
+					<TypeIdentifier>(0x5ba36127, 0x195feae1)</TypeIdentifier>
+					<Name>Output signal</Name>
+				</Output>
+			</Outputs>
+			<Settings>
+				<Setting>
+					<TypeIdentifier>(0x79a9edeb, 0x245d83fc)</TypeIdentifier>
+					<Name>Channel List</Name>
+					<DefaultValue>:</DefaultValue>
+					<Value>F3</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x3bcf9e67, 0x0c23994d)</TypeIdentifier>
+					<Name>Action</Name>
+					<DefaultValue>Select</DefaultValue>
+					<Value>Select</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x666f25e9, 0x3e5738d6)</TypeIdentifier>
+					<Name>Channel Matching Method</Name>
+					<DefaultValue>Smart</DefaultValue>
+					<Value>Smart</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+			</Settings>
+			<Attributes>
+				<Attribute>
+					<Identifier>(0x1fa7a38f, 0x54edbe0b)</Identifier>
+					<Value>-128</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x207c9054, 0x3c841b63)</Identifier>
+					<Value>1088</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x30a4e5c9, 0x83502953)</Identifier>
+					<Value></Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x4e7b798a, 0x183beafb)</Identifier>
+					<Value>(0x277826e1, 0xa30a3bd0)</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x527ad68d, 0x16d746a0)</Identifier>
+					<Value></Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xc80ce8af, 0xf699f813)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xce18836a, 0x9c0eb403)</Identifier>
+					<Value>3</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xcfad85b0, 0x7c6d841c)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+			</Attributes>
+		</Box>
+		<Box>
+			<Identifier>(0x3c200145, 0x6dd1573e)</Identifier>
+			<Name>F3</Name>
+			<AlgorithmClassIdentifier>(0x361722e8, 0x311574e8)</AlgorithmClassIdentifier>
+			<Inputs>
+				<Input>
+					<TypeIdentifier>(0x5ba36127, 0x195feae1)</TypeIdentifier>
+					<Name>Input signal</Name>
+				</Input>
+			</Inputs>
+			<Outputs>
+				<Output>
+					<TypeIdentifier>(0x5ba36127, 0x195feae1)</TypeIdentifier>
+					<Name>Output signal</Name>
+				</Output>
+			</Outputs>
+			<Settings>
+				<Setting>
+					<TypeIdentifier>(0x79a9edeb, 0x245d83fc)</TypeIdentifier>
+					<Name>Channel List</Name>
+					<DefaultValue>:</DefaultValue>
+					<Value>F3</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x3bcf9e67, 0x0c23994d)</TypeIdentifier>
+					<Name>Action</Name>
+					<DefaultValue>Select</DefaultValue>
+					<Value>Select</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x666f25e9, 0x3e5738d6)</TypeIdentifier>
+					<Name>Channel Matching Method</Name>
+					<DefaultValue>Smart</DefaultValue>
+					<Value>Smart</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+			</Settings>
+			<Attributes>
+				<Attribute>
+					<Identifier>(0x1fa7a38f, 0x54edbe0b)</Identifier>
+					<Value>0</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x207c9054, 0x3c841b63)</Identifier>
+					<Value>1472</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x30a4e5c9, 0x83502953)</Identifier>
+					<Value></Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x341d3912, 0x1478de86)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x4e7b798a, 0x183beafb)</Identifier>
+					<Value>(0x277826e1, 0xa30a3bd0)</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x527ad68d, 0x16d746a0)</Identifier>
+					<Value></Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xc80ce8af, 0xf699f813)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xce18836a, 0x9c0eb403)</Identifier>
+					<Value>3</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xcfad85b0, 0x7c6d841c)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+			</Attributes>
+		</Box>
+		<Box>
+			<Identifier>(0x3c200145, 0x6dd1573f)</Identifier>
+			<Name>F4</Name>
+			<AlgorithmClassIdentifier>(0x361722e8, 0x311574e8)</AlgorithmClassIdentifier>
+			<Inputs>
+				<Input>
+					<TypeIdentifier>(0x5ba36127, 0x195feae1)</TypeIdentifier>
+					<Name>Input signal</Name>
+				</Input>
+			</Inputs>
+			<Outputs>
+				<Output>
+					<TypeIdentifier>(0x5ba36127, 0x195feae1)</TypeIdentifier>
+					<Name>Output signal</Name>
+				</Output>
+			</Outputs>
+			<Settings>
+				<Setting>
+					<TypeIdentifier>(0x79a9edeb, 0x245d83fc)</TypeIdentifier>
+					<Name>Channel List</Name>
+					<DefaultValue>:</DefaultValue>
+					<Value>F4</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x3bcf9e67, 0x0c23994d)</TypeIdentifier>
+					<Name>Action</Name>
+					<DefaultValue>Select</DefaultValue>
+					<Value>Select</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x666f25e9, 0x3e5738d6)</TypeIdentifier>
+					<Name>Channel Matching Method</Name>
+					<DefaultValue>Smart</DefaultValue>
+					<Value>Smart</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+			</Settings>
+			<Attributes>
+				<Attribute>
+					<Identifier>(0x1fa7a38f, 0x54edbe0b)</Identifier>
+					<Value>0</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x207c9054, 0x3c841b63)</Identifier>
+					<Value>1760</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x30a4e5c9, 0x83502953)</Identifier>
+					<Value></Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x341d3912, 0x1478de86)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x4e7b798a, 0x183beafb)</Identifier>
+					<Value>(0x277826e1, 0xa30a3bd0)</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x527ad68d, 0x16d746a0)</Identifier>
+					<Value></Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xc80ce8af, 0xf699f813)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xce18836a, 0x9c0eb403)</Identifier>
+					<Value>3</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xcfad85b0, 0x7c6d841c)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+			</Attributes>
+		</Box>
+		<Box>
+			<Identifier>(0x3c200145, 0x6dd15740)</Identifier>
+			<Name>F4</Name>
+			<AlgorithmClassIdentifier>(0x361722e8, 0x311574e8)</AlgorithmClassIdentifier>
+			<Inputs>
+				<Input>
+					<TypeIdentifier>(0x5ba36127, 0x195feae1)</TypeIdentifier>
+					<Name>Input signal</Name>
+				</Input>
+			</Inputs>
+			<Outputs>
+				<Output>
+					<TypeIdentifier>(0x5ba36127, 0x195feae1)</TypeIdentifier>
+					<Name>Output signal</Name>
+				</Output>
+			</Outputs>
+			<Settings>
+				<Setting>
+					<TypeIdentifier>(0x79a9edeb, 0x245d83fc)</TypeIdentifier>
+					<Name>Channel List</Name>
+					<DefaultValue>:</DefaultValue>
+					<Value>F4</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x3bcf9e67, 0x0c23994d)</TypeIdentifier>
+					<Name>Action</Name>
+					<DefaultValue>Select</DefaultValue>
+					<Value>Select</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x666f25e9, 0x3e5738d6)</TypeIdentifier>
+					<Name>Channel Matching Method</Name>
+					<DefaultValue>Smart</DefaultValue>
+					<Value>Smart</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+			</Settings>
+			<Attributes>
+				<Attribute>
+					<Identifier>(0x1fa7a38f, 0x54edbe0b)</Identifier>
+					<Value>0</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x207c9054, 0x3c841b63)</Identifier>
+					<Value>1616</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x30a4e5c9, 0x83502953)</Identifier>
+					<Value></Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x341d3912, 0x1478de86)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x4e7b798a, 0x183beafb)</Identifier>
+					<Value>(0x277826e1, 0xa30a3bd0)</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x527ad68d, 0x16d746a0)</Identifier>
+					<Value></Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xc80ce8af, 0xf699f813)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xce18836a, 0x9c0eb403)</Identifier>
+					<Value>3</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xcfad85b0, 0x7c6d841c)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+			</Attributes>
+		</Box>
+		<Box>
+			<Identifier>(0x3c200145, 0x6dd15741)</Identifier>
+			<Name>P4</Name>
+			<AlgorithmClassIdentifier>(0x361722e8, 0x311574e8)</AlgorithmClassIdentifier>
+			<Inputs>
+				<Input>
+					<TypeIdentifier>(0x5ba36127, 0x195feae1)</TypeIdentifier>
+					<Name>Input signal</Name>
+				</Input>
+			</Inputs>
+			<Outputs>
+				<Output>
+					<TypeIdentifier>(0x5ba36127, 0x195feae1)</TypeIdentifier>
+					<Name>Output signal</Name>
+				</Output>
+			</Outputs>
+			<Settings>
+				<Setting>
+					<TypeIdentifier>(0x79a9edeb, 0x245d83fc)</TypeIdentifier>
+					<Name>Channel List</Name>
+					<DefaultValue>:</DefaultValue>
+					<Value>P4</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x3bcf9e67, 0x0c23994d)</TypeIdentifier>
+					<Name>Action</Name>
+					<DefaultValue>Select</DefaultValue>
+					<Value>Select</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x666f25e9, 0x3e5738d6)</TypeIdentifier>
+					<Name>Channel Matching Method</Name>
+					<DefaultValue>Smart</DefaultValue>
+					<Value>Smart</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+			</Settings>
+			<Attributes>
+				<Attribute>
+					<Identifier>(0x1fa7a38f, 0x54edbe0b)</Identifier>
+					<Value>0</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x207c9054, 0x3c841b63)</Identifier>
+					<Value>1216</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x30a4e5c9, 0x83502953)</Identifier>
+					<Value></Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x4e7b798a, 0x183beafb)</Identifier>
+					<Value>(0x277826e1, 0xa30a3bd0)</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x527ad68d, 0x16d746a0)</Identifier>
+					<Value></Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xc80ce8af, 0xf699f813)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xce18836a, 0x9c0eb403)</Identifier>
+					<Value>3</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xcfad85b0, 0x7c6d841c)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+			</Attributes>
+		</Box>
+		<Box>
+			<Identifier>(0x3c200145, 0x6dd15742)</Identifier>
+			<Name>F3</Name>
+			<AlgorithmClassIdentifier>(0x361722e8, 0x311574e8)</AlgorithmClassIdentifier>
+			<Inputs>
+				<Input>
+					<TypeIdentifier>(0x5ba36127, 0x195feae1)</TypeIdentifier>
+					<Name>Input signal</Name>
+				</Input>
+			</Inputs>
+			<Outputs>
+				<Output>
+					<TypeIdentifier>(0x5ba36127, 0x195feae1)</TypeIdentifier>
+					<Name>Output signal</Name>
+				</Output>
+			</Outputs>
+			<Settings>
+				<Setting>
+					<TypeIdentifier>(0x79a9edeb, 0x245d83fc)</TypeIdentifier>
+					<Name>Channel List</Name>
+					<DefaultValue>:</DefaultValue>
+					<Value>F3</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x3bcf9e67, 0x0c23994d)</TypeIdentifier>
+					<Name>Action</Name>
+					<DefaultValue>Select</DefaultValue>
+					<Value>Select</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x666f25e9, 0x3e5738d6)</TypeIdentifier>
+					<Name>Channel Matching Method</Name>
+					<DefaultValue>Smart</DefaultValue>
+					<Value>Smart</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+			</Settings>
+			<Attributes>
+				<Attribute>
+					<Identifier>(0x1fa7a38f, 0x54edbe0b)</Identifier>
+					<Value>0</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x207c9054, 0x3c841b63)</Identifier>
+					<Value>1344</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x30a4e5c9, 0x83502953)</Identifier>
+					<Value></Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x341d3912, 0x1478de86)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x4e7b798a, 0x183beafb)</Identifier>
+					<Value>(0x277826e1, 0xa30a3bd0)</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x527ad68d, 0x16d746a0)</Identifier>
+					<Value></Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xc80ce8af, 0xf699f813)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xce18836a, 0x9c0eb403)</Identifier>
+					<Value>3</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xcfad85b0, 0x7c6d841c)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+			</Attributes>
+		</Box>
+		<Box>
+			<Identifier>(0x3c200145, 0x6dd15743)</Identifier>
+			<Name>P3</Name>
+			<AlgorithmClassIdentifier>(0x361722e8, 0x311574e8)</AlgorithmClassIdentifier>
+			<Inputs>
+				<Input>
+					<TypeIdentifier>(0x5ba36127, 0x195feae1)</TypeIdentifier>
+					<Name>Input signal</Name>
+				</Input>
+			</Inputs>
+			<Outputs>
+				<Output>
+					<TypeIdentifier>(0x5ba36127, 0x195feae1)</TypeIdentifier>
+					<Name>Output signal</Name>
+				</Output>
+			</Outputs>
+			<Settings>
+				<Setting>
+					<TypeIdentifier>(0x79a9edeb, 0x245d83fc)</TypeIdentifier>
+					<Name>Channel List</Name>
+					<DefaultValue>:</DefaultValue>
+					<Value>P3</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x3bcf9e67, 0x0c23994d)</TypeIdentifier>
+					<Name>Action</Name>
+					<DefaultValue>Select</DefaultValue>
+					<Value>Select</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x666f25e9, 0x3e5738d6)</TypeIdentifier>
+					<Name>Channel Matching Method</Name>
+					<DefaultValue>Smart</DefaultValue>
+					<Value>Smart</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+			</Settings>
+			<Attributes>
+				<Attribute>
+					<Identifier>(0x1fa7a38f, 0x54edbe0b)</Identifier>
+					<Value>0</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x207c9054, 0x3c841b63)</Identifier>
+					<Value>1088</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x30a4e5c9, 0x83502953)</Identifier>
+					<Value></Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x4e7b798a, 0x183beafb)</Identifier>
+					<Value>(0x277826e1, 0xa30a3bd0)</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x527ad68d, 0x16d746a0)</Identifier>
+					<Value></Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xc80ce8af, 0xf699f813)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xce18836a, 0x9c0eb403)</Identifier>
+					<Value>3</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xcfad85b0, 0x7c6d841c)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+			</Attributes>
+		</Box>
+		<Box>
+			<Identifier>(0x3c200145, 0x6dd15744)</Identifier>
+			<Name>F3</Name>
+			<AlgorithmClassIdentifier>(0x361722e8, 0x311574e8)</AlgorithmClassIdentifier>
+			<Inputs>
+				<Input>
+					<TypeIdentifier>(0x5ba36127, 0x195feae1)</TypeIdentifier>
+					<Name>Input signal</Name>
+				</Input>
+			</Inputs>
+			<Outputs>
+				<Output>
+					<TypeIdentifier>(0x5ba36127, 0x195feae1)</TypeIdentifier>
+					<Name>Output signal</Name>
+				</Output>
+			</Outputs>
+			<Settings>
+				<Setting>
+					<TypeIdentifier>(0x79a9edeb, 0x245d83fc)</TypeIdentifier>
+					<Name>Channel List</Name>
+					<DefaultValue>:</DefaultValue>
+					<Value>F3</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x3bcf9e67, 0x0c23994d)</TypeIdentifier>
+					<Name>Action</Name>
+					<DefaultValue>Select</DefaultValue>
+					<Value>Select</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x666f25e9, 0x3e5738d6)</TypeIdentifier>
+					<Name>Channel Matching Method</Name>
+					<DefaultValue>Smart</DefaultValue>
+					<Value>Smart</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+			</Settings>
+			<Attributes>
+				<Attribute>
+					<Identifier>(0x1fa7a38f, 0x54edbe0b)</Identifier>
+					<Value>128</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x207c9054, 0x3c841b63)</Identifier>
+					<Value>1472</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x30a4e5c9, 0x83502953)</Identifier>
+					<Value></Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x341d3912, 0x1478de86)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x4e7b798a, 0x183beafb)</Identifier>
+					<Value>(0x277826e1, 0xa30a3bd0)</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x527ad68d, 0x16d746a0)</Identifier>
+					<Value></Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xc80ce8af, 0xf699f813)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xce18836a, 0x9c0eb403)</Identifier>
+					<Value>3</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xcfad85b0, 0x7c6d841c)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+			</Attributes>
+		</Box>
+		<Box>
+			<Identifier>(0x3c200145, 0x6dd15745)</Identifier>
+			<Name>F4</Name>
+			<AlgorithmClassIdentifier>(0x361722e8, 0x311574e8)</AlgorithmClassIdentifier>
+			<Inputs>
+				<Input>
+					<TypeIdentifier>(0x5ba36127, 0x195feae1)</TypeIdentifier>
+					<Name>Input signal</Name>
+				</Input>
+			</Inputs>
+			<Outputs>
+				<Output>
+					<TypeIdentifier>(0x5ba36127, 0x195feae1)</TypeIdentifier>
+					<Name>Output signal</Name>
+				</Output>
+			</Outputs>
+			<Settings>
+				<Setting>
+					<TypeIdentifier>(0x79a9edeb, 0x245d83fc)</TypeIdentifier>
+					<Name>Channel List</Name>
+					<DefaultValue>:</DefaultValue>
+					<Value>F4</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x3bcf9e67, 0x0c23994d)</TypeIdentifier>
+					<Name>Action</Name>
+					<DefaultValue>Select</DefaultValue>
+					<Value>Select</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x666f25e9, 0x3e5738d6)</TypeIdentifier>
+					<Name>Channel Matching Method</Name>
+					<DefaultValue>Smart</DefaultValue>
+					<Value>Smart</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+			</Settings>
+			<Attributes>
+				<Attribute>
+					<Identifier>(0x1fa7a38f, 0x54edbe0b)</Identifier>
+					<Value>128</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x207c9054, 0x3c841b63)</Identifier>
+					<Value>1760</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x30a4e5c9, 0x83502953)</Identifier>
+					<Value></Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x341d3912, 0x1478de86)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x4e7b798a, 0x183beafb)</Identifier>
+					<Value>(0x277826e1, 0xa30a3bd0)</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x527ad68d, 0x16d746a0)</Identifier>
+					<Value></Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xc80ce8af, 0xf699f813)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xce18836a, 0x9c0eb403)</Identifier>
+					<Value>3</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xcfad85b0, 0x7c6d841c)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+			</Attributes>
+		</Box>
+		<Box>
+			<Identifier>(0x3c200145, 0x6dd15746)</Identifier>
+			<Name>F4</Name>
+			<AlgorithmClassIdentifier>(0x361722e8, 0x311574e8)</AlgorithmClassIdentifier>
+			<Inputs>
+				<Input>
+					<TypeIdentifier>(0x5ba36127, 0x195feae1)</TypeIdentifier>
+					<Name>Input signal</Name>
+				</Input>
+			</Inputs>
+			<Outputs>
+				<Output>
+					<TypeIdentifier>(0x5ba36127, 0x195feae1)</TypeIdentifier>
+					<Name>Output signal</Name>
+				</Output>
+			</Outputs>
+			<Settings>
+				<Setting>
+					<TypeIdentifier>(0x79a9edeb, 0x245d83fc)</TypeIdentifier>
+					<Name>Channel List</Name>
+					<DefaultValue>:</DefaultValue>
+					<Value>F4</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x3bcf9e67, 0x0c23994d)</TypeIdentifier>
+					<Name>Action</Name>
+					<DefaultValue>Select</DefaultValue>
+					<Value>Select</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x666f25e9, 0x3e5738d6)</TypeIdentifier>
+					<Name>Channel Matching Method</Name>
+					<DefaultValue>Smart</DefaultValue>
+					<Value>Smart</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+			</Settings>
+			<Attributes>
+				<Attribute>
+					<Identifier>(0x1fa7a38f, 0x54edbe0b)</Identifier>
+					<Value>128</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x207c9054, 0x3c841b63)</Identifier>
+					<Value>1616</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x30a4e5c9, 0x83502953)</Identifier>
+					<Value></Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x341d3912, 0x1478de86)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x4e7b798a, 0x183beafb)</Identifier>
+					<Value>(0x277826e1, 0xa30a3bd0)</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x527ad68d, 0x16d746a0)</Identifier>
+					<Value></Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xc80ce8af, 0xf699f813)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xce18836a, 0x9c0eb403)</Identifier>
+					<Value>3</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xcfad85b0, 0x7c6d841c)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+			</Attributes>
+		</Box>
+		<Box>
+			<Identifier>(0x3c200145, 0x6dd15747)</Identifier>
+			<Name>O2</Name>
+			<AlgorithmClassIdentifier>(0x361722e8, 0x311574e8)</AlgorithmClassIdentifier>
+			<Inputs>
+				<Input>
+					<TypeIdentifier>(0x5ba36127, 0x195feae1)</TypeIdentifier>
+					<Name>Input signal</Name>
+				</Input>
+			</Inputs>
+			<Outputs>
+				<Output>
+					<TypeIdentifier>(0x5ba36127, 0x195feae1)</TypeIdentifier>
+					<Name>Output signal</Name>
+				</Output>
+			</Outputs>
+			<Settings>
+				<Setting>
+					<TypeIdentifier>(0x79a9edeb, 0x245d83fc)</TypeIdentifier>
+					<Name>Channel List</Name>
+					<DefaultValue>:</DefaultValue>
+					<Value>O2</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x3bcf9e67, 0x0c23994d)</TypeIdentifier>
+					<Name>Action</Name>
+					<DefaultValue>Select</DefaultValue>
+					<Value>Select</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x666f25e9, 0x3e5738d6)</TypeIdentifier>
+					<Name>Channel Matching Method</Name>
+					<DefaultValue>Smart</DefaultValue>
+					<Value>Smart</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+			</Settings>
+			<Attributes>
+				<Attribute>
+					<Identifier>(0x1fa7a38f, 0x54edbe0b)</Identifier>
+					<Value>128</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x207c9054, 0x3c841b63)</Identifier>
+					<Value>1216</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x30a4e5c9, 0x83502953)</Identifier>
+					<Value></Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x4e7b798a, 0x183beafb)</Identifier>
+					<Value>(0x277826e1, 0xa30a3bd0)</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x527ad68d, 0x16d746a0)</Identifier>
+					<Value></Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xc80ce8af, 0xf699f813)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xce18836a, 0x9c0eb403)</Identifier>
+					<Value>3</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xcfad85b0, 0x7c6d841c)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+			</Attributes>
+		</Box>
+		<Box>
+			<Identifier>(0x3c200145, 0x6dd15748)</Identifier>
+			<Name>F3</Name>
+			<AlgorithmClassIdentifier>(0x361722e8, 0x311574e8)</AlgorithmClassIdentifier>
+			<Inputs>
+				<Input>
+					<TypeIdentifier>(0x5ba36127, 0x195feae1)</TypeIdentifier>
+					<Name>Input signal</Name>
+				</Input>
+			</Inputs>
+			<Outputs>
+				<Output>
+					<TypeIdentifier>(0x5ba36127, 0x195feae1)</TypeIdentifier>
+					<Name>Output signal</Name>
+				</Output>
+			</Outputs>
+			<Settings>
+				<Setting>
+					<TypeIdentifier>(0x79a9edeb, 0x245d83fc)</TypeIdentifier>
+					<Name>Channel List</Name>
+					<DefaultValue>:</DefaultValue>
+					<Value>F3</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x3bcf9e67, 0x0c23994d)</TypeIdentifier>
+					<Name>Action</Name>
+					<DefaultValue>Select</DefaultValue>
+					<Value>Select</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x666f25e9, 0x3e5738d6)</TypeIdentifier>
+					<Name>Channel Matching Method</Name>
+					<DefaultValue>Smart</DefaultValue>
+					<Value>Smart</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+			</Settings>
+			<Attributes>
+				<Attribute>
+					<Identifier>(0x1fa7a38f, 0x54edbe0b)</Identifier>
+					<Value>128</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x207c9054, 0x3c841b63)</Identifier>
+					<Value>1344</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x30a4e5c9, 0x83502953)</Identifier>
+					<Value></Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x341d3912, 0x1478de86)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x4e7b798a, 0x183beafb)</Identifier>
+					<Value>(0x277826e1, 0xa30a3bd0)</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x527ad68d, 0x16d746a0)</Identifier>
+					<Value></Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xc80ce8af, 0xf699f813)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xce18836a, 0x9c0eb403)</Identifier>
+					<Value>3</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xcfad85b0, 0x7c6d841c)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+			</Attributes>
+		</Box>
+		<Box>
+			<Identifier>(0x3c200145, 0x6dd15749)</Identifier>
+			<Name>O1</Name>
+			<AlgorithmClassIdentifier>(0x361722e8, 0x311574e8)</AlgorithmClassIdentifier>
+			<Inputs>
+				<Input>
+					<TypeIdentifier>(0x5ba36127, 0x195feae1)</TypeIdentifier>
+					<Name>Input signal</Name>
+				</Input>
+			</Inputs>
+			<Outputs>
+				<Output>
+					<TypeIdentifier>(0x5ba36127, 0x195feae1)</TypeIdentifier>
+					<Name>Output signal</Name>
+				</Output>
+			</Outputs>
+			<Settings>
+				<Setting>
+					<TypeIdentifier>(0x79a9edeb, 0x245d83fc)</TypeIdentifier>
+					<Name>Channel List</Name>
+					<DefaultValue>:</DefaultValue>
+					<Value>O1</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x3bcf9e67, 0x0c23994d)</TypeIdentifier>
+					<Name>Action</Name>
+					<DefaultValue>Select</DefaultValue>
+					<Value>Select</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x666f25e9, 0x3e5738d6)</TypeIdentifier>
+					<Name>Channel Matching Method</Name>
+					<DefaultValue>Smart</DefaultValue>
+					<Value>Smart</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+			</Settings>
+			<Attributes>
+				<Attribute>
+					<Identifier>(0x1fa7a38f, 0x54edbe0b)</Identifier>
+					<Value>128</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x207c9054, 0x3c841b63)</Identifier>
+					<Value>1088</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x30a4e5c9, 0x83502953)</Identifier>
+					<Value></Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x4e7b798a, 0x183beafb)</Identifier>
+					<Value>(0x277826e1, 0xa30a3bd0)</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x527ad68d, 0x16d746a0)</Identifier>
+					<Value></Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xc80ce8af, 0xf699f813)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xce18836a, 0x9c0eb403)</Identifier>
+					<Value>3</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xcfad85b0, 0x7c6d841c)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+			</Attributes>
+		</Box>
+		<Box>
+			<Identifier>(0x5655fe48, 0x11f8de75)</Identifier>
+			<Name>Simple DSP</Name>
+			<AlgorithmClassIdentifier>(0x00e26fa1, 0x1dbab1b2)</AlgorithmClassIdentifier>
+			<Inputs>
+				<Input>
+					<TypeIdentifier>(0x5ba36127, 0x195feae1)</TypeIdentifier>
+					<Name>Input - A</Name>
+				</Input>
+			</Inputs>
+			<Outputs>
+				<Output>
+					<TypeIdentifier>(0x5ba36127, 0x195feae1)</TypeIdentifier>
+					<Name>Output</Name>
+				</Output>
+			</Outputs>
+			<Settings>
+				<Setting>
+					<TypeIdentifier>(0x79a9edeb, 0x245d83fc)</TypeIdentifier>
+					<Name>Equation</Name>
+					<DefaultValue>x</DefaultValue>
+					<Value>x*10</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+			</Settings>
+			<Attributes>
+				<Attribute>
+					<Identifier>(0x1fa7a38f, 0x54edbe0b)</Identifier>
+					<Value>-480</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x207c9054, 0x3c841b63)</Identifier>
+					<Value>1520</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x30a4e5c9, 0x83502953)</Identifier>
+					<Value></Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x341d3912, 0x1478de86)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x4e7b798a, 0x183beafb)</Identifier>
+					<Value>(0x21889dc4, 0x1126497e)</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x527ad68d, 0x16d746a0)</Identifier>
+					<Value></Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xc80ce8af, 0xf699f813)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xce18836a, 0x9c0eb403)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xcfad85b0, 0x7c6d841c)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xfba64161, 0x65304e21)</Identifier>
+					<Value></Value>
+				</Attribute>
+			</Attributes>
+		</Box>
+		<Box>
+			<Identifier>(0x5ad26528, 0x6a411f1d)</Identifier>
+			<Name>Simple DSP</Name>
+			<AlgorithmClassIdentifier>(0x00e26fa1, 0x1dbab1b2)</AlgorithmClassIdentifier>
+			<Inputs>
+				<Input>
+					<TypeIdentifier>(0x5ba36127, 0x195feae1)</TypeIdentifier>
+					<Name>Input - A</Name>
+				</Input>
+				<Input>
+					<Identifier>(0x000b80da, 0xbff5da2a)</Identifier>
+					<TypeIdentifier>(0x5ba36127, 0x195feae1)</TypeIdentifier>
+					<Name>Input - B</Name>
+				</Input>
+			</Inputs>
+			<Outputs>
+				<Output>
+					<TypeIdentifier>(0x5ba36127, 0x195feae1)</TypeIdentifier>
+					<Name>Output</Name>
+				</Output>
+			</Outputs>
+			<Settings>
+				<Setting>
+					<TypeIdentifier>(0x79a9edeb, 0x245d83fc)</TypeIdentifier>
+					<Name>Equation</Name>
+					<DefaultValue>x</DefaultValue>
+					<Value>(b&gt;0)*(a&gt;0)*a+(b&lt;=0)*b</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+			</Settings>
+			<Attributes>
+				<Attribute>
+					<Identifier>(0x1fa7a38f, 0x54edbe0b)</Identifier>
+					<Value>-320</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x207c9054, 0x3c841b63)</Identifier>
+					<Value>1200</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x30a4e5c9, 0x83502953)</Identifier>
+					<Value></Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x4e7b798a, 0x183beafb)</Identifier>
+					<Value>(0x21889dc4, 0x1126497e)</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x527ad68d, 0x16d746a0)</Identifier>
+					<Value></Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xc80ce8af, 0xf699f813)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xce18836a, 0x9c0eb403)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xcfad85b0, 0x7c6d841c)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xfba64161, 0x65304e21)</Identifier>
+					<Value></Value>
+				</Attribute>
+			</Attributes>
+		</Box>
+		<Box>
+			<Identifier>(0x5ad26528, 0x6a411f1e)</Identifier>
+			<Name>Simple DSP</Name>
+			<AlgorithmClassIdentifier>(0x00e26fa1, 0x1dbab1b2)</AlgorithmClassIdentifier>
+			<Inputs>
+				<Input>
+					<TypeIdentifier>(0x5ba36127, 0x195feae1)</TypeIdentifier>
+					<Name>Input - A</Name>
+				</Input>
+				<Input>
+					<Identifier>(0x000b80da, 0xbff5da2a)</Identifier>
+					<TypeIdentifier>(0x5ba36127, 0x195feae1)</TypeIdentifier>
+					<Name>Input - B</Name>
+				</Input>
+			</Inputs>
+			<Outputs>
+				<Output>
+					<TypeIdentifier>(0x5ba36127, 0x195feae1)</TypeIdentifier>
+					<Name>Output</Name>
+				</Output>
+			</Outputs>
+			<Settings>
+				<Setting>
+					<TypeIdentifier>(0x79a9edeb, 0x245d83fc)</TypeIdentifier>
+					<Name>Equation</Name>
+					<DefaultValue>x</DefaultValue>
+					<Value>(b&gt;0)*(a&gt;0)*a+(b&lt;=0)*(-1)</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+			</Settings>
+			<Attributes>
+				<Attribute>
+					<Identifier>(0x1fa7a38f, 0x54edbe0b)</Identifier>
+					<Value>-336</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x207c9054, 0x3c841b63)</Identifier>
+					<Value>1488</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x30a4e5c9, 0x83502953)</Identifier>
+					<Value></Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x341d3912, 0x1478de86)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x4e7b798a, 0x183beafb)</Identifier>
+					<Value>(0x21889dc4, 0x1126497e)</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x527ad68d, 0x16d746a0)</Identifier>
+					<Value></Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xc80ce8af, 0xf699f813)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xce18836a, 0x9c0eb403)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xcfad85b0, 0x7c6d841c)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xfba64161, 0x65304e21)</Identifier>
+					<Value></Value>
+				</Attribute>
+			</Attributes>
+		</Box>
+		<Box>
+			<Identifier>(0x5ad26528, 0x6a411f1f)</Identifier>
+			<Name>Simple DSP</Name>
+			<AlgorithmClassIdentifier>(0x00e26fa1, 0x1dbab1b2)</AlgorithmClassIdentifier>
+			<Inputs>
+				<Input>
+					<TypeIdentifier>(0x5ba36127, 0x195feae1)</TypeIdentifier>
+					<Name>Input - A</Name>
+				</Input>
+				<Input>
+					<Identifier>(0x000b80da, 0xbff5da2a)</Identifier>
+					<TypeIdentifier>(0x5ba36127, 0x195feae1)</TypeIdentifier>
+					<Name>Input - B</Name>
+				</Input>
+			</Inputs>
+			<Outputs>
+				<Output>
+					<TypeIdentifier>(0x5ba36127, 0x195feae1)</TypeIdentifier>
+					<Name>Output</Name>
+				</Output>
+			</Outputs>
+			<Settings>
+				<Setting>
+					<TypeIdentifier>(0x79a9edeb, 0x245d83fc)</TypeIdentifier>
+					<Name>Equation</Name>
+					<DefaultValue>x</DefaultValue>
+					<Value>(b&gt;0)*(a&gt;0)*a+(b&lt;=0)*(-1)</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+			</Settings>
+			<Attributes>
+				<Attribute>
+					<Identifier>(0x1fa7a38f, 0x54edbe0b)</Identifier>
+					<Value>-336</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x207c9054, 0x3c841b63)</Identifier>
+					<Value>1616</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x30a4e5c9, 0x83502953)</Identifier>
+					<Value></Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x341d3912, 0x1478de86)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x4e7b798a, 0x183beafb)</Identifier>
+					<Value>(0x21889dc4, 0x1126497e)</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x527ad68d, 0x16d746a0)</Identifier>
+					<Value></Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xc80ce8af, 0xf699f813)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xce18836a, 0x9c0eb403)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xcfad85b0, 0x7c6d841c)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xfba64161, 0x65304e21)</Identifier>
+					<Value></Value>
+				</Attribute>
+			</Attributes>
+		</Box>
+		<Box>
+			<Identifier>(0x5c8ee5bd, 0x531bdcff)</Identifier>
+			<Name>Signal display</Name>
+			<AlgorithmClassIdentifier>(0x0055be5f, 0x087bdd12)</AlgorithmClassIdentifier>
+			<Inputs>
+				<Input>
+					<TypeIdentifier>(0x5ba36127, 0x195feae1)</TypeIdentifier>
+					<Name>Data</Name>
+				</Input>
+				<Input>
+					<TypeIdentifier>(0x6f752dd0, 0x082a321e)</TypeIdentifier>
+					<Name>Stimulations</Name>
+				</Input>
+				<Input>
+					<TypeIdentifier>(0x6ab26b81, 0x0f8c02f3)</TypeIdentifier>
+					<Name>Channel Units</Name>
+				</Input>
+			</Inputs>
+			<Settings>
+				<Setting>
+					<TypeIdentifier>(0x5de046a6, 0x086340aa)</TypeIdentifier>
+					<Name>Display Mode</Name>
+					<DefaultValue>Scan</DefaultValue>
+					<Value>Scroll</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x33a30739, 0x00d5299b)</TypeIdentifier>
+					<Name>Auto vertical scale</Name>
+					<DefaultValue>Per channel</DefaultValue>
+					<Value>Per channel</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x512a166f, 0x5c3ef83f)</TypeIdentifier>
+					<Name>Scale refresh interval (secs)</Name>
+					<DefaultValue>5</DefaultValue>
+					<Value>5</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x512a166f, 0x5c3ef83f)</TypeIdentifier>
+					<Name>Vertical Scale</Name>
+					<DefaultValue>100</DefaultValue>
+					<Value>100</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x512a166f, 0x5c3ef83f)</TypeIdentifier>
+					<Name>Vertical Offset</Name>
+					<DefaultValue>0</DefaultValue>
+					<Value>0</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x512a166f, 0x5c3ef83f)</TypeIdentifier>
+					<Name>Time Scale</Name>
+					<DefaultValue>10</DefaultValue>
+					<Value>10</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x2cdb2f0b, 0x12f231ea)</TypeIdentifier>
+					<Name>Bottom ruler</Name>
+					<DefaultValue>true</DefaultValue>
+					<Value>true</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x2cdb2f0b, 0x12f231ea)</TypeIdentifier>
+					<Name>Left ruler</Name>
+					<DefaultValue>false</DefaultValue>
+					<Value>true</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x2cdb2f0b, 0x12f231ea)</TypeIdentifier>
+					<Name>Multiview</Name>
+					<DefaultValue>false</DefaultValue>
+					<Value>false</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+			</Settings>
+			<Attributes>
+				<Attribute>
+					<Identifier>(0x1fa7a38f, 0x54edbe0b)</Identifier>
+					<Value>-336</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x207c9054, 0x3c841b63)</Identifier>
+					<Value>1760</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x341d3912, 0x1478de86)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x4e7b798a, 0x183beafb)</Identifier>
+					<Value>(0x92c056a7, 0x2dc71aff)</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x527ad68d, 0x16d746a0)</Identifier>
+					<Value></Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xce18836a, 0x9c0eb403)</Identifier>
+					<Value>9</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xcfad85b0, 0x7c6d841c)</Identifier>
+					<Value>3</Value>
+				</Attribute>
+			</Attributes>
+		</Box>
+		<Box>
+			<Identifier>(0x5c8ee5bd, 0x531bdd00)</Identifier>
+			<Name>Signal display</Name>
+			<AlgorithmClassIdentifier>(0x0055be5f, 0x087bdd12)</AlgorithmClassIdentifier>
+			<Inputs>
+				<Input>
+					<TypeIdentifier>(0x5ba36127, 0x195feae1)</TypeIdentifier>
+					<Name>Data</Name>
+				</Input>
+				<Input>
+					<TypeIdentifier>(0x6f752dd0, 0x082a321e)</TypeIdentifier>
+					<Name>Stimulations</Name>
+				</Input>
+				<Input>
+					<TypeIdentifier>(0x6ab26b81, 0x0f8c02f3)</TypeIdentifier>
+					<Name>Channel Units</Name>
+				</Input>
+			</Inputs>
+			<Settings>
+				<Setting>
+					<TypeIdentifier>(0x5de046a6, 0x086340aa)</TypeIdentifier>
+					<Name>Display Mode</Name>
+					<DefaultValue>Scan</DefaultValue>
+					<Value>Scan</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x33a30739, 0x00d5299b)</TypeIdentifier>
+					<Name>Auto vertical scale</Name>
+					<DefaultValue>Per channel</DefaultValue>
+					<Value>None</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x512a166f, 0x5c3ef83f)</TypeIdentifier>
+					<Name>Scale refresh interval (secs)</Name>
+					<DefaultValue>5</DefaultValue>
+					<Value>5</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x512a166f, 0x5c3ef83f)</TypeIdentifier>
+					<Name>Vertical Scale</Name>
+					<DefaultValue>100</DefaultValue>
+					<Value>15.000000</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x512a166f, 0x5c3ef83f)</TypeIdentifier>
+					<Name>Vertical Offset</Name>
+					<DefaultValue>0</DefaultValue>
+					<Value>0.000000</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x512a166f, 0x5c3ef83f)</TypeIdentifier>
+					<Name>Time Scale</Name>
+					<DefaultValue>10</DefaultValue>
+					<Value>5</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x2cdb2f0b, 0x12f231ea)</TypeIdentifier>
+					<Name>Bottom ruler</Name>
+					<DefaultValue>true</DefaultValue>
+					<Value>true</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x2cdb2f0b, 0x12f231ea)</TypeIdentifier>
+					<Name>Left ruler</Name>
+					<DefaultValue>false</DefaultValue>
+					<Value>true</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x2cdb2f0b, 0x12f231ea)</TypeIdentifier>
+					<Name>Multiview</Name>
+					<DefaultValue>false</DefaultValue>
+					<Value>false</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+			</Settings>
+			<Attributes>
+				<Attribute>
+					<Identifier>(0x1fa7a38f, 0x54edbe0b)</Identifier>
+					<Value>-320</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x207c9054, 0x3c841b63)</Identifier>
+					<Value>1088</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x341d3912, 0x1478de86)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x4e7b798a, 0x183beafb)</Identifier>
+					<Value>(0x92c056a7, 0x2dc71aff)</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x527ad68d, 0x16d746a0)</Identifier>
+					<Value></Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xce18836a, 0x9c0eb403)</Identifier>
+					<Value>9</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xcfad85b0, 0x7c6d841c)</Identifier>
+					<Value>3</Value>
+				</Attribute>
+			</Attributes>
+		</Box>
+		<Box>
+			<Identifier>(0x62b2f750, 0x7f4916d9)</Identifier>
+			<Name>OSC Controller</Name>
+			<AlgorithmClassIdentifier>(0xc66f2f0c, 0x3ba5b424)</AlgorithmClassIdentifier>
+			<Inputs>
+				<Input>
+					<TypeIdentifier>(0x5ba36127, 0x195feae1)</TypeIdentifier>
+					<Name>Input</Name>
+				</Input>
+			</Inputs>
+			<Settings>
+				<Setting>
+					<TypeIdentifier>(0x79a9edeb, 0x245d83fc)</TypeIdentifier>
+					<Name>OSC Server IP</Name>
+					<DefaultValue>127.0.0.1</DefaultValue>
+					<Value>127.0.0.1</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x007deef9, 0x2f3e95c6)</TypeIdentifier>
+					<Name>OSC Server Port</Name>
+					<DefaultValue>9001</DefaultValue>
+					<Value>9001</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x79a9edeb, 0x245d83fc)</TypeIdentifier>
+					<Name>OSC Address</Name>
+					<DefaultValue>/a/b/c</DefaultValue>
+					<Value>/theta-gamma-Fp1</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+			</Settings>
+			<Attributes>
+				<Attribute>
+					<Identifier>(0x1fa7a38f, 0x54edbe0b)</Identifier>
+					<Value>-192</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x207c9054, 0x3c841b63)</Identifier>
+					<Value>1088</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x4e7b798a, 0x183beafb)</Identifier>
+					<Value>(0xb725381f, 0xee6e86ca)</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x527ad68d, 0x16d746a0)</Identifier>
+					<Value></Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x666fffff, 0x666fffff)</Identifier>
+					<Value></Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xce18836a, 0x9c0eb403)</Identifier>
+					<Value>3</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xcfad85b0, 0x7c6d841c)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+			</Attributes>
+		</Box>
+		<Box>
+			<Identifier>(0x62b2f750, 0x7f4916da)</Identifier>
+			<Name>OSC Controller</Name>
+			<AlgorithmClassIdentifier>(0xc66f2f0c, 0x3ba5b424)</AlgorithmClassIdentifier>
+			<Inputs>
+				<Input>
+					<TypeIdentifier>(0x5ba36127, 0x195feae1)</TypeIdentifier>
+					<Name>Input</Name>
+				</Input>
+			</Inputs>
+			<Settings>
+				<Setting>
+					<TypeIdentifier>(0x79a9edeb, 0x245d83fc)</TypeIdentifier>
+					<Name>OSC Server IP</Name>
+					<DefaultValue>127.0.0.1</DefaultValue>
+					<Value>127.0.0.1</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x007deef9, 0x2f3e95c6)</TypeIdentifier>
+					<Name>OSC Server Port</Name>
+					<DefaultValue>9001</DefaultValue>
+					<Value>9002</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x79a9edeb, 0x245d83fc)</TypeIdentifier>
+					<Name>OSC Address</Name>
+					<DefaultValue>/a/b/c</DefaultValue>
+					<Value>/theta-alpha-F3</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+			</Settings>
+			<Attributes>
+				<Attribute>
+					<Identifier>(0x1fa7a38f, 0x54edbe0b)</Identifier>
+					<Value>-192</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x207c9054, 0x3c841b63)</Identifier>
+					<Value>1344</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x341d3912, 0x1478de86)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x4e7b798a, 0x183beafb)</Identifier>
+					<Value>(0xb725381f, 0xee6e86ca)</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x527ad68d, 0x16d746a0)</Identifier>
+					<Value></Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x666fffff, 0x666fffff)</Identifier>
+					<Value></Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xce18836a, 0x9c0eb403)</Identifier>
+					<Value>3</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xcfad85b0, 0x7c6d841c)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+			</Attributes>
+		</Box>
+		<Box>
+			<Identifier>(0x62b2f750, 0x7f4916db)</Identifier>
+			<Name>OSC Controller</Name>
+			<AlgorithmClassIdentifier>(0xc66f2f0c, 0x3ba5b424)</AlgorithmClassIdentifier>
+			<Inputs>
+				<Input>
+					<TypeIdentifier>(0x5ba36127, 0x195feae1)</TypeIdentifier>
+					<Name>Input</Name>
+				</Input>
+			</Inputs>
+			<Settings>
+				<Setting>
+					<TypeIdentifier>(0x79a9edeb, 0x245d83fc)</TypeIdentifier>
+					<Name>OSC Server IP</Name>
+					<DefaultValue>127.0.0.1</DefaultValue>
+					<Value>127.0.0.1</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x007deef9, 0x2f3e95c6)</TypeIdentifier>
+					<Name>OSC Server Port</Name>
+					<DefaultValue>9001</DefaultValue>
+					<Value>9003</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x79a9edeb, 0x245d83fc)</TypeIdentifier>
+					<Name>OSC Address</Name>
+					<DefaultValue>/a/b/c</DefaultValue>
+					<Value>/theta-beta-F3</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+			</Settings>
+			<Attributes>
+				<Attribute>
+					<Identifier>(0x1fa7a38f, 0x54edbe0b)</Identifier>
+					<Value>-192</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x207c9054, 0x3c841b63)</Identifier>
+					<Value>1488</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x341d3912, 0x1478de86)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x4e7b798a, 0x183beafb)</Identifier>
+					<Value>(0xb725381f, 0xee6e86ca)</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x527ad68d, 0x16d746a0)</Identifier>
+					<Value></Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x666fffff, 0x666fffff)</Identifier>
+					<Value></Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xce18836a, 0x9c0eb403)</Identifier>
+					<Value>3</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xcfad85b0, 0x7c6d841c)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+			</Attributes>
+		</Box>
+		<Box>
+			<Identifier>(0x62b2f750, 0x7f4916dc)</Identifier>
+			<Name>OSC Controller</Name>
+			<AlgorithmClassIdentifier>(0xc66f2f0c, 0x3ba5b424)</AlgorithmClassIdentifier>
+			<Inputs>
+				<Input>
+					<TypeIdentifier>(0x5ba36127, 0x195feae1)</TypeIdentifier>
+					<Name>Input</Name>
+				</Input>
+			</Inputs>
+			<Settings>
+				<Setting>
+					<TypeIdentifier>(0x79a9edeb, 0x245d83fc)</TypeIdentifier>
+					<Name>OSC Server IP</Name>
+					<DefaultValue>127.0.0.1</DefaultValue>
+					<Value>127.0.0.1</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x007deef9, 0x2f3e95c6)</TypeIdentifier>
+					<Name>OSC Server Port</Name>
+					<DefaultValue>9001</DefaultValue>
+					<Value>9011</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x79a9edeb, 0x245d83fc)</TypeIdentifier>
+					<Name>OSC Address</Name>
+					<DefaultValue>/a/b/c</DefaultValue>
+					<Value>/theta-gamma-Fp2</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+			</Settings>
+			<Attributes>
+				<Attribute>
+					<Identifier>(0x1fa7a38f, 0x54edbe0b)</Identifier>
+					<Value>-192</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x207c9054, 0x3c841b63)</Identifier>
+					<Value>1216</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x4e7b798a, 0x183beafb)</Identifier>
+					<Value>(0xb725381f, 0xee6e86ca)</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x527ad68d, 0x16d746a0)</Identifier>
+					<Value></Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x666fffff, 0x666fffff)</Identifier>
+					<Value></Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xce18836a, 0x9c0eb403)</Identifier>
+					<Value>3</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xcfad85b0, 0x7c6d841c)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+			</Attributes>
+		</Box>
+		<Box>
+			<Identifier>(0x62b2f750, 0x7f4916dd)</Identifier>
+			<Name>OSC Controller</Name>
+			<AlgorithmClassIdentifier>(0xc66f2f0c, 0x3ba5b424)</AlgorithmClassIdentifier>
+			<Inputs>
+				<Input>
+					<TypeIdentifier>(0x5ba36127, 0x195feae1)</TypeIdentifier>
+					<Name>Input</Name>
+				</Input>
+			</Inputs>
+			<Settings>
+				<Setting>
+					<TypeIdentifier>(0x79a9edeb, 0x245d83fc)</TypeIdentifier>
+					<Name>OSC Server IP</Name>
+					<DefaultValue>127.0.0.1</DefaultValue>
+					<Value>127.0.0.1</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x007deef9, 0x2f3e95c6)</TypeIdentifier>
+					<Name>OSC Server Port</Name>
+					<DefaultValue>9001</DefaultValue>
+					<Value>9012</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x79a9edeb, 0x245d83fc)</TypeIdentifier>
+					<Name>OSC Address</Name>
+					<DefaultValue>/a/b/c</DefaultValue>
+					<Value>/theta-alpha-F4</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+			</Settings>
+			<Attributes>
+				<Attribute>
+					<Identifier>(0x1fa7a38f, 0x54edbe0b)</Identifier>
+					<Value>-192</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x207c9054, 0x3c841b63)</Identifier>
+					<Value>1616</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x341d3912, 0x1478de86)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x4e7b798a, 0x183beafb)</Identifier>
+					<Value>(0xb725381f, 0xee6e86ca)</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x527ad68d, 0x16d746a0)</Identifier>
+					<Value></Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x666fffff, 0x666fffff)</Identifier>
+					<Value></Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xce18836a, 0x9c0eb403)</Identifier>
+					<Value>3</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xcfad85b0, 0x7c6d841c)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+			</Attributes>
+		</Box>
+		<Box>
+			<Identifier>(0x62b2f750, 0x7f4916de)</Identifier>
+			<Name>OSC Controller</Name>
+			<AlgorithmClassIdentifier>(0xc66f2f0c, 0x3ba5b424)</AlgorithmClassIdentifier>
+			<Inputs>
+				<Input>
+					<TypeIdentifier>(0x5ba36127, 0x195feae1)</TypeIdentifier>
+					<Name>Input</Name>
+				</Input>
+			</Inputs>
+			<Settings>
+				<Setting>
+					<TypeIdentifier>(0x79a9edeb, 0x245d83fc)</TypeIdentifier>
+					<Name>OSC Server IP</Name>
+					<DefaultValue>127.0.0.1</DefaultValue>
+					<Value>127.0.0.1</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x007deef9, 0x2f3e95c6)</TypeIdentifier>
+					<Name>OSC Server Port</Name>
+					<DefaultValue>9001</DefaultValue>
+					<Value>9013</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x79a9edeb, 0x245d83fc)</TypeIdentifier>
+					<Name>OSC Address</Name>
+					<DefaultValue>/a/b/c</DefaultValue>
+					<Value>/theta-beta-F4</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+			</Settings>
+			<Attributes>
+				<Attribute>
+					<Identifier>(0x1fa7a38f, 0x54edbe0b)</Identifier>
+					<Value>-192</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x207c9054, 0x3c841b63)</Identifier>
+					<Value>1760</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x341d3912, 0x1478de86)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x4e7b798a, 0x183beafb)</Identifier>
+					<Value>(0xb725381f, 0xee6e86ca)</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x527ad68d, 0x16d746a0)</Identifier>
+					<Value></Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x666fffff, 0x666fffff)</Identifier>
+					<Value></Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xce18836a, 0x9c0eb403)</Identifier>
+					<Value>3</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xcfad85b0, 0x7c6d841c)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+			</Attributes>
+		</Box>
+		<Box>
+			<Identifier>(0x62b2f750, 0x7f4916df)</Identifier>
+			<Name>OSC Controller</Name>
+			<AlgorithmClassIdentifier>(0xc66f2f0c, 0x3ba5b424)</AlgorithmClassIdentifier>
+			<Inputs>
+				<Input>
+					<TypeIdentifier>(0x5ba36127, 0x195feae1)</TypeIdentifier>
+					<Name>Input</Name>
+				</Input>
+			</Inputs>
+			<Settings>
+				<Setting>
+					<TypeIdentifier>(0x79a9edeb, 0x245d83fc)</TypeIdentifier>
+					<Name>OSC Server IP</Name>
+					<DefaultValue>127.0.0.1</DefaultValue>
+					<Value>127.0.0.1</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x007deef9, 0x2f3e95c6)</TypeIdentifier>
+					<Name>OSC Server Port</Name>
+					<DefaultValue>9001</DefaultValue>
+					<Value>9101</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x79a9edeb, 0x245d83fc)</TypeIdentifier>
+					<Name>OSC Address</Name>
+					<DefaultValue>/a/b/c</DefaultValue>
+					<Value>/theta-gamma-F3</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+			</Settings>
+			<Attributes>
+				<Attribute>
+					<Identifier>(0x1fa7a38f, 0x54edbe0b)</Identifier>
+					<Value>-64</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x207c9054, 0x3c841b63)</Identifier>
+					<Value>1088</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x4e7b798a, 0x183beafb)</Identifier>
+					<Value>(0xb725381f, 0xee6e86ca)</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x527ad68d, 0x16d746a0)</Identifier>
+					<Value></Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x666fffff, 0x666fffff)</Identifier>
+					<Value></Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xce18836a, 0x9c0eb403)</Identifier>
+					<Value>3</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xcfad85b0, 0x7c6d841c)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+			</Attributes>
+		</Box>
+		<Box>
+			<Identifier>(0x62b2f750, 0x7f4916e0)</Identifier>
+			<Name>OSC Controller</Name>
+			<AlgorithmClassIdentifier>(0xc66f2f0c, 0x3ba5b424)</AlgorithmClassIdentifier>
+			<Inputs>
+				<Input>
+					<TypeIdentifier>(0x5ba36127, 0x195feae1)</TypeIdentifier>
+					<Name>Input</Name>
+				</Input>
+			</Inputs>
+			<Settings>
+				<Setting>
+					<TypeIdentifier>(0x79a9edeb, 0x245d83fc)</TypeIdentifier>
+					<Name>OSC Server IP</Name>
+					<DefaultValue>127.0.0.1</DefaultValue>
+					<Value>127.0.0.1</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x007deef9, 0x2f3e95c6)</TypeIdentifier>
+					<Name>OSC Server Port</Name>
+					<DefaultValue>9001</DefaultValue>
+					<Value>9002</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x79a9edeb, 0x245d83fc)</TypeIdentifier>
+					<Name>OSC Address</Name>
+					<DefaultValue>/a/b/c</DefaultValue>
+					<Value>/theta-alpha-F3</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+			</Settings>
+			<Attributes>
+				<Attribute>
+					<Identifier>(0x1fa7a38f, 0x54edbe0b)</Identifier>
+					<Value>-64</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x207c9054, 0x3c841b63)</Identifier>
+					<Value>1344</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x341d3912, 0x1478de86)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x4e7b798a, 0x183beafb)</Identifier>
+					<Value>(0xb725381f, 0xee6e86ca)</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x527ad68d, 0x16d746a0)</Identifier>
+					<Value></Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x666fffff, 0x666fffff)</Identifier>
+					<Value></Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xce18836a, 0x9c0eb403)</Identifier>
+					<Value>3</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xcfad85b0, 0x7c6d841c)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+			</Attributes>
+		</Box>
+		<Box>
+			<Identifier>(0x62b2f750, 0x7f4916e1)</Identifier>
+			<Name>OSC Controller</Name>
+			<AlgorithmClassIdentifier>(0xc66f2f0c, 0x3ba5b424)</AlgorithmClassIdentifier>
+			<Inputs>
+				<Input>
+					<TypeIdentifier>(0x5ba36127, 0x195feae1)</TypeIdentifier>
+					<Name>Input</Name>
+				</Input>
+			</Inputs>
+			<Settings>
+				<Setting>
+					<TypeIdentifier>(0x79a9edeb, 0x245d83fc)</TypeIdentifier>
+					<Name>OSC Server IP</Name>
+					<DefaultValue>127.0.0.1</DefaultValue>
+					<Value>127.0.0.1</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x007deef9, 0x2f3e95c6)</TypeIdentifier>
+					<Name>OSC Server Port</Name>
+					<DefaultValue>9001</DefaultValue>
+					<Value>9003</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x79a9edeb, 0x245d83fc)</TypeIdentifier>
+					<Name>OSC Address</Name>
+					<DefaultValue>/a/b/c</DefaultValue>
+					<Value>/theta-beta-F3</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+			</Settings>
+			<Attributes>
+				<Attribute>
+					<Identifier>(0x1fa7a38f, 0x54edbe0b)</Identifier>
+					<Value>-64</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x207c9054, 0x3c841b63)</Identifier>
+					<Value>1488</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x341d3912, 0x1478de86)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x4e7b798a, 0x183beafb)</Identifier>
+					<Value>(0xb725381f, 0xee6e86ca)</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x527ad68d, 0x16d746a0)</Identifier>
+					<Value></Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x666fffff, 0x666fffff)</Identifier>
+					<Value></Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xce18836a, 0x9c0eb403)</Identifier>
+					<Value>3</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xcfad85b0, 0x7c6d841c)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+			</Attributes>
+		</Box>
+		<Box>
+			<Identifier>(0x62b2f750, 0x7f4916e2)</Identifier>
+			<Name>OSC Controller</Name>
+			<AlgorithmClassIdentifier>(0xc66f2f0c, 0x3ba5b424)</AlgorithmClassIdentifier>
+			<Inputs>
+				<Input>
+					<TypeIdentifier>(0x5ba36127, 0x195feae1)</TypeIdentifier>
+					<Name>Input</Name>
+				</Input>
+			</Inputs>
+			<Settings>
+				<Setting>
+					<TypeIdentifier>(0x79a9edeb, 0x245d83fc)</TypeIdentifier>
+					<Name>OSC Server IP</Name>
+					<DefaultValue>127.0.0.1</DefaultValue>
+					<Value>127.0.0.1</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x007deef9, 0x2f3e95c6)</TypeIdentifier>
+					<Name>OSC Server Port</Name>
+					<DefaultValue>9001</DefaultValue>
+					<Value>9111</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x79a9edeb, 0x245d83fc)</TypeIdentifier>
+					<Name>OSC Address</Name>
+					<DefaultValue>/a/b/c</DefaultValue>
+					<Value>/theta-gamma-F4</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+			</Settings>
+			<Attributes>
+				<Attribute>
+					<Identifier>(0x1fa7a38f, 0x54edbe0b)</Identifier>
+					<Value>-64</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x207c9054, 0x3c841b63)</Identifier>
+					<Value>1216</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x4e7b798a, 0x183beafb)</Identifier>
+					<Value>(0xb725381f, 0xee6e86ca)</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x527ad68d, 0x16d746a0)</Identifier>
+					<Value></Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x666fffff, 0x666fffff)</Identifier>
+					<Value></Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xce18836a, 0x9c0eb403)</Identifier>
+					<Value>3</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xcfad85b0, 0x7c6d841c)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+			</Attributes>
+		</Box>
+		<Box>
+			<Identifier>(0x62b2f750, 0x7f4916e3)</Identifier>
+			<Name>OSC Controller</Name>
+			<AlgorithmClassIdentifier>(0xc66f2f0c, 0x3ba5b424)</AlgorithmClassIdentifier>
+			<Inputs>
+				<Input>
+					<TypeIdentifier>(0x5ba36127, 0x195feae1)</TypeIdentifier>
+					<Name>Input</Name>
+				</Input>
+			</Inputs>
+			<Settings>
+				<Setting>
+					<TypeIdentifier>(0x79a9edeb, 0x245d83fc)</TypeIdentifier>
+					<Name>OSC Server IP</Name>
+					<DefaultValue>127.0.0.1</DefaultValue>
+					<Value>127.0.0.1</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x007deef9, 0x2f3e95c6)</TypeIdentifier>
+					<Name>OSC Server Port</Name>
+					<DefaultValue>9001</DefaultValue>
+					<Value>9012</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x79a9edeb, 0x245d83fc)</TypeIdentifier>
+					<Name>OSC Address</Name>
+					<DefaultValue>/a/b/c</DefaultValue>
+					<Value>/theta-alpha-F4</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+			</Settings>
+			<Attributes>
+				<Attribute>
+					<Identifier>(0x1fa7a38f, 0x54edbe0b)</Identifier>
+					<Value>-64</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x207c9054, 0x3c841b63)</Identifier>
+					<Value>1616</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x341d3912, 0x1478de86)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x4e7b798a, 0x183beafb)</Identifier>
+					<Value>(0xb725381f, 0xee6e86ca)</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x527ad68d, 0x16d746a0)</Identifier>
+					<Value></Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x666fffff, 0x666fffff)</Identifier>
+					<Value></Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xce18836a, 0x9c0eb403)</Identifier>
+					<Value>3</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xcfad85b0, 0x7c6d841c)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+			</Attributes>
+		</Box>
+		<Box>
+			<Identifier>(0x62b2f750, 0x7f4916e4)</Identifier>
+			<Name>OSC Controller</Name>
+			<AlgorithmClassIdentifier>(0xc66f2f0c, 0x3ba5b424)</AlgorithmClassIdentifier>
+			<Inputs>
+				<Input>
+					<TypeIdentifier>(0x5ba36127, 0x195feae1)</TypeIdentifier>
+					<Name>Input</Name>
+				</Input>
+			</Inputs>
+			<Settings>
+				<Setting>
+					<TypeIdentifier>(0x79a9edeb, 0x245d83fc)</TypeIdentifier>
+					<Name>OSC Server IP</Name>
+					<DefaultValue>127.0.0.1</DefaultValue>
+					<Value>127.0.0.1</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x007deef9, 0x2f3e95c6)</TypeIdentifier>
+					<Name>OSC Server Port</Name>
+					<DefaultValue>9001</DefaultValue>
+					<Value>9013</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x79a9edeb, 0x245d83fc)</TypeIdentifier>
+					<Name>OSC Address</Name>
+					<DefaultValue>/a/b/c</DefaultValue>
+					<Value>/theta-beta-F4</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+			</Settings>
+			<Attributes>
+				<Attribute>
+					<Identifier>(0x1fa7a38f, 0x54edbe0b)</Identifier>
+					<Value>-64</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x207c9054, 0x3c841b63)</Identifier>
+					<Value>1760</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x341d3912, 0x1478de86)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x4e7b798a, 0x183beafb)</Identifier>
+					<Value>(0xb725381f, 0xee6e86ca)</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x527ad68d, 0x16d746a0)</Identifier>
+					<Value></Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x666fffff, 0x666fffff)</Identifier>
+					<Value></Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xce18836a, 0x9c0eb403)</Identifier>
+					<Value>3</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xcfad85b0, 0x7c6d841c)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+			</Attributes>
+		</Box>
+		<Box>
+			<Identifier>(0x62b2f750, 0x7f4916e5)</Identifier>
+			<Name>OSC Controller</Name>
+			<AlgorithmClassIdentifier>(0xc66f2f0c, 0x3ba5b424)</AlgorithmClassIdentifier>
+			<Inputs>
+				<Input>
+					<TypeIdentifier>(0x5ba36127, 0x195feae1)</TypeIdentifier>
+					<Name>Input</Name>
+				</Input>
+			</Inputs>
+			<Settings>
+				<Setting>
+					<TypeIdentifier>(0x79a9edeb, 0x245d83fc)</TypeIdentifier>
+					<Name>OSC Server IP</Name>
+					<DefaultValue>127.0.0.1</DefaultValue>
+					<Value>127.0.0.1</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x007deef9, 0x2f3e95c6)</TypeIdentifier>
+					<Name>OSC Server Port</Name>
+					<DefaultValue>9001</DefaultValue>
+					<Value>9201</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x79a9edeb, 0x245d83fc)</TypeIdentifier>
+					<Name>OSC Address</Name>
+					<DefaultValue>/a/b/c</DefaultValue>
+					<Value>/theta-gamma-P3</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+			</Settings>
+			<Attributes>
+				<Attribute>
+					<Identifier>(0x1fa7a38f, 0x54edbe0b)</Identifier>
+					<Value>64</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x207c9054, 0x3c841b63)</Identifier>
+					<Value>1088</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x4e7b798a, 0x183beafb)</Identifier>
+					<Value>(0xb725381f, 0xee6e86ca)</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x527ad68d, 0x16d746a0)</Identifier>
+					<Value></Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x666fffff, 0x666fffff)</Identifier>
+					<Value></Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xce18836a, 0x9c0eb403)</Identifier>
+					<Value>3</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xcfad85b0, 0x7c6d841c)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+			</Attributes>
+		</Box>
+		<Box>
+			<Identifier>(0x62b2f750, 0x7f4916e6)</Identifier>
+			<Name>OSC Controller</Name>
+			<AlgorithmClassIdentifier>(0xc66f2f0c, 0x3ba5b424)</AlgorithmClassIdentifier>
+			<Inputs>
+				<Input>
+					<TypeIdentifier>(0x5ba36127, 0x195feae1)</TypeIdentifier>
+					<Name>Input</Name>
+				</Input>
+			</Inputs>
+			<Settings>
+				<Setting>
+					<TypeIdentifier>(0x79a9edeb, 0x245d83fc)</TypeIdentifier>
+					<Name>OSC Server IP</Name>
+					<DefaultValue>127.0.0.1</DefaultValue>
+					<Value>127.0.0.1</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x007deef9, 0x2f3e95c6)</TypeIdentifier>
+					<Name>OSC Server Port</Name>
+					<DefaultValue>9001</DefaultValue>
+					<Value>9002</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x79a9edeb, 0x245d83fc)</TypeIdentifier>
+					<Name>OSC Address</Name>
+					<DefaultValue>/a/b/c</DefaultValue>
+					<Value>/theta-alpha-F3</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+			</Settings>
+			<Attributes>
+				<Attribute>
+					<Identifier>(0x1fa7a38f, 0x54edbe0b)</Identifier>
+					<Value>64</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x207c9054, 0x3c841b63)</Identifier>
+					<Value>1344</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x341d3912, 0x1478de86)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x4e7b798a, 0x183beafb)</Identifier>
+					<Value>(0xb725381f, 0xee6e86ca)</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x527ad68d, 0x16d746a0)</Identifier>
+					<Value></Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x666fffff, 0x666fffff)</Identifier>
+					<Value></Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xce18836a, 0x9c0eb403)</Identifier>
+					<Value>3</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xcfad85b0, 0x7c6d841c)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+			</Attributes>
+		</Box>
+		<Box>
+			<Identifier>(0x62b2f750, 0x7f4916e7)</Identifier>
+			<Name>OSC Controller</Name>
+			<AlgorithmClassIdentifier>(0xc66f2f0c, 0x3ba5b424)</AlgorithmClassIdentifier>
+			<Inputs>
+				<Input>
+					<TypeIdentifier>(0x5ba36127, 0x195feae1)</TypeIdentifier>
+					<Name>Input</Name>
+				</Input>
+			</Inputs>
+			<Settings>
+				<Setting>
+					<TypeIdentifier>(0x79a9edeb, 0x245d83fc)</TypeIdentifier>
+					<Name>OSC Server IP</Name>
+					<DefaultValue>127.0.0.1</DefaultValue>
+					<Value>127.0.0.1</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x007deef9, 0x2f3e95c6)</TypeIdentifier>
+					<Name>OSC Server Port</Name>
+					<DefaultValue>9001</DefaultValue>
+					<Value>9003</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x79a9edeb, 0x245d83fc)</TypeIdentifier>
+					<Name>OSC Address</Name>
+					<DefaultValue>/a/b/c</DefaultValue>
+					<Value>/theta-beta-F3</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+			</Settings>
+			<Attributes>
+				<Attribute>
+					<Identifier>(0x1fa7a38f, 0x54edbe0b)</Identifier>
+					<Value>64</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x207c9054, 0x3c841b63)</Identifier>
+					<Value>1488</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x341d3912, 0x1478de86)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x4e7b798a, 0x183beafb)</Identifier>
+					<Value>(0xb725381f, 0xee6e86ca)</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x527ad68d, 0x16d746a0)</Identifier>
+					<Value></Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x666fffff, 0x666fffff)</Identifier>
+					<Value></Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xce18836a, 0x9c0eb403)</Identifier>
+					<Value>3</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xcfad85b0, 0x7c6d841c)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+			</Attributes>
+		</Box>
+		<Box>
+			<Identifier>(0x62b2f750, 0x7f4916e8)</Identifier>
+			<Name>OSC Controller</Name>
+			<AlgorithmClassIdentifier>(0xc66f2f0c, 0x3ba5b424)</AlgorithmClassIdentifier>
+			<Inputs>
+				<Input>
+					<TypeIdentifier>(0x5ba36127, 0x195feae1)</TypeIdentifier>
+					<Name>Input</Name>
+				</Input>
+			</Inputs>
+			<Settings>
+				<Setting>
+					<TypeIdentifier>(0x79a9edeb, 0x245d83fc)</TypeIdentifier>
+					<Name>OSC Server IP</Name>
+					<DefaultValue>127.0.0.1</DefaultValue>
+					<Value>127.0.0.1</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x007deef9, 0x2f3e95c6)</TypeIdentifier>
+					<Name>OSC Server Port</Name>
+					<DefaultValue>9001</DefaultValue>
+					<Value>9211</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x79a9edeb, 0x245d83fc)</TypeIdentifier>
+					<Name>OSC Address</Name>
+					<DefaultValue>/a/b/c</DefaultValue>
+					<Value>/theta-gamma-P4</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+			</Settings>
+			<Attributes>
+				<Attribute>
+					<Identifier>(0x1fa7a38f, 0x54edbe0b)</Identifier>
+					<Value>64</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x207c9054, 0x3c841b63)</Identifier>
+					<Value>1216</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x4e7b798a, 0x183beafb)</Identifier>
+					<Value>(0xb725381f, 0xee6e86ca)</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x527ad68d, 0x16d746a0)</Identifier>
+					<Value></Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x666fffff, 0x666fffff)</Identifier>
+					<Value></Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xce18836a, 0x9c0eb403)</Identifier>
+					<Value>3</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xcfad85b0, 0x7c6d841c)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+			</Attributes>
+		</Box>
+		<Box>
+			<Identifier>(0x62b2f750, 0x7f4916e9)</Identifier>
+			<Name>OSC Controller</Name>
+			<AlgorithmClassIdentifier>(0xc66f2f0c, 0x3ba5b424)</AlgorithmClassIdentifier>
+			<Inputs>
+				<Input>
+					<TypeIdentifier>(0x5ba36127, 0x195feae1)</TypeIdentifier>
+					<Name>Input</Name>
+				</Input>
+			</Inputs>
+			<Settings>
+				<Setting>
+					<TypeIdentifier>(0x79a9edeb, 0x245d83fc)</TypeIdentifier>
+					<Name>OSC Server IP</Name>
+					<DefaultValue>127.0.0.1</DefaultValue>
+					<Value>127.0.0.1</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x007deef9, 0x2f3e95c6)</TypeIdentifier>
+					<Name>OSC Server Port</Name>
+					<DefaultValue>9001</DefaultValue>
+					<Value>9012</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x79a9edeb, 0x245d83fc)</TypeIdentifier>
+					<Name>OSC Address</Name>
+					<DefaultValue>/a/b/c</DefaultValue>
+					<Value>/theta-alpha-F4</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+			</Settings>
+			<Attributes>
+				<Attribute>
+					<Identifier>(0x1fa7a38f, 0x54edbe0b)</Identifier>
+					<Value>64</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x207c9054, 0x3c841b63)</Identifier>
+					<Value>1616</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x341d3912, 0x1478de86)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x4e7b798a, 0x183beafb)</Identifier>
+					<Value>(0xb725381f, 0xee6e86ca)</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x527ad68d, 0x16d746a0)</Identifier>
+					<Value></Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x666fffff, 0x666fffff)</Identifier>
+					<Value></Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xce18836a, 0x9c0eb403)</Identifier>
+					<Value>3</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xcfad85b0, 0x7c6d841c)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+			</Attributes>
+		</Box>
+		<Box>
+			<Identifier>(0x62b2f750, 0x7f4916ea)</Identifier>
+			<Name>OSC Controller</Name>
+			<AlgorithmClassIdentifier>(0xc66f2f0c, 0x3ba5b424)</AlgorithmClassIdentifier>
+			<Inputs>
+				<Input>
+					<TypeIdentifier>(0x5ba36127, 0x195feae1)</TypeIdentifier>
+					<Name>Input</Name>
+				</Input>
+			</Inputs>
+			<Settings>
+				<Setting>
+					<TypeIdentifier>(0x79a9edeb, 0x245d83fc)</TypeIdentifier>
+					<Name>OSC Server IP</Name>
+					<DefaultValue>127.0.0.1</DefaultValue>
+					<Value>127.0.0.1</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x007deef9, 0x2f3e95c6)</TypeIdentifier>
+					<Name>OSC Server Port</Name>
+					<DefaultValue>9001</DefaultValue>
+					<Value>9013</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x79a9edeb, 0x245d83fc)</TypeIdentifier>
+					<Name>OSC Address</Name>
+					<DefaultValue>/a/b/c</DefaultValue>
+					<Value>/theta-beta-F4</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+			</Settings>
+			<Attributes>
+				<Attribute>
+					<Identifier>(0x1fa7a38f, 0x54edbe0b)</Identifier>
+					<Value>64</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x207c9054, 0x3c841b63)</Identifier>
+					<Value>1760</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x341d3912, 0x1478de86)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x4e7b798a, 0x183beafb)</Identifier>
+					<Value>(0xb725381f, 0xee6e86ca)</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x527ad68d, 0x16d746a0)</Identifier>
+					<Value></Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x666fffff, 0x666fffff)</Identifier>
+					<Value></Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xce18836a, 0x9c0eb403)</Identifier>
+					<Value>3</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xcfad85b0, 0x7c6d841c)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+			</Attributes>
+		</Box>
+		<Box>
+			<Identifier>(0x62b2f750, 0x7f4916eb)</Identifier>
+			<Name>OSC Controller</Name>
+			<AlgorithmClassIdentifier>(0xc66f2f0c, 0x3ba5b424)</AlgorithmClassIdentifier>
+			<Inputs>
+				<Input>
+					<TypeIdentifier>(0x5ba36127, 0x195feae1)</TypeIdentifier>
+					<Name>Input</Name>
+				</Input>
+			</Inputs>
+			<Settings>
+				<Setting>
+					<TypeIdentifier>(0x79a9edeb, 0x245d83fc)</TypeIdentifier>
+					<Name>OSC Server IP</Name>
+					<DefaultValue>127.0.0.1</DefaultValue>
+					<Value>127.0.0.1</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x007deef9, 0x2f3e95c6)</TypeIdentifier>
+					<Name>OSC Server Port</Name>
+					<DefaultValue>9001</DefaultValue>
+					<Value>9301</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x79a9edeb, 0x245d83fc)</TypeIdentifier>
+					<Name>OSC Address</Name>
+					<DefaultValue>/a/b/c</DefaultValue>
+					<Value>/theta-gamma-O1</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+			</Settings>
+			<Attributes>
+				<Attribute>
+					<Identifier>(0x1fa7a38f, 0x54edbe0b)</Identifier>
+					<Value>192</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x207c9054, 0x3c841b63)</Identifier>
+					<Value>1088</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x4e7b798a, 0x183beafb)</Identifier>
+					<Value>(0xb725381f, 0xee6e86ca)</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x527ad68d, 0x16d746a0)</Identifier>
+					<Value></Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x666fffff, 0x666fffff)</Identifier>
+					<Value></Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xce18836a, 0x9c0eb403)</Identifier>
+					<Value>3</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xcfad85b0, 0x7c6d841c)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+			</Attributes>
+		</Box>
+		<Box>
+			<Identifier>(0x62b2f750, 0x7f4916ec)</Identifier>
+			<Name>OSC Controller</Name>
+			<AlgorithmClassIdentifier>(0xc66f2f0c, 0x3ba5b424)</AlgorithmClassIdentifier>
+			<Inputs>
+				<Input>
+					<TypeIdentifier>(0x5ba36127, 0x195feae1)</TypeIdentifier>
+					<Name>Input</Name>
+				</Input>
+			</Inputs>
+			<Settings>
+				<Setting>
+					<TypeIdentifier>(0x79a9edeb, 0x245d83fc)</TypeIdentifier>
+					<Name>OSC Server IP</Name>
+					<DefaultValue>127.0.0.1</DefaultValue>
+					<Value>127.0.0.1</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x007deef9, 0x2f3e95c6)</TypeIdentifier>
+					<Name>OSC Server Port</Name>
+					<DefaultValue>9001</DefaultValue>
+					<Value>9002</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x79a9edeb, 0x245d83fc)</TypeIdentifier>
+					<Name>OSC Address</Name>
+					<DefaultValue>/a/b/c</DefaultValue>
+					<Value>/theta-alpha-F3</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+			</Settings>
+			<Attributes>
+				<Attribute>
+					<Identifier>(0x1fa7a38f, 0x54edbe0b)</Identifier>
+					<Value>192</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x207c9054, 0x3c841b63)</Identifier>
+					<Value>1344</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x341d3912, 0x1478de86)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x4e7b798a, 0x183beafb)</Identifier>
+					<Value>(0xb725381f, 0xee6e86ca)</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x527ad68d, 0x16d746a0)</Identifier>
+					<Value></Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x666fffff, 0x666fffff)</Identifier>
+					<Value></Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xce18836a, 0x9c0eb403)</Identifier>
+					<Value>3</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xcfad85b0, 0x7c6d841c)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+			</Attributes>
+		</Box>
+		<Box>
+			<Identifier>(0x62b2f750, 0x7f4916ed)</Identifier>
+			<Name>OSC Controller</Name>
+			<AlgorithmClassIdentifier>(0xc66f2f0c, 0x3ba5b424)</AlgorithmClassIdentifier>
+			<Inputs>
+				<Input>
+					<TypeIdentifier>(0x5ba36127, 0x195feae1)</TypeIdentifier>
+					<Name>Input</Name>
+				</Input>
+			</Inputs>
+			<Settings>
+				<Setting>
+					<TypeIdentifier>(0x79a9edeb, 0x245d83fc)</TypeIdentifier>
+					<Name>OSC Server IP</Name>
+					<DefaultValue>127.0.0.1</DefaultValue>
+					<Value>127.0.0.1</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x007deef9, 0x2f3e95c6)</TypeIdentifier>
+					<Name>OSC Server Port</Name>
+					<DefaultValue>9001</DefaultValue>
+					<Value>9003</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x79a9edeb, 0x245d83fc)</TypeIdentifier>
+					<Name>OSC Address</Name>
+					<DefaultValue>/a/b/c</DefaultValue>
+					<Value>/theta-beta-F3</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+			</Settings>
+			<Attributes>
+				<Attribute>
+					<Identifier>(0x1fa7a38f, 0x54edbe0b)</Identifier>
+					<Value>192</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x207c9054, 0x3c841b63)</Identifier>
+					<Value>1488</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x341d3912, 0x1478de86)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x4e7b798a, 0x183beafb)</Identifier>
+					<Value>(0xb725381f, 0xee6e86ca)</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x527ad68d, 0x16d746a0)</Identifier>
+					<Value></Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x666fffff, 0x666fffff)</Identifier>
+					<Value></Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xce18836a, 0x9c0eb403)</Identifier>
+					<Value>3</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xcfad85b0, 0x7c6d841c)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+			</Attributes>
+		</Box>
+		<Box>
+			<Identifier>(0x62b2f750, 0x7f4916ee)</Identifier>
+			<Name>OSC Controller</Name>
+			<AlgorithmClassIdentifier>(0xc66f2f0c, 0x3ba5b424)</AlgorithmClassIdentifier>
+			<Inputs>
+				<Input>
+					<TypeIdentifier>(0x5ba36127, 0x195feae1)</TypeIdentifier>
+					<Name>Input</Name>
+				</Input>
+			</Inputs>
+			<Settings>
+				<Setting>
+					<TypeIdentifier>(0x79a9edeb, 0x245d83fc)</TypeIdentifier>
+					<Name>OSC Server IP</Name>
+					<DefaultValue>127.0.0.1</DefaultValue>
+					<Value>127.0.0.1</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x007deef9, 0x2f3e95c6)</TypeIdentifier>
+					<Name>OSC Server Port</Name>
+					<DefaultValue>9001</DefaultValue>
+					<Value>9311</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x79a9edeb, 0x245d83fc)</TypeIdentifier>
+					<Name>OSC Address</Name>
+					<DefaultValue>/a/b/c</DefaultValue>
+					<Value>/theta-gamma-O2</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+			</Settings>
+			<Attributes>
+				<Attribute>
+					<Identifier>(0x1fa7a38f, 0x54edbe0b)</Identifier>
+					<Value>192</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x207c9054, 0x3c841b63)</Identifier>
+					<Value>1216</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x4e7b798a, 0x183beafb)</Identifier>
+					<Value>(0xb725381f, 0xee6e86ca)</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x527ad68d, 0x16d746a0)</Identifier>
+					<Value></Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x666fffff, 0x666fffff)</Identifier>
+					<Value></Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xce18836a, 0x9c0eb403)</Identifier>
+					<Value>3</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xcfad85b0, 0x7c6d841c)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+			</Attributes>
+		</Box>
+		<Box>
+			<Identifier>(0x62b2f750, 0x7f4916ef)</Identifier>
+			<Name>OSC Controller</Name>
+			<AlgorithmClassIdentifier>(0xc66f2f0c, 0x3ba5b424)</AlgorithmClassIdentifier>
+			<Inputs>
+				<Input>
+					<TypeIdentifier>(0x5ba36127, 0x195feae1)</TypeIdentifier>
+					<Name>Input</Name>
+				</Input>
+			</Inputs>
+			<Settings>
+				<Setting>
+					<TypeIdentifier>(0x79a9edeb, 0x245d83fc)</TypeIdentifier>
+					<Name>OSC Server IP</Name>
+					<DefaultValue>127.0.0.1</DefaultValue>
+					<Value>127.0.0.1</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x007deef9, 0x2f3e95c6)</TypeIdentifier>
+					<Name>OSC Server Port</Name>
+					<DefaultValue>9001</DefaultValue>
+					<Value>9012</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x79a9edeb, 0x245d83fc)</TypeIdentifier>
+					<Name>OSC Address</Name>
+					<DefaultValue>/a/b/c</DefaultValue>
+					<Value>/theta-alpha-F4</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+			</Settings>
+			<Attributes>
+				<Attribute>
+					<Identifier>(0x1fa7a38f, 0x54edbe0b)</Identifier>
+					<Value>192</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x207c9054, 0x3c841b63)</Identifier>
+					<Value>1616</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x341d3912, 0x1478de86)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x4e7b798a, 0x183beafb)</Identifier>
+					<Value>(0xb725381f, 0xee6e86ca)</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x527ad68d, 0x16d746a0)</Identifier>
+					<Value></Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x666fffff, 0x666fffff)</Identifier>
+					<Value></Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xce18836a, 0x9c0eb403)</Identifier>
+					<Value>3</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xcfad85b0, 0x7c6d841c)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+			</Attributes>
+		</Box>
+		<Box>
+			<Identifier>(0x62b2f750, 0x7f4916f0)</Identifier>
+			<Name>OSC Controller</Name>
+			<AlgorithmClassIdentifier>(0xc66f2f0c, 0x3ba5b424)</AlgorithmClassIdentifier>
+			<Inputs>
+				<Input>
+					<TypeIdentifier>(0x5ba36127, 0x195feae1)</TypeIdentifier>
+					<Name>Input</Name>
+				</Input>
+			</Inputs>
+			<Settings>
+				<Setting>
+					<TypeIdentifier>(0x79a9edeb, 0x245d83fc)</TypeIdentifier>
+					<Name>OSC Server IP</Name>
+					<DefaultValue>127.0.0.1</DefaultValue>
+					<Value>127.0.0.1</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x007deef9, 0x2f3e95c6)</TypeIdentifier>
+					<Name>OSC Server Port</Name>
+					<DefaultValue>9001</DefaultValue>
+					<Value>9013</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x79a9edeb, 0x245d83fc)</TypeIdentifier>
+					<Name>OSC Address</Name>
+					<DefaultValue>/a/b/c</DefaultValue>
+					<Value>/theta-beta-F4</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+			</Settings>
+			<Attributes>
+				<Attribute>
+					<Identifier>(0x1fa7a38f, 0x54edbe0b)</Identifier>
+					<Value>192</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x207c9054, 0x3c841b63)</Identifier>
+					<Value>1760</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x341d3912, 0x1478de86)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x4e7b798a, 0x183beafb)</Identifier>
+					<Value>(0xb725381f, 0xee6e86ca)</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x527ad68d, 0x16d746a0)</Identifier>
+					<Value></Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x666fffff, 0x666fffff)</Identifier>
+					<Value></Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xce18836a, 0x9c0eb403)</Identifier>
+					<Value>3</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xcfad85b0, 0x7c6d841c)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+			</Attributes>
+		</Box>
+		<Box>
+			<Identifier>(0x760509a3, 0x6faf332a)</Identifier>
+			<Name>GDF file reader</Name>
+			<AlgorithmClassIdentifier>(0x3eeb1264, 0x4edfbd9a)</AlgorithmClassIdentifier>
+			<Outputs>
+				<Output>
+					<TypeIdentifier>(0x403488e7, 0x565d70b6)</TypeIdentifier>
+					<Name>Experiment information</Name>
+				</Output>
+				<Output>
+					<TypeIdentifier>(0x5ba36127, 0x195feae1)</TypeIdentifier>
+					<Name>EEG stream</Name>
+				</Output>
+				<Output>
+					<TypeIdentifier>(0x6f752dd0, 0x082a321e)</TypeIdentifier>
+					<Name>Stimulations</Name>
+				</Output>
+			</Outputs>
+			<Settings>
+				<Setting>
+					<TypeIdentifier>(0x330306dd, 0x74a95f98)</TypeIdentifier>
+					<Name>Filename</Name>
+					<DefaultValue></DefaultValue>
+					<Value>/home/dmitryneuro/Documents/FreeEEG32-alpha1.5/OpenVIBE/gdf/record-[2019.11.13-22.23.59].gdf</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x007deef9, 0x2f3e95c6)</TypeIdentifier>
+					<Name>Samples per buffer</Name>
+					<DefaultValue>32</DefaultValue>
+					<Value>32</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x2cdb2f0b, 0x12f231ea)</TypeIdentifier>
+					<Name>Subtract physical minimum</Name>
+					<DefaultValue>false</DefaultValue>
+					<Value>false</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+			</Settings>
+			<Attributes>
+				<Attribute>
+					<Identifier>(0x1fa7a38f, 0x54edbe0b)</Identifier>
+					<Value>-592</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x207c9054, 0x3c841b63)</Identifier>
+					<Value>1152</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x341d3912, 0x1478de86)</Identifier>
+					<Value>1</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x4e7b798a, 0x183beafb)</Identifier>
+					<Value>(0x78b8b69d, 0x27afe678)</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xc80ce8af, 0xf699f813)</Identifier>
+					<Value>3</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xce18836a, 0x9c0eb403)</Identifier>
+					<Value>3</Value>
+				</Attribute>
+			</Attributes>
+		</Box>
+		<Box>
+			<Identifier>(0x7beef19f, 0x0bf83fd2)</Identifier>
+			<Name>Acquisition client</Name>
+			<AlgorithmClassIdentifier>(0x35d225cb, 0x3e6e3a5f)</AlgorithmClassIdentifier>
+			<Outputs>
+				<Output>
+					<TypeIdentifier>(0x403488e7, 0x565d70b6)</TypeIdentifier>
+					<Name>Experiment information</Name>
+				</Output>
+				<Output>
+					<TypeIdentifier>(0x5ba36127, 0x195feae1)</TypeIdentifier>
+					<Name>Signal stream</Name>
+				</Output>
+				<Output>
+					<TypeIdentifier>(0x6f752dd0, 0x082a321e)</TypeIdentifier>
+					<Name>Stimulations</Name>
+				</Output>
+				<Output>
+					<TypeIdentifier>(0x013df452, 0xa3a8879a)</TypeIdentifier>
+					<Name>Channel localisation</Name>
+				</Output>
+				<Output>
+					<TypeIdentifier>(0x6ab26b81, 0x0f8c02f3)</TypeIdentifier>
+					<Name>Channel units</Name>
+				</Output>
+			</Outputs>
+			<Settings>
+				<Setting>
+					<TypeIdentifier>(0x79a9edeb, 0x245d83fc)</TypeIdentifier>
+					<Name>Acquisition server hostname</Name>
+					<DefaultValue>${AcquisitionServer_HostName}</DefaultValue>
+					<Value>${AcquisitionServer_HostName}</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+				<Setting>
+					<TypeIdentifier>(0x007deef9, 0x2f3e95c6)</TypeIdentifier>
+					<Name>Acquisition server port</Name>
+					<DefaultValue>1024</DefaultValue>
+					<Value>1024</Value>
+					<Modifiability>false</Modifiability>
+				</Setting>
+			</Settings>
+			<Attributes>
+				<Attribute>
+					<Identifier>(0x1fa7a38f, 0x54edbe0b)</Identifier>
+					<Value>-544</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x207c9054, 0x3c841b63)</Identifier>
+					<Value>1328</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0x4e7b798a, 0x183beafb)</Identifier>
+					<Value>(0x0d4656c0, 0xc95b1fa8)</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xc80ce8af, 0xf699f813)</Identifier>
+					<Value>5</Value>
+				</Attribute>
+				<Attribute>
+					<Identifier>(0xce18836a, 0x9c0eb403)</Identifier>
+					<Value>2</Value>
+				</Attribute>
+			</Attributes>
+		</Box>
+	</Boxes>
+	<Links>
+		<Link>
+			<Identifier>(0x008acd37, 0x643eeb9d)</Identifier>
+			<Source>
+				<BoxIdentifier>(0x3c200145, 0x6dd15735)</BoxIdentifier>
+				<BoxOutputIndex>0</BoxOutputIndex>
+			</Source>
+			<Target>
+				<BoxIdentifier>(0x62b2f750, 0x7f4916dc)</BoxIdentifier>
+				<BoxInputIndex>0</BoxInputIndex>
+			</Target>
+		</Link>
+		<Link>
+			<Identifier>(0x008acd37, 0x643eeb9e)</Identifier>
+			<Source>
+				<BoxIdentifier>(0x3c200145, 0x6dd1573b)</BoxIdentifier>
+				<BoxOutputIndex>0</BoxOutputIndex>
+			</Source>
+			<Target>
+				<BoxIdentifier>(0x62b2f750, 0x7f4916e2)</BoxIdentifier>
+				<BoxInputIndex>0</BoxInputIndex>
+			</Target>
+		</Link>
+		<Link>
+			<Identifier>(0x008acd37, 0x643eeb9f)</Identifier>
+			<Source>
+				<BoxIdentifier>(0x3c200145, 0x6dd15741)</BoxIdentifier>
+				<BoxOutputIndex>0</BoxOutputIndex>
+			</Source>
+			<Target>
+				<BoxIdentifier>(0x62b2f750, 0x7f4916e8)</BoxIdentifier>
+				<BoxInputIndex>0</BoxInputIndex>
+			</Target>
+		</Link>
+		<Link>
+			<Identifier>(0x008acd37, 0x643eeba0)</Identifier>
+			<Source>
+				<BoxIdentifier>(0x3c200145, 0x6dd15747)</BoxIdentifier>
+				<BoxOutputIndex>0</BoxOutputIndex>
+			</Source>
+			<Target>
+				<BoxIdentifier>(0x62b2f750, 0x7f4916ee)</BoxIdentifier>
+				<BoxInputIndex>0</BoxInputIndex>
+			</Target>
+		</Link>
+		<Link>
+			<Identifier>(0x0552f1b5, 0x21952547)</Identifier>
+			<Source>
+				<BoxIdentifier>(0x7beef19f, 0x0bf83fd2)</BoxIdentifier>
+				<BoxOutputIndex>1</BoxOutputIndex>
+			</Source>
+			<Target>
+				<BoxIdentifier>(0x3c200145, 0x6dd15732)</BoxIdentifier>
+				<BoxInputIndex>0</BoxInputIndex>
+			</Target>
+		</Link>
+		<Link>
+			<Identifier>(0x060ae0cf, 0x57333e01)</Identifier>
+			<Source>
+				<BoxIdentifier>(0x5ad26528, 0x6a411f1d)</BoxIdentifier>
+				<BoxOutputIndex>0</BoxOutputIndex>
+			</Source>
+			<Target>
+				<BoxIdentifier>(0x3c200145, 0x6dd15735)</BoxIdentifier>
+				<BoxInputIndex>0</BoxInputIndex>
+			</Target>
+		</Link>
+		<Link>
+			<Identifier>(0x0c43d908, 0x0f95c33f)</Identifier>
+			<Source>
+				<BoxIdentifier>(0x3c200145, 0x6dd15737)</BoxIdentifier>
+				<BoxOutputIndex>0</BoxOutputIndex>
+			</Source>
+			<Target>
+				<BoxIdentifier>(0x62b2f750, 0x7f4916d9)</BoxIdentifier>
+				<BoxInputIndex>0</BoxInputIndex>
+			</Target>
+		</Link>
+		<Link>
+			<Identifier>(0x0c43d908, 0x0f95c340)</Identifier>
+			<Source>
+				<BoxIdentifier>(0x3c200145, 0x6dd1573d)</BoxIdentifier>
+				<BoxOutputIndex>0</BoxOutputIndex>
+			</Source>
+			<Target>
+				<BoxIdentifier>(0x62b2f750, 0x7f4916df)</BoxIdentifier>
+				<BoxInputIndex>0</BoxInputIndex>
+			</Target>
+		</Link>
+		<Link>
+			<Identifier>(0x0c43d908, 0x0f95c341)</Identifier>
+			<Source>
+				<BoxIdentifier>(0x3c200145, 0x6dd15743)</BoxIdentifier>
+				<BoxOutputIndex>0</BoxOutputIndex>
+			</Source>
+			<Target>
+				<BoxIdentifier>(0x62b2f750, 0x7f4916e5)</BoxIdentifier>
+				<BoxInputIndex>0</BoxInputIndex>
+			</Target>
+		</Link>
+		<Link>
+			<Identifier>(0x0c43d908, 0x0f95c342)</Identifier>
+			<Source>
+				<BoxIdentifier>(0x3c200145, 0x6dd15749)</BoxIdentifier>
+				<BoxOutputIndex>0</BoxOutputIndex>
+			</Source>
+			<Target>
+				<BoxIdentifier>(0x62b2f750, 0x7f4916eb)</BoxIdentifier>
+				<BoxInputIndex>0</BoxInputIndex>
+			</Target>
+		</Link>
+		<Link>
+			<Identifier>(0x0e4fdd0b, 0x4621d7be)</Identifier>
+			<Source>
+				<BoxIdentifier>(0x5ad26528, 0x6a411f1d)</BoxIdentifier>
+				<BoxOutputIndex>0</BoxOutputIndex>
+			</Source>
+			<Target>
+				<BoxIdentifier>(0x3c200145, 0x6dd15749)</BoxIdentifier>
+				<BoxInputIndex>0</BoxInputIndex>
+			</Target>
+		</Link>
+		<Link>
+			<Identifier>(0x1018d40a, 0x4282d3ea)</Identifier>
+			<Source>
+				<BoxIdentifier>(0x36631f89, 0x7741822c)</BoxIdentifier>
+				<BoxOutputIndex>0</BoxOutputIndex>
+			</Source>
+			<Target>
+				<BoxIdentifier>(0x5ad26528, 0x6a411f1d)</BoxIdentifier>
+				<BoxInputIdentifier>(0x000b80da, 0xbff5da2a)</BoxInputIdentifier>
+			</Target>
+		</Link>
+		<Link>
+			<Identifier>(0x11e35ff2, 0x639ddc0e)</Identifier>
+			<Source>
+				<BoxIdentifier>(0x36631f89, 0x7741822c)</BoxIdentifier>
+				<BoxOutputIndex>0</BoxOutputIndex>
+			</Source>
+			<Target>
+				<BoxIdentifier>(0x5ad26528, 0x6a411f1e)</BoxIdentifier>
+				<BoxInputIdentifier>(0x000b80da, 0xbff5da2a)</BoxInputIdentifier>
+			</Target>
+		</Link>
+		<Link>
+			<Identifier>(0x127c3e5b, 0x70db50b9)</Identifier>
+			<Source>
+				<BoxIdentifier>(0x36631f89, 0x7741822c)</BoxIdentifier>
+				<BoxOutputIndex>0</BoxOutputIndex>
+			</Source>
+			<Target>
+				<BoxIdentifier>(0x5ad26528, 0x6a411f1f)</BoxIdentifier>
+				<BoxInputIdentifier>(0x000b80da, 0xbff5da2a)</BoxInputIdentifier>
+			</Target>
+		</Link>
+		<Link>
+			<Identifier>(0x19a8ae16, 0x09d9d044)</Identifier>
+			<Source>
+				<BoxIdentifier>(0x5ad26528, 0x6a411f1d)</BoxIdentifier>
+				<BoxOutputIndex>0</BoxOutputIndex>
+			</Source>
+			<Target>
+				<BoxIdentifier>(0x3c200145, 0x6dd15747)</BoxIdentifier>
+				<BoxInputIndex>0</BoxInputIndex>
+			</Target>
+		</Link>
+		<Link>
+			<Identifier>(0x1a18ad9d, 0x2490c009)</Identifier>
+			<Source>
+				<BoxIdentifier>(0x5ad26528, 0x6a411f1d)</BoxIdentifier>
+				<BoxOutputIndex>0</BoxOutputIndex>
+			</Source>
+			<Target>
+				<BoxIdentifier>(0x3c200145, 0x6dd1573d)</BoxIdentifier>
+				<BoxInputIndex>0</BoxInputIndex>
+			</Target>
+		</Link>
+		<Link>
+			<Identifier>(0x1b4a751e, 0x26aa344c)</Identifier>
+			<Source>
+				<BoxIdentifier>(0x5ad26528, 0x6a411f1f)</BoxIdentifier>
+				<BoxOutputIndex>0</BoxOutputIndex>
+			</Source>
+			<Target>
+				<BoxIdentifier>(0x3c200145, 0x6dd15733)</BoxIdentifier>
+				<BoxInputIndex>0</BoxInputIndex>
+			</Target>
+		</Link>
+		<Link>
+			<Identifier>(0x1ef63b31, 0x5111c83a)</Identifier>
+			<Source>
+				<BoxIdentifier>(0x36631f89, 0x7741822b)</BoxIdentifier>
+				<BoxOutputIndex>0</BoxOutputIndex>
+			</Source>
+			<Target>
+				<BoxIdentifier>(0x5ad26528, 0x6a411f1d)</BoxIdentifier>
+				<BoxInputIndex>0</BoxInputIndex>
+			</Target>
+		</Link>
+		<Link>
+			<Identifier>(0x1ef63b31, 0x5111c83b)</Identifier>
+			<Source>
+				<BoxIdentifier>(0x36631f89, 0x7741822d)</BoxIdentifier>
+				<BoxOutputIndex>0</BoxOutputIndex>
+			</Source>
+			<Target>
+				<BoxIdentifier>(0x5ad26528, 0x6a411f1e)</BoxIdentifier>
+				<BoxInputIndex>0</BoxInputIndex>
+			</Target>
+		</Link>
+		<Link>
+			<Identifier>(0x1ef63b31, 0x5111c83c)</Identifier>
+			<Source>
+				<BoxIdentifier>(0x36631f89, 0x7741822f)</BoxIdentifier>
+				<BoxOutputIndex>0</BoxOutputIndex>
+			</Source>
+			<Target>
+				<BoxIdentifier>(0x5ad26528, 0x6a411f1f)</BoxIdentifier>
+				<BoxInputIndex>0</BoxInputIndex>
+			</Target>
+		</Link>
+		<Link>
+			<Identifier>(0x21ec164a, 0x5542e953)</Identifier>
+			<Source>
+				<BoxIdentifier>(0x5ad26528, 0x6a411f1d)</BoxIdentifier>
+				<BoxOutputIndex>0</BoxOutputIndex>
+			</Source>
+			<Target>
+				<BoxIdentifier>(0x3c200145, 0x6dd15743)</BoxIdentifier>
+				<BoxInputIndex>0</BoxInputIndex>
+			</Target>
+		</Link>
+		<Link>
+			<Identifier>(0x24e6990a, 0x6d0abb05)</Identifier>
+			<Source>
+				<BoxIdentifier>(0x3c200145, 0x6dd15732)</BoxIdentifier>
+				<BoxOutputIndex>0</BoxOutputIndex>
+			</Source>
+			<Target>
+				<BoxIdentifier>(0x36631f89, 0x7741822f)</BoxIdentifier>
+				<BoxInputIndex>0</BoxInputIndex>
+			</Target>
+		</Link>
+		<Link>
+			<Identifier>(0x2b1ed543, 0x373f0d48)</Identifier>
+			<Source>
+				<BoxIdentifier>(0x36631f89, 0x7741822f)</BoxIdentifier>
+				<BoxOutputIndex>0</BoxOutputIndex>
+			</Source>
+			<Target>
+				<BoxIdentifier>(0x3595d6d8, 0x6623d6c1)</BoxIdentifier>
+				<BoxInputIndex>0</BoxInputIndex>
+			</Target>
+		</Link>
+		<Link>
+			<Identifier>(0x3129fa6d, 0x3f773a91)</Identifier>
+			<Source>
+				<BoxIdentifier>(0x36631f89, 0x7741822c)</BoxIdentifier>
+				<BoxOutputIndex>0</BoxOutputIndex>
+			</Source>
+			<Target>
+				<BoxIdentifier>(0x3595d6d8, 0x6623d6c2)</BoxIdentifier>
+				<BoxInputIndex>0</BoxInputIndex>
+			</Target>
+		</Link>
+		<Link>
+			<Identifier>(0x332efb6c, 0x02d78ec3)</Identifier>
+			<Source>
+				<BoxIdentifier>(0x5ad26528, 0x6a411f1f)</BoxIdentifier>
+				<BoxOutputIndex>0</BoxOutputIndex>
+			</Source>
+			<Target>
+				<BoxIdentifier>(0x5c8ee5bd, 0x531bdcff)</BoxIdentifier>
+				<BoxInputIndex>0</BoxInputIndex>
+			</Target>
+		</Link>
+		<Link>
+			<Identifier>(0x34c0707b, 0x2e76518e)</Identifier>
+			<Source>
+				<BoxIdentifier>(0x3c200145, 0x6dd15732)</BoxIdentifier>
+				<BoxOutputIndex>0</BoxOutputIndex>
+			</Source>
+			<Target>
+				<BoxIdentifier>(0x36631f89, 0x7741822d)</BoxIdentifier>
+				<BoxInputIndex>0</BoxInputIndex>
+			</Target>
+		</Link>
+		<Link>
+			<Identifier>(0x389adcae, 0x0f2081d2)</Identifier>
+			<Source>
+				<BoxIdentifier>(0x5ad26528, 0x6a411f1d)</BoxIdentifier>
+				<BoxOutputIndex>0</BoxOutputIndex>
+			</Source>
+			<Target>
+				<BoxIdentifier>(0x3c200145, 0x6dd1573b)</BoxIdentifier>
+				<BoxInputIndex>0</BoxInputIndex>
+			</Target>
+		</Link>
+		<Link>
+			<Identifier>(0x3f9fbfa4, 0x46a43498)</Identifier>
+			<Source>
+				<BoxIdentifier>(0x3c200145, 0x6dd15732)</BoxIdentifier>
+				<BoxOutputIndex>0</BoxOutputIndex>
+			</Source>
+			<Target>
+				<BoxIdentifier>(0x36631f89, 0x7741822c)</BoxIdentifier>
+				<BoxInputIndex>0</BoxInputIndex>
+			</Target>
+		</Link>
+		<Link>
+			<Identifier>(0x4665e407, 0x3b3dcb1e)</Identifier>
+			<Source>
+				<BoxIdentifier>(0x3c200145, 0x6dd15734)</BoxIdentifier>
+				<BoxOutputIndex>0</BoxOutputIndex>
+			</Source>
+			<Target>
+				<BoxIdentifier>(0x62b2f750, 0x7f4916dd)</BoxIdentifier>
+				<BoxInputIndex>0</BoxInputIndex>
+			</Target>
+		</Link>
+		<Link>
+			<Identifier>(0x4665e407, 0x3b3dcb1f)</Identifier>
+			<Source>
+				<BoxIdentifier>(0x3c200145, 0x6dd1573a)</BoxIdentifier>
+				<BoxOutputIndex>0</BoxOutputIndex>
+			</Source>
+			<Target>
+				<BoxIdentifier>(0x62b2f750, 0x7f4916e3)</BoxIdentifier>
+				<BoxInputIndex>0</BoxInputIndex>
+			</Target>
+		</Link>
+		<Link>
+			<Identifier>(0x4665e407, 0x3b3dcb20)</Identifier>
+			<Source>
+				<BoxIdentifier>(0x3c200145, 0x6dd15740)</BoxIdentifier>
+				<BoxOutputIndex>0</BoxOutputIndex>
+			</Source>
+			<Target>
+				<BoxIdentifier>(0x62b2f750, 0x7f4916e9)</BoxIdentifier>
+				<BoxInputIndex>0</BoxInputIndex>
+			</Target>
+		</Link>
+		<Link>
+			<Identifier>(0x4665e407, 0x3b3dcb21)</Identifier>
+			<Source>
+				<BoxIdentifier>(0x3c200145, 0x6dd15746)</BoxIdentifier>
+				<BoxOutputIndex>0</BoxOutputIndex>
+			</Source>
+			<Target>
+				<BoxIdentifier>(0x62b2f750, 0x7f4916ef)</BoxIdentifier>
+				<BoxInputIndex>0</BoxInputIndex>
+			</Target>
+		</Link>
+		<Link>
+			<Identifier>(0x4e0cbc1a, 0x3b3d7424)</Identifier>
+			<Source>
+				<BoxIdentifier>(0x760509a3, 0x6faf332a)</BoxIdentifier>
+				<BoxOutputIndex>2</BoxOutputIndex>
+			</Source>
+			<Target>
+				<BoxIdentifier>(0x00000a83, 0x00006fd7)</BoxIdentifier>
+				<BoxInputIndex>0</BoxInputIndex>
+			</Target>
+		</Link>
+		<Link>
+			<Identifier>(0x4e0d48fa, 0x7076070e)</Identifier>
+			<Source>
+				<BoxIdentifier>(0x5ad26528, 0x6a411f1d)</BoxIdentifier>
+				<BoxOutputIndex>0</BoxOutputIndex>
+			</Source>
+			<Target>
+				<BoxIdentifier>(0x3c200145, 0x6dd15741)</BoxIdentifier>
+				<BoxInputIndex>0</BoxInputIndex>
+			</Target>
+		</Link>
+		<Link>
+			<Identifier>(0x51ef772f, 0x6c055b96)</Identifier>
+			<Source>
+				<BoxIdentifier>(0x3c200145, 0x6dd15736)</BoxIdentifier>
+				<BoxOutputIndex>0</BoxOutputIndex>
+			</Source>
+			<Target>
+				<BoxIdentifier>(0x62b2f750, 0x7f4916da)</BoxIdentifier>
+				<BoxInputIndex>0</BoxInputIndex>
+			</Target>
+		</Link>
+		<Link>
+			<Identifier>(0x51ef772f, 0x6c055b97)</Identifier>
+			<Source>
+				<BoxIdentifier>(0x3c200145, 0x6dd1573c)</BoxIdentifier>
+				<BoxOutputIndex>0</BoxOutputIndex>
+			</Source>
+			<Target>
+				<BoxIdentifier>(0x62b2f750, 0x7f4916e0)</BoxIdentifier>
+				<BoxInputIndex>0</BoxInputIndex>
+			</Target>
+		</Link>
+		<Link>
+			<Identifier>(0x51ef772f, 0x6c055b98)</Identifier>
+			<Source>
+				<BoxIdentifier>(0x3c200145, 0x6dd15742)</BoxIdentifier>
+				<BoxOutputIndex>0</BoxOutputIndex>
+			</Source>
+			<Target>
+				<BoxIdentifier>(0x62b2f750, 0x7f4916e6)</BoxIdentifier>
+				<BoxInputIndex>0</BoxInputIndex>
+			</Target>
+		</Link>
+		<Link>
+			<Identifier>(0x51ef772f, 0x6c055b99)</Identifier>
+			<Source>
+				<BoxIdentifier>(0x3c200145, 0x6dd15748)</BoxIdentifier>
+				<BoxOutputIndex>0</BoxOutputIndex>
+			</Source>
+			<Target>
+				<BoxIdentifier>(0x62b2f750, 0x7f4916ec)</BoxIdentifier>
+				<BoxInputIndex>0</BoxInputIndex>
+			</Target>
+		</Link>
+		<Link>
+			<Identifier>(0x5b959ab8, 0x05ef6a50)</Identifier>
+			<Source>
+				<BoxIdentifier>(0x2f9da22c, 0x53359d19)</BoxIdentifier>
+				<BoxOutputIndex>0</BoxOutputIndex>
+			</Source>
+			<Target>
+				<BoxIdentifier>(0x5655fe48, 0x11f8de75)</BoxIdentifier>
+				<BoxInputIndex>0</BoxInputIndex>
+			</Target>
+		</Link>
+		<Link>
+			<Identifier>(0x61e7ff68, 0x5fa1152d)</Identifier>
+			<Source>
+				<BoxIdentifier>(0x5ad26528, 0x6a411f1e)</BoxIdentifier>
+				<BoxOutputIndex>0</BoxOutputIndex>
+			</Source>
+			<Target>
+				<BoxIdentifier>(0x3c200145, 0x6dd15734)</BoxIdentifier>
+				<BoxInputIndex>0</BoxInputIndex>
+			</Target>
+		</Link>
+		<Link>
+			<Identifier>(0x6d4e68e2, 0x1900f7c0)</Identifier>
+			<Source>
+				<BoxIdentifier>(0x3c200145, 0x6dd15733)</BoxIdentifier>
+				<BoxOutputIndex>0</BoxOutputIndex>
+			</Source>
+			<Target>
+				<BoxIdentifier>(0x62b2f750, 0x7f4916de)</BoxIdentifier>
+				<BoxInputIndex>0</BoxInputIndex>
+			</Target>
+		</Link>
+		<Link>
+			<Identifier>(0x6f36d86b, 0x5cb1b96e)</Identifier>
+			<Source>
+				<BoxIdentifier>(0x5ad26528, 0x6a411f1d)</BoxIdentifier>
+				<BoxOutputIndex>0</BoxOutputIndex>
+			</Source>
+			<Target>
+				<BoxIdentifier>(0x3c200145, 0x6dd15737)</BoxIdentifier>
+				<BoxInputIndex>0</BoxInputIndex>
+			</Target>
+		</Link>
+		<Link>
+			<Identifier>(0x74d4862a, 0x1e03d85d)</Identifier>
+			<Source>
+				<BoxIdentifier>(0x3c200145, 0x6dd15731)</BoxIdentifier>
+				<BoxOutputIndex>0</BoxOutputIndex>
+			</Source>
+			<Target>
+				<BoxIdentifier>(0x62b2f750, 0x7f4916db)</BoxIdentifier>
+				<BoxInputIndex>0</BoxInputIndex>
+			</Target>
+		</Link>
+		<Link>
+			<Identifier>(0x74d4862a, 0x1e03d85e)</Identifier>
+			<Source>
+				<BoxIdentifier>(0x3c200145, 0x6dd15738)</BoxIdentifier>
+				<BoxOutputIndex>0</BoxOutputIndex>
+			</Source>
+			<Target>
+				<BoxIdentifier>(0x62b2f750, 0x7f4916e1)</BoxIdentifier>
+				<BoxInputIndex>0</BoxInputIndex>
+			</Target>
+		</Link>
+		<Link>
+			<Identifier>(0x74d4862a, 0x1e03d85f)</Identifier>
+			<Source>
+				<BoxIdentifier>(0x3c200145, 0x6dd1573e)</BoxIdentifier>
+				<BoxOutputIndex>0</BoxOutputIndex>
+			</Source>
+			<Target>
+				<BoxIdentifier>(0x62b2f750, 0x7f4916e7)</BoxIdentifier>
+				<BoxInputIndex>0</BoxInputIndex>
+			</Target>
+		</Link>
+		<Link>
+			<Identifier>(0x74d4862a, 0x1e03d860)</Identifier>
+			<Source>
+				<BoxIdentifier>(0x3c200145, 0x6dd15744)</BoxIdentifier>
+				<BoxOutputIndex>0</BoxOutputIndex>
+			</Source>
+			<Target>
+				<BoxIdentifier>(0x62b2f750, 0x7f4916ed)</BoxIdentifier>
+				<BoxInputIndex>0</BoxInputIndex>
+			</Target>
+		</Link>
+		<Link>
+			<Identifier>(0x794b529c, 0x3236c6e7)</Identifier>
+			<Source>
+				<BoxIdentifier>(0x5ad26528, 0x6a411f1e)</BoxIdentifier>
+				<BoxOutputIndex>0</BoxOutputIndex>
+			</Source>
+			<Target>
+				<BoxIdentifier>(0x3c200145, 0x6dd15736)</BoxIdentifier>
+				<BoxInputIndex>0</BoxInputIndex>
+			</Target>
+		</Link>
+		<Link>
+			<Identifier>(0x7f358710, 0x2ec618d8)</Identifier>
+			<Source>
+				<BoxIdentifier>(0x3c200145, 0x6dd15732)</BoxIdentifier>
+				<BoxOutputIndex>0</BoxOutputIndex>
+			</Source>
+			<Target>
+				<BoxIdentifier>(0x36631f89, 0x7741822b)</BoxIdentifier>
+				<BoxInputIndex>0</BoxInputIndex>
+			</Target>
+		</Link>
+		<Link>
+			<Identifier>(0x7f63a796, 0x7e02d1fb)</Identifier>
+			<Source>
+				<BoxIdentifier>(0x5ad26528, 0x6a411f1f)</BoxIdentifier>
+				<BoxOutputIndex>0</BoxOutputIndex>
+			</Source>
+			<Target>
+				<BoxIdentifier>(0x3c200145, 0x6dd15731)</BoxIdentifier>
+				<BoxInputIndex>0</BoxInputIndex>
+			</Target>
+		</Link>
+		<Link>
+			<Identifier>(0x7ffe55bf, 0x79ff8ea3)</Identifier>
+			<Source>
+				<BoxIdentifier>(0x5ad26528, 0x6a411f1d)</BoxIdentifier>
+				<BoxOutputIndex>0</BoxOutputIndex>
+			</Source>
+			<Target>
+				<BoxIdentifier>(0x5c8ee5bd, 0x531bdd00)</BoxIdentifier>
+				<BoxInputIndex>0</BoxInputIndex>
+			</Target>
+		</Link>
+	</Links>
+	<Comments></Comments>
+	<Metadata>
+		<Entry>
+			<Identifier>(0x32b3ed6a, 0x29ec3f8c)</Identifier>
+			<Type>(0x3bcce5d2, 0x43f2d968)</Type>
+			<Data>[{"boxIdentifier":"(0x5c8ee5bd, 0x531bdcff)","childCount":0,"identifier":"(0x128fcf0e, 0x620b9113)","parentIdentifier":"(0xffffffff, 0xffffffff)","type":3},{"boxIdentifier":"(0xffffffff, 0xffffffff)","childCount":1,"height":320,"identifier":"(0x2ffdabcc, 0x46d2c49a)","name":"Default window","parentIdentifier":"(0xffffffff, 0xffffffff)","type":1,"width":480},{"boxIdentifier":"(0x3595d6d8, 0x6623d6c1)","childCount":0,"identifier":"(0x5628635d, 0x30b1c8a5)","parentIdentifier":"(0xffffffff, 0xffffffff)","type":3},{"boxIdentifier":"(0x5c8ee5bd, 0x531bdd00)","childCount":0,"identifier":"(0x58782bdd, 0x4c8d86e3)","parentIdentifier":"(0xffffffff, 0xffffffff)","type":3},{"boxIdentifier":"(0x3595d6d8, 0x6623d6c2)","childCount":0,"identifier":"(0x7a2bc812, 0x5aa452ab)","parentIdentifier":"(0xffffffff, 0xffffffff)","type":3},{"boxIdentifier":"(0xffffffff, 0xffffffff)","childCount":1,"identifier":"(0x2b59edd9, 0x11fb3684)","index":0,"name":"Default tab","parentIdentifier":"(0x2ffdabcc, 0x46d2c49a)","type":2},{"boxIdentifier":"(0xffffffff, 0xffffffff)","childCount":0,"identifier":"(0x460bc95c, 0x5a7cff93)","index":0,"name":"Empty","parentIdentifier":"(0x2b59edd9, 0x11fb3684)","type":0}]</Data>
+		</Entry>
+	</Metadata>
+</OpenViBE-Scenario>
